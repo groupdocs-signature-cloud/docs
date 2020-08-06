@@ -26,10 +26,8 @@ There are 10 features and fixes in this release. The most notable are:
 
 ## Full List of Issues Covering all Changes in this Release ##
 
-|Key
-|---
-|Summary
-|Category
+|Key|Summary|Category
+|---|---|---
 |SIGNATURECLOUD-202|Implement Verification for Images documents|New Feature
 |SIGNATURECLOUD-195|Implement Signing for Images documents|New Feature
 |SIGNATURECLOUD-193|Implement Pages Setup for SignOptionsData|New Feature
@@ -47,7 +45,7 @@ There are 10 features and fixes in this release. The most notable are:
 ## Public API and Backward Incompatible Changes ##
 
 
-### [Sign documents with Stamp Signature]({{< ref "signature/developer-guide/signing-documents/working-with-stamp-signature.md" >}}) ###
+### Sign documents with Stamp Signature ###
 |---|---
 
 To put Stamp Signature for supported Document formats (PDF, Images, SpreadSheet Document Formats, Word Processing Document Formats and Presentation Document Formats) Signature API provides new stamp options. For example to put Stamp Signature to Image **[ImagesSignStampOptionsData]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}})** is used that specify text, signature area, alignment, appearance, colors and another render features.
@@ -138,8 +136,7 @@ The result Document created by Signature contains Image Signature File (see scre
 ![](signature/images/ImagesWithStampSignature_small.png)
 
 
-### [Signature Collection]({{< ref "signature/developer-guide/signing-documents/working-with-signature-collection.md" >}}) ###
-|---|---
+### Signature Collection ###
 
 To put list of signatures on document (Cells, Images, PDF, Slides or Words) Signature provides new object **[SignOptionsCollectionData]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}})** that can contain one or more signature options. Please, use signature options which appropriate for current document format.
 
@@ -272,8 +269,7 @@ The result contains data about signed file and status.
  
 
 
-### [Verify Images documents with Barcode and QR-Code Signature]({{< ref "signature/developer-guide/signing-documents/working-with-qr-code-signature.md" >}}) ###
-|---|---
+### Verify Images documents with Barcode and QR-Code Signature ###
 
 This version(18.5) started support of Image docments verification with Barcode and QR-Code Signature. It introduced two new options for the purpose **[ImagesVerifyBarcodeOptionsData]({{< ref "signature/developer-guide/v1/common-resources/verification-options-objects.md" >}}) **and** [ImagesVerifyQRCodeOptionsData]({{< ref "signature/developer-guide/v1/common-resources/verification-options-objects.md" >}}).** For example to verify Barcode Signature in Image Document Signature API provides new options **[ImagesVerifyBarcodeOptionsData]({{< ref "signature/developer-guide/v1/common-resources/verification-options-objects.md" >}})** that specify barcode text, barcode type and other features.
 
@@ -419,8 +415,7 @@ JSON result contains verification status. If verification is successful result 
 
 
 
-### [Verify Collection]({{< ref "signature/developer-guide/verifying-signature/working-with-verify-collection.md" >}}) ###
-|---|---
+### Verify Collection ###
 
 To verify list of signatures in document (Cells, Images, PDF, Slides or Words) Signature provides new object **[VerifyOptionsCollectionData]({{< ref "signature/developer-guide/v1/common-resources/verification-options-objects.md" >}})** that can contain one or more search options. Please, use search options which appropriate for current document format.
 
@@ -767,8 +762,7 @@ JSON result contains list of objects which represent signatures found in a docu
 
 
 
-### [Search Collection]({{< ref "signature/developer-guide/search-signature/working-with-search-collection.md" >}}) ###
-|---|---
+### Search Collection ###
 
 To search list of signatures in document (Cells, Images, PDF, Slides or Words) Signature provides new object **[SearchOptionsCollectionData]({{< ref "signature/developer-guide/v1/common-resources/search-options-objects.md" >}})** that can contain one or more search options. Please, use search options which appropriate for current document format.
 
