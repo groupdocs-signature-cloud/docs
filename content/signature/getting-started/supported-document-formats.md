@@ -33,8 +33,10 @@ This page is a reference for all document and image formats supported by GroupDo
 |---
 
  
+|CorelDraw Image|[CDR](https://docs.fileformat.com/image/cdr/)| | | 
+|---|---|---|---|---
+|Corel Exchange image|[CMX](https://docs.fileformat.com/image/cmx/)| | | 
 |Digital Imaging and Communications in Medicine (DICOM)|.[DCM](https://wiki.fileformat.com/image/dcm/)| | 
-|---|---|---|---|---|---
 
  | 
 |---
@@ -161,7 +163,6 @@ This page is a reference for all document and image formats supported by GroupDo
  
 
 
-
 ## PDF Formats ##
 
 |Format|File Extension|Load|Save|Notes
@@ -243,7 +244,6 @@ This page is a reference for all document and image formats supported by GroupDo
 |---
 
  
-
 
 
 ## Spreadsheet Formats ##
@@ -379,7 +379,6 @@ This page is a reference for all document and image formats supported by GroupDo
 |---
 
  
-
 
 
  

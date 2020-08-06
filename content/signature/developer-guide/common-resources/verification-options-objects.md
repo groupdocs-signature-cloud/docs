@@ -21,7 +21,7 @@ Page contains description for Verification Options objects and object properties
 
 
 ## [VerifyOptionsCollectionData Object]("VerifyOptionsCollectionDataObject") ##
-|---|---
+
 
 Provides list of options for documents verification.
 
@@ -75,7 +75,7 @@ Example VerifyOptionsCollectionData object
  VerifyOptionsCollectionData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Items|List<VerifyOptionsData>|List of Verify Options records.
 
 
@@ -85,7 +85,7 @@ Example VerifyOptionsCollectionData object
 
 
 ## [CellsVerifyTextOptionsData Object]("CellsVerifyTextOptionsData") ##
-|---|---
+
 
 Provides options to verify Text Signature in Cells Documents.
 
@@ -103,7 +103,7 @@ Example CellsVerifyTextOptionsData object
  CellsVerifyTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
 |PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
@@ -136,7 +136,7 @@ Example PdfVerifyTextOptionsData object
  PdfVerifyTextOptions Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |SignatureID|int|unique identifier of Text Signature for Stamp Text signature implementation
 |SignatureImplementation|enum|Specifies type of Signature implementation to verify
 |Text|string|Text of Signature. Default value is empty.
@@ -152,7 +152,7 @@ Example PdfVerifyTextOptionsData object
 
 
 ## [SlidesVerifyTextOptionsData Object]("SlidesVerifyTextOptionsData") ##
-|---|---
+
 
 Provides options to verify Text Signature in Slides Documents.
 
@@ -170,7 +170,7 @@ Example SlidesVerifyTextOptionsData object
  SlidesVerifyTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
 |PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
@@ -184,7 +184,7 @@ Example SlidesVerifyTextOptionsData object
 
 
 ## [WordsVerifyTextOptionsData Object]("WordsVerifyTextOptionsData") ##
-|---|---
+
 
 Provides optionsto verify Text Signature in Words Documents.
 
@@ -202,7 +202,7 @@ Example WordsVerifyTextOptionsData object
  WordsVerifyTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature to verify
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
@@ -216,7 +216,7 @@ Example WordsVerifyTextOptionsData object
 
 
 ## [CellsVerifyDigitalOptionsData Object]("InfoOptionsObject") ##
-|---|---
+
 
 Provides options to verify Digital Signature in Cells Documents.
 
@@ -237,7 +237,7 @@ Example CellsVerifyDigitalOptionsData object
  CellsVerifyTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
 |PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
@@ -271,7 +271,7 @@ Example PdfVerifyDigitalOptionsData object
  PdfVerifyDigitalOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |SignatureID|int|unique identifier of Text Signature for Stamp Text signature implementation
 |SignatureImplementation|enum|Specifies type of Signature implementation to verify
 |Text|string|Text of Signature. Default value is empty.
@@ -287,7 +287,7 @@ Example PdfVerifyDigitalOptionsData object
  
 
 ## [WordsVerifyDigialOptionsData Object]("WordsVerifyDigialOptionsData") ##
-|---|---
+
 
 Provides options to verify Digital Signature in Words Documents.
 
@@ -308,7 +308,7 @@ Example WordsVerifyDigitalOptionsData object
  WordsVerifyTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature to verify
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
@@ -322,7 +322,7 @@ Example WordsVerifyDigitalOptionsData object
 
 
 ## [CellsVerifyBarcodeOptionsData Object]("CellsVerifyBarcodeOptionsData") ##
-|---|---
+
 
 Provides options to verify Barcode Signature in Cells Documents.
 
@@ -342,7 +342,7 @@ Example CellsVerifyBarcodeOptionsData object
  CellsVerifyTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Barcode encode type name to verify on document page(s). List of supported Barcode encode type names could be found in Barcode Resources
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
 |Text|string|Text of Signature to verify. Default value is empty.
@@ -358,7 +358,7 @@ Example CellsVerifyBarcodeOptionsData object
 
 
 ## [ImagesVerifyBarcodeOptionsData Object]("ImagesVerifyBarcodeOptionsDataObject") ##
-|---|---
+
 
 Provides options to verify Barcode Signature in Images Documents.
 
@@ -390,7 +390,7 @@ Example ImagesVerifyBarcodeOptionsData object
  CellsVerifyTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Barcode encode type name to verify on document page(s). List of supported Barcode encode type names could be found in Barcode Resources
 |Text|string|Optional. Specifies text to search in Barcodes. If value is not set there will be no Text criteria.
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -425,7 +425,7 @@ Example PdfVerifyBarcodeOptionsData object
  PdfVerifyBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Barcode encode type name to verify on document page(s). List of supported Barcode encode type names could be found in Barcode Resources
 |MatchType|enum|Specifies enumeration of possible Barcode Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of Signature. Default value is empty.
@@ -441,7 +441,7 @@ Example PdfVerifyBarcodeOptionsData object
 
 
 ## [SlidesVerifyBarcodeOptionsData Object]("SlidesVerifyBarcodeOptionsData") ##
-|---|---
+
 
 Provides options to verify Barcode Signature in Slides Documents.
 
@@ -461,7 +461,7 @@ Example SlidesVerifyBarcodeOptionsData object
  SlidesVerifyBarodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Barcode encode type name to verify on document page(s). List of supported Barcode encode type names could be found in Barcode Resources
 |MatchType|enum|Specifies enumeration of possible Barcode Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of Signature. Default value is empty.
@@ -477,7 +477,7 @@ Example SlidesVerifyBarcodeOptionsData object
 
 
 ## [WordsVerifyBarcodeOptionsData Object]("WordsVerifyBarcodeOptionsData") ##
-|---|---
+
 
 Provides options to verify Barcode Signature in Words Documents.
 
@@ -497,7 +497,7 @@ Example WordsVerifyBarcodeOptionsData object
  ```
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Barcode encode type name to verify on document page(s). List of supported Barcode encode type names could be found in Barcode Resources
 |MatchType|enum|Specifies enumeration of possible Barcode Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of Signature to verify
@@ -510,7 +510,7 @@ Example WordsVerifyBarcodeOptionsData object
  
 
 ## [CellsVerifyQRCodeOptionsData Object]("CellsVerifyQRCodeOptionsData") ##
-|---|---
+
 
 Provides options to verify QRCodeSignature in Cells Documents.
 
@@ -530,7 +530,7 @@ Example CellsVerifyQRCodeOptionsData object
  CellsVerifyQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|QR-Code encode type name to verify on document page(s). List of supported QR-Code encode type names could be found in QR-Code Resources
 |MatchType|enum|Specifies enumeration of possible QR-Code Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.
@@ -546,7 +546,7 @@ Example CellsVerifyQRCodeOptionsData object
 
 
 ## [ImagesVerifyQRCodeOptionsData Object]("ImagesVerifyQRCodeOptionsDataObject") ##
-|---|---
+
 
 Provides options to verify QRCodeSignature in Images Documents.
 
@@ -578,7 +578,7 @@ Example ImagesVerifyQRCodeOptionsData object
  ImagesVerifyQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|QR-Code encode type name to verify on document page(s). List of supported QR-Code encode type names could be found in QR-Code Resources
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.
@@ -613,7 +613,7 @@ Example PdfVerifyQRCodeOptionsData object
  PdfVerifyQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|QR-Code encode type name to verify on document page(s). List of supported QR-Code encode type names could be found in QR-Code Resources
 |MatchType|enum|Specifies enumeration of possible QR-Code Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.
@@ -629,7 +629,7 @@ Example PdfVerifyQRCodeOptionsData object
 
 
 ## [SlidesVerifyQRCodeOptionsData Object]("SlidesVerifyQRCodeOptionsData") ##
-|---|---
+
 
 Provides options to verify QRCodeSignature in Slides Documents.
 
@@ -649,7 +649,7 @@ Example SlidesVerifyQRCodeOptionsData object
  SlidesVerifyQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|QR-Code encode type name to verify on document page(s). List of supported QR-Code encode type names could be found in QR-Code Resources
 |MatchType|enum|Specifies enumeration of possible QR-Code Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.
@@ -665,7 +665,7 @@ Example SlidesVerifyQRCodeOptionsData object
 
 
 ## [WordsVerifyQRCodeOptionsData Object]("WordsVerifyQRCode OptionsData") ##
-|---|---
+
 
 Provides options to verify QR-Code Signature in Words Documents.
 
@@ -685,7 +685,7 @@ Example WordsVerifyQRCodeOptionsData object
  ```
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|QR-Code encode type name to verify on document page(s). List of supported QR-Code encode type names could be found in QR-Code Resources
 |MatchType|enum|Specifies enumeration of possible QR-Code Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.

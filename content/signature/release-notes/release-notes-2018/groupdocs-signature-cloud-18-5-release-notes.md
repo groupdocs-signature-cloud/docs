@@ -50,7 +50,7 @@ There are 10 features and fixes in this release. The most notable are:
 ### [Sign documents with Stamp Signature]({{< ref "signature/developer-guide/signing-documents/working-with-stamp-signature.md" >}}) ###
 |---|---
 
-To put Stamp Signature for supported Document formats (PDF, Images, SpreadSheet Document Formats, Word Processing Document Formats and Presentation Document Formats) Signature API provides new stamp options. For example to put Stamp Signature to Image **[ImagesSignStampOptionsData]({{< ref "signature/developer-guide/common-resources/signature-options-objects.md" >}})** is used that specify text, signature area, alignment, appearance, colors and another render features.
+To put Stamp Signature for supported Document formats (PDF, Images, SpreadSheet Document Formats, Word Processing Document Formats and Presentation Document Formats) Signature API provides new stamp options. For example to put Stamp Signature to Image **[ImagesSignStampOptionsData]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}})** is used that specify text, signature area, alignment, appearance, colors and another render features.
 
  
 
@@ -141,7 +141,7 @@ The result Document created by Signature contains Image Signature File (see scre
 ### [Signature Collection]({{< ref "signature/developer-guide/signing-documents/working-with-signature-collection.md" >}}) ###
 |---|---
 
-To put list of signatures on document (Cells, Images, PDF, Slides or Words) Signature provides new object **[SignOptionsCollectionData]({{< ref "signature/developer-guide/common-resources/signature-options-objects.md" >}})** that can contain one or more signature options. Please, use signature options which appropriate for current document format.
+To put list of signatures on document (Cells, Images, PDF, Slides or Words) Signature provides new object **[SignOptionsCollectionData]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}})** that can contain one or more signature options. Please, use signature options which appropriate for current document format.
 
  
 
@@ -275,7 +275,7 @@ The result contains data about signed file and status.
 ### [Verify Images documents with Barcode and QR-Code Signature]({{< ref "signature/developer-guide/signing-documents/working-with-qr-code-signature.md" >}}) ###
 |---|---
 
-This version(18.5) started support of Image docments verification with Barcode and QR-Code Signature. It introduced two new options for the purpose **[ImagesVerifyBarcodeOptionsData]({{< ref "signature/developer-guide/common-resources/verification-options-objects.md" >}}) **and** [ImagesVerifyQRCodeOptionsData]({{< ref "signature/developer-guide/common-resources/verification-options-objects.md" >}}).** For example to verify Barcode Signature in Image Document Signature API provides new options **[ImagesVerifyBarcodeOptionsData]({{< ref "signature/developer-guide/common-resources/verification-options-objects.md" >}})** that specify barcode text, barcode type and other features.
+This version(18.5) started support of Image docments verification with Barcode and QR-Code Signature. It introduced two new options for the purpose **[ImagesVerifyBarcodeOptionsData]({{< ref "signature/developer-guide/v1/common-resources/verification-options-objects.md" >}}) **and** [ImagesVerifyQRCodeOptionsData]({{< ref "signature/developer-guide/v1/common-resources/verification-options-objects.md" >}}).** For example to verify Barcode Signature in Image Document Signature API provides new options **[ImagesVerifyBarcodeOptionsData]({{< ref "signature/developer-guide/v1/common-resources/verification-options-objects.md" >}})** that specify barcode text, barcode type and other features.
 
  
 
@@ -422,7 +422,7 @@ JSON result contains verification status. If verification is successful result 
 ### [Verify Collection]({{< ref "signature/developer-guide/verifying-signature/working-with-verify-collection.md" >}}) ###
 |---|---
 
-To verify list of signatures in document (Cells, Images, PDF, Slides or Words) Signature provides new object **[VerifyOptionsCollectionData]({{< ref "signature/developer-guide/common-resources/verification-options-objects.md" >}})** that can contain one or more search options. Please, use search options which appropriate for current document format.
+To verify list of signatures in document (Cells, Images, PDF, Slides or Words) Signature provides new object **[VerifyOptionsCollectionData]({{< ref "signature/developer-guide/v1/common-resources/verification-options-objects.md" >}})** that can contain one or more search options. Please, use search options which appropriate for current document format.
 
  
 
@@ -568,13 +568,13 @@ JSON result contains verification status. If verification is successful result 
 ### [Search Signatures in Documents](http://lisbon.dynabic.com/wiki/display/signature/v18.05+Search+Cells+documents+for+Barcode+Signatures) ###
 |---|---
 
-The support of this feature started from version 18.5. [search-options-objects]({{< ref "signature/developer-guide/common-resources/search-options-objects.md" >}}) are introduced in Signature API for the purpose.
+The support of this feature started from version 18.5. [search-options-objects]({{< ref "signature/developer-guide/v1/common-resources/search-options-objects.md" >}}) are introduced in Signature API for the purpose.
 
 * search for Digital Signatures in PDF, SpreadSheet Document Formats and Word Processing Document Formats
 * search for Barcode Signatures in PDF, Images, SpreadSheet Document Formats, Word Processing Document Formats and Presentation Document Formats
 * search for QR-Code Signatures in PDF, Images, SpreadSheet Document Formats, Word Processing Document Formats and Presentation Document Formats
 
-For example To search Barcode Signatures in Cells Document (.xlsx, .xls, .xlsm, xlsb, csv, ods, ots, xltx, xltm file formats) Signature provides new options **[CellsSearchBarcodeOptionsData]({{< ref "signature/developer-guide/common-resources/search-options-objects.md" >}})** that specify barcodeTypeName, text, matchType and other search features.
+For example To search Barcode Signatures in Cells Document (.xlsx, .xls, .xlsm, xlsb, csv, ods, ots, xltx, xltm file formats) Signature provides new options **[CellsSearchBarcodeOptionsData]({{< ref "signature/developer-guide/v1/common-resources/search-options-objects.md" >}})** that specify barcodeTypeName, text, matchType and other search features.
 
  
 
@@ -770,7 +770,7 @@ JSON result contains list of objects which represent signatures found in a docu
 ### [Search Collection]({{< ref "signature/developer-guide/search-signature/working-with-search-collection.md" >}}) ###
 |---|---
 
-To search list of signatures in document (Cells, Images, PDF, Slides or Words) Signature provides new object **[SearchOptionsCollectionData]({{< ref "signature/developer-guide/common-resources/search-options-objects.md" >}})** that can contain one or more search options. Please, use search options which appropriate for current document format.
+To search list of signatures in document (Cells, Images, PDF, Slides or Words) Signature provides new object **[SearchOptionsCollectionData]({{< ref "signature/developer-guide/v1/common-resources/search-options-objects.md" >}})** that can contain one or more search options. Please, use search options which appropriate for current document format.
 
  
 

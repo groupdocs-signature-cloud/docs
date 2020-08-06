@@ -10,9 +10,8 @@ keywords: ""
 
 # SignSettings #
 
-SignSettings data structure used as input parameters for .
+SignSettings data structure used as input parameters for Sign API method
 
- 
 
 ##### SignSettings example #####
 
@@ -24,13 +23,11 @@ SignSettings data structure used as input parameters for .
   }, 
   "SaveOptions": {
     "OverwriteExisting": "true",
-    "OutputFilePath": "file02.docx",
-    "SaveFormat": "docx"
+    "OutputFilePath": "file02.docx"
   },
-  "SignOptions": 
+  "Options": 
   [
-   	{
-      "DocumentType": "WordProcessing",
+    {
       "SignatureType": "Barcode",  
       "Page": 1,
       "Text": "John Smith",
@@ -39,15 +36,13 @@ SignSettings data structure used as input parameters for .
       "Top": 2
     },
     {
-      "DocumentType": "WordProcessing",
       "SignatureType": "Image",  
       "Page": 1,
-      "ImageGuid": "image1.jpg",
+      "ImageFilePath": "image1.jpg",
       "Left": 200,
-      "Top": 200,
-      "Opacity": 0.5
+      "Top": 200
     }
-	]
+ ]
  }
 
  ```
@@ -62,15 +57,12 @@ SignSettings data structure used as input parameters for .
 |FileInfo.Password|Password for rendering password-protected documents| 
 |SaveOptions.OverwriteExisting|Flag to remove existing file if it exists| 
 |SaveOptions.OutputFilePath|Output flle path| 
-|SaveOptions.SaveFormat|Output save format| 
-|SignOptions|Array with at least one SignOptions that specifies Signature and Document type and its properties to be added to Document
+|Options|Array with at least one SignOptions that specifies Signature and Document type and its properties to be added to Document
 
 
 
 | 
 |---
 
-
- 
 
  

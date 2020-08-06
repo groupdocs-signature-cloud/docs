@@ -21,7 +21,6 @@ Page contains description for Search Options objects and object properties
 
 
 ## [CellsBarcodeSignatureData Object]("CellsBarcodeSignatureDataObject") ##
-|---|---
 
 Contains Cells Bar-code Signature properties.
 
@@ -32,7 +31,7 @@ Contains Cells Bar-code Signature properties.
  CellsBarcodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Specifies the Barcode type.
 |Text|string|Specifies text of Bar-code.
 
@@ -43,7 +42,6 @@ Contains Cells Bar-code Signature properties.
 
 
 ## [ImagesBarcodeSignatureData Object]("ImagesBarcodeSignatureDataObject") ##
-|---|---
 
 Contains Images Bar-code Signature properties.
 
@@ -54,7 +52,7 @@ Contains Images Bar-code Signature properties.
  ImagesBarcodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Specifies the Barcode type.
 |Text|string|Specifies text of Bar-code.
 
@@ -65,7 +63,6 @@ Contains Images Bar-code Signature properties.
 
 
 ## [PdfBarcodeSignatureData Object]("PdfBarcodeSignatureDataObject") ##
-|---|---
 
 Contains Pdf Bar-code Signature properties.
 
@@ -76,7 +73,7 @@ Contains Pdf Bar-code Signature properties.
  PdfBarcodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Specifies the Barcode type.
 |Text|string|Specifies text of Bar-code.
 
@@ -87,7 +84,6 @@ Contains Pdf Bar-code Signature properties.
 
 
 ## [SlidesBarcodeSignatureData Object]("SlidesBarcodeSignatureDataObject") ##
-|---|---
 
 Contains Slides Bar-code Signature properties.
 
@@ -98,7 +94,7 @@ Contains Slides Bar-code Signature properties.
  SlidesBarcodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Specifies the Barcode type.
 |Text|string|Specifies text of Bar-code.
 
@@ -109,7 +105,6 @@ Contains Slides Bar-code Signature properties.
 
 
 ## [WordsBarcodeSignatureData Object]("WordsBarcodeSignatureDataObject") ##
-|---|---
 
 Contains Words Bar-code Signature properties.
 
@@ -120,7 +115,7 @@ Contains Words Bar-code Signature properties.
  WordsBarcodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Specifies the Barcode type.
 |Text|string|Specifies text of Bar-code.
 
@@ -131,7 +126,6 @@ Contains Words Bar-code Signature properties.
 
 
 ## [CellsDigitalSignatureData Object]("CellsDigitalSignatureDataObject") ##
-|---|---
 
 Describes digital signature for Cells documents.
 
@@ -142,7 +136,7 @@ Describes digital signature for Cells documents.
  CellsDigitalSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Comments|string|Gets or sets the signing purpose comment.
 |IsValid|string|Keeps true if this digital signature is valid and the document has not been tampered with.
 |DigitaSignatureType|DigitalSignatureTypeData|Gets or sets the type of the digital signature. ****
@@ -155,7 +149,6 @@ Describes digital signature for Cells documents.
 
 
 ## [PdfDigitalSignatureData Object]("PdfDigitalSignatureDataObject") ##
-|---|---
 
 Describes digital signature for Pdf documents.
 
@@ -166,7 +159,7 @@ Describes digital signature for Pdf documents.
  PdfDigitalSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Comments|string|Gets or sets the signing purpose comment.
 |IsValid|string|Keeps true if this digital signature is valid and the document has not been tampered with.
 |DigitaSignatureType|DigitalSignatureTypeData|Gets or sets the type of the digital signature. ****
@@ -179,7 +172,6 @@ Describes digital signature for Pdf documents.
 
 
 ## [WordsDigitalSignatureData Object]("WordsDigitalSignatureDataObject") ##
-|---|---
 
 Describes digital signature for Words documents.
 
@@ -190,7 +182,7 @@ Describes digital signature for Words documents.
  WordsDigitalSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Comments|string|Gets or sets the signing purpose comment.
 |IsValid|string|Keeps true if this digital signature is valid and the document has not been tampered with.
 |DigitaSignatureType|DigitalSignatureTypeData|Gets or sets the type of the digital signature. ****
@@ -203,7 +195,6 @@ Describes digital signature for Words documents.
 
 
 ## [CellsQRCodeSignatureData Object]("CellsQRCodeSignatureDataObject") ##
-|---|---
 
 Contains Cells QRCode Signature properties.
 
@@ -214,7 +205,7 @@ Contains Cells QRCode Signature properties.
  CellsQRCodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Specifies the QRCode type.
 |Text|string|Specifies text of QRCode.
 
@@ -225,7 +216,6 @@ Contains Cells QRCode Signature properties.
 
 
 ## [ImagesQRCodeSignatureData Object]("ImagesQRCodeSignatureDataObject") ##
-|---|---
 
 Contains Images QRCode Signature properties.
 
@@ -236,7 +226,7 @@ Contains Images QRCode Signature properties.
  ImagesQRCodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Specifies the QRCode type.
 |Text|string|Specifies text of QRCode.
 
@@ -247,7 +237,6 @@ Contains Images QRCode Signature properties.
 
 
 ## [PdfQRCodeSignatureData Object]("PdfQRCodeSignatureDataObject") ##
-|---|---
 
 Contains Pdf QRCode Signature properties.
 
@@ -258,7 +247,7 @@ Contains Pdf QRCode Signature properties.
  PdfQRCodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Specifies the QRCode type.
 |Text|string|Specifies text of QRCode.
 
@@ -269,7 +258,6 @@ Contains Pdf QRCode Signature properties.
 
 
 ## [SlidesQRCodeSignatureData Object]("SlidesQRCodeSignatureDataObject") ##
-|---|---
 
 Contains Slides QRCode Signature properties.
 
@@ -280,7 +268,7 @@ Contains Slides QRCode Signature properties.
  SlidesQRCodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Specifies the QRCode type.
 |Text|string|Specifies text of QRCode.
 
@@ -291,7 +279,6 @@ Contains Slides QRCode Signature properties.
 
 
 ## [WordsQRCodeSignatureData Object]("WordsQRCodeSignatureDataObject") ##
-|---|---
 
 Contains Words QRCode Signature properties.
 
@@ -302,7 +289,7 @@ Contains Words QRCode Signature properties.
  WordsQRCodeSignatureData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Specifies the QRCode type.
 |Text|string|Specifies text of QRCode.
 

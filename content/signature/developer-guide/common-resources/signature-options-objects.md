@@ -21,7 +21,6 @@ Page contains description for Signature Options objects and object properties
 
 
 ## [SignOptionsCollectionData Object]("SignOptionsCollectionDataObject") ##
-|---|---
 
 Provides list of options for documents signing.
 
@@ -129,7 +128,7 @@ Example SignOptionsCollectionData object
  SignOptionsCollectionData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Items|List<SignOptionsData>|List of Signature Options objects.
 
 
@@ -139,7 +138,6 @@ Example SignOptionsCollectionData object
 
 
 ## [CellsSignTextOptionsData Object]("CellsSignTextOptionsDataObject") ##
-|---|---
 
 Provides options for Cells Documents to add Text Signature.
 
@@ -211,7 +209,7 @@ Example CellsSignTextOptionsData object
  CellsSignTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |SignatureImplementation|enum|Specifies Text Signature Implementation Type. **.**
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -253,7 +251,6 @@ Example CellsSignTextOptionsData object
 
 
 ## [ImagesSignTextOptionsData Object]("ImagesSignTextOptionsDataObject") ##
-|---|---
 
 Provides options for Images Documents to add Text Signature.
 
@@ -322,7 +319,7 @@ Example ImagesSignTextOptionsData object
  ImagesSignTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |SignatureImplementation|enum|Specifies Text Signature Implementation Type. **.**
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -428,7 +425,7 @@ Example PdfSignTextOptionsData object
  PdfSignTextOptions Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty. **.**
 |SignatureImplementation|enum|Specifies Text Signature Implementation Type.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -465,7 +462,6 @@ Example PdfSignTextOptionsData object
 
 
 ## [SlidesSignTextOptionsData Object]("SlidesTextOptions") ##
-|---|---
 
 Provides options to put Text Signature on Slides Documents.
 
@@ -532,7 +528,7 @@ Example SlidesSignTextOptionsData object
  SlidesSignTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |SignatureImplementation|enum|Specifies Text Signature Implementation Type. **.**
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -569,7 +565,6 @@ Example SlidesSignTextOptionsData object
 
 
 ## [WordsSignTextOptionsData Object]("WordsSignTextOptionsData") ##
-|---|---
 
 Provides options for Text Signature object for Words Documents.
 
@@ -637,7 +632,7 @@ Example WordsSignTextOptionsData object
  WordsSignTextOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |SignatureImplementation|enum|Specifies Text Signature Implementation Type. **.**
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -675,7 +670,6 @@ Example WordsSignTextOptionsData object
 
 
 ## [CellsSignImageOptionsData Object]("CellsSignImageOptionsData") ##
-|---|---
 
 Provides options to put Image Signature on Cells Documents Pages.
 
@@ -725,7 +719,7 @@ Example CellsSignImageOptionsData object
  CellsSignImageOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SheetNumber|int|Gets or sets worksheet number for signing. DocumentPageNumber parameter contains the same value.
@@ -757,7 +751,6 @@ Example CellsSignImageOptionsData object
 
 
 ## [ImagesSignImageOptionsData Object]("ImagesSignImageOptionsDataObject") ##
-|---|---
 
 Provides options for Images Documents to add Image Signature.
 
@@ -804,7 +797,7 @@ Example ImagesSignImageOptionsData object.
  ImagesSignImageOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
@@ -833,7 +826,6 @@ Example ImagesSignImageOptionsData object.
 
 
 ## [PdfSignImageOptionsData Object]("PdfSignImageOptionsData Object")  ##
-|---|---
 
 Provides options to add Image Signature on Document pages.
 
@@ -886,7 +878,7 @@ Example PdfSignImageOptionsData object
  PdfSignImageOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
@@ -915,7 +907,7 @@ Example PdfSignImageOptionsData object
 
 
 ## [SlidesSignImageOptionsData Object]("SlidesSignImageOptionsData") ##
-|---|---
+
 
 Provides options to put Image Signature on Slides Documents
 
@@ -959,7 +951,7 @@ Provides options to put Image Signature on Slides Documents
  SlidesSignImageOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
@@ -988,7 +980,7 @@ Provides options to put Image Signature on Slides Documents
 
 
 ## [WordsSignImageOptionsData Object]("WordsSignImageOptionsData") ##
-|---|---
+
 
 Provides options to put Image Signature on Words Documents
 
@@ -1035,7 +1027,7 @@ Example WordsSignImageOptionsData object.
  WordsSignImagesOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
@@ -1064,7 +1056,7 @@ Example WordsSignImageOptionsData object.
 
 
 ## [CellsSignDigitalOptionsData Object]("CellsSignDigitalOptionsData") ##
-|---|---
+
 
 Provides options to add Digital Signature on Cells Documents
 
@@ -1116,7 +1108,7 @@ Example CellsSignDigitalOptionsData object.
  CellsSignDigitalOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |CertificateGuid|string|Gets or sets the digital certificate file GUID.
 |Password|string|Gets or sets the password of digital certificate.
 |ImageGuid|string|Gets or sets the signature image file name.
@@ -1150,7 +1142,7 @@ Example CellsSignDigitalOptionsData object.
 
 
 ## [PdfSignDigitalOptionsData Object]("PdfSignDigitalOptionsData") ##
-|---|---
+
 
 Provides options to put Digital Signature on Pdf Documents
 
@@ -1203,7 +1195,7 @@ Example PdfSignDigitalOptionsData object.
  PdfSignDigitalOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |CertificateGuid|string|Gets or sets the digital certificate file GUID.
 |Password|string|Gets or sets the password of digital certificate.
 |ImageGuid|string|Gets or sets the signature image file name.
@@ -1238,7 +1230,7 @@ Example PdfSignDigitalOptionsData object.
 
 
 ## [WordsSignDigitalOptionsData Object]("WordsSignDigitalOptionsData") ##
-|---|---
+
 
 Provides options to put Digital Siganture on Words Documents.
 
@@ -1285,7 +1277,7 @@ Example WordsSignDigitalOptionsData object.
  WordsSignDigitalOptionsData Object Fileds (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |CertificateGuid|string|Gets or sets the digital certificate file GUID.
 |Password|string|Gets or sets the password of digital certificate.
 |ImageGuid|string|Gets or sets the signature image file name.
@@ -1316,7 +1308,7 @@ Example WordsSignDigitalOptionsData object.
 
 
 ## [CellsSignBarcodeOptionsData Object]("CellsSignBarcodeOptionsData") ##
-|---|---
+
 
 Provides options for Cells Documents to add Barcode Signature.
 
@@ -1395,7 +1387,7 @@ Example CellsSignBarcodeOptionsData object
  CellsSignBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |BarcodeTypeName|string|Get or set Barcode type. Pick one from supported Barcode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -1437,7 +1429,7 @@ Example CellsSignBarcodeOptionsData object
 
 
 ## [ImagesSignBarcodeOptionsData Object]("ImagesSignBarcodeOptionsDataObject") ##
-|---|---
+
 
 Provides options for Images Documents to add Barcode Signature.
 
@@ -1513,7 +1505,7 @@ Example ImagesSignBarcodeOptionsData object.
  ImagesSignBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |BarcodeTypeName|string|Get or set Barcode type. Pick one from supported Barcode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -1628,7 +1620,7 @@ Example PdfSignBarcodeOptionsData object
  PdfSignBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |BarcodeTypeName|string|Get or set Barcode type. Pick one from supported Barcode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -1668,7 +1660,7 @@ Example PdfSignBarcodeOptionsData object
 
 
 ## [SlidesSignBarcodeOptionsData Object]("SlidesTextOptions") ##
-|---|---
+
 
 Provides options to put Barcode Signature on Slides Documents.
 
@@ -1744,7 +1736,7 @@ Example SlidesSignBarcodeOptionsData object
  SlidesSignBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |BarcodeTypeName|string|Get or set Barcode type. Pick one from supported Barcode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -1784,7 +1776,7 @@ Example SlidesSignBarcodeOptionsData object
 
 
 ## [WordsSignBarcodeOptionsData Object]("WordsSignTextOptionsData") ##
-|---|---
+
 
 Provides options for Barcode Signature object for Words Documents.
 
@@ -1860,7 +1852,7 @@ Example WordsSignBarcodeOptionsData object
  WordsSignBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |BarcodeTypeName|string|Get or set Barcode type. Pick one from supported Barcode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -1900,7 +1892,7 @@ Example WordsSignBarcodeOptionsData object
 
 
 ## [CellsSignQRCodeOptionsData Object]("CellsSignQRCodeOptionsData") ##
-|---|---
+
 
 Provides options for Cells Documents to add QR-Code Signature.
 
@@ -1979,7 +1971,7 @@ Example CellsSignQRCodeOptionsData object
  CellsSignQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |QRCodeTypeName|string|Get or set QRCode type. Pick one from supported QRCode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -2021,7 +2013,7 @@ Example CellsSignQRCodeOptionsData object
 
 
 ## [ImagesSignQRCodeOptionsData Object]("ImagesSignQRCodeOptionsDataObject") ##
-|---|---
+
 
 Provides options for Images Documents to add QRCode Signature.
 
@@ -2097,7 +2089,7 @@ Example ImagesSignQRCodeOptionsData object.
  ImagesSignQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |QRCodeTypeName|string|Get or set QRCode type. Pick one from supported QRCode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -2210,7 +2202,7 @@ Example PdfSignQRCodeOptionsData object
  PdfSignQRCodeOptions Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |QRCodeTypeName|string|Get or set QRCode type. Pick one from supported QRCode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -2250,7 +2242,7 @@ Example PdfSignQRCodeOptionsData object
 
 
 ## [SlidesSignQRCodeOptionsData Object]("SlidesSignQRCodeOptionsData") ##
-|---|---
+
 
 Provides options to put QR-Code Signature on Slides Documents.
 
@@ -2326,7 +2318,7 @@ Example SlidesSignQRCodeOptionsData object
  SlidesSignQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |QRCodeTypeName|string|Get or set QRCode type. Pick one from supported QRCode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -2366,7 +2358,7 @@ Example SlidesSignQRCodeOptionsData object
 
 
 ## [WordsSignQRCodeOptionsData Object]("WordsSignQRCodeOptionsData") ##
-|---|---
+
 
 Provides options for QR-Code Signature object for Words Documents.
 
@@ -2442,7 +2434,7 @@ Example WordsSignQRCodeOptionsData object
  WordsSignQRCodeOptions Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Text|string|Text of Signature. Default value is empty.
 |QRCodeTypeName|string|Get or set QRCode type. Pick one from supported QRCode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
@@ -2482,7 +2474,7 @@ Example WordsSignQRCodeOptionsData object
 
 
 ## [CellsSignStampOptionsData Object]("CellsSignStampOptionsData") ##
-|---|---
+
 
 Provides options to put Stamp Signature on Cells Documents Pages.
 
@@ -2613,7 +2605,7 @@ Example CellsSignStampOptionsData object
  CellsSignStampOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SheetNumber|int|Gets or sets worksheet number for signing. DocumentPageNumber parameter contains the same value.
@@ -2650,7 +2642,7 @@ Example CellsSignStampOptionsData object
 
 
 ## [ImagesSignStampOptionsData Object]("ImagesSignStampOptionsDataObject") ##
-|---|---
+
 
 Provides options to put Stamp Signature on Images Documents Pages.
 
@@ -2778,7 +2770,7 @@ Example ImagesSignStampOptionsData object
  ImagesSignStampOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
@@ -2812,7 +2804,7 @@ Example ImagesSignStampOptionsData object
 
 
 ## [PdfSignStampOptionsData Object]("PdfSignStampOptionsDataObject") ##
-|---|---
+
 
 Provides options to put Stamp Signature on Pdf Documents Pages.
 
@@ -2938,7 +2930,7 @@ Example PdfSignStampOptionsData object.
  PdfSignStampOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
@@ -2972,7 +2964,7 @@ Example PdfSignStampOptionsData object.
 
 
 ## [SlidesSignStampOptionsData Object]("SlidesSignStampOptionsDataObject") ##
-|---|---
+
 
 Provides options to put Stamp Signature on Slides Documents Pages.
 
@@ -3100,7 +3092,7 @@ Example SlidesSignStampOptionsData object
  ImagesSignStampOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
@@ -3134,7 +3126,7 @@ Example SlidesSignStampOptionsData object
 
 
 ## [WordsSignStampOptionsData Object]("WordsSignStampOptionsDataObject") ##
-|---|---
+
 
 Provides options to put Stamp Signature on Words Documents Pages.
 
@@ -3260,7 +3252,7 @@ Example WordsSignStampOptionsData object
  ImagesSignStampOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
@@ -3297,7 +3289,7 @@ Example WordsSignStampOptionsData object
 **
 
 **[PagesSetupData]("PagesSetupDataObject")**
-|---|---
+
 
 **[PagesSetupData]("PagesSetupDataObject")**
-|---|---
+

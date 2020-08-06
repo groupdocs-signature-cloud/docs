@@ -10,19 +10,35 @@ keywords: ""
 
 # SearchResult #
 
-SearchResult data structure returned by  as output result
+SearchResult data structure returned by Search API method as output result
 
 ##### SearchResult example #####
 
 ```html 
 
 {
-  "FileInfo": {
-    "FilePath": "/words/docx/one-page.docx",
-    "Password" : "1234567890"
+  "fileInfo": {
+    "filePath": "/words/docx/one-page.docx",
+    "password" : "1234567890"
   },
-  "Size" : 12345,
-  "Signatures": "true"
+  "size" : 12345,
+  "signatures": [
+    {
+      "barcodeType": "Code128",
+      "text": "123456789012",
+      "format": "Portable Network Graphic",
+      "signatureType": "Barcode",
+      "pageNumber": 1,
+      "signatureId": "114bc076-f734-4edf-9ce4-2277725a6ea5",
+      "isSignature": true,
+      "createdOn": "2020-07-22T07:45:01.6812929+00:00",
+      "modifiedOn": "2020-07-22T07:45:01.6812929+00:00",
+      "top": 100,
+      "left": 100,
+      "width": 300,
+      "height": 100
+    }
+  ]
 }
 
  
@@ -40,7 +56,13 @@ SearchResult data structure returned by  as output result
 
 Based of found signature type of one the following data structures will be created
 
+BarcodeSignature
 
+DigitalSignature
 
+ImageSignature
 
+QRCodeSignature
+
+TextSignature
 

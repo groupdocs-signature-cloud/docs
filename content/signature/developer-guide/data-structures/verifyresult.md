@@ -10,7 +10,7 @@ keywords: ""
 
 # VerifyResult #
 
-VerifyResult data structure returned by  as output result
+VerifyResult data structure returned by Verify API method  as output result
 
 ##### VerifyResult example #####
 

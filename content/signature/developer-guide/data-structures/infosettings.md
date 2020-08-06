@@ -10,13 +10,12 @@ keywords: ""
 
 # InfoSettings #
 
-InfoSettings data structure used as input parameters for  to retrieve information
+InfoSettings data structure used as input parameters for Info API method  to retrieve information
 
 {{< alert style="info" >}}
 Not all options are supported by all document formats. Each option may correspond to one or more formats.
 {{< /alert >}}
 
- 
 
 ##### InfoSettings example #####
 

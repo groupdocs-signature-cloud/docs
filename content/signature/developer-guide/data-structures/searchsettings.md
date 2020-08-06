@@ -10,9 +10,8 @@ keywords: ""
 
 # SearchSettings #
 
-SearchSettings data structure used as input parameters of method **~~/search** for .
+SearchSettings data structure used as input parameters of Search API method.
 
- 
 
 ##### SearchSettings example #####
 
@@ -25,10 +24,9 @@ SearchSettings data structure used as input parameters of method **~~/search** 
     "VersionId": "string",
     "Password": "string"
   },   
-  "SearchOptions": 
+  "Options": 
    [
-   	{
-        "DocumentType": "Pdf",
+    {
         "SignatureType": "Barcode",  
         "Page": 1,
         "Text": "123",
@@ -48,14 +46,10 @@ SearchSettings data structure used as input parameters of method **~~/search** 
 |FileInfo.StorageName|Storage name| 
 |FileInfo.VersionId|File version Id| 
 |FileInfo.Password|Password for password-protected document to be signed.| 
-|SearchOptions|Array with at least one SearchOptions that specifies search options to provide search in the document for different signatures
+|Options|Array with at least one SearchOptions that specifies search options to provide search in the document for different signatures
 
 
 
 | 
 |---
 
-
- 
-
- 

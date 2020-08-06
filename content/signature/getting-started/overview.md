@@ -15,7 +15,7 @@ keywords: ""
 
 # GroupDocs.Signature Cloud #
 
-GroupDocs.Signature Cloud is a REST API to create, verify and search different type of Signatures objects to documents in the cloud by performing a wide variety of signature options you can wish to put on a document in the cloud, verify document and search Signatures in it.
+GroupDocs.Signature Cloud is a REST API to create, verify, search, update and delete different type of Signatures objects to documents in the cloud by performing a wide variety of signature options you can wish to put on a document in the cloud, verify document and search Signatures in it.
 
 {{< alert style="info" >}}
 Summary there are five types of supported Signature type you can operate with.
@@ -39,8 +39,10 @@ Our GroupDocs.Signature Cloud REST API allows the following operations with docu
 * Support working with all Signature types (except Digital Signature for PowerPoint) on Microsoft Document formats like Word, Excel, PowerPoint
 * Verify Text and Digital signatures for PDF, Word and Excel document types
 * Verify Barcode and QR-Code Signatures for all document format types
-* search Digital Signatures in PDF, SpreadSheet Document Formats and Word Processing Document Formats
-* search Barcode and AR-Code Signatures in PDF, Images, SpreadSheet Document Formats, Word Processing Document Formats and Presentation Document Formats
+* Search Digital Signatures in PDF, SpreadSheet Document Formats and Word Processing Document Formats
+* Search Barcode and AR-Code Signatures in PDF, Images, SpreadSheet Document Formats, Word Processing Document Formats and Presentation Document Formats
+* Update signatures by ID
+* Delete signatures by ID
 {{< /alert >}}
 
 ## Supported File Formats ##
@@ -90,7 +92,7 @@ List of supported Document file formats:
 |BMP|+|+|+| |+|+
 |GIF|+|+|+| |+|+
 |TIFF|+|+|+| |+|+
-
+|CDR|+|+|+| |+|+
 
 ## Security and Authentication ##
 

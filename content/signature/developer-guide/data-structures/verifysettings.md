@@ -10,9 +10,8 @@ keywords: ""
 
 # VerifySettings #
 
-VerifySettings data structure used as input parameters of method **~~/verify** for .
+VerifySettings data structure used as input parameters for Verify API method.
 
- 
 
 ##### VerifySettings example #####
 
@@ -25,15 +24,14 @@ VerifySettings data structure used as input parameters of method **~~/verify** 
     "VersionId": "string",
     "Password": "string"
   },   
-  "VerifyOptions": [
-   		{
-           "DocumentType": "Pdf",
+  "Options": [
+   {
            "SignatureType": "Text",  
            "Page": 1,
            "Text": "John",
            "MatchType": "Contains"
         }
-	]
+  ]
  }
 
  ```
@@ -46,14 +44,10 @@ VerifySettings data structure used as input parameters of method **~~/verify** 
 |FileInfo.StorageName|Storage name| 
 |FileInfo.VersionId|File version Id| 
 |FileInfo.Password|Password for password-protected document to be signed.| 
-|VerifyOptions|Array with at least one VerifyOptions that specifies Verification options to provide Document signature verification
+|Options|Array with at least one VerifyOptions that specifies Verification options to provide Document signature verification
 
 
 
 | 
 |---
 
-
- 
-
- 

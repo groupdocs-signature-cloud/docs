@@ -21,7 +21,6 @@ Page contains description for Search Options objects and object properties
 
 
 ## [SearchOptionsCollectionData Object]("SearchOptionsCollectionDataObject") ##
-|---|---
 
 Provides list of options for documents searching.
 
@@ -68,7 +67,7 @@ Example SearchOptionsCollectionData object
  SearchOptionsCollectionData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |Items|List<SearchOptionsData>|List of Search Options records.
 
 
@@ -78,7 +77,6 @@ Example SearchOptionsCollectionData object
 
 
 ## [CellsSearchBarcodeOptionsData Object]("CellsSearchBarcodeOptionsData") ##
-|---|---
 
 Provides options to search Barcode Signature in Cells Documents.
 
@@ -109,7 +107,7 @@ Example CellsSearchBarcodeOptionsData object
  CellsSearchBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Optional Barcode Type name (value one of supported Barcode Type names) to search Barcodes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in Barcodes. If value is not set there will be no Text criteria.
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -125,7 +123,6 @@ Example CellsSearchBarcodeOptionsData object
 
 
 ## [ImagesSearchBarcodeOptionsData Object]("ImagesSearchBarcodeOptionsData") ##
-|---|---
 
 Provides options to search Barcode Signature in Images Documents.
 
@@ -156,7 +153,7 @@ Example ImagesSearchBarcodeOptionsData object
  ImagesSearchBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Optional Barcode Type name (value one of supported Barcode Type names) to search Barcodes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in Barcodes. If value is not set there will be no Text criteria.
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -202,7 +199,7 @@ Example PdfSearchBarcodeOptionsData object
  PdfSearchBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Optional Barcode Type name (value one of supported Barcode Type names) to search Barcodes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in Barcodes. If value is not set there will be no Text criteria.
 |MatchType|enum|Specifies Text matching logic.See** [TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -218,7 +215,6 @@ Example PdfSearchBarcodeOptionsData object
 
 
 ## [SlidesSearchBarcodeOptionsData Object]("SlidesVerifyTextOptionsDataObject") ##
-|---|---
 
 Provides options to search Barcode Signature in Slides Documents.
 
@@ -249,7 +245,7 @@ Example SlidesSearchBarcodeOptionsData object
  SlidesSearchBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Optional Barcode Type name (value one of supported Barcode Type names) to search Barcodes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in Barcodes. If value is not set there will be no Text criteria.
 |MatchType|enum|Specifies Text matching logic.See **[TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -265,7 +261,6 @@ Example SlidesSearchBarcodeOptionsData object
 
 
 ## [WordsSearchBarcodeOptionsData Object]("WordsSearchBarcodeOptionsDataObject") ##
-|---|---
 
 Provides optionsto search Barcode Signature in Words Documents.
 
@@ -296,7 +291,7 @@ Example WordsSearchBarcodeOptionsData object
  WordsSearchBarcodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |BarcodeTypeName|string|Optional Barcode Type name (value one of supported Barcode Type names) to search Barcodes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in Barcodes. If value is not set there will be no Text criteria.
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -312,7 +307,6 @@ Example WordsSearchBarcodeOptionsData object
 
 
 ## [CellsSearchDigitalOptionsData Object]("CellsSearchDigitalOptionsDataObject") ##
-|---|---
 
 Provides options to search Digital Signature in Cells Documents.
 
@@ -329,7 +323,7 @@ Example CellsSearchDigitalOptionsData object
  CellsSearchDigitalOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |DocumentPageNumber|int|Specifies document-sheet page number to search Digital Signature. Parameter is optional. if value is not set program will try to search on any page
 |SearchAllPages|bool|The flag to search for Signatures entire all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsSearchDigitalOptionsData". This property is set automatically when using SDK classes.
@@ -341,7 +335,6 @@ Example CellsSearchDigitalOptionsData object
 
 
 ## [PdfSearchDigitalOptionsData Object]("PdfSearchDigitalOptionsDataObject") ##
-|---|---
 
 Provides options to search Digital Signature in Pdf Documents.
 
@@ -358,7 +351,7 @@ Example PdfSearchDigitalOptionsData object
  PdfSearchDigitalOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |DocumentPageNumber|int|Specifies document-sheet page number to search Digital Signature. Parameter is optional. if value is not set program will try to search on any page
 |SearchAllPages|bool|The flag to search for Signatures entire all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfSearchDigitalOptionsData". This property is set automatically when using SDK classes.
@@ -370,7 +363,6 @@ Example PdfSearchDigitalOptionsData object
 
 
 ## [WordsSearchDigitalOptionsData Object]("WordsSearchDigitalOptionsDataObject") ##
-|---|---
 
 Provides options to search Digital Signature in Words Documents.
 
@@ -387,7 +379,7 @@ Example WordsSearchDigitalOptionsData object
  WordsSearchDigitalOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |DocumentPageNumber|int|Specifies document-sheet page number to search Digital Signature. Parameter is optional. if value is not set program will try to search on any page
 |SearchAllPages|bool|The flag to search for Signatures entire all pages in document
 |OptionsType|string|The class name of options object, should always contains value "WordsSearchDigitalOptionsData". This property is set automatically when using SDK classes.
@@ -399,7 +391,6 @@ Example WordsSearchDigitalOptionsData object
 
 
 ## [CellsSearchQRCodeOptionsData Object]("CellsSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QRCodeSignature in Cells Documents.
 
@@ -430,7 +421,7 @@ Example CellsSearchQRCodeOptionsData object
  CellsSearchQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Optional QR-Code Type name (value one of supported QR-Code Type names) to search QR-Codes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in QR-Codes. If value is not set there will be no Text criteria for Search.
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -446,7 +437,6 @@ Example CellsSearchQRCodeOptionsData object
 
 
 ## [ImagesSearchQRCodeOptionsData Object]("ImagesSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QRCodeSignature in Images Documents.
 
@@ -477,7 +467,7 @@ Example ImagesSearchQRCodeOptionsData object
  ImagesSearchQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Optional QR-Code Type name (value one of supported QR-Code Type names) to search QR-Codes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in QR-Codes. If value is not set there will be no Text criteria for Search.
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -493,7 +483,6 @@ Example ImagesSearchQRCodeOptionsData object
 
 
 ## [PdfSearchQRCodeOptionsData Object]("PdfSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QRCode Signature in Pdf Documents.
 
@@ -524,7 +513,7 @@ Example PdfSearchQRCodeOptionsData object
  PdfSearchQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Optional QR-Code Type name (value one of supported QR-Code Type names) to search QR-Codes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in QR-Codes. If value is not set there will be no Text criteria for Search.
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -540,7 +529,6 @@ Example PdfSearchQRCodeOptionsData object
 
 
 ## [SlidesSearchQRCodeOptionsData Object]("SlidesSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QRCodeSignature in Slides Documents.
 
@@ -571,7 +559,7 @@ Example SlidesSearchQRCodeOptionsData object
  SlidesSearchQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Optional QR-Code Type name (value one of supported QR-Code Type names) to search QR-Codes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in QR-Codes. If value is not set there will be no Text criteria for Search.
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
@@ -587,7 +575,6 @@ Example SlidesSearchQRCodeOptionsData object
 
 
 ## [WordsSearchQRCodeOptionsData Object]("WordsSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QR-Code Signature in Words Documents.
 
@@ -626,7 +613,7 @@ Example WordsSearchQRCodeOptionsData object
  WordsSearchQRCodeOptionsData Object Fields (Click here to expand)
 
 |Name|Type|Description
-|---|---|---
+|---
 |QRCodeTypeName|string|Optional QR-Code Type name (value one of supported QR-Code Type names) to search QR-Codes with exact Type. When value is not set no Type criteria.
 |Text|string|Optional. Specifies text to search in QR-Codes. If value is not set there will be no Text criteria for Search.
 |MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**

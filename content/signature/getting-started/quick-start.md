@@ -32,45 +32,106 @@ GroupDocs for Cloud SDK is written in different languages, all you need to get s
 Use the **App SID** and **App key (secret key)** from the API app client you created in step one and replace in the corresponding code. Below is an example demonstrating using the Formats API to get all supported file formats in GroupDocs.Signature Cloud.
 
 {{< alert style="info" >}}The GitHub repository for [GroupDocs.Signature Cloud](https://github.com/groupdocs-signature-cloud) has a complete set of examples, demonstrating our API capabilities.{{< /alert >}}
+ 
 
+# SDK Examples #
 
 
  C#
+```csharp 
+
+* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
+string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+  
+var configuration # new Configuration(MyAppSid, MyAppKey);
+  
+var apiInstance # new InfoApi(configuration);
+var response # apiInstance.GetSupportedFileFormats();
+
+ ```
 
 
+ Java
+```java 
 
+* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
+String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+String MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+  
+Configuration configuration # new Configuration(MyAppSid, MyAppKey);
+  
+InfoApi apiInstance # new InfoApi(configuration); 
+FormatsResult response # apiInstance.getSupportedFileFormats();
 
-{{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Supported_FileFormats.cs >}}
-
-
-
-
-
+ ```
 
 
  PHP
+```php 
+
+* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-php-samples
+use GroupDocs\Signature\Model;
+use GroupDocs\Signature\Model\Requests;
+ 
+$AppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+  
+$configuration # new GroupDocs\Signature\Configuration();
+$configuration->setAppSid($AppSid);
+$configuration->setAppKey($AppKey);
+ 
+$infoApi# new GroupDocs\Signature\InfoApi($configuration);
+ 
+$response # $infoApi->getSupportedFileFormats();
+
+ ```
 
 
+ Node
+```html 
 
+* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-node-samples
+global.signature_cloud # require("groupdocs-signature-cloud");
+ 
+global.appSid # "XXXX-XXXX-XXXX-XXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appKey # "XXXXXXXXXXXXXXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+  
+global.infoApi # signature_cloud.InfoApi.fromKeys(appSid, appKey);
+ 
+let response # await infoApi.getSupportedFileFormats();
 
-{{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Supported_FileFormats.php >}}
-
-
-
-
-
+ ```
 
 
  Python
+```python 
+
+# For complete examples and data files, please go to https://github.com/groupdocs-signature_cloud-cloud/groupdocs-signature_cloud-cloud-python-samples
+import groupdocs_signature_cloud
+ 
+app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+  
+infoApi # groupdocs_signature_cloud.InfoApi.from_keys(app_sid, app_key)
+ 
+result # infoApi.get_supported_file_formats()
+
+ ```
 
 
+ Ruby
+```ruby 
 
+# For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-ruby-samples
+require 'groupdocs_signature_cloud'
+ 
+$app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+  
+infoApi # GroupDocsSignatureCloud::InfoApi.from_keys($app_sid, $app_key)
+ 
+result # infoApi.get_supported_file_formats()
 
-{{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Supported_FileFormats.py >}}
-
-
-
-
-
-
+ ```
 

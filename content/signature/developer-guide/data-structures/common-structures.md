@@ -16,35 +16,6 @@ Page contains description for common structures and its properties
 
 
 
-## [DocumentType properties]("DocumentTypeObject") ##
-|---|---
-
-Specifies enumeration of supported Document Types.
-
-Example **DocumentType** object
-
-```html 
-{
-	"DocumentType": "Spreadsheet"
-}
- ```
-
- DocumentType Enumeration values (Click here to expand)
-
-|Name|Description
-|---|---
-|Image|Specifies document images type is used for processing images with formats like .jpg, .png, .tiff and many other
-|Pdf|Specifies Pdf document type, type is demanded for processing documents in PDF format
-|Presentation|Specifies Presentation document, type is necessary for processing presentations with formats like .ppt, .pptx, .odp and many other
-|Spreadsheet|Specifies Spreadsheet document,  type is necessary for processing spreadsheets with formats like .xls, .xlsx, .ods and many other
-|WordProcessing|Specifies WordProcessing document, type is used for processing documents with formats like .doc, .docx, .odt and many other
-
-
-
-
-
-
-
 ## [SignatureType properties]("SignatureTypeObject") ##
 |---|---
 
@@ -52,17 +23,14 @@ Specifies enumeration of supported Signature Types.
 
 Example **SignatureType** object
 
-```html 
-
+{{code collapse#"true" title#"PageSetup properties"}}
 {
-	"SignatureType": "Text"
+ "SignatureType": "Text"
 }
 
  ```
 
- 
 
- 
 
 |Name|Description
 |---|---
@@ -74,7 +42,6 @@ Example **SignatureType** object
 |Stamp|Specifies Stamp signature type
 
 
- 
 
 ## [PagesSetup properties]("PagesSetupObject") ##
 |---|---
@@ -83,7 +50,7 @@ Provides options to specify special or ordinary pages for Document processing.
 
 Example **PagesSetup** object
 
-```html 
+{{code collapse#"true" title#"PageSetup properties"}}
 {
   "PagesSetup": {
     "FirstPage": false,
@@ -97,6 +64,7 @@ Example **PagesSetup** object
     ]
   }
 }
+
  ```
 
  PagesSetup Object Fields (Click here to expand)
@@ -123,6 +91,7 @@ Provides options to specify special or ordinary pages for Document processing.
 Example **Padding** object
 
 ```html 
+
 {    
     "All": 5,
     "Left": 5,
@@ -130,6 +99,7 @@ Example **Padding** object
     "Right": 5,
     "Bottom": 5
 }
+
  ```
 
  Padding Object Fields (Click here to expand)
@@ -155,7 +125,7 @@ Provides properties to specify Font properties for Signature object.
 
 Example SignatureFont object
 
-```html 
+{{code language#"html/xml" collapse#"true" title#"SignatureFont properties"}}
 {
     "FontFamily": "Times New Roman",
     "FontSize": 14.0,
@@ -163,6 +133,7 @@ Example SignatureFont object
     "Italic": false,
     "Underline": false
 }
+
  ```
 
  SignatureFont Object Fields (Click here to expand)
@@ -188,11 +159,12 @@ Utility class for Color serialization.
 
 Example Color object
 
-```html 
+{{code language#"html/xml" collapse#"true" title#"Color properties"}}
 {
     "Web": "Transparent",
     "Alpha": 0
 }
+
  ```
 
  Color Object Fields (Click here to expand)
@@ -216,9 +188,11 @@ Specifies measure units of signature on document page.
 Example MeasureType object
 
 ```html 
+
 {
-	"MeasureType": "Pixels"
+ "MeasureType": "Pixels"
 }
+
  ```
 
  MeasureType Enumeration values (Click here to expand)
@@ -243,9 +217,11 @@ Specifies horizontal alignment of element on Document Page.
 Example HorizontalAlignment object.
 
 ```html 
+
 {
-	"HorizontalAlignment": "Left"
+ "HorizontalAlignment": "Left"
 }
+
  ```
 
  HorizontalAlignment Object Fields (Click here to expand)
@@ -272,9 +248,11 @@ Specifies vertical alignment of element on Document Page.
 Example VerticalAlignment object.
 
 ```html 
+
 {
-	"VerticalAlignment": "Top"
+ "VerticalAlignment": "Top"
 }
+
  ```
 
  VerticalAlignment Object Fields (Click here to expand)
@@ -301,9 +279,11 @@ Specifies text horizontal alignment inside a Signature.
 Example TextHorizontalAlignment object.
 
 ```html 
+
 {
-	 "TextHorizontalAlignment": "Left"
+  "TextHorizontalAlignment": "Left"
 }
+
  ```
 
  TextHorizontalAlignment Object Fields (Click here to expand)
@@ -328,9 +308,11 @@ Specifies text vertical alignment inside a Signature.
 Example TextVerticalAlignment object.
 
 ```html 
+
 {
-	"TextVerticalAlignment": "Top"
+ "TextVerticalAlignment": "Top"
 }
+
  ```
 
  TextVerticalAlignment Object Fields (Click here to expand)
@@ -355,9 +337,11 @@ Specifies measure units of signature on document page.
 Example StretchMode object.
 
 ```html 
+
 {
-	"Stretch": "PageHeight"
+ "Stretch": "PageHeight"
 }
+
  ```
 
  StretchMode Object Fields (Click here to expand)
@@ -383,9 +367,11 @@ Specifies type of implementation for cells Text Signature.
 Example CellsTextSignatureImplementation object.
 
 ```html 
+
 {
-	"SignatureImplementation": "TextAsImage"
+ "SignatureImplementation": "TextAsImage"
 }
+
  ```
 
  CellsTextSignatureImplementation Object Fields (Click here to expand)
@@ -400,7 +386,6 @@ Example CellsTextSignatureImplementation object.
 
 
 
-\\
 
 ## [DashStyle Object]("DashStyleObject") ##
 |---|---
@@ -410,9 +395,11 @@ Represents style of dash drawing lines on documents.
 Example DashStyle object.
 
 ```html 
+
 {
-	"BorderDashStyle": "Solid"
+ "BorderDashStyle": "Solid"
 }
+
  ```
 
  DashStyleData Object Fields (Click here to expand)
@@ -433,43 +420,6 @@ Example DashStyle object.
 
 
 
-
-## [ExtendedDashStyle Object]("ExtendedDashStyleObject") ##
-|---|---
-
-Represents style of dash drawing lines on documents.
-
-Example ExtendedDashStyle object.
-
-```html 
-{
-	"BorderDashStyle": "Solid"
-}
- ```
-
- ExtendedDashStyle Object Fields (Click here to expand)
-
-|Name|Description
-|---|---
-|Default|Represent a default solid line.
-|Solid|Represent a solid line.
-|ShortDash|Represent a short dash line.
-|ShortDot|Represent a short dot line.
-|ShortDashDot|Represent a short dash-dot line.
-|ShortDashDotDot|Represent a short dash-dot-dot line.
-|Dot|Represent a square dot style.
-|Dash|Represent a dash line style.
-|LongDash|Represent a long dash style.
-|DashDot|Dash short dash.
-|LongDashDot|Long dash short dash.
-|LongDashDotDot|Long dash short dash short dash.
-
-
-
-
-
-
-
 ## [StampBackgroundCropType Object]("StampBackgroundCropTypeObject") ##
 |---|---
 
@@ -478,9 +428,11 @@ Specifies crop type of background layer on Stamp elements.
 Example StampBackgroundCropType object.
 
 ```html 
+
 {
-	"BackgroundColorCropType": "InnerArea"
+ "BackgroundColorCropType": "InnerArea"
 }
+
  ```
 
  StampBackgroundCropType Object Fields (Click here to expand)
@@ -506,9 +458,11 @@ Specifies type of text repeat for stamp lines.
 Example StampTextRepeatType object.
 
 ```html 
+
 {
-	"TextRepeatType": "FullTextRepeat"
+ "TextRepeatType": "FullTextRepeat"
 }
+
  ```
 
  StampTextRepeatType Object Fields (Click here to expand)
@@ -533,6 +487,7 @@ Utility class for BorderLine serialization.
 Example BorderLine object
 
 ```html 
+
        {
         "style": "LongDash",
         "transparency": 0.5,
@@ -540,6 +495,7 @@ Example BorderLine object
         "color": {
           "Web": "DarkOrange"
         }
+
  ```
 
  BorderLine Object Fields (Click here to expand)
@@ -565,6 +521,7 @@ Utility class for StampLine serialization.
 Example StampLine object
 
 ```html 
+
 {
       "height": 30,
       "backgroundColor": {
@@ -601,6 +558,7 @@ Example StampLine object
       },
       "visible": true
     }
+
  ```
 
  StampLine Object Fields (Click here to expand)
@@ -632,9 +590,11 @@ Digital Signature Type define the method to sign.
 Example DigitalSignatureType object
 
 ```html 
+
 {
   "SignatureType": "CryptoApi"
 }
+
  ```
 
  DigitalSignatureTypeData Object Fields (Click here to expand)
@@ -659,9 +619,11 @@ Represents style of dash drawing lines on documents.
 Example TextMatchType object
 
 ```html 
+
 {
   "MatchType": "Contains"
 }
+
  ```
 
  TextMatchType Object Fields (Click here to expand)
@@ -687,9 +649,11 @@ Alignment of code text for Bar-codes and QR-codes.
 Example CodeTextAlignment object
 
 ```html 
+
 {
   "CodeTextAlignment": "Above"
 }
+
  ```
 
  CodeTextAlignment Object Fields (Click here to expand)
@@ -719,12 +683,14 @@ Base class for setting signature background brush. There are four subclasses for
 Example LinearGradientBrush object:
 
 ```html 
+
 {
-	"startColor": {"web": "CornflowerBlue"}, 
-	"endColor": {"web": "DarkBlue"}, 
-	"angle": 0.0, 
-	"brushType": "LinearGradientBrush"
+ "startColor": {"web": "CornflowerBlue"}, 
+ "endColor": {"web": "DarkBlue"}, 
+ "angle": 0.0, 
+ "brushType": "LinearGradientBrush"
 }
+
  ```
 
  LinearGradientBrush Object Fields (Click here to expand)
@@ -747,11 +713,13 @@ Example LinearGradientBrush object:
 Example RadialGradientBrush object:
 
 ```html 
+
 {
-	"innerColor": {"web": "CornflowerBlue"}, 
-	"outerColor": {"web": "DarkBlue"}, 
-	"brushType": "RadialGradientBrush"
+ "innerColor": {"web": "CornflowerBlue"}, 
+ "outerColor": {"web": "DarkBlue"}, 
+ "brushType": "RadialGradientBrush"
 }
+
  ```
 
  RadialGradientBrush Object Fields (Click here to expand)
@@ -773,10 +741,12 @@ Example RadialGradientBrush object:
 Example SolidBrush object:
 
 ```html 
+
 {
-	"color": {"web": "DarkBlue"}, 
-	"brushType": "SolidBrush"
+ "color": {"web": "DarkBlue"}, 
+ "brushType": "SolidBrush"
 }
+
  ```
 
  SolidBrush Object Fields (Click here to expand)
@@ -797,10 +767,12 @@ Example SolidBrush object:
 Example TextureBrush object:
 
 ```html 
+
 {
-	"imageGuid": "images\signature_01.jpg", 
-	"brushType": "TextureBrush"
+ "imageGuid": "images\signature_01.jpg", 
+ "brushType": "TextureBrush"
 }
+
  ```
 
  TextureBrush Object Fields (Click here to expand)
@@ -808,8 +780,6 @@ Example TextureBrush object:
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the texture image file Guid.
-
-
 
 
 
