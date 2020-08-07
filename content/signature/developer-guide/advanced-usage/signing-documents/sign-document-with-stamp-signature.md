@@ -19,7 +19,7 @@ keywords: ""
 A **stamp** signature is a special type of electronic signature that have visual appearance of round seal and its visual parameters can be set programmatically.
 Every stamp signature can have multiple "stamp lines" with custom text and different line thickness, color, font weight and size. Here is an example of how stamp signature created with GroupDocs.Siganture Cloud may look like: 
 
-![](signature/images/https)
+![stamp](signature/images/Stamp.png)
 
 GroupDocs.Signature Cloud provides options to specify different options for Stamp signature:
 

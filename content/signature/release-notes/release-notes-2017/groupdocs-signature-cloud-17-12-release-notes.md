@@ -35,7 +35,7 @@ Our GroupDocs.Signature Cloud REST API allows following operations with document
 
 ## Full List of Issues Covering all Changes in this Release ##
 
-This is the first version of new generation GroupDocs.Signature Cloud. 
+This is the first version of new generation GroupDocs.Signature Cloud.
 
 ## Public API and Backward Incompatible Changes ##
 

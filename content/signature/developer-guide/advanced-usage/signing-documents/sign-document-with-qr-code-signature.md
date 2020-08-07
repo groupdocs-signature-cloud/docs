@@ -18,7 +18,7 @@ keywords: ""
 
 QR-code (or Quick Response code) is a sort of two-dimensional barcode that consists of black squares arranged in a square grid on a white background. QR-code can be read by smartphone camera or specialized devices that are dedicated to QR reading - hand-held scanners, handy terminals, fixed scanners that are used after placing it on a desktop, or embedding it in other devices. Usually QR-codes contain data that points to a website or application, emails, or phone numbers, product identifiers, or trackers. Therefore QR-code application scope extends general marketing and item identification to document management.
 
-![](signature/images/https)
+![qrcode](signature/images/QR_Code_2.png)
 
 GroupDocs.Signature Cloud allows to eSign documents with QR-codes of various types.
 

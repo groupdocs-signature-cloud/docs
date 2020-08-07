@@ -7,30 +7,21 @@ description: ""
 keywords: ""
 ---
 
- 
-
-
-
-
-
-
 # Introduction #
 
 A digital electronic signature is a scheme for verifying the document's authenticity. A valid digital signature gives a recipient very strong reason to believe that the document was created or updated by a known sender and that the document was not altered by unknown source. For documents, the digital signature is represented by certificate with private (to sign) and public (to verify) keys. Most often certificates of various public key cryptography standards are used for this purpose, for example PFX format (see specification [here](https://en.wikipedia.org/wiki/PKCS_12)). These digital signature certificates could be obtained from the operation system or generated manually with proper tools or trusted sources.
 
 Digital signature as certificate file of PFX format allows to sign document after each creation or change with certificate and specify several optional parameters like subject, title, reason, contact etc. Most document viewers or editors support digital signatures verification that allows users to ensure document is from trusted source. Office documents format such as Word processing documents (DOC, DOCX, ODT, OTT), Spreadsheet files (XLSX, XLS, ODS, OTS) support digital signature without any visual appearance on document pages. PDF document format supports digital signature with alternative visual appearance on specific document page with custom image and labels. Picture below shows how digital signature looks by default on PDF document page..
 
-![](signature/images/https)
+![image](signature/images/image2020-2-10_18_40_38.png)
 
 GroupDocs.Signature Cloud supports creation of digital signature based on existing PFX certificate. It allows to adjust digital signature properties in the document:
-
 
 * Certificate source from FilePath;
 * Certificate password;
 * Contact, Reason and Location properties to set additional description;
 * Visible property to specify whether signature should be visible on document page or not;
 * XAdES type to specify whether e-signature should be of Xml Advanced Electronic Signature type.
-
 
 API Usage
 
@@ -46,10 +37,9 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ## cURL REST Example ##
 
-
  Request
-```html 
 
+```html
 * First get JSON Web Token
 * Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
@@ -69,7 +59,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
     'FilePath': 'signaturedocs/sample2.pdf'
   },
   'Options': [
-    {      
+    {
       'AllPages': true,
       'SignatureType': 'Digital',
       'ImageFilePath': 'signaturedocs/signature.jpg',
@@ -88,10 +78,9 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 
  ```
 
-
  Response
-```html 
 
+```html
 {
   "fileInfo": {
     "filePath": "signaturedocs/signedDigital_sample2.pdf",
@@ -138,18 +127,15 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 
  ```
 
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
 
 ### SDK Examples ###
 
-
  C#
-```csharp 
+
+```csharp
 
 * For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
 string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
@@ -203,9 +189,9 @@ var response # apiInstance.CreateSignatures(request);
 
  ```
 
+Java
 
- Java
-```java 
+```java
 
 * For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
 String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
@@ -406,53 +392,52 @@ opts.vertical_alignment # "None"
 opts.margin # Padding()
 opts.margin.all # 5
 opts.margin_measure_type # "Pixels"
- 
- 
+
+
 opts.page # 1
- 
+
 settings # SignSettings()
 settings.options # [opts]
 settings.save_options # SaveOptions()
 settings.save_options.output_file_path # "signaturedocs\\signedDigitalOne_page.docx"
 settings.file_info # fileInfo
- 
+
 request # CreateSignaturesRequest(settings)
 response # api.create_signatures(request)
 
  ```
 
-
  Ruby
-```ruby 
+
+```ruby
 
 # For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-ruby-samples
 require 'groupdocs_signature_cloud'
- 
+
 $app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 $app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
   
 api # GroupDocsSignatureCloud::SignApi.from_keys($app_sid, $app_key)
- 
+
 $info # GroupDocsSignatureCloud::FileInfo.new()
 $info.file_path # "signaturedocs\\one-page.docx"
- 
+
 $opts # GroupDocsSignatureCloud::SignDigitalOptions.new()
 $opts.signature_type # 'Digital'
 $opts.image_file_path # "signaturedocs\\signature.jpg"
 $opts.certificate_file_path # "signaturedocs\\temp.pfx"
 $opts.password # '1234567890'
- 
+
 $settings # GroupDocsSignatureCloud::SignSettings.new()
 $settings.options # [$opts]
- 
+
 $settings.save_options # GroupDocsSignatureCloud::SaveOptions.new()
 $settings.save_options.output_file_path # "signaturedocs\\signedDigitalOne_page.docx"
 $settings.file_info # $info
- 
+
 $request # GroupDocsSignatureCloud::CreateSignaturesRequest.new($settings)
- 
+
 # Executing an API.
 $response # api.create_signatures($request)
 
  ```
-

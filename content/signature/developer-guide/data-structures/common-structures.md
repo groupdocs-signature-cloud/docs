@@ -8,29 +8,21 @@ description: ""
 keywords: ""
 ---
 
-# Common data structures #
+## Common data structures
 
 Page contains description for common structures and its properties
 
-
-
-
-
-## [SignatureType properties]("SignatureTypeObject") ##
-|---|---
+## SignatureType properties
 
 Specifies enumeration of supported Signature Types.
 
 Example **SignatureType** object
 
-{{code collapse#"true" title#"PageSetup properties"}}
+```javascript
 {
  "SignatureType": "Text"
 }
-
  ```
-
-
 
 |Name|Description
 |---|---
@@ -41,16 +33,13 @@ Example **SignatureType** object
 |QRCode|Specifies QRCode signature type
 |Stamp|Specifies Stamp signature type
 
-
-
-## [PagesSetup properties]("PagesSetupObject") ##
-|---|---
+## PagesSetup properties
 
 Provides options to specify special or ordinary pages for Document processing.
 
 Example **PagesSetup** object
 
-{{code collapse#"true" title#"PageSetup properties"}}
+```javascript
 {
   "PagesSetup": {
     "FirstPage": false,
@@ -64,10 +53,9 @@ Example **PagesSetup** object
     ]
   }
 }
+```
 
- ```
-
- PagesSetup Object Fields (Click here to expand)
+PagesSetup Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -77,32 +65,23 @@ Example **PagesSetup** object
 |EvenPages|boolean|Specifies if even pages of Document should be processed
 |PageNumbers|Array|Specify ordinary pages of Document that should be processed
 
-
-
-
-
-
-
-## [Padding properties]("PaddingObject") ##
-|---|---
+## Padding properties
 
 Provides options to specify special or ordinary pages for Document processing.
 
-Example **Padding** object
+Example of **Padding** object
 
-```html 
-
-{    
+```javascript
+{
     "All": 5,
     "Left": 5,
     "Top": 5,
     "Right": 5,
     "Bottom": 5
 }
-
  ```
 
- Padding Object Fields (Click here to expand)
+ Padding Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -112,20 +91,13 @@ Example **Padding** object
 |Right|int|Gets or sets the padding value for the right edge.
 |Bottom|int|Gets or sets the padding value for the bottom edge.
 
-
-
-
-
-
-
-## [SignatureFont Object]("SignatureFontObject") ##
-|---|---
+## SignatureFont Object
 
 Provides properties to specify Font properties for Signature object.
 
 Example SignatureFont object
 
-{{code language#"html/xml" collapse#"true" title#"SignatureFont properties"}}
+```javascript
 {
     "FontFamily": "Times New Roman",
     "FontSize": 14.0,
@@ -133,10 +105,9 @@ Example SignatureFont object
     "Italic": false,
     "Underline": false
 }
+```
 
- ```
-
- SignatureFont Object Fields (Click here to expand)
+SignatureFont Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -146,56 +117,39 @@ Example SignatureFont object
 |Italic|boolean|Flag is Font is Italic style
 |Underline|boolean|Flag is Font is Underline style
 
-
-
-
-
-
-
-## [Color Object]("ColorObject") ##
-|---|---
+## Color Object
 
 Utility class for Color serialization.
 
 Example Color object
 
-{{code language#"html/xml" collapse#"true" title#"Color properties"}}
+```javascript
 {
     "Web": "Transparent",
     "Alpha": 0
 }
+```
 
- ```
-
- Color Object Fields (Click here to expand)
+Color Object Fields
 
 |Name|Type|Description
 |---|---|---
 |Web|string|HTML string color representation.
 |Alpha|int|Alpha component of color structure.
 
-
-
-
-
-
-
-## [MeasureType Object]("MeasureTypeObject") ##
-|---|---
+## MeasureType Object
 
 Specifies measure units of signature on document page.
 
 Example MeasureType object
 
-```html 
-
+```javascript
 {
  "MeasureType": "Pixels"
 }
+```
 
- ```
-
- MeasureType Enumeration values (Click here to expand)
+MeasureType Enumeration values
 
 |Name|Description
 |---|---
@@ -203,28 +157,19 @@ Example MeasureType object
 |Percent|Percents of page size.
 |Millimeters|Millimeters.
 
-
-
-
-
-
-
-## [HorizontalAlignment Object]("HorizontalAlignmentObject") ##
-|---|---
+## HorizontalAlignment Object
 
 Specifies horizontal alignment of element on Document Page.
 
 Example HorizontalAlignment object.
 
-```html 
-
+```javascript
 {
  "HorizontalAlignment": "Left"
 }
+```
 
- ```
-
- HorizontalAlignment Object Fields (Click here to expand)
+HorizontalAlignment Object Fields
 
 |Name|Description
 |---|---
@@ -234,28 +179,19 @@ Example HorizontalAlignment object.
 |Center|Specifies that the object shall be centered with respect to the horizontal alignment base.
 |Right|Specifies that the object shall be right aligned to the horizontal alignment base.
 
-
-
-
-
-
-
-## [VerticalAlignment Object]("VerticalAlignmentObject") ##
-|---|---
+## VerticalAlignment Object
 
 Specifies vertical alignment of element on Document Page.
 
 Example VerticalAlignment object.
 
-```html 
-
+```javascript
 {
  "VerticalAlignment": "Top"
 }
+```
 
- ```
-
- VerticalAlignment Object Fields (Click here to expand)
+VerticalAlignment Object Fields
 
 |Name|Description
 |---|---
@@ -265,28 +201,19 @@ Example VerticalAlignment object.
 |Center|Specifies that the object shall be centered with respect to the vertical alignment base.
 |Bottom|Specifies that the object shall be at the bottom of the vertical alignment base.
 
-
-
-
-
-
-
-## [TextHorizontalAlignment Object]("TextHorizontalAlignmentDataObject") ##
-|---|---
+## TextHorizontalAlignment Object
 
 Specifies text horizontal alignment inside a Signature.
 
 Example TextHorizontalAlignment object.
 
-```html 
-
+```javascript
 {
   "TextHorizontalAlignment": "Left"
 }
+```
 
- ```
-
- TextHorizontalAlignment Object Fields (Click here to expand)
+TextHorizontalAlignment Object Fields
 
 |Name|Description
 |---|---
@@ -294,28 +221,19 @@ Example TextHorizontalAlignment object.
 |Center|Specifies that the text is centered to the horizontal alignment base.
 |Right|Specifies that the text is right aligned to the horizontal alignment base.
 
-
-
-
-
-
-
-## [TextVerticalAlignment Object]("TextVerticalAlignmentDataObject") ##
-|---|---
+## TextVerticalAlignment Object
 
 Specifies text vertical alignment inside a Signature.
 
 Example TextVerticalAlignment object.
 
-```html 
-
+```javascript
 {
  "TextVerticalAlignment": "Top"
 }
+```
 
- ```
-
- TextVerticalAlignment Object Fields (Click here to expand)
+TextVerticalAlignment Object Fields
 
 |Name|Description
 |---|---
@@ -323,28 +241,19 @@ Example TextVerticalAlignment object.
 |Center|Specifies that the text is centered to the vertical alignment base.
 |Bottom|Specifies that the text is bottom aligned to the vertical alignment base.
 
-
-
-
-
-
-
-## [StretchMode Object]("StretchModeDataObject") ##
-|---|---
+## StretchMode Object
 
 Specifies measure units of signature on document page.
 
 Example StretchMode object.
 
-```html 
-
+```javascript
 {
  "Stretch": "PageHeight"
 }
+```
 
- ```
-
- StretchMode Object Fields (Click here to expand)
+StretchMode Object Fields
 
 |Name|Description
 |---|---
@@ -353,56 +262,38 @@ Example StretchMode object.
 |PageHeight|Stretch Signature area along page Height. Margin property will be used to apply required offset values.
 |PageArea|Stretch Signature area along page Height and Width. Margin property will be used to apply required offset values.
 
-
-
-
-
-
-
-## [TextSignatureImplementation Object]("TextSignatureImplementationObject") ##
-|---|---
+## TextSignatureImplementation Object
 
 Specifies type of implementation for cells Text Signature.
 
 Example CellsTextSignatureImplementation object.
 
-```html 
-
+```javascript
 {
  "SignatureImplementation": "TextAsImage"
 }
+```
 
- ```
-
- CellsTextSignatureImplementation Object Fields (Click here to expand)
+CellsTextSignatureImplementation Object Fields
 
 |Name|Description
 |---|---
 |TextStamp|Text Signature as Label object on Cells sheet.
 |TextAsImage|Text Signature as Image object on Cells sheet.
 
-
-
-
-
-
-
-## [DashStyle Object]("DashStyleObject") ##
-|---|---
+## DashStyle Object
 
 Represents style of dash drawing lines on documents.
 
 Example DashStyle object.
 
-```html 
-
+```javascript
 {
  "BorderDashStyle": "Solid"
 }
+```
 
- ```
-
- DashStyleData Object Fields (Click here to expand)
+DashStyleData Object Fields
 
 |Name|Description
 |---|---
@@ -415,27 +306,19 @@ Example DashStyle object.
 |Solid|Represent a solid line.
 |SquareDot|Represents a square-dot line.
 
-
-
-
-
-
-## [StampBackgroundCropType Object]("StampBackgroundCropTypeObject") ##
-|---|---
+## StampBackgroundCropType Object
 
 Specifies crop type of background layer on Stamp elements.
 
 Example StampBackgroundCropType object.
 
-```html 
-
+```javascript
 {
  "BackgroundColorCropType": "InnerArea"
 }
+```
 
- ```
-
- StampBackgroundCropType Object Fields (Click here to expand)
+StampBackgroundCropType Object Fields
 
 |Name|Description
 |---|---
@@ -444,28 +327,19 @@ Example StampBackgroundCropType object.
 |MiddleArea|Crop background between external and inner lines.
 |InnerArea|Crop background by internal line.
 
-
-
-
-
-
-
-## [StampTextRepeatType Object]("StampTextRepeatTypeObject") ##
-|---|---
+## StampTextRepeatType Object
 
 Specifies type of text repeat for stamp lines.
 
 Example StampTextRepeatType object.
 
-```html 
-
+```javascript
 {
  "TextRepeatType": "FullTextRepeat"
 }
+```
 
- ```
-
- StampTextRepeatType Object Fields (Click here to expand)
+StampTextRepeatType Object Fields
 
 |Name|Description
 |---|---
@@ -473,32 +347,23 @@ Example StampTextRepeatType object.
 |FullTextRepeat|Text will be repeated to fit full length without truncation.
 |RepeatWithTruncation|Text will be repeated to fit full length with word truncation at the end.
 
-
-
-
-
-
-
-## [BorderLine Object]("BorderLineObject") ##
-|---|---
+## BorderLine Object
 
 Utility class for BorderLine serialization.
 
 Example BorderLine object
 
-```html 
+```javascript
+{
+"style": "LongDash",
+"transparency": 0.5,
+"weight": 1.2,
+"color": {
+  "Web": "DarkOrange"
+}
+```
 
-       {
-        "style": "LongDash",
-        "transparency": 0.5,
-        "weight": 1.2,
-        "color": {
-          "Web": "DarkOrange"
-        }
-
- ```
-
- BorderLine Object Fields (Click here to expand)
+BorderLine Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -507,61 +372,52 @@ Example BorderLine object
 |Weight|double|Gets or sets the weight of the signature border.
 |Color|Color|Gets or sets the border color of signature.
 
-
-
-
-
-
-
-## [StampLine Object]("StampLineObject") ##
-|---|---
+## StampLine Object
 
 Utility class for StampLine serialization.
 
 Example StampLine object
 
-```html 
-
+```javascript
 {
-      "height": 30,
-      "backgroundColor": {
-        "Web": "CornflowerBlue"
-      },
-      "text": "John Smith",
-      "font": {
-        "fontFamily": "Times New Roman",
-        "fontSize": 20.0,
-        "bold": true,
-        "italic": true,
-        "underline": true
-      },
-      "textColor": {
-        "Web": "Gold"
-      },
-      "textBottomIntent": 3,
-      "textRepeatType": "None",
-      "outerBorder": {
-        "style": "Dot",
-        "transparency": 0.4,
-        "weight": 1.4,
-        "color": {
-          "Web": "GhostWhite"
-        }
-      },
-      "innerBorder": {
-        "style": "LongDash",
-        "transparency": 0.5,
-        "weight": 1.2,
-        "color": {
-          "Web": "OliveDrab"
-        }
-      },
-      "visible": true
-    }
+    "height": 30,
+    "backgroundColor": {
+      "Web": "CornflowerBlue"
+    },
+    "text": "John Smith",
+    "font": {
+      "fontFamily": "Times New Roman",
+      "fontSize": 20.0,
+      "bold": true,
+      "italic": true,
+      "underline": true
+    },
+    "textColor": {
+      "Web": "Gold"
+    },
+    "textBottomIntent": 3,
+    "textRepeatType": "None",
+    "outerBorder": {
+      "style": "Dot",
+      "transparency": 0.4,
+      "weight": 1.4,
+      "color": {
+        "Web": "GhostWhite"
+      }
+    },
+    "innerBorder": {
+      "style": "LongDash",
+      "transparency": 0.5,
+      "weight": 1.2,
+      "color": {
+        "Web": "OliveDrab"
+      }
+    },
+    "visible": true
+}
+```
 
- ```
-
- StampLine Object Fields (Click here to expand)
+StampLine Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -576,28 +432,19 @@ Example StampLine object
 |InnerBorder|BorderLine|Setup Inner Border. **.**
 |Visible|bool|Get and set visibility of Stamp Line.
 
-
-
-
-
-
-
-## [DigitalSignatureType Object]("DigitalSignatureTypeObject") ##
-|---|---
+## DigitalSignatureType Object
 
 Digital Signature Type define the method to sign.
 
 Example DigitalSignatureType object
 
-```html 
-
+```javascript
 {
   "SignatureType": "CryptoApi"
 }
+```
 
- ```
-
- DigitalSignatureTypeData Object Fields (Click here to expand)
+DigitalSignatureTypeData Object Fields
 
 |Name|Description
 |---|---
@@ -605,28 +452,19 @@ Example DigitalSignatureType object
 |CryptoApi|The Crypto API signature method used in Microsoft Word 97-2003 .DOC binary documents.
 |XmlDsig|The XmlDsig signature method used in OOXML and OpenDocument documents.
 
-
-
-
-
-
-
-## [TextMatchType Object]("TextMatchTypeObject") ##
-|---|---
+## TextMatchType Object
 
 Represents style of dash drawing lines on documents.
 
 Example TextMatchType object
 
-```html 
-
+```javascript
 {
   "MatchType": "Contains"
 }
+```
 
- ```
-
- TextMatchType Object Fields (Click here to expand)
+TextMatchType Object Fields
 
 |Name|Description
 |---|---
@@ -635,28 +473,19 @@ Example TextMatchType object
 |EndsWith|Text ends with value.
 |Contains|Text contains the value.
 
-
-
-
-
-
-
-## [CodeTextAlignment Object]("CodeTextAlignmentObject") ##
-|---|---
+## CodeTextAlignment Object
 
 Alignment of code text for Bar-codes and QR-codes.
 
 Example CodeTextAlignment object
 
-```html 
-
+```javascript
 {
   "CodeTextAlignment": "Above"
 }
+```
 
- ```
-
- CodeTextAlignment Object Fields (Click here to expand)
+CodeTextAlignment Object Fields
 
 |Name|Description
 |---|---
@@ -665,35 +494,24 @@ Example CodeTextAlignment object
 |Below|Text is below the code.
 |Right|Text is on the right of the code.
 
+## Brush Object
 
+Base class for setting signature background brush. There are four subclasses for describing various brushes:**LinearGradientBrush**, **RadialGradientBrush**, **SolidBrush**, **TextureBrush**
 
-
-
-
-
-## [Brush Object]("BrushObject") ##
-|---|---
-
-Base class for setting signature background brush. There are four subclasses for describing various brushes:**[LinearGradientBrush,]("LinearGradientBrushObject")** **[RadialGradientBrush,]("RadialGradientBrushObject")** **[SolidBrush,]("SolidBrushObject")** **[TextureBrush.]("TextureBrushObject")**
-|---|---|---|---|---|---|---|---
-
-## [LinearGradientBrush Object]("LinearGradientBrushObject") ##
-|---|---
+## LinearGradientBrush Object
 
 Example LinearGradientBrush object:
 
-```html 
-
+```javascript
 {
- "startColor": {"web": "CornflowerBlue"}, 
- "endColor": {"web": "DarkBlue"}, 
- "angle": 0.0, 
+ "startColor": {"web": "CornflowerBlue"},
+ "endColor": {"web": "DarkBlue"},
+ "angle": 0.0,
  "brushType": "LinearGradientBrush"
 }
+```
 
- ```
-
- LinearGradientBrush Object Fields (Click here to expand)
+LinearGradientBrush Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -701,85 +519,55 @@ Example LinearGradientBrush object:
 |EndColor|Color|Gets or sets finish gradient color.
 |Angle|float|Gets or sets gradient angle.
 
-
-
-
-
-
-
-## [RadialGradientBrush Object]("RadialGradientBrushObject") ##
-|---|---
+## RadialGradientBrush Object
 
 Example RadialGradientBrush object:
 
-```html 
-
+```javascript
 {
- "innerColor": {"web": "CornflowerBlue"}, 
- "outerColor": {"web": "DarkBlue"}, 
+ "innerColor": {"web": "CornflowerBlue"},
+ "outerColor": {"web": "DarkBlue"},
  "brushType": "RadialGradientBrush"
 }
+```
 
- ```
-
- RadialGradientBrush Object Fields (Click here to expand)
+RadialGradientBrush Object Fields
 
 |Name|Type|Description
 |---|---|---
 |InnerColor|Color|Gets or sets inner gradient color.
 |OuterColor|Color|Gets or sets outer gradient color.
 
-
-
-
-
-
-
-## [SolidBrush Object]("SolidBrushObject") ##
-|---|---
+## SolidBrush Object
 
 Example SolidBrush object:
 
-```html 
-
+```javascript
 {
- "color": {"web": "DarkBlue"}, 
+ "color": {"web": "DarkBlue"},
  "brushType": "SolidBrush"
 }
+```
 
- ```
-
- SolidBrush Object Fields (Click here to expand)
+SolidBrush Object Fields
 
 |Name|Type|Description
 |---|---|---
 |Color|Color|Gets or sets color of solid brush.
 
-
-
-
-
-
-
-## [TextureBrush Object]("TextureBrushObject") ##
-|---|---
+## TextureBrush Object
 
 Example TextureBrush object:
 
-```html 
-
+```javascript
 {
- "imageGuid": "images\signature_01.jpg", 
+ "imageGuid": "images\signature_01.jpg",
  "brushType": "TextureBrush"
 }
+```
 
- ```
-
- TextureBrush Object Fields (Click here to expand)
+TextureBrush Object Fields
 
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the texture image file Guid.
-
-
-

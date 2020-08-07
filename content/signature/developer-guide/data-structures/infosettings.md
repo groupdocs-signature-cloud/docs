@@ -8,19 +8,15 @@ description: ""
 keywords: ""
 ---
 
-# InfoSettings #
-
 InfoSettings data structure used as input parameters for Info API method  to retrieve information
 
 {{< alert style="info" >}}
 Not all options are supported by all document formats. Each option may correspond to one or more formats.
 {{< /alert >}}
 
-
 ##### InfoSettings example #####
 
-```html 
-
+```javascript
 {
   "FileInfo": {
     "FilePath": "string",
@@ -29,15 +25,13 @@ Not all options are supported by all document formats. Each option may correspon
     "Password": "string"
   }
 }
-
- ```
+```
 
 ##### InfoSettings fields #####
 
 |Name|Description|API Version
 |---|---|---
-|FileInfo.FilePath|The path of the document, located in the storage. **Required.**| 
-|FileInfo.StorageName|Storage name| 
-|FileInfo.VersionId|File version Id| 
-|FileInfo.Password|Password for rendering password-protected documents| 
-
+|FileInfo.FilePath|The path of the document, located in the storage. **Required.**|
+|FileInfo.StorageName|Storage name|
+|FileInfo.VersionId|File version Id|
+|FileInfo.Password|Password for rendering password-protected documents|

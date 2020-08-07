@@ -8,14 +8,11 @@ description: ""
 keywords: ""
 ---
 
-# InfoResult #
-
 InfoResult data structure returned by Info API method  as output result
 
 ##### InfoResult example #####
 
-```html 
-
+```javascript
 {
   "fileInfo": {
     "filePath": "signaturedocs/one-page.docx",
@@ -42,8 +39,7 @@ InfoResult data structure returned by Info API method  as output result
     }
   ]
 }
-
- ```
+```
 
 ##### InfoResult fields #####
 

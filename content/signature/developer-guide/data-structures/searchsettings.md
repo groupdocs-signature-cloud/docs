@@ -8,23 +8,19 @@ description: ""
 keywords: ""
 ---
 
-# SearchSettings #
-
 SearchSettings data structure used as input parameters of Search API method.
-
 
 ##### SearchSettings example #####
 
-```html 
-
+```javascript
 {
   "FileInfo": {
     "FilePath": "string",
     "StorageName": "string",
     "VersionId": "string",
     "Password": "string"
-  },   
-  "Options": 
+  },
+  "Options":
    [
     {
         "SignatureType": "Barcode",  
@@ -35,21 +31,14 @@ SearchSettings data structure used as input parameters of Search API method.
     }
    ]
  }
-
- ```
+```
 
 ##### SearchSettings fields #####
 
 |Name|Description|API Version
 |---|---|---
-|FileInfo.FilePath|The path of the document, located in the storage. **Required.**| 
-|FileInfo.StorageName|Storage name| 
-|FileInfo.VersionId|File version Id| 
-|FileInfo.Password|Password for password-protected document to be signed.| 
+|FileInfo.FilePath|The path of the document, located in the storage. **Required.**|
+|FileInfo.StorageName|Storage name|
+|FileInfo.VersionId|File version Id|
+|FileInfo.Password|Password for password-protected document to be signed.|
 |Options|Array with at least one SearchOptions that specifies search options to provide search in the document for different signatures
-
-
-
-| 
-|---
-

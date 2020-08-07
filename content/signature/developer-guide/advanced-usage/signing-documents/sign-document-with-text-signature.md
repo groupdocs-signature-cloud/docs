@@ -19,7 +19,7 @@ keywords: ""
 A** Text** electronic signature is an arbitrary text that is added to a document in a native way dependent on document type. GroupDocs.Signature Cloud provides text signature feature and allows to customize wide range of text settings - from font name, size and color to alignment, borders, shadow effects etc. This is how text signature may look like:  
 
 
-![](signature/images/https)
+![text](signature/images/image2020-7-22_8_45_40.png)
 
 To manipulate with text signatures GroupDocs.Signature Cloud provides various text sign options.
 

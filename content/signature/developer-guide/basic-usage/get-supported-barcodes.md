@@ -8,11 +8,6 @@ description: ""
 keywords: ""
 ---
 
-
-
-
-
-
 # Supported Barcode Types #
 
 GroupDocs.Signature Cloud REST API supports to sign a document with Barcode. This API lists all supported Barcode types.
@@ -23,22 +18,15 @@ The following GroupDocs.Signature Cloud REST API resource has been used in examp
 
 ## cURL Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
  curl -X GET "https://api.groupdocs.cloud/v2.0/signature/barcodes" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
  ```
 
+Response
 
-
-
- Response
-
-```html 
+```html
 {
   "barcodeTypes": [
     {
@@ -228,96 +216,32 @@ The following GroupDocs.Signature Cloud REST API resource has been used in examp
 }
  ```
 
-
-
-
-
-
 ## SDKs ##
 
 The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
 
 ### Get Supported Barcodes List ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud 930234f9ab12e6e3a5b7cfeb98928c9d Signature_CSharp_Get_Supported_Barcodes.cs >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud d752cfd742c8869fa25ef531a9e29236 Signature_Java_Get_Supported_Barcodes.java >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 4d51ebda15c88dcc9da36b902fffc8a8 Signature_Php_Get_Supported_Barcodes.php >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 37b171abdcc6961eab45170e66037696 Signature_Ruby_Get_Supported_Barcodes.rb >}}
 
-
-
-
-
-
-
- Node
-
-
-
+Node
 
 {{< gist groupdocscloud 39c386004ccdadc059d6cc7124ebb77e Signature_Node_Get_Supported_Barcodes.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 371ae0feb03d6df33ec242272ccf7112 Signature_Python_Get_Supported_Barcodes.py >}}
-
-
-
-
-
-
-

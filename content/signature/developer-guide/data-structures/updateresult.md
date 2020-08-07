@@ -8,14 +8,11 @@ description: ""
 keywords: ""
 ---
 
-# UpdateResult #
-
 UpdateResult data structure returned by Update API method as output result
 
 ##### UpdateResult example #####
 
-```html 
-
+```javascript
 {
   "fileInfo": {
     "filePath": "signedBarcode_one-page.docx",
@@ -43,15 +40,13 @@ UpdateResult data structure returned by Update API method as output result
   ],
   "failed": []
 }
-
- ```
-
-#####   #####
+```
 
 ##### UpdateResult fields #####
 
-|#Name|#Description|#API Version
-|fileInfo|Input file information| 
-|size|The size of the output document| 
-|Succeeded|List of successfully modified signatures| 
-|Failed|List of signatures that were not updated| 
+|Name|Description|API Version
+|---|---|---
+|fileInfo|Input file information|
+|size|The size of the output document|
+|Succeeded|List of successfully modified signatures|
+|Failed|List of signatures that were not updated|

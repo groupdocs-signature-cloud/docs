@@ -8,22 +8,18 @@ description: ""
 keywords: ""
 ---
 
-# VerifySettings #
-
 VerifySettings data structure used as input parameters for Verify API method.
-
 
 ##### VerifySettings example #####
 
-```html 
-
+```javascript
 {
   "FileInfo": {
     "FilePath": "string",
     "StorageName": "string",
     "VersionId": "string",
     "Password": "string"
-  },   
+  },
   "Options": [
    {
            "SignatureType": "Text",  
@@ -33,21 +29,14 @@ VerifySettings data structure used as input parameters for Verify API method.
         }
   ]
  }
-
- ```
+```
 
 ##### VerifySettings fields #####
 
 |Name|Description|API Version
 |---|---|---
-|FileInfo.FilePath|The path of the document, located in the storage. **Required.**| 
-|FileInfo.StorageName|Storage name| 
-|FileInfo.VersionId|File version Id| 
-|FileInfo.Password|Password for password-protected document to be signed.| 
+|FileInfo.FilePath|The path of the document, located in the storage. **Required.**|
+|FileInfo.StorageName|Storage name|
+|FileInfo.VersionId|File version Id|
+|FileInfo.Password|Password for password-protected document to be signed.|
 |Options|Array with at least one VerifyOptions that specifies Verification options to provide Document signature verification
-
-
-
-| 
-|---
-

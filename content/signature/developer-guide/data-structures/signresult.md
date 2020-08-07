@@ -8,14 +8,11 @@ description: ""
 keywords: ""
 ---
 
-# SignResult #
-
 SignResult data structure returned by Sign API method  as output result
 
 ##### SignResult example #####
 
-```html 
-
+```javascript
 {
   "FileInfo": {
     "FilePath": "signed/one-page.pdf",
@@ -42,10 +39,7 @@ SignResult data structure returned by Sign API method  as output result
   ],
   "failed": []
 }
-
- 
-
- ```
+```
 
 ##### SignResult fields #####
 
@@ -53,6 +47,6 @@ SignResult data structure returned by Sign API method  as output result
 |---|---
 |FilePath|Name of the signed document
 |Size|Size of the signed document
-|DownloadUrl|Page file path in the cloud storage. Use this value to download page using 
+|DownloadUrl|Page file path in the cloud storage. Use this value to download page using
 |Succeeded|List of newly created signatures
 |Failed|List of signatures that were failed to create

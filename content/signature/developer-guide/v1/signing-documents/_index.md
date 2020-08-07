@@ -1,6 +1,6 @@
 ---
 id: "signing-documents"
-url: "signature/signing-documents"
+url: "signature/signing-documents-v1"
 title: "Signing Documents"
 productName: "GroupDocs.Signature Cloud"
 weight: 7

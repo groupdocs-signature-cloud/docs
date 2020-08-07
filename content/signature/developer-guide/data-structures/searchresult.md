@@ -8,14 +8,11 @@ description: ""
 keywords: ""
 ---
 
-# SearchResult #
-
 SearchResult data structure returned by Search API method as output result
 
 ##### SearchResult example #####
 
-```html 
-
+```javascript
 {
   "fileInfo": {
     "filePath": "/words/docx/one-page.docx",
@@ -40,10 +37,7 @@ SearchResult data structure returned by Search API method as output result
     }
   ]
 }
-
- 
-
- ```
+```
 
 ##### SignResult fields #####
 
@@ -65,4 +59,3 @@ ImageSignature
 QRCodeSignature
 
 TextSignature
-

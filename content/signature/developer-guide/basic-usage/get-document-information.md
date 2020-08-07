@@ -8,15 +8,6 @@ description: ""
 keywords: ""
 ---
 
- 
-
- 
-
-
-
-
-
-
 # Get Document Information #
 
 This API retrieves document information. It returns an object that contains information about file format, document pages and file size.
@@ -27,18 +18,11 @@ The following GroupDocs.Signature Cloud REST API resource has been used to get 
 
 ## cURL REST Example ##
 
+Request
 
-
-
-
- Request
-
-```html 
+```html
  curl -X POST "https://api.groupdocs.cloud/v2.0/signature/info" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]" -H  "Content-Type: application/json" -d "{  \"FileInfo\": {    \"FilePath\": \"Signaturedocs/one-page.docx\",    \"StorageName\": \"MyStorage\",    \"VersionId\": \"\",    \"Password\": \"\"  }}"
  ```
-
-
-
 
  Response
 
@@ -64,13 +48,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used to get 
     ]
   }
 }
- 
  ```
-
-
-
-
-
 
 ## SDKs ##
 
@@ -78,85 +56,26 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information ###
 
-
-
-
-
- C#
-
-
-
+C#
 
 {{< gist groupdocscloud 930234f9ab12e6e3a5b7cfeb98928c9d Signature_CSharp_DocumentInfo_File.cs >}}
 
-
-
-
-
-
-
- Java
-
-
-
+Java
 
 {{< gist groupdocscloud d752cfd742c8869fa25ef531a9e29236 Signature_Java_DocumentInfo_File.java >}}
 
-
-
-
-
-
-
- PHP
-
-
-
+PHP
 
 {{< gist groupdocscloud 4d51ebda15c88dcc9da36b902fffc8a8 Signature_Php_Get_Document_Information.php >}}
 
-
-
-
-
-
-
- Ruby
-
-
-
+Ruby
 
 {{< gist groupdocscloud 37b171abdcc6961eab45170e66037696 Signature_Ruby_Get_Document_Information.rb >}}
 
-
-
-
-
-
-
- Node
-
-
-
+Node
 
 {{< gist groupdocscloud 39c386004ccdadc059d6cc7124ebb77e Signature_Node_DocumentInfo_File.js >}}
 
-
-
-
-
-
-
- Python
-
-
-
+Python
 
 {{< gist groupdocscloud 371ae0feb03d6df33ec242272ccf7112 Signature_Python_DocumentInfo_File.py >}}
-
-
-
-
-
-
-

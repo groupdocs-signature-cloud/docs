@@ -8,24 +8,20 @@ description: ""
 keywords: ""
 ---
 
-# SignSettings #
-
 SignSettings data structure used as input parameters for Sign API method
-
 
 ##### SignSettings example #####
 
-```html 
-
+```javascript
 {
   "FileInfo": {
     "FilePath": "files01.docx",
-  }, 
+  },
   "SaveOptions": {
     "OverwriteExisting": "true",
     "OutputFilePath": "file02.docx"
   },
-  "Options": 
+  "Options":
   [
     {
       "SignatureType": "Barcode",  
@@ -44,25 +40,16 @@ SignSettings data structure used as input parameters for Sign API method
     }
  ]
  }
-
- ```
+```
 
 ##### SignSettings fields #####
 
 |Name|Description|API Version
 |---|---|---
-|FileInfo.FilePath|The path of the document, located in the storage. **Required.**| 
-|FileInfo.StorageName|Storage name| 
-|FileInfo.VersionId|File version Id| 
-|FileInfo.Password|Password for rendering password-protected documents| 
-|SaveOptions.OverwriteExisting|Flag to remove existing file if it exists| 
-|SaveOptions.OutputFilePath|Output flle path| 
+|FileInfo.FilePath|The path of the document, located in the storage. **Required.**|
+|FileInfo.StorageName|Storage name|
+|FileInfo.VersionId|File version Id|
+|FileInfo.Password|Password for rendering password-protected documents|
+|SaveOptions.OverwriteExisting|Flag to remove existing file if it exists|
+|SaveOptions.OutputFilePath|Output flle path|
 |Options|Array with at least one SignOptions that specifies Signature and Document type and its properties to be added to Document
-
-
-
-| 
-|---
-
-
- 

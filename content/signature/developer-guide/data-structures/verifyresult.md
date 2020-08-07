@@ -8,14 +8,11 @@ description: ""
 keywords: ""
 ---
 
-# VerifyResult #
-
 VerifyResult data structure returned by Verify API method  as output result
 
 ##### VerifyResult example #####
 
-```html 
-
+```javascript
 {
   "FileInfo": {
     "FilePath": "/words/docx/one-page.docx",
@@ -24,10 +21,7 @@ VerifyResult data structure returned by Verify API method  as output result
   "Size" : 12345,
   "IsSuccess": "true"
 }
-
- 
-
- ```
+```
 
 ##### SignResult fields #####
 
@@ -36,4 +30,3 @@ VerifyResult data structure returned by Verify API method  as output result
 |FilePath|Name of the verified document
 |Size|Size of the verified document
 |IsSuccess|Result of verification process
-

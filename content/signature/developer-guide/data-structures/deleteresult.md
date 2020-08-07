@@ -8,14 +8,12 @@ description: ""
 keywords: ""
 ---
 
-# DeleteResult #
 
 DeleteResult data structure returned by Delete API method as output result
 
 ##### DeleteResult example #####
 
-```html 
-
+```javascript
 {
   "fileInfo": {
     "filePath": "signedBarcode_one-page.docx",
@@ -43,15 +41,13 @@ DeleteResult data structure returned by Delete API method as output result
   ],
   "failed": []
 }
-
- ```
-
-#####   #####
+```
 
 ##### DeleteResult fields #####
 
-|#Name|#Description|#API Version
-|fileInfo|Input file information| 
-|size|The size of the output document| 
-|Succeeded|List of successfully deleted signatures| 
-|Failed|List of signatures that were not deleted| 
+|Name|Description|API Version
+|---|---|---
+|fileInfo|Input file information|
+|size|The size of the output document|
+|Succeeded|List of successfully deleted signatures|
+|Failed|List of signatures that were not deleted|
