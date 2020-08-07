@@ -9,23 +9,19 @@ keywords: ""
 ---
 
 
-
-
-
-
-# Create Account #
+## Create Account ##
 
 For details on how to create a new account please check [Create a new Account](https://idsrv.asposeptyltd.com/identity/signup?signin#afd1a248967c69e396baddcd488ef333).
 
-# Apply App SID and App Key #
+## Apply App SID and App Key ##
 
 For details on how to get App Key and App SID please check [doc:gdtotalcloud.Create New App and Get App Key and SID).
 
-# Free Plan #
+## Free Plan ##
 
 Our free plan allows you to use Cloud APIs as you would normally. It only applies the limitation to the data that can be processed with the APIs.  For details on the free plan please check [Free Trial Plan](https://purchase.groupdocs.cloud/trial). For pricing please check [Cloud APIs Pricing](https://purchase.groupdocs.cloud/pricing).
 
-# Paid Plan #
+## Paid Plan ##
 
 The free plan simply becomes [paid plan](https://purchase.groupdocs.cloud/pricing) when you upgrade your plan for any paid account. Please follow below steps to upgrade your free plan to paid plan.
 

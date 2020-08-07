@@ -10,11 +10,6 @@ keywords: ""
 
 
 
-
-
-
-# GroupDocs.Signature Cloud #
-
 GroupDocs.Signature Cloud is a REST API to create, verify, search, update and delete different type of Signatures objects to documents in the cloud by performing a wide variety of signature options you can wish to put on a document in the cloud, verify document and search Signatures in it.
 
 {{< alert style="info" >}}
@@ -45,48 +40,47 @@ Our GroupDocs.Signature Cloud REST API allows the following operations with docu
 * Delete signatures by ID
 {{< /alert >}}
 
-## Supported File Formats ##
+## Supported File Formats
 
 List of supported Document file formats:
 
-| | | | | | | 
-|---|---|---|---|---|---|---
-|Supported formats / Signature Type|Text Signature|Stamp Signature|Image Signature|Digital Signature|Barcode Signature|QR-Code Signature
-|Portable Document Format| | | | | | 
+|Supported formats / Signature Type|Text Signature|Stamp Signature|Image Signature|Digital Signature|Barcode Signature|QR-Code Signature|
+|---|---|---|---|---|---|---|
+|Portable Document Format| | | | | |
 |PDF|+|+|+|+|+|+
-|Microsoft Word| | | | | | 
+|Microsoft Word| | | | | |
 |DOC – binary files|+|+|+|+|+|+
 |DOCM|+|+|+|+|+|+
 |DOCX – Open XML files|+|+|+|+|+|+
 |DOT|+|+|+|+|+|+
 |DOTM|+|+|+|+|+|+
 |DOTX|+|+|+|+|+|+
-|Microsoft Excel| | | | | | 
+|Microsoft Excel| | | | | |
 |XLS – binary files|+|+|+|+|+|+
-|XLSB|+|+|+| |+| 
+|XLSB|+|+|+| |+|
 |XLSM|+|+|+|+|+|+
 |XLSX – Open XML files|+|+|+|+|+|+
 |XLT|+|+|+|+|+|+
 |XLTM|+|+|+|+|+|+
 |XLTX|+|+|+|+|+|+
-|Microsoft PowerPoint| | | | | | 
-|POT|+|+|+| |+| 
-|POTM|+|+|+| |+| 
-|POTX|+|+|+| 
-|PPS|+|+|+| | | 
-|PPSM|+|+|+| 
-|PPSX|+|+|+| |+| 
-|PPT – binary files|+|+|+| | | 
-|PPTM| | | |+| | 
-|PPTX – Open XML files|+|+|+|+|+| 
-|OpenDocument Formats| | | | | | 
-|ODT – OpenOffice Document|+|+|+|+|+| 
-|ODP – OpenOffice Presentation|+|+|+| |+| 
-|ODS – OpenOffice Spreadsheet|+|+|+| |+| 
+|Microsoft PowerPoint| | | | | |
+|POT|+|+|+| |+|
+|POTM|+|+|+| |+|
+|POTX|+|+|+|
+|PPS|+|+|+| | |
+|PPSM|+|+|+|
+|PPSX|+|+|+| |+|
+|PPT – binary files|+|+|+| | |
+|PPTM| | | |+| |
+|PPTX – Open XML files|+|+|+|+|+|
+|OpenDocument Formats| | | | | |
+|ODT – OpenOffice Document|+|+|+|+|+|
+|ODP – OpenOffice Presentation|+|+|+| |+|
+|ODS – OpenOffice Spreadsheet|+|+|+| |+|
 |OTT – OpenOffice Text Template|+|+|+| |+|+
-|Rich Text Format| | | | | | 
+|Rich Text Format| | | | | |
 |RTF|+|+|+| |+|+
-|**Image Format**| | | | | | 
+|**Image Formats**| | | | | |
 |JPG|+|+|+| |+|+
 |PNG|+|+|+| |+|+
 |BMP|+|+|+| |+|+
@@ -94,16 +88,14 @@ List of supported Document file formats:
 |TIFF|+|+|+| |+|+
 |CDR|+|+|+| |+|+
 
-## Security and Authentication ##
+## Security and Authentication
 
 The GroupDocs.Signature Cloud API is secured and requires authentication. Developers can [create]({{< ref "total/getting-started/ui-topics/create-new-app-and-get-app-key-and-sid.md" >}}) an app access key ID (appSID) and app secret access key when they [register]({{< ref "total/getting-started/ui-topics/creating-and-managing-account.md" >}}). Authenticated requests require a signature and AppSID query parameters or OAuth 2.0 authorization header. You can see complete detail [here]({{< ref "total/getting-started/overview-rest-api/authenticating-api-requests.md" >}}).
 
-## SDKs ##
+## SDKs
 
 GroupDocs.Signature Cloud comes with SDKs for different platforms to use this REST API in your specific project effortlessly. Please checkout our GitHub [repository](https://github.com/groupdocs-signature-cloud) for a complete list of GroupDocs.Signature SDKs along with working examples, to get you started in no time.
-|---|---
 
-## API Explorer ##
+## API Explorer
 
 The easiest way to try out our API right away in your browser! With the [GroupDocs for Cloud Web API explorer](https://apireference.groupdocs.cloud/signature/). This is a collection of Swagger documentation for the GroupDocs for Cloud APIs. You can get information about all the resources in the API. It also provides testing and interactivity to our API endpoint documentation.
-|---|---

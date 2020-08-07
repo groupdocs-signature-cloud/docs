@@ -8,7 +8,6 @@ keywords: ""
 ---
 
 
-
 ## Overview ##
 
 [Docker](https://docs.docker.com/get-started/overview/) is an open platform that effectively solves three main tasks development, deployment, and running the applications. With Docker, you can isolate your applications from the infrastructure that simplifies software development and delivery. The main building blocs are images and containers. The image includes everything you need to run the application: code or binaries, runtimes dependencies, file system. The container is an isolated process with additional features that you can interact with. The use of containers to deploy applications is called *containerization*.
@@ -19,7 +18,7 @@ keywords: ""
 
 The GroupDocs.Signature Cloud Container Image available at [https://hub.docker.com/r/groupdocs/signature-cloud](https://hub.docker.com/r/groupdocs/signature-cloud) and enables users to self-host GroupDocs.Signature Cloud.
 
-To run the GroupDocs.Signature Cloud in Docker the Docker itself should be installed on your machine. 
+To run the GroupDocs.Signature Cloud in Docker the Docker itself should be installed on your machine.
 
 ### Install Docker ###
 
@@ -33,11 +32,11 @@ Before running the container you can create two optional folders with files to p
 
 To run GroupDocs.Signature Cloud in Docker type one of the following commands:
 
-*NOTE: In case you don't have license keys you can omit LICENSE_PUBLIC_KEY and LICENSE_PRIVATE_KEY parameters. Without license GroupDocs.Signature Cloud will work in evaluation mode. *
+*NOTE: In case you don't have license keys you can omit LICENSE_PUBLIC_KEY and LICENSE_PRIVATE_KEY parameters. Without license GroupDocs.Signature Cloud will work in evaluation mode.*
 
 **Windows (PowerShell)**
 
-```html 
+```html
 
 docker run `
     -p 8080:80 `
@@ -51,7 +50,7 @@ docker run `
 
 **Linux (bash)**
 
-```html 
+```html
 
 docker run \
     -p 8080:80 \
@@ -69,9 +68,9 @@ The Docker would download GroupDocs.Signature Cloud image from Docker Hub and st
 
 After the container is started you'll see the following messages that indicate that GroupDocs.Signature Cloud service up and running.
 
-![](signature/images/1596699080320-548.png)
+![screenshot](signature/images/1596699080320-548.png)
 
-Now you can work with GroupDocs.Signature Cloud which is hosted on your machine. 
+Now you can work with GroupDocs.Signature Cloud which is hosted on your machine.
 
 ### Health-check ###
 
@@ -79,7 +78,7 @@ When the container and GroupDocs.Signature Cloud started you can check service s
 
 **Windows (PowerShell)**
 
-```html 
+```html
 
 Invoke-WebRequest -Uri http://localhost:8080/
 
@@ -87,7 +86,7 @@ Invoke-WebRequest -Uri http://localhost:8080/
 
 **Linux (bash)**
 
-```html 
+```html
 
 curl -i http://localhost:8080/
 
@@ -95,13 +94,13 @@ curl -i http://localhost:8080/
 
 At the following screenshot, I'm calling [http:~~/~~/localhost:8080/](http://localhost:8080/) in a separate Powershell window and response indicates that service is alive:
 
-![](signature/images/viewercloud.getting-started.how-to-self-host-groupdocs-viewer-cloud-with-docker.WebHome@health_check.png)
+![screenshot](signature/images/viewercloud.getting-started.how-to-self-host-groupdocs-viewer-cloud-with-docker.WebHome@health_check.png)
 
 ### Using UI ###
 
 After starting, you can use Swagger UI at [http:~~/~~/localhost:8080/swagger/](http://localhost:8080/swagger/) and explore the API. With Swagger UI you can call API methods in your browser.
 
-![](signature/images/1596699201339-560.png)
+![screenshot](signature/images/1596699201339-560.png)
 
 ### Using SDK ###
 
@@ -111,7 +110,7 @@ We generate our SDKs in different languages so you may check if yours is availab
 
 **Windows (PowerShell)**
 
-```html 
+```html
 
 docker run `
     -p 8080:80 `
@@ -127,7 +126,7 @@ docker run `
 
 **Linux (bash)**
 
-```html 
+```html
 
 docker run \
     -p 8080:80 \
@@ -146,7 +145,7 @@ docker run \
 
 To stop the running Docker container, just use Ctrl+C in the same terminal where the container is running. Alternatively, you can stop the container by name.
 
-```html 
+```html
 
 docker stop signature_cloud
 
