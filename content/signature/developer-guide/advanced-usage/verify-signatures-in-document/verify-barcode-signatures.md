@@ -30,15 +30,15 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ```javascript
 
-* First get JSON Web Token
-* Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
+// First get JSON Web Token
+// Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
 -X POST \
 -d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -H "Accept: application/json"
 
-* cURL example to get document information
+// cURL example to get document information
 curl -v "https://api.groupdocs.cloud/v2.0/signature/verify" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -88,36 +88,36 @@ The API is completely independent of your operating system, database system or d
 
 ```csharp
 
-* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
-string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
+string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-var configuration # new Configuration(MyAppSid, MyAppKey);
-var apiInstance # new SignApi(configuration);
+var configuration = new Configuration(MyAppSid, MyAppKey);
+var apiInstance = new SignApi(configuration);
 
-* Verify options.
-var options # new VerifyBarcodeOptions
+// Verify options.
+var options = new VerifyBarcodeOptions
 {
-    SignatureType # SignatureTypeEnum.Barcode,
-    MatchType # VerifyTextOptions.MatchTypeEnum.Contains,
-    Text # "123456789012",
-    BarcodeType # "Code128",
-    Page # 1,
-    AllPages # true
+    SignatureType = SignatureTypeEnum.Barcode,
+    MatchType = VerifyTextOptions.MatchTypeEnum.Contains,
+    Text = "123456789012",
+    BarcodeType = "Code128",
+    Page = 1,
+    AllPages = true
 };
-* Verify settings
-var verifySettings # new VerifySettings
+// Verify settings
+var verifySettings = new VerifySettings
 {
-    FileInfo # new FileInfo
+    FileInfo = new FileInfo
     {
-        FilePath # "signedBarcode_one-page.docx"
+        FilePath = "signedBarcode_one-page.docx"
     },
-    Options # new List<VerifyOptions> { options }
+    Options = new List<VerifyOptions> { options }
 };
-* Create request
-var request # new VerifySignaturesRequest(verifySettings);
-* Call api method with request
-var response # apiInstance.VerifySignatures(request);
+// Create request
+var request = new VerifySignaturesRequest(verifySettings);
+// Call api method with request
+var response = apiInstance.VerifySignatures(request);
 
 ```
 
@@ -125,26 +125,26 @@ var response # apiInstance.VerifySignatures(request);
 
 ```java
 
-* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
-String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
+String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-Configuration configuration # new Configuration(MyAppSid, MyAppKey);
-SignApi apiInstance # new SignApi(configuration);
+Configuration configuration = new Configuration(MyAppSid, MyAppKey);
+SignApi apiInstance = new SignApi(configuration);
 
-FileInfo fileInfo # new FileInfo();
+FileInfo fileInfo = new FileInfo();
 fileInfo.setFilePath("Signaturedocs\\signedBarcodeOne_page.docx");
 
-InfoSettings infoSettings # new InfoSettings();
+InfoSettings infoSettings = new InfoSettings();
 infoSettings.setFileInfo(fileInfo);
 
-VerifyBarcodeOptions options # new VerifyBarcodeOptions();
+VerifyBarcodeOptions options = new VerifyBarcodeOptions();
 options.setSignatureType(SignatureTypeEnum.BARCODE);
 
 options.setPage(1);
 options.setAllPages(true);
 
-PagesSetup pagesSetup # new PagesSetup();
+PagesSetup pagesSetup = new PagesSetup();
 pagesSetup.setEvenPages(false);
 pagesSetup.setFirstPage(true);
 pagesSetup.setLastPage(false);
@@ -156,13 +156,13 @@ options.setBarcodeType("Code128");
 options.setText("123456789012");
 options.setMatchType(MatchTypeEnum.CONTAINS);
 
-VerifySettings verifySettings # new VerifySettings();
+VerifySettings verifySettings = new VerifySettings();
 verifySettings.setFileInfo(fileInfo);
 verifySettings.addOptionsItem(options);
 
-VerifySignaturesRequest request # new VerifySignaturesRequest(verifySettings);
+VerifySignaturesRequest request = new VerifySignaturesRequest(verifySettings);
 
-VerifyResult  response # apiInstance.verifySignatures(request);
+VerifyResult  response = apiInstance.verifySignatures(request);
 
 ```
 
@@ -170,37 +170,37 @@ VerifyResult  response # apiInstance.verifySignatures(request);
 
 ```php
 
-* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-php-samples
+// For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-php-samples
 use GroupDocs\Signature\Model;
 use GroupDocs\Signature\Model\Requests;
 
-$AppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$AppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-$configuration # new GroupDocs\Signature\Configuration();
+$configuration = new GroupDocs\Signature\Configuration();
 $configuration->setAppSid($AppSid);
 $configuration->setAppKey($AppKey);
 
-$apiInstance # new GroupDocs\Signature\SignApi($configuration);
+$apiInstance = new GroupDocs\Signature\SignApi($configuration);
 
-$fileInfo # new GroupDocs\Signature\Model\FileInfo();
+$fileInfo = new GroupDocs\Signature\Model\FileInfo();
 $fileInfo->setFilePath("signaturedocs\signedBarcodeOne_page.docx");
 $fileInfo->setPassword("");
 
-$settings # new GroupDocs\Signature\Model\VerifySettings();
+$settings = new GroupDocs\Signature\Model\VerifySettings();
 $settings->setFileInfo($fileInfo);
 
-$options # new GroupDocs\Signature\Model\VerifyBarcodeOptions();
+$options = new GroupDocs\Signature\Model\VerifyBarcodeOptions();
 $options->setPage(1);
 $options->setAllPages(false);
 $options->setSignatureType(GroupDocs\Signature\Model\OptionsBase::SIGNATURE_TYPE_BARCODE);
 $options->setBarcodeType("Code128");
 $options->setText("123456789012");
 
-$padding # new GroupDocs\Signature\Model\Padding();
+$padding = new GroupDocs\Signature\Model\Padding();
 $padding->setAll(5);
 
-$pagesSetup # new GroupDocs\Signature\Model\PagesSetup();
+$pagesSetup = new GroupDocs\Signature\Model\PagesSetup();
 $pagesSetup->setEvenPages(false);
 $pagesSetup->setFirstPage(true);
 $pagesSetup->setLastPage(false);
@@ -210,8 +210,8 @@ $options->setPagesSetup($pagesSetup);
 
 $settings->setOptions([$options]);
 
-$request # new GroupDocs\Signature\Model\Requests\VerifySignaturesRequest($settings);
-$response # $apiInstance->verifySignatures($request);
+$request = new GroupDocs\Signature\Model\Requests\VerifySignaturesRequest($settings);
+$response = $apiInstance->verifySignatures($request);
 
 ```
 
@@ -219,32 +219,32 @@ $response # $apiInstance->verifySignatures($request);
 
 ```javascript
 
-* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-node-samples
-global.signature_cloud # require("groupdocs-signature-cloud");
+// For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-node-samples
+global.signature_cloud = require("groupdocs-signature-cloud");
 
-global.appSid # "XXXX-XXXX-XXXX-XXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-global.appKey # "XXXXXXXXXXXXXXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appSid = "XXXX-XXXX-XXXX-XXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appKey = "XXXXXXXXXXXXXXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-global.signApi # signature_cloud.SignApi.fromKeys(appSid, appKey);
+global.signApi = signature_cloud.SignApi.fromKeys(appSid, appKey);
 
-let fileInfo # new signature_cloud.FileInfo();
-fileInfo.filePath # "signaturedocs/signedBarcodeOne_page.docx";
+let fileInfo = new signature_cloud.FileInfo();
+fileInfo.filePath = "signaturedocs/signedBarcodeOne_page.docx";
 
-let opts # new signature_cloud.VerifyBarcodeOptions();
-opts.signatureType # signature_cloud.OptionsBase.SignatureTypeEnum.Barcode;
-opts.barcodeType # 'Code39Standard';
-opts.text # '123456789012';
-opts.matchType # signature_cloud.VerifyBarcodeOptions.MatchTypeEnum.Contains;
+let opts = new signature_cloud.VerifyBarcodeOptions();
+opts.signatureType = signature_cloud.OptionsBase.SignatureTypeEnum.Barcode;
+opts.barcodeType = 'Code39Standard';
+opts.text = '123456789012';
+opts.matchType = signature_cloud.VerifyBarcodeOptions.MatchTypeEnum.Contains;
 
-opts.page # 1;
-opts.allPages # true;
+opts.page = 1;
+opts.allPages = true;
 
-let settings # new signature_cloud.VerifySettings();
-settings.fileInfo # fileInfo;
-settings.options # [opts];
+let settings = new signature_cloud.VerifySettings();
+settings.fileInfo = fileInfo;
+settings.options = [opts];
 
-let request # new signature_cloud.VerifySignaturesRequest(settings);
-let response # await signApi.verifySignatures(request);
+let request = new signature_cloud.VerifySignaturesRequest(settings);
+let response = await signApi.verifySignatures(request);
 
 ```
 
@@ -256,28 +256,28 @@ let response # await signApi.verifySignatures(request);
 from groupdocs_signature_cloud import *
 import groupdocs_signature_cloud
 
-app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-api # groupdocs_signature_cloud.SignApi.from_keys(app_sid, app_key)
+api = groupdocs_signature_cloud.SignApi.from_keys(app_sid, app_key)
 
-fileInfo # FileInfo()
-fileInfo.file_path # "signaturedocs\\signedBarcodeOne_page.docx"
+fileInfo = FileInfo()
+fileInfo.file_path = "signaturedocs\\signedBarcodeOne_page.docx"
 
-opts # VerifyBarcodeOptions()
-opts.signature_type # 'Barcode'
-opts.text # '123456789012'
-opts.barcode_type # 'Code128'
-opts.match_type # 'Contains'
+opts = VerifyBarcodeOptions()
+opts.signature_type = 'Barcode'
+opts.text = '123456789012'
+opts.barcode_type = 'Code128'
+opts.match_type = 'Contains'
 
-opts.page # 1
+opts.page = 1
 
-settings # VerifySettings()
-settings.options # [opts]
-settings.file_info # fileInfo
+settings = VerifySettings()
+settings.options = [opts]
+settings.file_info = fileInfo
 
-request # VerifySignaturesRequest(settings)
-response # api.verify_signatures(request)
+request = VerifySignaturesRequest(settings)
+response = api.verify_signatures(request)
 
 ```
 
@@ -288,29 +288,29 @@ response # api.verify_signatures(request)
 # For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-ruby-samples
 require 'groupdocs_signature_cloud'
 
-$app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-api # GroupDocsSignatureCloud::SignApi.from_keys($app_sid, $app_key)
+api = GroupDocsSignatureCloud::SignApi.from_keys($app_sid, $app_key)
 
-$info # GroupDocsSignatureCloud::FileInfo.new()
-$info.file_path # "signaturedocs\\signedBarcodeOne_page.docx"
+$info = GroupDocsSignatureCloud::FileInfo.new()
+$info.file_path = "signaturedocs\\signedBarcodeOne_page.docx"
 
-$opts # GroupDocsSignatureCloud::VerifyBarcodeOptions.new()
-$opts.signature_type # "Barcode"
-$opts.barcode_type # "Code128"
-$opts.text # "123456789012"
-$opts.match_type # "Contains"
-$opts.page # 1
+$opts = GroupDocsSignatureCloud::VerifyBarcodeOptions.new()
+$opts.signature_type = "Barcode"
+$opts.barcode_type = "Code128"
+$opts.text = "123456789012"
+$opts.match_type = "Contains"
+$opts.page = 1
 
-$settings # GroupDocsSignatureCloud::VerifySettings.new()
-$settings.options # [$opts]
-$settings.file_info # $info
+$settings = GroupDocsSignatureCloud::VerifySettings.new()
+$settings.options = [$opts]
+$settings.file_info = $info
 
-$request # GroupDocsSignatureCloud::VerifySignaturesRequest.new($settings)
+$request = GroupDocsSignatureCloud::VerifySignaturesRequest.new($settings)
 
 # Executing an API.
-$response # api.verify_signatures($request)
+$response = api.verify_signatures($request)
 
 ```
 

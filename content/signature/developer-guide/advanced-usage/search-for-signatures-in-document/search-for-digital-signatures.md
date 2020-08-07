@@ -28,15 +28,15 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ```javascript
 
-* First get JSON Web Token
-* Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
+// First get JSON Web Token
+// Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
 -X POST \
 -d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -H "Accept: application/json"
 
-* cURL example to get document information
+// cURL example to get document information
 curl -v "https://api.groupdocs.cloud/v2.0/signature/search" \
 -X POST \
 -H "Content-Type: application/json" \
@@ -114,41 +114,41 @@ The API is completely independent of your operating system, database system or d
 
 ```csharp
 
-* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
-string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
+string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-var configuration # new Configuration(MyAppSid, MyAppKey);
-var apiInstance # new SignApi(configuration);
+var configuration = new Configuration(MyAppSid, MyAppKey);
+var apiInstance = new SignApi(configuration);
 
-* Search options
-var options # new SearchDigitalOptions
+// Search options
+var options = new SearchDigitalOptions
 {
-    SignatureType # SignatureTypeEnum.Digital,
-    AllPages # false,
-    Page # 1,
-    PagesSetup # new PagesSetup
+    SignatureType = SignatureTypeEnum.Digital,
+    AllPages = false,
+    Page = 1,
+    PagesSetup = new PagesSetup
     {
-        EvenPages # false,
-        FirstPage # true,
-        LastPage # false,
-        OddPages # false,
-        PageNumbers # new List<int?> {1}
+        EvenPages = false,
+        FirstPage = true,
+        LastPage = false,
+        OddPages = false,
+        PageNumbers = new List<int?> {1}
     }
 };
-* Search settings
-var searchSettings # new SearchSettings
+// Search settings
+var searchSettings = new SearchSettings
 {
-    FileInfo # new FileInfo
+    FileInfo = new FileInfo
     {
-        FilePath # "signedDigital_sample2.pdf"
+        FilePath = "signedDigital_sample2.pdf"
     },
-    Options # new List<SearchOptions> { options }
+    Options = new List<SearchOptions> { options }
 };
-* Create request.
-var request # new SearchSignaturesRequest(searchSettings);
-* Call api method with request.
-var response # apiInstance.SearchSignatures(request);
+// Create request.
+var request = new SearchSignaturesRequest(searchSettings);
+// Call api method with request.
+var response = apiInstance.SearchSignatures(request);
 
 ```
 
@@ -156,25 +156,25 @@ var response # apiInstance.SearchSignatures(request);
 
 ```java
 
-* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
-String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+// For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
+String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-Configuration configuration # new Configuration(MyAppSid, MyAppKey);
-SignApi apiInstance # new SignApi(configuration);
+Configuration configuration = new Configuration(MyAppSid, MyAppKey);
+SignApi apiInstance = new SignApi(configuration);
 
-FileInfo fileInfo # new FileInfo();
+FileInfo fileInfo = new FileInfo();
 fileInfo.setFilePath("Signaturedocs\\signedDigital_sample2.pdf");
 
-InfoSettings infoSettings # new InfoSettings();
+InfoSettings infoSettings = new InfoSettings();
 infoSettings.setFileInfo(fileInfo);
 
-SearchDigitalOptions options # new SearchDigitalOptions();
+SearchDigitalOptions options = new SearchDigitalOptions();
 options.setSignatureType(SignatureTypeEnum.DIGITAL);
 options.setPage(1);
 options.setAllPages(true);
 
-PagesSetup pagesSetup # new PagesSetup();
+PagesSetup pagesSetup = new PagesSetup();
 pagesSetup.setEvenPages(false);
 pagesSetup.setFirstPage(true);
 pagesSetup.setLastPage(false);
@@ -182,13 +182,13 @@ pagesSetup.setOddPages(false);
 pagesSetup.addPageNumbersItem(1);
 options.setPagesSetup(pagesSetup);
 
-SearchSettings searchSettings # new SearchSettings();
+SearchSettings searchSettings = new SearchSettings();
 searchSettings.setFileInfo(fileInfo);
 searchSettings.addOptionsItem(options);
 
-SearchSignaturesRequest request # new SearchSignaturesRequest(searchSettings);
+SearchSignaturesRequest request = new SearchSignaturesRequest(searchSettings);
 
-SearchResult  response # apiInstance.searchSignatures(request);
+SearchResult  response = apiInstance.searchSignatures(request);
 
 ```
 
@@ -196,35 +196,35 @@ SearchResult  response # apiInstance.searchSignatures(request);
 
 ```php
 
-* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-php-samples
+// For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-php-samples
 use GroupDocs\Signature\Model;
 use GroupDocs\Signature\Model\Requests;
 
-$AppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$AppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$AppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-$configuration # new GroupDocs\Signature\Configuration();
+$configuration = new GroupDocs\Signature\Configuration();
 $configuration->setAppSid($AppSid);
 $configuration->setAppKey($AppKey);
 
-$apiInstance # new GroupDocs\Signature\SignApi($configuration);
+$apiInstance = new GroupDocs\Signature\SignApi($configuration);
 
-$fileInfo # new GroupDocs\Signature\Model\FileInfo();
+$fileInfo = new GroupDocs\Signature\Model\FileInfo();
 $fileInfo->setFilePath("signaturedocs\signedDigitalOne_page.docx");
 $fileInfo->setPassword("");
 
-$settings # new GroupDocs\Signature\Model\SearchSettings();
+$settings = new GroupDocs\Signature\Model\SearchSettings();
 $settings->setFileInfo($fileInfo);
 
-$options # new GroupDocs\Signature\Model\SearchDigitalOptions();
+$options = new GroupDocs\Signature\Model\SearchDigitalOptions();
 $options->setPage(1);
 $options->setAllPages(false);
 $options->setSignatureType(GroupDocs\Signature\Model\OptionsBase::SIGNATURE_TYPE_DIGITAL);
 
 $settings->setOptions([$options]);
 
-$request # new GroupDocs\Signature\Model\Requests\SearchSignaturesRequest($settings);
-$response # $apiInstance->searchSignatures($request);
+$request = new GroupDocs\Signature\Model\Requests\SearchSignaturesRequest($settings);
+$response = $apiInstance->searchSignatures($request);
 
 ```
 
@@ -232,26 +232,26 @@ $response # $apiInstance->searchSignatures($request);
 
 ```javascript
 
-* For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-node-samples
-global.signature_cloud # require("groupdocs-signature-cloud");
+// For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-node-samples
+global.signature_cloud = require("groupdocs-signature-cloud");
 
-global.appSid # "XXXX-XXXX-XXXX-XXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-global.appKey # "XXXXXXXXXXXXXXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appSid = "XXXX-XXXX-XXXX-XXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.appKey = "XXXXXXXXXXXXXXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-global.signApi # signature_cloud.SignApi.fromKeys(appSid, appKey);
+global.signApi = signature_cloud.SignApi.fromKeys(appSid, appKey);
 
-let fileInfo # new signature_cloud.FileInfo();
-fileInfo.filePath # "signaturedocs/signedDigital_sample2.pdf";
+let fileInfo = new signature_cloud.FileInfo();
+fileInfo.filePath = "signaturedocs/signedDigital_sample2.pdf";
 
-let opts # new signature_cloud.SearchDigitalOptions();
-opts.signatureType # signature_cloud.OptionsBase.SignatureTypeEnum.Digital;
+let opts = new signature_cloud.SearchDigitalOptions();
+opts.signatureType = signature_cloud.OptionsBase.SignatureTypeEnum.Digital;
 
-let settings # new signature_cloud.SearchSettings();
-settings.fileInfo # fileInfo;
-settings.options # [opts];
+let settings = new signature_cloud.SearchSettings();
+settings.fileInfo = fileInfo;
+settings.options = [opts];
 
-let request # new signature_cloud.SearchSignaturesRequest(settings);
-let response # await signApi.searchSignatures(request);
+let request = new signature_cloud.SearchSignaturesRequest(settings);
+let response = await signApi.searchSignatures(request);
 
 ```
 
@@ -263,23 +263,23 @@ let response # await signApi.searchSignatures(request);
 from groupdocs_signature_cloud import *
 import groupdocs_signature_cloud
 
-app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-api # groupdocs_signature_cloud.SignApi.from_keys(app_sid, app_key)
+api = groupdocs_signature_cloud.SignApi.from_keys(app_sid, app_key)
 
-fileInfo # FileInfo()
-fileInfo.file_path # "signaturedocs\\signedDigitalOne_page.docx"
+fileInfo = FileInfo()
+fileInfo.file_path = "signaturedocs\\signedDigitalOne_page.docx"
 
-opts # SearchDigitalOptions()
-opts.signature_type # 'Digital'
+opts = SearchDigitalOptions()
+opts.signature_type = 'Digital'
 
-settings # SearchSettings()
-settings.options # [opts]
-settings.file_info # fileInfo
+settings = SearchSettings()
+settings.options = [opts]
+settings.file_info = fileInfo
 
-request # SearchSignaturesRequest(settings)
-response # api.search_signatures(request)
+request = SearchSignaturesRequest(settings)
+response = api.search_signatures(request)
 
 ```
 
@@ -290,26 +290,26 @@ response # api.search_signatures(request)
 # For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-ruby-samples
 require 'groupdocs_signature_cloud'
 
-$app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 
-api # GroupDocsSignatureCloud::SignApi.from_keys($app_sid, $app_key)
+api = GroupDocsSignatureCloud::SignApi.from_keys($app_sid, $app_key)
 
-$info # GroupDocsSignatureCloud::FileInfo.new()
-$info.file_path # "signaturedocs\\signedDigitalOne_page.docx"
+$info = GroupDocsSignatureCloud::FileInfo.new()
+$info.file_path = "signaturedocs\\signedDigitalOne_page.docx"
 
-$opts # GroupDocsSignatureCloud::SearchDigitalOptions.new()
-$opts.signature_type # "Digital"
-$opts.all_pages # true
+$opts = GroupDocsSignatureCloud::SearchDigitalOptions.new()
+$opts.signature_type = "Digital"
+$opts.all_pages = true
 
-$settings # GroupDocsSignatureCloud::SearchSettings.new()
-$settings.options # [$opts]
-$settings.file_info # $info
+$settings = GroupDocsSignatureCloud::SearchSettings.new()
+$settings.options = [$opts]
+$settings.file_info = $info
 
-$request # GroupDocsSignatureCloud::SearchSignaturesRequest.new($settings)
+$request = GroupDocsSignatureCloud::SearchSignaturesRequest.new($settings)
 
 # Executing an API.
-$response # api.search_signatures($request)
+$response = api.search_signatures($request)
 
 ```
 

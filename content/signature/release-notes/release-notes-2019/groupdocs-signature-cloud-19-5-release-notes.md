@@ -33,8 +33,3 @@ The difference between the V2 version from V1 is a more simplified API with fewe
 * V2 provides a much simpler and intuitive API comparing with V1
 * V2 includes Storage and File API which enables users to manage storage and files
 
-## Public API Examples ##
-
-* [GroupDocs Signature Cloud v2.0 API Examples and documentation]({{< ref "signature/_index.md" >}}))
-|---|---
-
