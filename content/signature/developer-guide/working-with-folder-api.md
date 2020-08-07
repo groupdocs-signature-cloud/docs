@@ -10,7 +10,7 @@ keywords: ""
 
 # Get the File Listing of a Specific Folder #
 
-This API allows you to get a list of all files of a specific folder from the specified Cloud Storage. If you do not pass storage name API will find folder in GroupDocs Cloud Storage. 
+This API allows you to get a list of all files of a specific folder from the specified Cloud Storage. If you do not pass storage name API will find folder in GroupDocs Cloud Storage.
 
 ## API Explorer ##
 
@@ -27,13 +27,14 @@ This API allows you to get a list of all files of a specific folder from the 
 
 Request
 
-```html
+```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+
 ```
 
 Response
 
-```html
+```javascript
 {
   "value": [
     {
@@ -94,6 +95,7 @@ Response
     }
   ]
 }
+
 ```
 
 ## SDKs ##
@@ -145,17 +147,19 @@ This API allows you to create a new Folder in the specified Cloud Storage. If yo
 
 Request
 
-```html
+```javascript
 curl -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+
 ```
 
 Response
 
-```html
-{  
+```javascript
+{
   "code": 200,
   "status": "OK"
 }
+
 ```
 
 ## SDKs ##
@@ -207,18 +211,19 @@ This API allows you to delete a particular Folder in the specified Cloud Storage
 
 Request
 
-```html
+```javascript
 curl -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs3?storageName#MyStorage&#x26;recursive#true" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+
 ```
 
 Response
 
-```html
-{  
+```javascript
+{
   "code": 200,
   "status": "OK"
 }
- ```
+```
 
 ## SDKs ##
 
@@ -271,17 +276,19 @@ This API allows you to copy a Folder to another location in the GroupDocs Cloud 
 
 Request
 
-```html
+```javascript
 curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/copy/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+
 ```
 
 Response
 
-```html
-{  
+```javascript
+{
   "code": 200,
   "status": "OK"
 }
+
 ```
 
 ## SDKs ##
@@ -335,18 +342,18 @@ This API allows you to move a Folder to another location in the GroupDocs Cloud 
 
 Request
 
-```html
-curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/move/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"  
- ```
+```javascript
+curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/move/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+```
 
 Response
 
-```html
-{  
+```javascript
+{
   "code": 200,
   "status": "OK"
 }
- ```
+```
 
 ## SDKs ##
 

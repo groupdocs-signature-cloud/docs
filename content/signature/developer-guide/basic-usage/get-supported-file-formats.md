@@ -20,13 +20,13 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the 
 
 Request
 
-```html
+```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/formats" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
- ```
+```
 
 Response
 
-```html
+```javascript
 {
   "formats": [
     {
@@ -179,7 +179,7 @@ Response
     }
   ]
 }
- ```
+```
 
 ## SDKs ##
 

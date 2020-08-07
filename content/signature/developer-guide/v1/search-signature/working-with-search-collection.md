@@ -12,15 +12,6 @@ keywords: ""
 Note:  The features listed on this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
-
-
-
-
 # Introduction #
 
 GroupDocs.Signature Cloud REST API supports to search multiple signatures in a document. For example, you can search whether a document contains Text and Barcode Signatures at same time. To search list of signatures on document (Cells, Images, PDF, Slides or Words) Signature API provides an object **[SearchOptionsCollectionData]({{< ref "signature/developer-guide/v1/common-resources/search-options-objects.md" >}})** that can contain one or more search options. Please, use search options which appropriate for current document format.
@@ -37,27 +28,20 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl --request POST \
 --url http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.pdf/collection/search?folder#signed \
 --header 'authorization: [Access Token]' \
 --header 'content-type: application/json' \
 --data '{ "items": [ { "barcodeTypeName": "Code39Standard", "text": "123456789012", "matchType": "Contains", "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "searchAllPages": true, "OptionsType": "PdfSearchBarcodeOptionsData" }, { "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "searchAllPages": true, "OptionsType": "PdfSearchDigitalOptionsData" } ] }'
 
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "signatures": [
     {
@@ -78,12 +62,7 @@ curl --request POST \
   "code": 200,
   "status": "OK"
 }
- ```
-
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -91,76 +70,25 @@ The API is completely independent of your operating system, database system or d
 
 ### Search Multiple Signatures ###
 
-
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Search_Collection.cs >}}
 
-
-
-
-
-
-
  PHP
-
-
-
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Search_Collection.php >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Search_Collection.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Search_Collection.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Search_Collection.rb >}}
-
-
-
-
-
-
-
-
 
 # Search Multiple Signatures on Document at Provided URL #
 
@@ -174,27 +102,20 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl --request POST \
 --url http://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
 --header 'authorization: [Access Token]' \
 --header 'content-type: application/json' \
 --data '{ "items": [ { "barcodeTypeName": "Code39Standard", "text": "123456789012", "matchType": "Contains", "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "searchAllPages": true, "OptionsType": "PdfSearchBarcodeOptionsData" }, { "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "searchAllPages": true, "OptionsType": "PdfSearchDigitalOptionsData" } ] }'
 
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "signatures": [
     {
@@ -215,12 +136,7 @@ curl --request POST \
   "code": 200,
   "status": "OK"
 }
- ```
-
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -228,73 +144,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Search Multiple Signatures on Document at Provided URL ###
 
- 
-
-
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Search_Collection_FromUrl.cs >}}
 
-
-
-
-
-
-
  PHP
-
-
-
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Search_Collection_URL.php >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Search_Collection_FromUrl.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Search_Collection_FromUrl.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Search_Collection_FromUrl.rb >}}
-
-
-
-
-
 

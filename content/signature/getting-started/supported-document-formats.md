@@ -16,7 +16,7 @@ This page is a reference for all document and image formats supported by GroupDo
 
 |Format|File Extension|Load|Save|Notes
 |---|---|---|---|---
-|Bitmap Picture (BMP)|.[BMP](https://wiki.fileformat.com/image/bmp/)| |  
+|Bitmap Picture (BMP)|.[BMP](https://wiki.fileformat.com/image/bmp/)| |
 |Computer Graphics Metafile|.[CGM](https://wiki.fileformat.com/page-description-language/cgm/)| |
 |CorelDraw Image|[CDR](https://docs.fileformat.com/image/cdr/)| | |
 |Corel Exchange image|[CMX](https://docs.fileformat.com/image/cmx/)| | |

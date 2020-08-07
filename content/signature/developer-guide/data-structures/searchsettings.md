@@ -23,7 +23,7 @@ SearchSettings data structure used as input parameters of Search API method.
   "Options":
    [
     {
-        "SignatureType": "Barcode",  
+        "SignatureType": "Barcode",
         "Page": 1,
         "Text": "123",
         "BarcodeType": "Code128",
@@ -31,6 +31,7 @@ SearchSettings data structure used as input parameters of Search API method.
     }
    ]
  }
+
 ```
 
 ##### SearchSettings fields #####

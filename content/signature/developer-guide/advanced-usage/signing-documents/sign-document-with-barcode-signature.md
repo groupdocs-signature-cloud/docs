@@ -32,13 +32,13 @@ There are steps that usage of GroupDocs.Signature Cloud consists of:
 
 For storage operations, like uploading or downloading documents, please refer to the corresponding articles of this manual.
 
-[Swagger UI](https://apireference.groupdocs.cloud/signature/) lets you call this REST API directly from the browser. 
+[Swagger UI](https://apireference.groupdocs.cloud/signature/) lets you call this REST API directly from the browser.
 
 ## cURL REST Example ##
 
  Request
 
-```html
+```javascript
 * First get JSON Web Token
 * Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
@@ -46,7 +46,7 @@ curl -v "https://api.groupdocs.cloud/connect/token" \
 -d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -H "Accept: application/json"
-  
+
 * cURL example to get document information
 curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 -X POST \
@@ -74,11 +74,11 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
   }
 }"
 
- ```
+```
 
  Response
 
-```html
+```javascript
 {
   "fileInfo": {
     "filePath": "signaturedocs/signedBarcode_one-page.docx",
@@ -108,7 +108,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
   "failed": []
 }
 
- ```
+```
 
 ## SDKs ##
 
@@ -123,7 +123,7 @@ C#
 * For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
 string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 var configuration # new Configuration(MyAppSid, MyAppKey);
 var apiInstance # new SignApi(configuration);
 * Sign options.
@@ -171,7 +171,7 @@ var request # new CreateSignaturesRequest(signSettings);
 * Call api method with request.
 var response # apiInstance.CreateSignatures(request);
 
- ```
+```
 
 Java
 
@@ -179,7 +179,7 @@ Java
 * For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
 String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 String MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 Configuration configuration # new Configuration(MyAppSid, MyAppKey);
 SignApi apiInstance # new SignApi(configuration);
 
@@ -249,7 +249,7 @@ CreateSignaturesRequest request # new CreateSignaturesRequest(signSettings);
 
 SignResult response # apiInstance.createSignatures(request);
 
- ```
+```
 
  PHP
 
@@ -261,7 +261,7 @@ use GroupDocs\Signature\Model\Requests;
 
 $AppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 $AppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 $configuration # new GroupDocs\Signature\Configuration();
 $configuration->setAppSid($AppSid);
 $configuration->setAppKey($AppKey);
@@ -281,8 +281,8 @@ $settings->setSaveOptions($saveOptions);
 
 $options # new GroupDocs\Signature\Model\SignBarcodeOptions();
 $options->setPage(1);
-$options->setAllPages(false);        
-$options->setSignatureType(GroupDocs\Signature\Model\OptionsBase::SIGNATURE_TYPE_BARCODE);        
+$options->setAllPages(false);
+$options->setSignatureType(GroupDocs\Signature\Model\OptionsBase::SIGNATURE_TYPE_BARCODE);
 $options->setBarcodeType("Code128");
 $options->setText("123456789012");
 $options->setCodeTextAlignment(GroupDocs\Signature\Model\SignBarcodeOptions::CODE_TEXT_ALIGNMENT_NONE);
@@ -301,9 +301,9 @@ $padding # new GroupDocs\Signature\Model\Padding();
 $padding->setAll(5);
 $options->setMargin($padding);
 
-$options->setMarginMeasureType(GroupDocs\Signature\Model\SignTextOptions::MARGIN_MEASURE_TYPE_PIXELS);  
+$options->setMarginMeasureType(GroupDocs\Signature\Model\SignTextOptions::MARGIN_MEASURE_TYPE_PIXELS);
 $padding # new GroupDocs\Signature\Model\Padding();
-$padding->setAll(2);        
+$padding->setAll(2);
 $options->setInnerMargins($padding);
 
 $pagesSetup # new GroupDocs\Signature\Model\PagesSetup();
@@ -319,7 +319,7 @@ $settings->setOptions([$options]);
 $request # new GroupDocs\Signature\Model\Requests\createSignaturesRequest($settings);
 $response # $apiInstance->createSignatures($request);
 
- ```
+```
 
 Node
 
@@ -330,7 +330,7 @@ global.signature_cloud # require("groupdocs-signature-cloud");
 
 global.appSid # "XXXX-XXXX-XXXX-XXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 global.appKey # "XXXXXXXXXXXXXXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 global.signApi # signature_cloud.SignApi.fromKeys(appSid, appKey);
 
 let fileInfo # new signature_cloud.FileInfo();
@@ -385,7 +385,7 @@ import groupdocs_signature_cloud
 
 app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 api # groupdocs_signature_cloud.SignApi.from_keys(app_sid, app_key)
 
 fileInfo # FileInfo()
@@ -426,7 +426,7 @@ settings.file_info # fileInfo
 request # CreateSignaturesRequest(settings)
 response # api.create_signatures(request)
 
- ```
+```
 
  Ruby
 
@@ -437,7 +437,7 @@ require 'groupdocs_signature_cloud'
 
 $app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 $app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 api # GroupDocsSignatureCloud::SignApi.from_keys($app_sid, $app_key)
 
 $info # GroupDocsSignatureCloud::FileInfo.new()
@@ -482,4 +482,4 @@ $request # GroupDocsSignatureCloud::CreateSignaturesRequest.new($settings)
 # Executing an API.
 $response # api.create_signatures($request)
 
- ```
+```

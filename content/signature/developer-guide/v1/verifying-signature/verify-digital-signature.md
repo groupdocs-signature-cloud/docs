@@ -12,15 +12,6 @@ keywords: ""
 Note:  The features listed on this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
-
-
-
-
 # Introduction #
 
 GroupDocs.Signature Cloud REST API supports to verify a signed document. It provides methods to verify Digital Signature in Documents Pages with different options for page number, text and search criteria by using [doc:signaturecloud.Verification Options Objects) data in request body.
@@ -35,27 +26,20 @@ The following GroupDocs.Signature Cloud REST API resource has been used [to ver
 
 ## cURL Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl -v "https://api-qa.groupdocs.cloud/v1/signature/Signed_Digital.pdf/digital/verification?Folder#signed" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -d "{"DocumentPageNumber": 1,"Password" : "password","CertificateGuid": "temp.pfx","Comments" : "verified data","SignDateTimeFrom" : "1/12/2017","SignDateTimeTo":"12/12/2017","OptionsType":"PdfVerifyDigitalOptionsData"}" \
 -H "authorization: Bearer ku1wBVYory9t4m9MOW0VuEKbyT4GYUZy8hTXpirhs6ECV_3dQhlbwLHn8ffsX650Syt0hDq2vXZNia70T1NY0jG32h_LUxQoRrVQMvV88P5Y0EbmBinPsmEAuqFHCR2ahhWJqZhidpXU7tP_PHh5IXuZ-cmmW1VUARtj73oE-B4gyD8WEJ1i0CgEM8-Do2843TpCgueqczRgCikeKy8ftSjhgNr2HfYGIc8Fjn152yE3o-wi2VvYwRmEquF28di-zDCxVcZa742ENp9d5GLs1obG8Y-pf-FwQDFcvj-XreWt9U1_dNbTaRiREsrliisAxFAM7qUG1zRZpNISX_kEYC6NqaLlebMIAd5-WHL_PeK2reld-DMURVsniqsgHSxNRnQpmxoJ-YVeQQeN7ZoMBrI4G3zWMeRrUwWR2UmS4jfBlckpfCjkvGZ7ydbzWp3qkLmE3Ns95uf1ccJuvESN9yWkUmg"
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "result": true,
   "fileName": "Signed_Digital.pdf",
@@ -63,12 +47,7 @@ curl -v "https://api-qa.groupdocs.cloud/v1/signature/Signed_Digital.pdf/digital/
   "code": 200,
   "status": "OK"
 }
- ```
-
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -76,76 +55,25 @@ The API is completely independent of your operating system, database system or d
 
 ### Verify Digital Signature in a Document ###
 
-
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Verify-Signature_Digital.cs >}}
 
-
-
-
-
-
-
  PHP
-
-
-
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Digital_Verify.php >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Verify_Signature_Digital.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Verify_Signature_Digital.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_Digital.rb >}}
-
-
-
-
-
-
-
-
 
 # Verify Digital Signature in a Document at Provided URL #
 
@@ -157,27 +85,20 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl -v "https://api-qa.groupdocs.cloud/v1/signature/digital/verification?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -d "{"DocumentPageNumber": 1,"Password":"password","CertificateGuid":"temp.pfx","Comments":"verified data","SignDateTimeFrom":"1/12/2017","SignDateTimeTo":"12/12/2017","OptionsType":"WordsVerifyDigitalOptionsData"}" \
 -H "authorization: Bearer ku1wBVYory9t4m9MOW0VuEKbyT4GYUZy8hTXpirhs6ECV_3dQhlbwLHn8ffsX650Syt0hDq2vXZNia70T1NY0jG32h_LUxQoRrVQMvV88P5Y0EbmBinPsmEAuqFHCR2ahhWJqZhidpXU7tP_PHh5IXuZ-cmmW1VUARtj73oE-B4gyD8WEJ1i0CgEM8-Do2843TpCgueqczRgCikeKy8ftSjhgNr2HfYGIc8Fjn152yE3o-wi2VvYwRmEquF28di-zDCxVcZa742ENp9d5GLs1obG8Y-pf-FwQDFcvj-XreWt9U1_dNbTaRiREsrliisAxFAM7qUG1zRZpNISX_kEYC6NqaLlebMIAd5-WHL_PeK2reld-DMURVsniqsgHSxNRnQpmxoJ-YVeQQeN7ZoMBrI4G3zWMeRrUwWR2UmS4jfBlckpfCjkvGZ7ydbzWp3qkLmE3Ns95uf1ccJuvESN9yWkUmg"
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "result": false,
   "fileName": "https://www.dropbox.com/s/bzx1xm68zd0c910/PieChart.docx",
@@ -185,12 +106,7 @@ curl -v "https://api-qa.groupdocs.cloud/v1/signature/digital/verification?url#ht
   "code": 200,
   "status": "OK"
 }
- ```
-
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -198,72 +114,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Verify Digital Signature in a Document at Provided URL ###
 
-
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Verify_Signature_Digital_URL.cs >}}
 
-
-
-
-
-
-
  PHP
-
-
-
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Digital_Verify_URL.php >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Verify_Signature_Digital_URL.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Verify_Signature_Digital_URL.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_Digital_URL.rb >}}
-
-
-
-
-
-
 

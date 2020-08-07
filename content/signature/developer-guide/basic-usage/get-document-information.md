@@ -20,13 +20,13 @@ The following GroupDocs.Signature Cloud REST API resource has been used to get 
 
 Request
 
-```html
+```javascript
  curl -X POST "https://api.groupdocs.cloud/v2.0/signature/info" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]" -H  "Content-Type: application/json" -d "{  \"FileInfo\": {    \"FilePath\": \"Signaturedocs/one-page.docx\",    \"StorageName\": \"MyStorage\",    \"VersionId\": \"\",    \"Password\": \"\"  }}"
- ```
+```
 
  Response
 
-```html 
+```javascript
 {
   "fileName": "one-page.docx",
   "extension": ".docx",
@@ -48,7 +48,7 @@ Request
     ]
   }
 }
- ```
+```
 
 ## SDKs ##
 

@@ -16,18 +16,14 @@ Note:  The features listed in this page are supported only in GroupDocs.Signatu
 
 Page contains description for Signature Options objects and object properties
 
+## [SignOptionsCollectionData Object]("SignOptionsCollectionDataObject") 
 
-
-
-
-## [SignOptionsCollectionData Object]("SignOptionsCollectionDataObject") ##
-|---|---
 
 Provides list of options for documents signing.
 
 Example SignOptionsCollectionData object
 
-```html 
+```javascript
 {
   "items": [
     {
@@ -124,7 +120,7 @@ Example SignOptionsCollectionData object
     }
   ]
 }
- ```
+```
 
  SignOptionsCollectionData Object Fields (Click here to expand)
 
@@ -132,20 +128,14 @@ Example SignOptionsCollectionData object
 |---|---|---
 |Items|List<SignOptionsData>|List of Signature Options objects.
 
+## [CellsSignTextOptionsData Object]("CellsSignTextOptionsDataObject") 
 
-
-
-
-
-
-## [CellsSignTextOptionsData Object]("CellsSignTextOptionsDataObject") ##
-|---|---
 
 Provides options for Cells Documents to add Text Signature.
 
 Example CellsSignTextOptionsData object
 
-```html 
+```javascript
 {
   "margin": {
     "all": 5,
@@ -206,7 +196,7 @@ Example CellsSignTextOptionsData object
   },
   "optionsType": "CellsSignTextOptionsData"
 }
- ```
+```
 
  CellsSignTextOptionsData Object Fields (Click here to expand)
 
@@ -246,20 +236,14 @@ Example CellsSignTextOptionsData object
 |BackgroundTransparency|float|Specifies Transparency of Text Signature Area Background. Value should be in range 0 - 1. When 0 means no transparency and 1 absolutely transparent object. Default value is 0
 |OptionsType|string|The class name of options object, should always contains value "CellsSignTextOptionsData". This property is set automatically when using SDK classes.
 
+## [ImagesSignTextOptionsData Object]("ImagesSignTextOptionsDataObject") 
 
-
-
-
-
-
-## [ImagesSignTextOptionsData Object]("ImagesSignTextOptionsDataObject") ##
-|---|---
 
 Provides options for Images Documents to add Text Signature.
 
 Example ImagesSignTextOptionsData object
 
-```html 
+```javascript
 {
   "opacity": 0.9,
   "signatureImplementation": "TextAsImage",
@@ -317,7 +301,7 @@ Example ImagesSignTextOptionsData object
   },
   "optionsType": "ImagesSignTextOptionsData"
 }
- ```
+```
 
  ImagesSignTextOptionsData Object Fields (Click here to expand)
 
@@ -354,19 +338,13 @@ Example ImagesSignTextOptionsData object
 |BackgroundTransparency|double|Gets or sets the signature background transparency (value from 0.0 (opaque) through 1.0 (clear)).
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignTextOptionsData". This property is set automatically when using SDK classes.
 
-
-
-
-
-
-
 ##  ##
 
 Provides options for Pdf Documents to add Text Signature.
 
 Example PdfSignTextOptionsData object
 
-```html 
+```javascript
 {
   "opacity": 0.8,
   "signatureID": 12,
@@ -423,7 +401,7 @@ Example PdfSignTextOptionsData object
   },
   "optionsType": "PdfSignTextOptionsData"
 }
- ```
+```
 
  PdfSignTextOptions Object Fields (Click here to expand)
 
@@ -458,20 +436,14 @@ Example PdfSignTextOptionsData object
 |FormTextFieldType|enum|Gets or sets the type of form field to put text signature into it. This property could be used only with PdfTextSignatureImplementation # TextToFormField. Value by default is AllTextTypes. **.**
 |OptionsType|string|The class name of options object, should always contains value "PdfSignTextOptionsData ". This property is set automatically when using SDK classes.
 
+## [SlidesSignTextOptionsData Object]("SlidesTextOptions") 
 
-
-
-
-
-
-## [SlidesSignTextOptionsData Object]("SlidesTextOptions") ##
-|---|---
 
 Provides options to put Text Signature on Slides Documents.
 
 Example SlidesSignTextOptionsData object
 
-```html 
+```javascript
 {
   "borderTransparency": 0.55,
   "borderWeight": 12.0,
@@ -527,7 +499,7 @@ Example SlidesSignTextOptionsData object
   },
   "optionsType": "SlidesSignTextOptionsData"
 }
- ```
+```
 
  SlidesSignTextOptionsData Object Fields (Click here to expand)
 
@@ -562,20 +534,14 @@ Example SlidesSignTextOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignTextOptionsData". This property is set automatically when using SDK classes.
 
+## [WordsSignTextOptionsData Object]("WordsSignTextOptionsData") 
 
-
-
-
-
-
-## [WordsSignTextOptionsData Object]("WordsSignTextOptionsData") ##
-|---|---
 
 Provides options for Text Signature object for Words Documents.
 
 Example WordsSignTextOptionsData object
 
-```html 
+```javascript
 {
   "borderDashStyle": 5,
   "borderTransparency": 0.55,
@@ -632,7 +598,7 @@ Example WordsSignTextOptionsData object
   },
   "optionsType": "WordsSignTextOptionsData"
 }
- ```
+```
 
  WordsSignTextOptionsData Object Fields (Click here to expand)
 
@@ -668,20 +634,14 @@ Example WordsSignTextOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |OptionsType|string|The class name of options object, should always contains value "WordsSignTextOptionsData". This property is set automatically when using SDK classes.
 
+## [CellsSignImageOptionsData Object]("CellsSignImageOptionsData") 
 
-
-
-
-
-
-## [CellsSignImageOptionsData Object]("CellsSignImageOptionsData") ##
-|---|---
 
 Provides options to put Image Signature on Cells Documents Pages.
 
 Example CellsSignImageOptionsData object
 
-```html 
+```javascript
 {
   "margin": {
     "all": 5,
@@ -720,7 +680,7 @@ Example CellsSignImageOptionsData object
   },
   "optionsType": "CellsSignImageOptionsData"
 }
- ```
+```
 
  CellsSignImageOptionsData Object Fields (Click here to expand)
 
@@ -750,20 +710,14 @@ Example CellsSignImageOptionsData object
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
 |OptionsType|string|The class name of options object, should always contains value "CellsSignImageOptionsData". This property is set automatically when using SDK classes.
 
+## [ImagesSignImageOptionsData Object]("ImagesSignImageOptionsDataObject") 
 
-
-
-
-
-
-## [ImagesSignImageOptionsData Object]("ImagesSignImageOptionsDataObject") ##
-|---|---
 
 Provides options for Images Documents to add Image Signature.
 
 Example ImagesSignImageOptionsData object.
 
-```html 
+```javascript
 {
   "imageGuid": "images\signature_01.jpg",
   "left": 2,
@@ -799,7 +753,7 @@ Example ImagesSignImageOptionsData object.
   },
   "optionsType": "ImagesSignImageOptionsData"
 }
- ```
+```
 
  ImagesSignImageOptionsData Object Fields (Click here to expand)
 
@@ -826,20 +780,14 @@ Example ImagesSignImageOptionsData object.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignImageOptionsData". This property is set automatically when using SDK classes.
 
+## [PdfSignImageOptionsData Object]("PdfSignImageOptionsData Object")  
 
-
-
-
-
-
-## [PdfSignImageOptionsData Object]("PdfSignImageOptionsData Object")  ##
-|---|---
 
 Provides options to add Image Signature on Document pages.
 
 Example PdfSignImageOptionsData object
 
-```html 
+```javascript
 
 {
   "imageGuid": "images\signature_01.jpg",
@@ -877,11 +825,7 @@ Example PdfSignImageOptionsData object
   "optionsType": "PdfSignImageOptionsData"
 }
 
- ```
-
- 
-
-
+```
 
  PdfSignImageOptionsData Object Fields (Click here to expand)
 
@@ -908,18 +852,12 @@ Example PdfSignImageOptionsData object
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
 |OptionsType|string|The class name of options object, should always contains value "PdfSignImageOptionsData". This property is set automatically when using SDK classes.
 
+## [SlidesSignImageOptionsData Object]("SlidesSignImageOptionsData") 
 
-
-
-
-
-
-## [SlidesSignImageOptionsData Object]("SlidesSignImageOptionsData") ##
-|---|---
 
 Provides options to put Image Signature on Slides Documents
 
-```html 
+```javascript
 {
   "left": 10,
   "top": 10,
@@ -954,7 +892,7 @@ Provides options to put Image Signature on Slides Documents
   },
   "optionsType": "SlidesSignImageOptionsData"
 }
- ```
+```
 
  SlidesSignImageOptionsData Object Fields (Click here to expand)
 
@@ -981,20 +919,14 @@ Provides options to put Image Signature on Slides Documents
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
 |OptionsType|string|The class name of options object, should always contains value "SlidesSignImageOptionsData". This property is set automatically when using SDK classes.
 
+## [WordsSignImageOptionsData Object]("WordsSignImageOptionsData") 
 
-
-
-
-
-
-## [WordsSignImageOptionsData Object]("WordsSignImageOptionsData") ##
-|---|---
 
 Provides options to put Image Signature on Words Documents
 
 Example WordsSignImageOptionsData object.
 
-```html 
+```javascript
 {
   "imageGuid": "images\signature_01.jpg",
   "left": 2,
@@ -1030,7 +962,7 @@ Example WordsSignImageOptionsData object.
   },
   "optionsType": "WordsSignImageOptionsData"
 }
- ```
+```
 
  WordsSignImagesOptionsData Object Fields (Click here to expand)
 
@@ -1057,20 +989,14 @@ Example WordsSignImageOptionsData object.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
 |OptionsType|string|The class name of options object, should always contains value "WordsSignImageOptionsData". This property is set automatically when using SDK classes.
 
+## [CellsSignDigitalOptionsData Object]("CellsSignDigitalOptionsData") 
 
-
-
-
-
-
-## [CellsSignDigitalOptionsData Object]("CellsSignDigitalOptionsData") ##
-|---|---
 
 Provides options to add Digital Signature on Cells Documents
 
 Example CellsSignDigitalOptionsData object.
 
-```html 
+```javascript
 {
   "margin": {
     "all": 5,
@@ -1111,7 +1037,7 @@ Example CellsSignDigitalOptionsData object.
   },
   "optionsType": "CellsSignDigitalOptionsData"
 }
- ```
+```
 
  CellsSignDigitalOptionsData Object Fields (Click here to expand)
 
@@ -1143,20 +1069,14 @@ Example CellsSignDigitalOptionsData object.
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
 |OptionsType|string|The class name of options object, should always contains value "CellsSignImageOptionsData". This property is set automatically when using SDK classes
 
+## [PdfSignDigitalOptionsData Object]("PdfSignDigitalOptionsData") 
 
-
-
-
-
-
-## [PdfSignDigitalOptionsData Object]("PdfSignDigitalOptionsData") ##
-|---|---
 
 Provides options to put Digital Signature on Pdf Documents
 
 Example PdfSignDigitalOptionsData object.
 
-```html 
+```javascript
 {
   "reason": "reason",
   "contact": "contact",
@@ -1198,7 +1118,7 @@ Example PdfSignDigitalOptionsData object.
   },
   "optionsType": "PdfSignDigitalOptionsData"
 }
- ```
+```
 
  PdfSignDigitalOptionsData Object Fields (Click here to expand)
 
@@ -1231,20 +1151,14 @@ Example PdfSignDigitalOptionsData object.
 |Visible|bool|Gets or sets the visibility of signature.
 |OptionsType|string|The class name of options object, should always contains value "PdfSignDigitalOptionsData". This property is set automatically when using SDK classes
 
+## [WordsSignDigitalOptionsData Object]("WordsSignDigitalOptionsData") 
 
-
-
-
-
-
-## [WordsSignDigitalOptionsData Object]("WordsSignDigitalOptionsData") ##
-|---|---
 
 Provides options to put Digital Siganture on Words Documents.
 
 Example WordsSignDigitalOptionsData object.
 
-```html 
+```javascript
 {
   "password": "1234567890",
   "certificateGuid": "certificates\SherlockHolmes.pfx",
@@ -1280,7 +1194,7 @@ Example WordsSignDigitalOptionsData object.
   },
   "optionsType": "WordsSignDigitalOptionsData"
 }
- ```
+```
 
  WordsSignDigitalOptionsData Object Fileds (Click here to expand)
 
@@ -1309,20 +1223,14 @@ Example WordsSignDigitalOptionsData object.
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
 |OptionsType|string|The class name of options object, should always contains value "WordsSignDigitalOptionsData". This property is set automatically when using SDK classes.
 
+## [CellsSignBarcodeOptionsData Object]("CellsSignBarcodeOptionsData") 
 
-
-
-
-
-
-## [CellsSignBarcodeOptionsData Object]("CellsSignBarcodeOptionsData") ##
-|---|---
 
 Provides options for Cells Documents to add Barcode Signature.
 
 Example CellsSignBarcodeOptionsData object
 
-```html 
+```javascript
 {
   "sheetNumber": 1,
   "rowNumber": 2,
@@ -1390,7 +1298,7 @@ Example CellsSignBarcodeOptionsData object
   },
   "optionsType": "CellsSignBarcodeOptionsData"
 }
- ```
+```
 
  CellsSignBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -1430,20 +1338,14 @@ Example CellsSignBarcodeOptionsData object
 |InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "CellsSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
+## [ImagesSignBarcodeOptionsData Object]("ImagesSignBarcodeOptionsDataObject") 
 
-
-
-
-
-
-## [ImagesSignBarcodeOptionsData Object]("ImagesSignBarcodeOptionsDataObject") ##
-|---|---
 
 Provides options for Images Documents to add Barcode Signature.
 
 Example ImagesSignBarcodeOptionsData object.
 
-```html 
+```javascript
 {
   "barcodeTypeName": "Code39Standard",
   "borderVisiblity": true,
@@ -1508,7 +1410,7 @@ Example ImagesSignBarcodeOptionsData object.
   },
   "optionsType": "ImagesSignBarcodeOptionsData"
 }
- ```
+```
 
  ImagesSignBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -1546,19 +1448,13 @@ Example ImagesSignBarcodeOptionsData object.
 |InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-
-
-
-
-
-
 ##  ##
 
 Provides options for Pdf Documents to add Barcode Signature.
 
 Example PdfSignBarcodeOptionsData object
 
-```html 
+```javascript
 {
   "barcodeTypeName": "Code39Standard",
   "borderVisiblity": true,
@@ -1623,7 +1519,7 @@ Example PdfSignBarcodeOptionsData object
   },
   "optionsType": "PdfSignBarcodeOptionsData"
 }
- ```
+```
 
  PdfSignBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -1661,20 +1557,14 @@ Example PdfSignBarcodeOptionsData object
 |InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "PdfSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
+## [SlidesSignBarcodeOptionsData Object]("SlidesTextOptions") 
 
-
-
-
-
-
-## [SlidesSignBarcodeOptionsData Object]("SlidesTextOptions") ##
-|---|---
 
 Provides options to put Barcode Signature on Slides Documents.
 
 Example SlidesSignBarcodeOptionsData object
 
-```html 
+```javascript
 {
   "barcodeTypeName": "Code39Standard",
   "borderVisiblity": true,
@@ -1739,7 +1629,7 @@ Example SlidesSignBarcodeOptionsData object
   },
   "optionsType": "SlidesSignBarcodeOptionsData"
 }
- ```
+```
 
  SlidesSignBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -1777,20 +1667,14 @@ Example SlidesSignBarcodeOptionsData object
 |InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "SlidesSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
+## [WordsSignBarcodeOptionsData Object]("WordsSignTextOptionsData") 
 
-
-
-
-
-
-## [WordsSignBarcodeOptionsData Object]("WordsSignTextOptionsData") ##
-|---|---
 
 Provides options for Barcode Signature object for Words Documents.
 
 Example WordsSignBarcodeOptionsData object
 
-```html 
+```javascript
 {
   "barcodeTypeName": "Code39Standard",
   "borderVisiblity": true,
@@ -1855,7 +1739,7 @@ Example WordsSignBarcodeOptionsData object
   },
   "optionsType": "WordsSignBarcodeOptionsData"
 }
- ```
+```
 
  WordsSignBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -1893,20 +1777,14 @@ Example WordsSignBarcodeOptionsData object
 |InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "WordsSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
+## [CellsSignQRCodeOptionsData Object]("CellsSignQRCodeOptionsData") 
 
-
-
-
-
-
-## [CellsSignQRCodeOptionsData Object]("CellsSignQRCodeOptionsData") ##
-|---|---
 
 Provides options for Cells Documents to add QR-Code Signature.
 
 Example CellsSignQRCodeOptionsData object
 
-```html 
+```javascript
 {
   "sheetNumber": 1,
   "rowNumber": 2,
@@ -1974,7 +1852,7 @@ Example CellsSignQRCodeOptionsData object
   },
   "optionsType": "CellsSignQRCodeOptionsData"
 }
- ```
+```
 
  CellsSignQRCodeOptionsData Object Fields (Click here to expand)
 
@@ -2014,20 +1892,14 @@ Example CellsSignQRCodeOptionsData object
 |InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "CellsSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
+## [ImagesSignQRCodeOptionsData Object]("ImagesSignQRCodeOptionsDataObject") 
 
-
-
-
-
-
-## [ImagesSignQRCodeOptionsData Object]("ImagesSignQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options for Images Documents to add QRCode Signature.
 
 Example ImagesSignQRCodeOptionsData object.
 
-```html 
+```javascript
 {
   "qrCodeTypeName": "Aztec",
   "borderVisiblity": true,
@@ -2092,7 +1964,7 @@ Example ImagesSignQRCodeOptionsData object.
   },
   "optionsType": "ImagesSignQRCodeOptionsData"
 }
- ```
+```
 
  ImagesSignQRCodeOptionsData Object Fields (Click here to expand)
 
@@ -2130,19 +2002,13 @@ Example ImagesSignQRCodeOptionsData object.
 |InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-
-
-
-
-
-
 ##  ##
 
 Provides options for Pdf Documents to add QRCode Signature.
 
 Example PdfSignQRCodeOptionsData object
 
-```html 
+```javascript
 {
   "qrCodeTypeName": "Aztec",
   "borderVisiblity": true,
@@ -2205,7 +2071,7 @@ Example PdfSignQRCodeOptionsData object
   },
   "optionsType": "PdfSignQRCodeOptionsData"
 }
- ```
+```
 
  PdfSignQRCodeOptions Object Fields (Click here to expand)
 
@@ -2243,20 +2109,14 @@ Example PdfSignQRCodeOptionsData object
 |InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "PdfSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
+## [SlidesSignQRCodeOptionsData Object]("SlidesSignQRCodeOptionsData") 
 
-
-
-
-
-
-## [SlidesSignQRCodeOptionsData Object]("SlidesSignQRCodeOptionsData") ##
-|---|---
 
 Provides options to put QR-Code Signature on Slides Documents.
 
 Example SlidesSignQRCodeOptionsData object
 
-```html 
+```javascript
 {
   "qrCodeTypeName": "Aztec",
   "borderVisiblity": true,
@@ -2321,7 +2181,7 @@ Example SlidesSignQRCodeOptionsData object
   },
   "optionsType": "SlidesSignQRCodeOptionsData"
 }
- ```
+```
 
  SlidesSignQRCodeOptionsData Object Fields (Click here to expand)
 
@@ -2359,20 +2219,14 @@ Example SlidesSignQRCodeOptionsData object
 |InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "SlidesSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
+## [WordsSignQRCodeOptionsData Object]("WordsSignQRCodeOptionsData") 
 
-
-
-
-
-
-## [WordsSignQRCodeOptionsData Object]("WordsSignQRCodeOptionsData") ##
-|---|---
 
 Provides options for QR-Code Signature object for Words Documents.
 
 Example WordsSignQRCodeOptionsData object
 
-```html 
+```javascript
 {
   "qrCodeTypeName": "Aztec",
   "borderVisiblity": true,
@@ -2437,7 +2291,7 @@ Example WordsSignQRCodeOptionsData object
   },
   "optionsType": "WordsSignQRCodeOptionsData"
 }
- ```
+```
 
  WordsSignQRCodeOptions Object Fields (Click here to expand)
 
@@ -2475,20 +2329,14 @@ Example WordsSignQRCodeOptionsData object
 |InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
 |OptionsType|string|The class name of options object, should always contains value "WordsSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
+## [CellsSignStampOptionsData Object]("CellsSignStampOptionsData") 
 
-
-
-
-
-
-## [CellsSignStampOptionsData Object]("CellsSignStampOptionsData") ##
-|---|---
 
 Provides options to put Stamp Signature on Cells Documents Pages.
 
 Example CellsSignStampOptionsData object
 
-```html 
+```javascript
 {
   "sheetNumber": 1,
   "rowNumber": 2,
@@ -2608,7 +2456,7 @@ Example CellsSignStampOptionsData object
   },
   "optionsType": "CellsSignStampOptionsData"
 }
- ```
+```
 
  CellsSignStampOptionsData Object Fields (Click here to expand)
 
@@ -2643,20 +2491,14 @@ Example CellsSignStampOptionsData object
 |InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles. **.**
 |OptionsType|string|The class name of options object, should always contains value "CellsSignStampOptionsData". This property is set automatically when using SDK classes.
 
+## [ImagesSignStampOptionsData Object]("ImagesSignStampOptionsDataObject") 
 
-
-
-
-
-
-## [ImagesSignStampOptionsData Object]("ImagesSignStampOptionsDataObject") ##
-|---|---
 
 Provides options to put Stamp Signature on Images Documents Pages.
 
 Example ImagesSignStampOptionsData object
 
-```html 
+```javascript
 {
   "outerLines": [
     {
@@ -2773,7 +2615,7 @@ Example ImagesSignStampOptionsData object
   },
   "optionsType": "ImagesSignStampOptionsData"
 }
- ```
+```
 
  ImagesSignStampOptionsData Object Fields (Click here to expand)
 
@@ -2805,20 +2647,14 @@ Example ImagesSignStampOptionsData object
 |InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles. **.**
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignStampOptionsData". This property is set automatically when using SDK classes.
 
+## [PdfSignStampOptionsData Object]("PdfSignStampOptionsDataObject") 
 
-
-
-
-
-
-## [PdfSignStampOptionsData Object]("PdfSignStampOptionsDataObject") ##
-|---|---
 
 Provides options to put Stamp Signature on Pdf Documents Pages.
 
 Example PdfSignStampOptionsData object.
 
-```html 
+```javascript
 {
   "outerLines": [
     {
@@ -2933,7 +2769,7 @@ Example PdfSignStampOptionsData object.
   },
   "optionsType": "PdfSignStampOptionsData"
 }
- ```
+```
 
  PdfSignStampOptionsData Object Fields (Click here to expand)
 
@@ -2965,20 +2801,14 @@ Example PdfSignStampOptionsData object.
 |InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles. **.**
 |OptionsType|string|The class name of options object, should always contains value "PdfSignStampOptionsData". This property is set automatically when using SDK classes.
 
+## [SlidesSignStampOptionsData Object]("SlidesSignStampOptionsDataObject") 
 
-
-
-
-
-
-## [SlidesSignStampOptionsData Object]("SlidesSignStampOptionsDataObject") ##
-|---|---
 
 Provides options to put Stamp Signature on Slides Documents Pages.
 
 Example SlidesSignStampOptionsData object
 
-```html 
+```javascript
 {
   "outerLines": [
     {
@@ -3095,7 +2925,7 @@ Example SlidesSignStampOptionsData object
   },
   "optionsType": "SlidesSignStampOptionsData"
 }
- ```
+```
 
  ImagesSignStampOptionsData Object Fields (Click here to expand)
 
@@ -3127,20 +2957,14 @@ Example SlidesSignStampOptionsData object
 |InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles. **.**
 |OptionsType|string|The class name of options object, should always contains value "SlidesSignStampOptionsData". This property is set automatically when using SDK classes.
 
+## [WordsSignStampOptionsData Object]("WordsSignStampOptionsDataObject") 
 
-
-
-
-
-
-## [WordsSignStampOptionsData Object]("WordsSignStampOptionsDataObject") ##
-|---|---
 
 Provides options to put Stamp Signature on Words Documents Pages.
 
 Example WordsSignStampOptionsData object
 
-```html 
+```javascript
 {
   "outerLines": [
     {
@@ -3255,7 +3079,7 @@ Example WordsSignStampOptionsData object
   },
   "optionsType": "WordsSignStampOptionsData"
 }
- ```
+```
 
  ImagesSignStampOptionsData Object Fields (Click here to expand)
 
@@ -3286,12 +3110,6 @@ Example WordsSignStampOptionsData object
 |OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles. **.**
 |InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles. **.**
 |OptionsType|string|The class name of options object, should always contains value "WordsSignStampOptionsData". This property is set automatically when using SDK classes.
-
-
-
-
-
- 
 
 **
 **

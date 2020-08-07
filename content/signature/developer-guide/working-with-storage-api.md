@@ -26,16 +26,18 @@ This API intended for checking existence of cloud storage with given name from [
 
 Request
 
-```html
+```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/MyStorage/exist" -H  "accept: application/json" -H  "authorization: Bearer  [Access Token]"
+
 ```
 
 Response
 
-```html
+```javascript
 {
   "exists": true
 }
+
 ```
 
 ## SDKs ##
@@ -90,18 +92,18 @@ Required. Can be passed as query string parameter or as part of the URL
 
 Request
 
-```html
+```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/exist/signaturedocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
- ```
+```
 
 Response
 
-```html
+```javascript
 {
   "exists": true,
   "isFolder": true
 }
- ```
+```
 
 ## SDKs ##
 
@@ -151,17 +153,19 @@ This API intended for getting total and used space of the[ GroupDocs Cloud Stora
 
 Request
 
-```html
+```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/disc?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+
 ```
 
 Response
 
-```html
+```javascript
 {
   "usedSize": 31032368,
   "totalSize": 3221225472
 }
+
 ```
 
 ## SDKs ##
@@ -213,13 +217,13 @@ This API intended for getting the list of file versions, stored in the [GroupDoc
 
 Request
 
-```html
+```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/version/one-page.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
- ```
+```
 
 Response
 
-```html
+```javascript
 {
   "value": [
     {
@@ -233,7 +237,7 @@ Response
     }
   ]
 }
- ```
+```
 
 ## SDKs ##
 

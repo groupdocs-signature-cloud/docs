@@ -8,8 +8,6 @@ description: ""
 keywords: ""
 ---
 
-
-
 ## Major Features ##
 
 GroupDocs.Signature Cloud is a REST API to create, verify and search different type of Signatures objects to documents in the cloud by performing a wide variety of signature options you can wish to put on a document in the cloud, verify document and search Signatures in it. Summary there are five types of supported Signature type you can operate with.

@@ -37,6 +37,7 @@ SearchResult data structure returned by Search API method as output result
     }
   ]
 }
+
 ```
 
 ##### SignResult fields #####

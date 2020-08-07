@@ -16,18 +16,14 @@ Note:  The features listed in this page are supported only in GroupDocs.Signatu
 
 Page contains description for Search Options objects and object properties
 
+## [SearchOptionsCollectionData Object]("SearchOptionsCollectionDataObject") 
 
-
-
-
-## [SearchOptionsCollectionData Object]("SearchOptionsCollectionDataObject") ##
-|---|---
 
 Provides list of options for documents searching.
 
 Example SearchOptionsCollectionData object
 
-```html 
+```javascript
 {
   "items": [
     {
@@ -63,7 +59,7 @@ Example SearchOptionsCollectionData object
      }
   ]
 }
- ```
+```
 
  SearchOptionsCollectionData Object Fields (Click here to expand)
 
@@ -71,20 +67,14 @@ Example SearchOptionsCollectionData object
 |---|---|---
 |Items|List<SearchOptionsData>|List of Search Options records.
 
+## [CellsSearchBarcodeOptionsData Object]("CellsSearchBarcodeOptionsData") 
 
-
-
-
-
-
-## [CellsSearchBarcodeOptionsData Object]("CellsSearchBarcodeOptionsData") ##
-|---|---
 
 Provides options to search Barcode Signature in Cells Documents.
 
 Example CellsSearchBarcodeOptionsData object
 
-```html 
+```javascript
 {
   "BarcodeTypeName": "Code128",
   "Text": "John Smith",
@@ -104,7 +94,7 @@ Example CellsSearchBarcodeOptionsData object
   "SearchAllPages": true,
   "OptionsType": "CellsSearchBarcodeOptionsData"
 }
- ```
+```
 
  CellsSearchBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -118,20 +108,14 @@ Example CellsSearchBarcodeOptionsData object
 |SearchAllPages|bool|The flag to search all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsSearchBarcodeOptionsData". This property is set automatically when using SDK classes.
 
+## [ImagesSearchBarcodeOptionsData Object]("ImagesSearchBarcodeOptionsData") 
 
-
-
-
-
-
-## [ImagesSearchBarcodeOptionsData Object]("ImagesSearchBarcodeOptionsData") ##
-|---|---
 
 Provides options to search Barcode Signature in Images Documents.
 
 Example ImagesSearchBarcodeOptionsData object
 
-```html 
+```javascript
 {
   "barcodeTypeName": "Code39Standard",
   "text": "123456789012",
@@ -151,7 +135,7 @@ Example ImagesSearchBarcodeOptionsData object
   "searchAllPages": true,
   "optionsType": "ImagesSearchBarcodeOptionsData"
 }
- ```
+```
 
  ImagesSearchBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -165,19 +149,13 @@ Example ImagesSearchBarcodeOptionsData object
 |SearchAllPages|bool|The flag to search all pages in document
 |OptionsType|string|The class name of options object, should always contains value "ImagesSearchBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-
-
-
-
- 
-
 ##  ##
 
 Provides options to search Barcode Signature in Pdf Documents.
 
 Example PdfSearchBarcodeOptionsData object
 
-```html 
+```javascript
 {
   "BarcodeTypeName": "Code128",
   "Text": "John Smith",
@@ -197,7 +175,7 @@ Example PdfSearchBarcodeOptionsData object
   "SearchAllPages": true,
   "OptionsType": "PdfSearchBarcodeOptionsData"
 }
- ```
+```
 
  PdfSearchBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -211,20 +189,14 @@ Example PdfSearchBarcodeOptionsData object
 |SearchAllPages|bool|The flag to search all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfSearchBarcodeOptionsData". This property is set automatically when using SDK classes.
 
+## [SlidesSearchBarcodeOptionsData Object]("SlidesVerifyTextOptionsDataObject") 
 
-
-
-
-
-
-## [SlidesSearchBarcodeOptionsData Object]("SlidesVerifyTextOptionsDataObject") ##
-|---|---
 
 Provides options to search Barcode Signature in Slides Documents.
 
 Example SlidesSearchBarcodeOptionsData object
 
-```html 
+```javascript
 {
   "BarcodeTypeName": "Code128",
   "Text": "John Smith",
@@ -244,7 +216,7 @@ Example SlidesSearchBarcodeOptionsData object
   "SearchAllPages": true,
   "OptionsType": "SlidesSearchBarcodeOptionsData"
 }
- ```
+```
 
  SlidesSearchBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -258,20 +230,14 @@ Example SlidesSearchBarcodeOptionsData object
 |SearchAllPages|bool|The flag to search all pages in document
 |OptionsType|string|The class name of options object, should always contains value "SlidesSearchBarcodeOptionsData". This property is set automatically when using SDK classes.
 
+## [WordsSearchBarcodeOptionsData Object]("WordsSearchBarcodeOptionsDataObject") 
 
-
-
-
-
-
-## [WordsSearchBarcodeOptionsData Object]("WordsSearchBarcodeOptionsDataObject") ##
-|---|---
 
 Provides optionsto search Barcode Signature in Words Documents.
 
 Example WordsSearchBarcodeOptionsData object
 
-```html 
+```javascript
 {
   "BarcodeTypeName": "Code128",
   "Text": "John Smith",
@@ -291,7 +257,7 @@ Example WordsSearchBarcodeOptionsData object
   "SearchAllPages": true,
   "OptionsType": "WordsSearchBarcodeOptionsData"
 }
- ```
+```
 
  WordsSearchBarcodeOptionsData Object Fields (Click here to expand)
 
@@ -305,26 +271,20 @@ Example WordsSearchBarcodeOptionsData object
 |SearchAllPages|bool|The flag to search all pages in document
 |OptionsType|string|The class name of options object, should always contains value "WordsSearchBarcodeOptionsData". This property is set automatically when using SDK classes.
 
+## [CellsSearchDigitalOptionsData Object]("CellsSearchDigitalOptionsDataObject") 
 
-
-
-
-
-
-## [CellsSearchDigitalOptionsData Object]("CellsSearchDigitalOptionsDataObject") ##
-|---|---
 
 Provides options to search Digital Signature in Cells Documents.
 
 Example CellsSearchDigitalOptionsData object
 
-```html 
+```javascript
 {
   "DocumentPageNumber": 1,
   "SearchAllPages": true,
   "OptionsType": "CellsSearchDigitalOptionsData"
 }
- ```
+```
 
  CellsSearchDigitalOptionsData Object Fields (Click here to expand)
 
@@ -334,26 +294,20 @@ Example CellsSearchDigitalOptionsData object
 |SearchAllPages|bool|The flag to search for Signatures entire all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsSearchDigitalOptionsData". This property is set automatically when using SDK classes.
 
+## [PdfSearchDigitalOptionsData Object]("PdfSearchDigitalOptionsDataObject") 
 
-
-
-
-
-
-## [PdfSearchDigitalOptionsData Object]("PdfSearchDigitalOptionsDataObject") ##
-|---|---
 
 Provides options to search Digital Signature in Pdf Documents.
 
 Example PdfSearchDigitalOptionsData object
 
-```html 
+```javascript
 {
   "DocumentPageNumber": 1,
   "SearchAllPages": true,
   "OptionsType": "PdfSearchDigitalOptionsData"
 }
- ```
+```
 
  PdfSearchDigitalOptionsData Object Fields (Click here to expand)
 
@@ -363,26 +317,20 @@ Example PdfSearchDigitalOptionsData object
 |SearchAllPages|bool|The flag to search for Signatures entire all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfSearchDigitalOptionsData". This property is set automatically when using SDK classes.
 
+## [WordsSearchDigitalOptionsData Object]("WordsSearchDigitalOptionsDataObject") 
 
-
-
-
-
-
-## [WordsSearchDigitalOptionsData Object]("WordsSearchDigitalOptionsDataObject") ##
-|---|---
 
 Provides options to search Digital Signature in Words Documents.
 
 Example WordsSearchDigitalOptionsData object
 
-```html 
+```javascript
 {
   "DocumentPageNumber": 1,
   "SearchAllPages": true,
   "OptionsType": "WordsSearchDigitalOptionsData"
 }
- ```
+```
 
  WordsSearchDigitalOptionsData Object Fields (Click here to expand)
 
@@ -392,20 +340,14 @@ Example WordsSearchDigitalOptionsData object
 |SearchAllPages|bool|The flag to search for Signatures entire all pages in document
 |OptionsType|string|The class name of options object, should always contains value "WordsSearchDigitalOptionsData". This property is set automatically when using SDK classes.
 
+## [CellsSearchQRCodeOptionsData Object]("CellsSearchQRCodeOptionsDataObject") 
 
-
-
-
-
-
-## [CellsSearchQRCodeOptionsData Object]("CellsSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QRCodeSignature in Cells Documents.
 
 Example CellsSearchQRCodeOptionsData object
 
-```html 
+```javascript
 {
   "QRCodeTypeName": "QR",
   "Text": "John Smith",
@@ -425,7 +367,7 @@ Example CellsSearchQRCodeOptionsData object
   "SearchAllPages": true,
   "OptionsType": "CellsSearchQRCodeOptionsData"
 }
- ```
+```
 
  CellsSearchQRCodeOptionsData Object Fields (Click here to expand)
 
@@ -439,20 +381,14 @@ Example CellsSearchQRCodeOptionsData object
 |SearchAllPages|bool|The flag to search Signatures entire all pages in Document.
 |OptionsType|string|The class name of options object, should always contains value "CellsSearchQRCodeOptionsData". This property is set automatically when using SDK classes.
 
+## [ImagesSearchQRCodeOptionsData Object]("ImagesSearchQRCodeOptionsDataObject") 
 
-
-
-
-
-
-## [ImagesSearchQRCodeOptionsData Object]("ImagesSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QRCodeSignature in Images Documents.
 
 Example ImagesSearchQRCodeOptionsData object
 
-```html 
+```javascript
 {
   "qrCodeTypeName": "Aztec",
   "text": "John Smith",
@@ -472,7 +408,7 @@ Example ImagesSearchQRCodeOptionsData object
   "searchAllPages": true,
   "optionsType": "ImagesSearchQRCodeOptionsData"
 }
- ```
+```
 
  ImagesSearchQRCodeOptionsData Object Fields (Click here to expand)
 
@@ -486,20 +422,14 @@ Example ImagesSearchQRCodeOptionsData object
 |SearchAllPages|bool|The flag to search Signatures entire all pages in Document.
 |OptionsType|string|The class name of options object, should always contains value "ImagesSearchQRCodeOptionsData". This property is set automatically when using SDK classes.
 
+## [PdfSearchQRCodeOptionsData Object]("PdfSearchQRCodeOptionsDataObject") 
 
-
-
-
-
-
-## [PdfSearchQRCodeOptionsData Object]("PdfSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QRCode Signature in Pdf Documents.
 
 Example PdfSearchQRCodeOptionsData object
 
-```html 
+```javascript
 {
   "QRCodeTypeName": "QR",
   "Text": "John Smith",
@@ -519,7 +449,7 @@ Example PdfSearchQRCodeOptionsData object
   "SearchAllPages": true,
   "OptionsType": "PdfSearchQRCodeOptionsData"
 }
- ```
+```
 
  PdfSearchQRCodeOptionsData Object Fields (Click here to expand)
 
@@ -533,20 +463,14 @@ Example PdfSearchQRCodeOptionsData object
 |SearchAllPages|bool|The flag to search Signatures entire all pages in Document.
 |OptionsType|string|The class name of options object, should always contains value "PdfSearchQRCodeOptionsData". This property is set automatically when using SDK classes.
 
+## [SlidesSearchQRCodeOptionsData Object]("SlidesSearchQRCodeOptionsDataObject") 
 
-
-
-
-
-
-## [SlidesSearchQRCodeOptionsData Object]("SlidesSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QRCodeSignature in Slides Documents.
 
 Example SlidesSearchQRCodeOptionsData object
 
-```html 
+```javascript
 {
   "QRCodeTypeName": "QR",
   "Text": "John Smith",
@@ -566,7 +490,7 @@ Example SlidesSearchQRCodeOptionsData object
   "SearchAllPages": true,
   "OptionsType": "SlidesSearchQRCodeOptionsData"
 }
- ```
+```
 
  SlidesSearchQRCodeOptionsData Object Fields (Click here to expand)
 
@@ -580,20 +504,14 @@ Example SlidesSearchQRCodeOptionsData object
 |SearchAllPages|bool|The flag to search Signatures entire all pages in Document.
 |OptionsType|string|The class name of options object, should always contains value "SlidesSearchQRCodeOptionsData". This property is set automatically when using SDK classes.
 
+## [WordsSearchQRCodeOptionsData Object]("WordsSearchQRCodeOptionsDataObject") 
 
-
-
-
-
-
-## [WordsSearchQRCodeOptionsData Object]("WordsSearchQRCodeOptionsDataObject") ##
-|---|---
 
 Provides options to search QR-Code Signature in Words Documents.
 
 Example WordsSearchQRCodeOptionsData object
 
-```html 
+```javascript
 
 {
   "QRCodeTypeName": "QR",
@@ -615,13 +533,7 @@ Example WordsSearchQRCodeOptionsData object
   "OptionsType": "WordsSearchQRCodeOptionsData"
 }
 
- ```
-
- 
-
- 
-
-
+```
 
  WordsSearchQRCodeOptionsData Object Fields (Click here to expand)
 
@@ -634,8 +546,4 @@ Example WordsSearchQRCodeOptionsData object
 |PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
 |SearchAllPages|bool|The flag to search Signatures entire all pages in Document.
 |OptionsType|string|The class name of options object, should always contains value "WordsSearchQRCodeOptionsData". This property is set automatically when using SDK classes.
-
-
-
-
 

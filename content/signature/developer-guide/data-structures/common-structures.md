@@ -22,7 +22,7 @@ Example **SignatureType** object
 {
  "SignatureType": "Text"
 }
- ```
+```
 
 |Name|Description
 |---|---
@@ -53,6 +53,7 @@ Example **PagesSetup** object
     ]
   }
 }
+
 ```
 
 PagesSetup Object Fields
@@ -79,7 +80,7 @@ Example of **Padding** object
     "Right": 5,
     "Bottom": 5
 }
- ```
+```
 
  Padding Object Fields
 
@@ -105,6 +106,7 @@ Example SignatureFont object
     "Italic": false,
     "Underline": false
 }
+
 ```
 
 SignatureFont Object Fields
@@ -128,6 +130,7 @@ Example Color object
     "Web": "Transparent",
     "Alpha": 0
 }
+
 ```
 
 Color Object Fields
@@ -147,6 +150,7 @@ Example MeasureType object
 {
  "MeasureType": "Pixels"
 }
+
 ```
 
 MeasureType Enumeration values
@@ -167,6 +171,7 @@ Example HorizontalAlignment object.
 {
  "HorizontalAlignment": "Left"
 }
+
 ```
 
 HorizontalAlignment Object Fields
@@ -189,6 +194,7 @@ Example VerticalAlignment object.
 {
  "VerticalAlignment": "Top"
 }
+
 ```
 
 VerticalAlignment Object Fields
@@ -211,6 +217,7 @@ Example TextHorizontalAlignment object.
 {
   "TextHorizontalAlignment": "Left"
 }
+
 ```
 
 TextHorizontalAlignment Object Fields
@@ -231,6 +238,7 @@ Example TextVerticalAlignment object.
 {
  "TextVerticalAlignment": "Top"
 }
+
 ```
 
 TextVerticalAlignment Object Fields
@@ -251,6 +259,7 @@ Example StretchMode object.
 {
  "Stretch": "PageHeight"
 }
+
 ```
 
 StretchMode Object Fields
@@ -272,6 +281,7 @@ Example CellsTextSignatureImplementation object.
 {
  "SignatureImplementation": "TextAsImage"
 }
+
 ```
 
 CellsTextSignatureImplementation Object Fields
@@ -291,6 +301,7 @@ Example DashStyle object.
 {
  "BorderDashStyle": "Solid"
 }
+
 ```
 
 DashStyleData Object Fields
@@ -316,6 +327,7 @@ Example StampBackgroundCropType object.
 {
  "BackgroundColorCropType": "InnerArea"
 }
+
 ```
 
 StampBackgroundCropType Object Fields
@@ -337,6 +349,7 @@ Example StampTextRepeatType object.
 {
  "TextRepeatType": "FullTextRepeat"
 }
+
 ```
 
 StampTextRepeatType Object Fields
@@ -361,6 +374,7 @@ Example BorderLine object
 "color": {
   "Web": "DarkOrange"
 }
+
 ```
 
 BorderLine Object Fields
@@ -415,6 +429,7 @@ Example StampLine object
     },
     "visible": true
 }
+
 ```
 
 StampLine Object Fields
@@ -442,6 +457,7 @@ Example DigitalSignatureType object
 {
   "SignatureType": "CryptoApi"
 }
+
 ```
 
 DigitalSignatureTypeData Object Fields
@@ -462,6 +478,7 @@ Example TextMatchType object
 {
   "MatchType": "Contains"
 }
+
 ```
 
 TextMatchType Object Fields
@@ -483,6 +500,7 @@ Example CodeTextAlignment object
 {
   "CodeTextAlignment": "Above"
 }
+
 ```
 
 CodeTextAlignment Object Fields
@@ -509,6 +527,7 @@ Example LinearGradientBrush object:
  "angle": 0.0,
  "brushType": "LinearGradientBrush"
 }
+
 ```
 
 LinearGradientBrush Object Fields
@@ -529,6 +548,7 @@ Example RadialGradientBrush object:
  "outerColor": {"web": "DarkBlue"},
  "brushType": "RadialGradientBrush"
 }
+
 ```
 
 RadialGradientBrush Object Fields
@@ -547,6 +567,7 @@ Example SolidBrush object:
  "color": {"web": "DarkBlue"},
  "brushType": "SolidBrush"
 }
+
 ```
 
 SolidBrush Object Fields
@@ -564,6 +585,7 @@ Example TextureBrush object:
  "imageGuid": "images\signature_01.jpg",
  "brushType": "TextureBrush"
 }
+
 ```
 
 TextureBrush Object Fields

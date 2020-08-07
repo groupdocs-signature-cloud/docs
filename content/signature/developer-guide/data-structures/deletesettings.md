@@ -24,6 +24,7 @@ DeleteSettings data structure used as input parameters of Delete API method.
     }
   ]
 }
+
 ```
 
 ##### UpdateSettings fields #####

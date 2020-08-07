@@ -12,11 +12,6 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
 # Get Document Information #
 
 This API retrieves document information. It returns an object that contains information about file format, document pages and file size.
@@ -27,26 +22,19 @@ The following GroupDocs.Signature Cloud REST API resource has been used to get 
 
 ## cURL REST Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/document.docx/document/info" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer _0zqJ6w3enMdpEw5C6ZKm3lgYvHell1lHdx3vztekvBpCbZGqMvMplrKNrsVXih9Xe6738GSej2hb0BnwKVVz-ANEOnW0bGqjeiJcEySo2Y9-9VZ1K_rs_p4zZcsMoGNuDkL9G4rowGX9Wd1frChwRXzsJCpJUs9G5fGK-0kochaFTVdMgoOHU8JjUOQ5wiu-_ZQSbR0bMKRamxEyc_P_gv9NU7LTJQTCrP1SIJwem1WTX7GaTr8JRUYE0zsXH2vHUkJ1rNh-1RPblqE6wwrfxkklTCGxAWTxvoaSG-Ax-h2Zl9nZkBCAjS48zzz2kqIWS-K5WUmGPP9hAWQL00_deMB0Qi7xqvf2MWoJ831mFnyse-ZQ80fAqPyFBdYpS-xVFC0Uuc8rVHehydCxD0_oIJWkCU_GuDJpNMv6q4IpM-1RzFn"
  
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "fileName": "document.docx",
   "extension": ".docx",
@@ -68,13 +56,8 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document.docx/document/info" \
     ]
   }
 }
- 
- ```
 
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -82,63 +65,21 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information ###
 
-
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_DocumentInfo_File.cs >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_DocumentInfo_File.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_DocumentInfo_File.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_DocumentInfo_File.rb >}}
-
-
-
-
-
-
-
-
 
 # Get Document Information from provided URL #
 
@@ -150,26 +91,19 @@ The following GroupDocs.Signature Cloud REST API resource has been used to get 
 
 ## cURL REST Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/document/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "authorization: Bearer _0zqJ6w3enMdpEw5C6ZKm3lgYvHell1lHdx3vztekvBpCbZGqMvMplrKNrsVXih9Xe6738GSej2hb0BnwKVVz-ANEOnW0bGqjeiJcEySo2Y9-9VZ1K_rs_p4zZcsMoGNuDkL9G4rowGX9Wd1frChwRXzsJCpJUs9G5fGK-0kochaFTVdMgoOHU8JjUOQ5wiu-_ZQSbR0bMKRamxEyc_P_gv9NU7LTJQTCrP1SIJwem1WTX7GaTr8JRUYE0zsXH2vHUkJ1rNh-1RPblqE6wwrfxkklTCGxAWTxvoaSG-Ax-h2Zl9nZkBCAjS48zzz2kqIWS-K5WUmGPP9hAWQL00_deMB0Qi7xqvf2MWoJ831mFnyse-ZQ80fAqPyFBdYpS-xVFC0Uuc8rVHehydCxD0_oIJWkCU_GuDJpNMv6q4IpM-1RzFn"
  
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "fileName": "document.docx",
   "extension": ".docx",
@@ -191,13 +125,8 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document/info?url#https%3a%2f%
     ]
   }
 }
- 
- ```
 
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -205,59 +134,19 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information from Provided URL ###
 
-
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_DocumentInfo_URL.cs >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_DocumentInfo_URL.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_DocumentInfo_URL.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_DocumentInfo_URL.rb >}}
-
-
-
-
-
-
 

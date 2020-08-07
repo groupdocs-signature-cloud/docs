@@ -20,13 +20,13 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 Request
 
-```html
+```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/qrcodes" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
- ```
+```
 
  Response
 
-```html
+```javascript
 {
   "qrCodeTypes": [
     {
@@ -46,7 +46,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/signature/qrcodes" -H  "accept: ap
     }
   ]
 }
- ```
+```
 
 ## SDKs ##
 

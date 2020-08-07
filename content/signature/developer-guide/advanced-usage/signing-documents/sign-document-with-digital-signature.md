@@ -33,13 +33,13 @@ There are steps that usage of GroupDocs.Signature Cloud consists of:
 
 For storage operations, like uploading or downloading documents, please refer to the corresponding articles of this manual.
 
-[Swagger UI](https://apireference.groupdocs.cloud/signature/) lets you call this REST API directly from the browser. 
+[Swagger UI](https://apireference.groupdocs.cloud/signature/) lets you call this REST API directly from the browser.
 
 ## cURL REST Example ##
 
  Request
 
-```html
+```javascript
 * First get JSON Web Token
 * Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
@@ -47,7 +47,7 @@ curl -v "https://api.groupdocs.cloud/connect/token" \
 -d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -H "Accept: application/json"
-  
+
 * cURL example to get document information
 curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 -X POST \
@@ -76,11 +76,11 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
   }
 }"
 
- ```
+```
 
  Response
 
-```html
+```javascript
 {
   "fileInfo": {
     "filePath": "signaturedocs/signedDigital_sample2.pdf",
@@ -125,7 +125,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
   "failed": []
 }
 
- ```
+```
 
 ## SDKs ##
 
@@ -140,7 +140,7 @@ The API is completely independent of your operating system, database system or d
 * For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
 string MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 string MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 var configuration # new Configuration(MyAppSid, MyAppKey);
 var apiInstance # new SignApi(configuration);
 * Sign options
@@ -187,7 +187,7 @@ var request # new CreateSignaturesRequest(signSettings);
 * Call api method with request.
 var response # apiInstance.CreateSignatures(request);
 
- ```
+```
 
 Java
 
@@ -196,27 +196,27 @@ Java
 * For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
 String MyAppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 String MyAppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 Configuration configuration # new Configuration(MyAppSid, MyAppKey);
 SignApi apiInstance # new SignApi(configuration);
- 
+
 FileInfo fileInfo # new FileInfo();
 fileInfo.setFilePath("Signaturedocs\\sample2.pdf");
 fileInfo.setPassword(null);
 fileInfo.setVersionId(null);
 fileInfo.setStorageName(Constants.MYStorage);
- 
+
 InfoSettings infoSettings # new InfoSettings();
 infoSettings.setFileInfo(fileInfo);
- 
+
 SignDigitalOptions options # new SignDigitalOptions();
 options.setSignatureType(SignatureTypeEnum.DIGITAL);
- 
+
 * set signature properties
 options.setImageFilePath("Signaturedocs\\signature.jpg");
 options.setCertificateFilePath("Signaturedocs\\temp.pfx");
 options.setPassword("1234567890");
- 
+
 * set signature position on a page
 options.setLeft(100);
 options.setTop(100);
@@ -227,16 +227,16 @@ options.setSizeMeasureType(SizeMeasureTypeEnum.PIXELS);
 options.setRotationAngle(0);
 options.setHorizontalAlignment(HorizontalAlignmentEnum.NONE);
 options.setVerticalAlignment(VerticalAlignmentEnum.NONE);
- 
+
 Padding padding # new Padding();
 padding.setAll(5);
 options.setMargin(padding);
 options.setMarginMeasureType(MarginMeasureTypeEnum.PIXELS);
- 
+
 *set pages for signing (each of these page settings could be used singly)
 options.setPage(1);
 options.setAllPages(true);
- 
+
 PagesSetup pagesSetup # new PagesSetup();
 pagesSetup.setEvenPages(false);
 pagesSetup.setFirstPage(true);
@@ -244,56 +244,56 @@ pagesSetup.setLastPage(false);
 pagesSetup.setOddPages(false);
 pagesSetup.addPageNumbersItem(1);
 options.setPagesSetup(pagesSetup);
- 
+
 SaveOptions saveOptions # new SaveOptions();
 saveOptions.setOutputFilePath("Signaturedocs\\signedDigital_sample2.pdf");
- 
+
 SignSettings signSettings # new SignSettings();
 signSettings.setFileInfo(fileInfo);
 signSettings.addOptionsItem(options);
 signSettings.setSaveOptions(saveOptions);
- 
+
 CreateSignaturesRequest request # new CreateSignaturesRequest(signSettings);
- 
+
 SignResult response # apiInstance.createSignatures(request);
 
- ```
-
+```
 
  PHP
-```php 
+
+```php
 
 * For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-php-samples
 use GroupDocs\Signature\Model;
 use GroupDocs\Signature\Model\Requests;
- 
+
 $AppSid # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 $AppKey # ""; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 $configuration # new GroupDocs\Signature\Configuration();
 $configuration->setAppSid($AppSid);
 $configuration->setAppKey($AppKey);
- 
+
 $apiInstance # new GroupDocs\Signature\SignApi($configuration);
- 
+
 $fileInfo # new GroupDocs\Signature\Model\FileInfo();
 $fileInfo->setFilePath("signaturedocs\one-page.docx");
 $fileInfo->setPassword("");
- 
+
 $settings # new GroupDocs\Signature\Model\SignSettings();
 $settings->setFileInfo($fileInfo);
- 
+
 $saveOptions # new GroupDocs\Signature\Model\SaveOptions();
 $saveOptions->setOutputFilePath("signaturedocs\signedDigitalOne_page.docx");
 $settings->setSaveOptions($saveOptions);
- 
+
 $options # new GroupDocs\Signature\Model\SignDigitalOptions();
 $options->setPage(1);
-$options->setAllPages(false);        
-$options->setSignatureType(GroupDocs\Signature\Model\OptionsBase::SIGNATURE_TYPE_DIGITAL);        
+$options->setAllPages(false);
+$options->setSignatureType(GroupDocs\Signature\Model\OptionsBase::SIGNATURE_TYPE_DIGITAL);
 $options->setImageFilePath("signaturedocs\\signature.jpg");
 $options->setCertificateFilePath("signaturedocs\\temp.pfx");
-$options->setPassword("1234567890");        
+$options->setPassword("1234567890");
 $options->setLeft(100);
 $options->setTop(100);
 $options->setWidth(300);
@@ -303,12 +303,12 @@ $options->setSizeMeasureType(GroupDocs\Signature\Model\SignTextOptions::SIZE_MEA
 $options->setRotationAngle(0);
 $options->setHorizontalAlignment(GroupDocs\Signature\Model\SignTextOptions::HORIZONTAL_ALIGNMENT_NONE);
 $options->setVerticalAlignment(GroupDocs\Signature\Model\SignTextOptions::VERTICAL_ALIGNMENT_NONE);
- 
+
 $padding # new GroupDocs\Signature\Model\Padding();
 $padding->setAll(5);
 $options->setMargin($padding);
 $options->setMarginMeasureType(GroupDocs\Signature\Model\SignTextOptions::MARGIN_MEASURE_TYPE_PIXELS);
- 
+
 $pagesSetup # new GroupDocs\Signature\Model\PagesSetup();
 $pagesSetup->setEvenPages(false);
 $pagesSetup->setFirstPage(true);
@@ -316,83 +316,82 @@ $pagesSetup->setLastPage(false);
 $pagesSetup->setOddPages(false);
 $pagesSetup->setPageNumbers([1]);
 $options->setPagesSetup($pagesSetup);
- 
+
 $settings->setOptions([$options]);
- 
+
 $request # new GroupDocs\Signature\Model\Requests\createSignaturesRequest($settings);
 $response # $apiInstance->createSignatures($request);
 
- ```
-
+```
 
  Node
-```html 
+
+```javascript
 
 * For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-node-samples
 global.signature_cloud # require("groupdocs-signature-cloud");
- 
+
 global.appSid # "XXXX-XXXX-XXXX-XXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 global.appKey # "XXXXXXXXXXXXXXXX"; * Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 global.signApi # signature_cloud.SignApi.fromKeys(appSid, appKey);
- 
+
 let fileInfo # new signature_cloud.FileInfo();
 fileInfo.filePath # "signaturedocs/sample2.pdf";
- 
+
 let opts # new signature_cloud.SignDigitalOptions();
 opts.signatureType # signature_cloud.OptionsBase.SignatureTypeEnum.Digital;
 opts.imageFilePath # "signaturedocs/signature.jpg";
 opts.certificateFilePath # "signaturedocs/temp.pfx";
 opts.password # "1234567890";
- 
+
 let settings # new signature_cloud.SignSettings();
 settings.fileInfo # fileInfo;
 settings.options # [opts];
- 
+
 settings.saveOptions # new signature_cloud.SaveOptions();
 settings.saveOptions.outputFilePath # "signaturedocs/signedDigital_sample2.pdf";
- 
+
 let request # new signature_cloud.CreateSignaturesRequest(settings);
 let response # await signApi.createSignatures(request);
 
- ```
-
+```
 
  Python
-```python 
+
+```python
 
 # For complete examples and data files, please go to https://github.com/groupdocs-signature_cloud-cloud/groupdocs-signature_cloud-cloud-python-samples
 from groupdocs_signature_cloud import *
 import groupdocs_signature_cloud
- 
+
 app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 api # groupdocs_signature_cloud.SignApi.from_keys(app_sid, app_key)
- 
+
 fileInfo # FileInfo()
 fileInfo.file_path # "signaturedocs\\one-page.docx"
- 
-opts # SignDigitalOptions()        
+
+opts # SignDigitalOptions()
 opts.signature_type # 'Digital'
 opts.image_file_path # "signaturedocs\\signature.jpg"
 opts.certificate_file_path # "signaturedocs\\temp.pfx"
 opts.password # '1234567890'
- 
+
 # set signature position on a page
 opts.left # 100
 opts.top # 100
 opts.width # 200
 opts.height # 100
 opts.location_measure_type # "Pixels"
-opts.size_measure_type # "Pixels"       
+opts.size_measure_type # "Pixels"
 opts.rotation_angle # 0
 opts.horizontal_alignment # "None"
 opts.vertical_alignment # "None"
 opts.margin # Padding()
 opts.margin.all # 5
 opts.margin_measure_type # "Pixels"
-
 
 opts.page # 1
 
@@ -405,7 +404,7 @@ settings.file_info # fileInfo
 request # CreateSignaturesRequest(settings)
 response # api.create_signatures(request)
 
- ```
+```
 
  Ruby
 
@@ -416,7 +415,7 @@ require 'groupdocs_signature_cloud'
 
 $app_sid # "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
 $app_key # "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-  
+
 api # GroupDocsSignatureCloud::SignApi.from_keys($app_sid, $app_key)
 
 $info # GroupDocsSignatureCloud::FileInfo.new()
@@ -440,4 +439,4 @@ $request # GroupDocsSignatureCloud::CreateSignaturesRequest.new($settings)
 # Executing an API.
 $response # api.create_signatures($request)
 
- ```
+```

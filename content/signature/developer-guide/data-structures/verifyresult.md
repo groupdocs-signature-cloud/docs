@@ -21,6 +21,7 @@ VerifyResult data structure returned by Verify API method  as output result
   "Size" : 12345,
   "IsSuccess": "true"
 }
+
 ```
 
 ##### SignResult fields #####

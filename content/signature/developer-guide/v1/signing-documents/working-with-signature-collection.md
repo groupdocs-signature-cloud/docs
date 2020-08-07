@@ -12,15 +12,6 @@ keywords: ""
 Note:  The features listed on this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
-
-
-
-
 # Introduction #
 
 GroupDocs.Signature Cloud REST API supports to sign a document with multiple signatures. For example, you can add Text and Barcode Signature to a document at same time. To put list of signatures on document (Cells, Images, PDF, Slides or Words) Signature API provides an object **[SignOptionsCollectionData]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}})** that can contain one or more signature options. Please, use signature options which appropriate for current document format.
@@ -37,39 +28,27 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl --request POST \
 --url http://api.groupdocs.cloud/v1/signature/01_pages.pdf/collection?folder#storage \
 --header 'authorization: [Access Token]' \
 --header 'content-type: application/json' \
 --data '{ "items": [ { "barcodeTypeName": "Code39Standard", "borderVisiblity": true, "borderDashStyle": "Dash", "borderWeight": 12.0, "opacity": 0.8, "text": "123456789012", "left": 2, "top": 100, "width": 200, "height": 100, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "stretch": "None", "rotationAngle": 0, "horizontalAlignment": "Default", "verticalAlignment": "Default", "margin": { "all": 5, "left": 5, "top": 5, "right": 5, "bottom": 5 }, "marginMeasureType": "Pixels", "signAllPages": false, "font": { "fontFamily": "Times New Roman", "fontSize": 14.0, "bold": false, "italic": false, "underline": false }, "foreColor": { "Web": "DarkOrange" }, "borderColor": { "Web": "DarkOrange" }, "backgroundColor": { "Web": "BlueViolet" }, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "OptionsType": "PdfSignBarcodeOptionsData" }, { "reason": "PdfDigitalReason", "contact": "PdfDigitalContact", "location": "PdfDigitalLocation", "visible": true, "password": "1234567890", "certificateGuid": "certificates\SherlockHolmes.pfx", "imageGuid": "images\signature_01.jpg", "left": 2, "top": 500, "width": 200, "height": 100, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 45, "horizontalAlignment": "Default", "verticalAlignment": "Default", "margin": { "all": 5, "left": 5, "top": 5, "right": 5, "bottom": 5 }, "marginMeasureType": "Pixels", "opacity": 0.9, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "OptionsType": "PdfSignDigitalOptionsData" } ] }'
 
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "fileName": "01_pages.pdf",
   "folder": "Output",
   "code": 200,
   "status": "OK"
 }
- ```
-
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -77,74 +56,25 @@ The API is completely independent of your operating system, database system or d
 
 ### Add Multiple Signatures to Document ###
 
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Collection.cs >}}
 
-
-
-
-
-
-
  PHP
-
-
-
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Collection.php >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Collection.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Collection.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_Collection.rb >}}
-
-
-
-
-
-
- 
 
 # Add Multiple Signatures to Document at Provided URL #
 
@@ -158,39 +88,27 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl --request POST \
 --url http://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
 --header 'authorization: [Access Token]' \
 --header 'content-type: application/json' \
 --data '{ "items": [ { "barcodeTypeName": "Code39Standard", "borderVisiblity": true, "borderDashStyle": "Dash", "borderWeight": 12.0, "opacity": 0.8, "text": "123456789012", "left": 2, "top": 100, "width": 200, "height": 100, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "stretch": "None", "rotationAngle": 0, "horizontalAlignment": "Default", "verticalAlignment": "Default", "margin": { "all": 5, "left": 5, "top": 5, "right": 5, "bottom": 5 }, "marginMeasureType": "Pixels", "signAllPages": false, "font": { "fontFamily": "Times New Roman", "fontSize": 14.0, "bold": false, "italic": false, "underline": false }, "foreColor": { "Web": "DarkOrange" }, "borderColor": { "Web": "DarkOrange" }, "backgroundColor": { "Web": "BlueViolet" }, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "OptionsType": "PdfSignBarcodeOptionsData" }, { "reason": "PdfDigitalReason", "contact": "PdfDigitalContact", "location": "PdfDigitalLocation", "visible": true, "password": "1234567890", "certificateGuid": "certificates\SherlockHolmes.pfx", "imageGuid": "images\signature_01.jpg", "left": 2, "top": 500, "width": 200, "height": 100, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 45, "horizontalAlignment": "Default", "verticalAlignment": "Default", "margin": { "all": 5, "left": 5, "top": 5, "right": 5, "bottom": 5 }, "marginMeasureType": "Pixels", "opacity": 0.9, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "OptionsType": "PdfSignDigitalOptionsData" } ] }'
 
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "fileName": "01_pages.pdf",
   "folder": "Output",
   "code": 200,
   "status": "OK"
 }
- ```
-
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -198,71 +116,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Add Multiple Signatures to Document at Provided URL ###
 
-
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Collection_FromUrl.cs >}}
 
-
-
-
-
-
-
  PHP
-
-
-
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Collection_URL.php >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Collection_FromUrl.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Collection_FromUrl.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_Collection_FromUrl.rb >}}
-
-
-
-
-
 

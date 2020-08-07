@@ -40,6 +40,7 @@ UpdateResult data structure returned by Update API method as output result
   ],
   "failed": []
 }
+
 ```
 
 ##### UpdateResult fields #####

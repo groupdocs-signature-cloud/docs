@@ -8,7 +8,6 @@ description: ""
 keywords: ""
 ---
 
-
 DeleteResult data structure returned by Delete API method as output result
 
 ##### DeleteResult example #####
@@ -41,6 +40,7 @@ DeleteResult data structure returned by Delete API method as output result
   ],
   "failed": []
 }
+
 ```
 
 ##### DeleteResult fields #####

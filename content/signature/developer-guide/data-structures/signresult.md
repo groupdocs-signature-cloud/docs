@@ -39,6 +39,7 @@ SignResult data structure returned by Sign API method  as output result
   ],
   "failed": []
 }
+
 ```
 
 ##### SignResult fields #####

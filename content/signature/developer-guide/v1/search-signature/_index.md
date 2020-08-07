@@ -14,5 +14,3 @@ Note:  The features listed on this page are supported only in GroupDocs.Signatu
 
 ### Search Signature ###
 
-
-

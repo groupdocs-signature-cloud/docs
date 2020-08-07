@@ -8,7 +8,6 @@ description: ""
 keywords: ""
 ---
 
-
 UpdateSettings data structure used as input parameters of Update API method.
 
 ##### UpdateSettings example #####
@@ -30,6 +29,7 @@ UpdateSettings data structure used as input parameters of Update API method.
     }
   ]
 }
+
 ```
 
 ##### UpdateSettings fields #####

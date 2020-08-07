@@ -39,6 +39,7 @@ InfoResult data structure returned by Info API method  as output result
     }
   ]
 }
+
 ```
 
 ##### InfoResult fields #####

@@ -27,7 +27,6 @@ The difference between the V2 version from V1 is a more simplified API with fewe
 |Folder API|Methods for creating, copy, move, delete folders in the cloud storage
 |Storage API|Methods for getting storage information and file information
 
-
 # Major Features #
 
 * This is the first release of a completely new version of the API GroupDocs.Signature.Cloud v2.0
@@ -39,4 +38,3 @@ The difference between the V2 version from V1 is a more simplified API with fewe
 * [GroupDocs Signature Cloud v2.0 API Examples and documentation]({{< ref "signature/_index.md" >}}))
 |---|---
 
- 

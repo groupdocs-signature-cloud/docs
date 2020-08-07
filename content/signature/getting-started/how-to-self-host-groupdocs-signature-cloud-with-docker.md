@@ -7,7 +7,6 @@ description: ""
 keywords: ""
 ---
 
-
 ## Overview ##
 
 [Docker](https://docs.docker.com/get-started/overview/) is an open platform that effectively solves three main tasks development, deployment, and running the applications. With Docker, you can isolate your applications from the infrastructure that simplifies software development and delivery. The main building blocs are images and containers. The image includes everything you need to run the application: code or binaries, runtimes dependencies, file system. The container is an isolated process with additional features that you can interact with. The use of containers to deploy applications is called *containerization*.
@@ -36,7 +35,7 @@ To run GroupDocs.Signature Cloud in Docker type one of the following commands:
 
 **Windows (PowerShell)**
 
-```html
+```javascript
 
 docker run `
     -p 8080:80 `
@@ -46,11 +45,11 @@ docker run `
     --name signature_cloud `
     groupdocs/signature-cloud
 
- ```
+```
 
 **Linux (bash)**
 
-```html
+```javascript
 
 docker run \
     -p 8080:80 \
@@ -60,7 +59,7 @@ docker run \
     --name signature_cloud \
     groupdocs/signature-cloud
 
- ```
+```
 
 The Docker would download GroupDocs.Signature Cloud image from Docker Hub and start a container. While downloading the image the output similar to shown on screenshot would be printed to the console:
 
@@ -78,19 +77,19 @@ When the container and GroupDocs.Signature Cloud started you can check service s
 
 **Windows (PowerShell)**
 
-```html
+```javascript
 
 Invoke-WebRequest -Uri http://localhost:8080/
 
- ```
+```
 
 **Linux (bash)**
 
-```html
+```javascript
 
 curl -i http://localhost:8080/
 
- ```
+```
 
 At the following screenshot, I'm calling [http:~~/~~/localhost:8080/](http://localhost:8080/) in a separate Powershell window and response indicates that service is alive:
 
@@ -110,7 +109,7 @@ We generate our SDKs in different languages so you may check if yours is availab
 
 **Windows (PowerShell)**
 
-```html
+```javascript
 
 docker run `
     -p 8080:80 `
@@ -122,11 +121,11 @@ docker run `
     --name signature_cloud `
     groupdocs/signature-cloud
 
- ```
+```
 
 **Linux (bash)**
 
-```html
+```javascript
 
 docker run \
     -p 8080:80 \
@@ -139,17 +138,17 @@ docker run \
     --name signature_cloud \
     groupdocs/signature-cloud
 
- ```
+```
 
 ### Stop Container ###
 
 To stop the running Docker container, just use Ctrl+C in the same terminal where the container is running. Alternatively, you can stop the container by name.
 
-```html
+```javascript
 
 docker stop signature_cloud
 
- ```
+```
 
 ## Licensing ##
 

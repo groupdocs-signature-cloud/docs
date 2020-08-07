@@ -36,25 +36,25 @@ This page contains release notes for GroupDocs.Signature Cloud 20.7
 
 There is no need to specify DocumentType property in all options of all API methods, the document type will be detected automatically from this version:
 
-```html
+```javascript
 SignOptions, VerifyOptions, SearchOptions, Signature
 "DocumentType": "WordProcessing" * Removed, do not use
- ```
+```
 
 ### Opacity option renamed to Transparency ###
 
 BorderLine, SignBarcodeOptions, SignImageOptions, SignQRCodeOptions, SignDigitalOptions, SignStampOptions classes have been updated by renaming the Opacity property to Transparency with changing value interpretation, so value shell be set from 0.0 - no transparency (default) to 1.0 - transparent:
 
-```html
+```javascript
 BorderLine, SignBarcodeOptions, SignImageOptions, SignQRCodeOptions, SignDigitalOptions, SignStampOptions
 "Transparency": 0.0
- ```
+```
 
 ### Border options replaced with BorderLine class ###
 
 SignOptions, VerifyOptions, SearchOptions and all inherited classes have been updated by removing BorderColor, BorderVisibility, BorderDashStyle, BorderWeight properties and replaced with single property Border, of existing BorderLine type:
 
-```html
+```javascript
 SignOptions, VerifyOptions, SearchOptions
 "Border": {
    "Style": "Dash",
@@ -63,14 +63,14 @@ SignOptions, VerifyOptions, SearchOptions
    "Weight": 12,
    "Visible": true
 }
- ```
+```
 
 ### ImageGuid and CertificateGuid renamed ###
 
 SignImageOptions, SignStampOptions, SignDigitalOptions, TextureBrush classes have been updated by renaming the ImageGuid and CertificateGuid properties into ImageFilePath and CertificateFilePath:
 
-```html
+```javascript
 SignImageOptions, SignStampOptions, SignDigitalOptions, TextureBrush
 "ImageFilePath": "file.jpg",
 "CertificateFilePath": "cert.pfx"
- ```
+```

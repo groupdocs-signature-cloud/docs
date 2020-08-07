@@ -12,15 +12,6 @@ keywords: ""
 Note:  The features listed on this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-
-
-
-
-
-
-
-
-
 # Introduction #
 
 GroupDocs.Signature Cloud REST API supports to verify a signed document. It provides methods to verify QRCode Signature in Documents Pages with different options for page number, text and search criteria by using [doc:signaturecloud.Verification Options Objects) data in request body.
@@ -35,27 +26,20 @@ The following GroupDocs.Signature Cloud REST API resource has been used [to ver
 
 ## cURL Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/Signed_QRCode.pdf/qrcode/verification?Folder#signed" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -d "{"QRCodeTypeName":"QR","MatchType":"Exact","DocumentPageNumber":1,"Text": "1234567890","VerifyAllPages":false,"OptionsType":"PdfVerifyQRCodeOptionsData"}" \
 -H "authorization: Bearer rf1Wyp3-Cz_xukjKqvzF-OMwYvhJcl0rJ6CQ0IgQbZwdSGTKYJziBpGNeDdzGSwwXgsRLCCfPLhHJBKPv8dzqX3tGA8n8SA4tXhLdnGh-hws2gQgmCWEjF0RpzEdJA6jh6tGZyOSAa2GlTrLhuflBwjMB5-dc8JwRmI-ssOiXkO3fSRxnwWuWih24Co8-n8elsun4HxZVMqCzXepAiXBV9UBeUktV_PLclri_lTJEnDzoJRzfRyDigjb2-luODo9aX8DFseboggoCIMKDoyLPSVHnFXgs5EWV2aQ_DgRm_D6UPn2T1Gn7OAIe-T8aA7ypDCoR-wuTJdB8o7T0f2I8K-8FrXCy2Sgb8B5QPpAOcLdiBBqFxRdk8f2c67J-rSbm2WUPWK65pbLa8NGHHdIRKuiI87NmphWuKc39a_zcgEg4MnHSlDeephmStnLS8OayQObNdLQBYAmoeQeVpZRy9t9bcU"
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "result": true,
   "fileName": "Signed_QRCode.pdf",
@@ -63,12 +47,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/Signed_QRCode.pdf/qrcode/verif
   "code": 200,
   "status": "OK"
 }
- ```
-
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -76,76 +55,25 @@ The API is completely independent of your operating system, database system or d
 
 ### Verify QRCode Signature in a Document ###
 
-
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Verify_Signature_QRCode.cs >}}
 
-
-
-
-
-
-
  PHP
-
-
-
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_QRCode_Verify.php >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Verify_Signature_QRCode.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Verify_Signature_QRCode.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_QRCode.rb >}}
-
-
-
-
-
-
-
-
 
 # Verify QRCode Signature in a Document at Provided URL #
 
@@ -157,26 +85,19 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
-
-
-
-
  Request
 
-```html 
+```javascript
 curl -v "https://api-qa.groupdocs.cloud/v1/signature/qrcode/verification?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -d "{"QRCodeTypeName":"QR","MatchType":"Exact","DocumentPageNumber":1,"Text":"12345678","VerifyAllPages":true,"OptionsType":"WordsVerifyQRCodeOptionsData"}" -H "authorization: Bearer ku1wBVYory9t4m9MOW0VuEKbyT4GYUZy8hTXpirhs6ECV_3dQhlbwLHn8ffsX650Syt0hDq2vXZNia70T1NY0jG32h_LUxQoRrVQMvV88P5Y0EbmBinPsmEAuqFHCR2ahhWJqZhidpXU7tP_PHh5IXuZ-cmmW1VUARtj73oE-B4gyD8WEJ1i0CgEM8-Do2843TpCgueqczRgCikeKy8ftSjhgNr2HfYGIc8Fjn152yE3o-wi2VvYwRmEquF28di-zDCxVcZa742ENp9d5GLs1obG8Y-pf-FwQDFcvj-XreWt9U1_dNbTaRiREsrliisAxFAM7qUG1zRZpNISX_kEYC6NqaLlebMIAd5-WHL_PeK2reld-DMURVsniqsgHSxNRnQpmxoJ-YVeQQeN7ZoMBrI4G3zWMeRrUwWR2UmS4jfBlckpfCjkvGZ7ydbzWp3qkLmE3Ns95uf1ccJuvESN9yWkUmg"
- ```
-
-
-
+```
 
  Response
 
-```html 
+```javascript
 {
   "result": false,
   "fileName": "https://www.dropbox.com/s/bzx1xm68zd0c910/PieChart.docx",
@@ -184,12 +105,7 @@ curl -v "https://api-qa.groupdocs.cloud/v1/signature/qrcode/verification?url#htt
   "code": 200,
   "status": "OK"
 }
- ```
-
-
-
-
-
+```
 
 ## SDKs ##
 
@@ -197,72 +113,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Verify QRCode Signature in a Document at Provided URL ###
 
-
-
-
-
  C#
-
-
-
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Verify_Signature_QRCode_URL.cs >}}
 
-
-
-
-
-
-
  PHP
-
-
-
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_QRCode_Verify_URL.php >}}
 
-
-
-
-
-
-
  Java
-
-
-
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Verify_Signature_QRCode_URL.java >}}
 
-
-
-
-
-
-
  Python
-
-
-
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Verify_Signature_QRCode_URL.py >}}
 
-
-
-
-
-
-
  Ruby
 
-
-
-
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_QRCode_URL.rb >}}
-
-
-
-
-
-
 

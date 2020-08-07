@@ -28,17 +28,19 @@ This API allows you to download a file from [GroupDocs Cloud Storage](https://da
 
  Request
 
-```html
+```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/file/one-page.docx?storageName#MyStorage" -H  "accept: multipart/form-data" -H  "authorization: Bearer [Access Token]"
+
 ```
 
  Response
 
-```html
+```javascript
 {
   "Code": 200,
   "Status": "OK"
 }
+
 ```
 
 ## SDKs ##
@@ -91,13 +93,14 @@ This API allows you to upload files to the [GroupDocs Cloud Storage](https://
 
 Request
 
-```html
+```javascript
 curl -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs%2Fone-page2.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+
 ```
 
 Response
 
-```html
+```javascript
 Http status code: 200 (Returns OK and list of errors, which is empty if success.)
 {
   "Uploaded": [
@@ -115,6 +118,7 @@ Http status code: 200 (Returns OK and list of errors, which is empty if success.
     }
   ]
 }
+
 ```
 
 ## SDKs ##
@@ -167,17 +171,19 @@ This API allows you to delete specific file from [GroupDocs Cloud Storage](htt
 
 Request
 
-```html
+```javascript
 curl -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs1%2Fone-page1.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+
 ```
 
 Response
 
-```html
+```javascript
 {
   "Code": 200,
   "Status": "OK"
 }
+
 ```
 
 ## SDKs ##
@@ -232,17 +238,19 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https
 
 Request
 
-```html
+```javascript
 curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/copy/sinaturedocs%2Fone-page1.docx?destPath#sinaturedocs%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+
 ```
 
 Response
 
-```html
+```javascript
 {
   "Code": 200,
   "Status": "OK"
 }
+
 ```
 
 ## SDKs ##
@@ -297,18 +305,19 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https:
 
 Request
 
-```html
+```javascript
 curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/move/sinaturedocs%2Fone-page1.docx?destPath#sinaturedocs%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+
 ```
 
 Response
 
-```html
+```javascript
 {
   "Code": 200,
   "Status": "OK"
 }
- ```
+```
 
 ## SDKs ##
 

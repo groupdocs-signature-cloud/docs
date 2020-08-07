@@ -22,13 +22,14 @@ VerifySettings data structure used as input parameters for Verify API method.
   },
   "Options": [
    {
-           "SignatureType": "Text",  
+           "SignatureType": "Text",
            "Page": 1,
            "Text": "John",
            "MatchType": "Contains"
         }
   ]
  }
+
 ```
 
 ##### VerifySettings fields #####

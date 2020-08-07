@@ -24,7 +24,7 @@ SignSettings data structure used as input parameters for Sign API method
   "Options":
   [
     {
-      "SignatureType": "Barcode",  
+      "SignatureType": "Barcode",
       "Page": 1,
       "Text": "John Smith",
       "BarcodeType": "Code128",
@@ -32,7 +32,7 @@ SignSettings data structure used as input parameters for Sign API method
       "Top": 2
     },
     {
-      "SignatureType": "Image",  
+      "SignatureType": "Image",
       "Page": 1,
       "ImageFilePath": "image1.jpg",
       "Left": 200,
@@ -40,6 +40,7 @@ SignSettings data structure used as input parameters for Sign API method
     }
  ]
  }
+
 ```
 
 ##### SignSettings fields #####
