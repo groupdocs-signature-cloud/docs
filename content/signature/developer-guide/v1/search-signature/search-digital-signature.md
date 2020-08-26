@@ -65,25 +65,27 @@ The API is completely independent of your operating system, database system or d
 
 ### Search Digital Signature in a Document ###
 
-C#
+{{< tabs tabTotal="5" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Search_Signature_Digital.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Digital_Search.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Search_Signature_Digital.java >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Search_Signature_Digital.py >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Search_Signature_Digital.rb >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Search Digital Signature in a Document at Provided URL #
 
@@ -129,23 +131,25 @@ The API is completely independent of your operating system, database system or d
 
 ### Search Digital Signature in a Document at provided URL ###
 
-C#
+{{< tabs tabTotal="5" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Search_Signature_Digital_URL.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Digital_Search_URL.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Search_Signature_Digital_URL.java >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Search_Signature_Digital_URL.py >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Search_Signature_Digital_URL.rb >}}
+
+{{< /tab >}} {{< /tabs >}}
 

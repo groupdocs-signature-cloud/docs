@@ -46,29 +46,31 @@ Our API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud 930234f9ab12e6e3a5b7cfeb98928c9d Signature_CSharp_Storage_Exist.cs >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d752cfd742c8869fa25ef531a9e29236 Signature_Java_Storage_Exist.java >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 4d51ebda15c88dcc9da36b902fffc8a8 Signature_Php_Storage_Exist.php >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 37b171abdcc6961eab45170e66037696 Signature_Ruby_Storage_Exist.rb >}}
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud 39c386004ccdadc059d6cc7124ebb77e Signature_Node_Storage_Exist.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 371ae0feb03d6df33ec242272ccf7112 Signature_Python_Storage_Exist.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Storage object existence API #
 
@@ -111,29 +113,31 @@ Our API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud 930234f9ab12e6e3a5b7cfeb98928c9d Signature_CSharp_Object_Exists.cs >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d752cfd742c8869fa25ef531a9e29236 Signature_Java_Object_Exists.java >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 4d51ebda15c88dcc9da36b902fffc8a8 Signature_Php_Object_Exists.php >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 37b171abdcc6961eab45170e66037696 Signature_Ruby_Object_Exists.rb >}}
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud 39c386004ccdadc059d6cc7124ebb77e Signature_Node_Object_Exists.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 371ae0feb03d6df33ec242272ccf7112 Signature_Python_Object_Exists.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Storage Space Usage API #
 
@@ -174,29 +178,31 @@ Our API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud 930234f9ab12e6e3a5b7cfeb98928c9d Signature_CSharp_Get_Disc_Usage.cs >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d752cfd742c8869fa25ef531a9e29236 Signature_Java_Get_Disc_Usage.java >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 4d51ebda15c88dcc9da36b902fffc8a8 Signature_Php_Get_Disc_Usage.php >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 37b171abdcc6961eab45170e66037696 Signature_Ruby_Get_Disc_Usage.rb >}}
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud 39c386004ccdadc059d6cc7124ebb77e Signature_Node_Get_Disc_Usage.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 371ae0feb03d6df33ec242272ccf7112 Signature_Python_Get_Disc_Usage.py >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Storage File Versions API #
 
@@ -245,26 +251,28 @@ Our API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud 930234f9ab12e6e3a5b7cfeb98928c9d Signature_CSharp_Get_File_Versions.cs >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d752cfd742c8869fa25ef531a9e29236 Signature_Java_Get_File_Versions.java >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 4d51ebda15c88dcc9da36b902fffc8a8 Signature_Php_Get_File_Versions.php >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 37b171abdcc6961eab45170e66037696 Signature_Ruby_Get_File_Versions.rb >}}
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud 39c386004ccdadc059d6cc7124ebb77e Signature_Node_Get_File_Versions.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 371ae0feb03d6df33ec242272ccf7112 Signature_Python_Get_File_Versions.py >}}
+
+{{< /tab >}} {{< /tabs >}}

@@ -56,25 +56,27 @@ The API is completely independent of your operating system, database system or d
 
 ### Add Multiple Signatures to Document ###
 
-C#
+{{< tabs tabTotal="5" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Collection.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Collection.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Collection.java >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Collection.py >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_Collection.rb >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Add Multiple Signatures to Document at Provided URL #
 
@@ -116,23 +118,25 @@ The API is completely independent of your operating system, database system or d
 
 ### Add Multiple Signatures to Document at Provided URL ###
 
-C#
+{{< tabs tabTotal="5" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Collection_FromUrl.cs >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Collection_URL.php >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Collection_FromUrl.java >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Collection_FromUrl.py >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_Collection_FromUrl.rb >}}
+
+{{< /tab >}} {{< /tabs >}}
 

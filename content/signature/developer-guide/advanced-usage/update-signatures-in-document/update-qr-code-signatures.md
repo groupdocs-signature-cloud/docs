@@ -104,7 +104,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -163,7 +163,7 @@ var response = apiInstance.UpdateSignatures(request);
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -207,7 +207,7 @@ UpdateResult updateResult = apiInstance.updateSignatures(new UpdateSignaturesReq
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -261,7 +261,7 @@ $response = $apiInstance->updateSignatures($request);
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -310,7 +310,7 @@ response = await signApi.updateSignatures(request);
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -358,7 +358,7 @@ response = api.update_signatures(request)
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -402,4 +402,6 @@ $request = GroupDocsSignatureCloud::UpdateSignaturesRequest.new($updateSettings)
 $response = api.update_signatures($request)
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 

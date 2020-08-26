@@ -30,7 +30,7 @@ Use the **App SID** and **App key (secret key)** from the API app client you
 
 ## SDK Examples
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -45,7 +45,7 @@ var response = apiInstance.GetSupportedFileFormats();
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -60,7 +60,7 @@ FormatsResult response = apiInstance.getSupportedFileFormats();
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -81,7 +81,7 @@ $response = $infoApi->getSupportedFileFormats();
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -97,7 +97,7 @@ let response = await infoApi.getSupportedFileFormats();
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -113,7 +113,7 @@ result = infoApi.get_supported_file_formats()
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -128,3 +128,5 @@ infoApi = GroupDocsSignatureCloud::InfoApi.from_keys($app_sid, $app_key)
 result = infoApi.get_supported_file_formats()
 
 ```
+
+{{< /tab >}} {{< /tabs >}}

@@ -56,26 +56,28 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud 930234f9ab12e6e3a5b7cfeb98928c9d Signature_CSharp_DocumentInfo_File.cs >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d752cfd742c8869fa25ef531a9e29236 Signature_Java_DocumentInfo_File.java >}}
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud 4d51ebda15c88dcc9da36b902fffc8a8 Signature_Php_Get_Document_Information.php >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 {{< gist groupdocscloud 37b171abdcc6961eab45170e66037696 Signature_Ruby_Get_Document_Information.rb >}}
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud 39c386004ccdadc059d6cc7124ebb77e Signature_Node_DocumentInfo_File.js >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 {{< gist groupdocscloud 371ae0feb03d6df33ec242272ccf7112 Signature_Python_DocumentInfo_File.py >}}
+
+{{< /tab >}} {{< /tabs >}}

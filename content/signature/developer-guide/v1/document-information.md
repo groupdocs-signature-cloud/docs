@@ -65,21 +65,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information ###
 
-C#
+{{< tabs tabTotal="4" tabID="10" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_DocumentInfo_File.cs >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_DocumentInfo_File.java >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_DocumentInfo_File.py >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_DocumentInfo_File.rb >}}
+
+{{< /tab >}} {{< /tabs >}}
 
 # Get Document Information from provided URL #
 
@@ -134,19 +136,20 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information from Provided URL ###
 
-C#
+{{< tabs tabTotal="4" tabID="11" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" >}} {{< tab tabNum="1" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_DocumentInfo_URL.cs >}}
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_DocumentInfo_URL.java >}}
 
-Python
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_DocumentInfo_URL.py >}}
 
-Ruby
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_DocumentInfo_URL.rb >}}
 
+{{< /tab >}} {{< /tabs >}}

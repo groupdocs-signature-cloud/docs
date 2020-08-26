@@ -83,7 +83,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
-C#
+{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
 
 ```csharp
 
@@ -127,7 +127,7 @@ var response = apiInstance.VerifySignatures(request);
 
 ```
 
-Java
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```java
 
@@ -167,7 +167,7 @@ VerifyResult  response = apiInstance.verifySignatures(request);
 
 ```
 
-PHP
+{{< /tab >}} {{< tab tabNum="3" >}}
 
 ```php
 
@@ -211,7 +211,7 @@ $response = $apiInstance->verifySignatures($request);
 
 ```
 
-Node
+{{< /tab >}} {{< tab tabNum="4" >}}
 
 ```javascript
 
@@ -238,7 +238,7 @@ let response = await signApi.verifySignatures(request);
 
 ```
 
-Python
+{{< /tab >}} {{< tab tabNum="5" >}}
 
 ```python
 
@@ -268,7 +268,7 @@ response = api.verify_signatures(request)
 
 ```
 
-Ruby
+{{< /tab >}} {{< tab tabNum="6" >}}
 
 ```ruby
 
@@ -296,4 +296,6 @@ $request = GroupDocsSignatureCloud::VerifySignaturesRequest.new($settings)
 $response = api.verify_signatures($request)
 
 ```
+
+{{< /tab >}} {{< /tabs >}}
 
