@@ -8,8 +8,6 @@ description: ""
 keywords: ""
 ---
 
-# Supported Barcode Types #
-
 GroupDocs.Signature Cloud REST API supports to sign a document with Barcode. This API lists all supported Barcode types.
 
 ## Resource ##

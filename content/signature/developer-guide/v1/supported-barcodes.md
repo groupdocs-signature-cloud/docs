@@ -12,8 +12,6 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-# Supported Barcode Types #
-
 GroupDocs.Signature Cloud REST API supports to sign a document with Barcode. This API lists all supported Barcode types.
 
 ## Resource ##

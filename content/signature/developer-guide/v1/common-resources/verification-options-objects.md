@@ -12,12 +12,9 @@ keywords: ""
 Note:  The features listed in this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-# Verification Options Objects #
-
 Page contains description for Verification Options objects and object properties
 
-## [VerifyOptionsCollectionData Object]("VerifyOptionsCollectionDataObject") 
-
+## [VerifyOptionsCollectionData Object]("VerifyOptionsCollectionDataObject")
 
 Provides list of options for documents verification.
 
@@ -74,8 +71,7 @@ Example VerifyOptionsCollectionData object
 |---|---|---
 |Items|List<VerifyOptionsData>|List of Verify Options records.
 
-## [CellsVerifyTextOptionsData Object]("CellsVerifyTextOptionsData") 
-
+## [CellsVerifyTextOptionsData Object]("CellsVerifyTextOptionsData")
 
 Provides options to verify Text Signature in Cells Documents.
 
@@ -100,7 +96,7 @@ Example CellsVerifyTextOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsVerifyTextOptionsData". This property is set automatically when using SDK classes.
 
-##  ##
+## PdfVerifyTextOptionsData ##
 
 Provides options to verify Text Signature in Pdf Documents.
 
@@ -129,8 +125,7 @@ Example PdfVerifyTextOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfVerifyTextOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesVerifyTextOptionsData Object]("SlidesVerifyTextOptionsData") 
-
+## [SlidesVerifyTextOptionsData Object]("SlidesVerifyTextOptionsData")
 
 Provides options to verify Text Signature in Slides Documents.
 
@@ -155,8 +150,7 @@ Example SlidesVerifyTextOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "SlidesVerifyTextOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsVerifyTextOptionsData Object]("WordsVerifyTextOptionsData") 
-
+## [WordsVerifyTextOptionsData Object]("WordsVerifyTextOptionsData")
 
 Provides optionsto verify Text Signature in Words Documents.
 
@@ -181,8 +175,7 @@ Example WordsVerifyTextOptionsData object
 |SheetNumber|int|Specifies document-sheet page number to add Text Signature.
 |OptionsType|string|The class name of options object, should always contains value "WordsVerifyTextOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsVerifyDigitalOptionsData Object]("InfoOptionsObject") 
-
+## [CellsVerifyDigitalOptionsData Object]("InfoOptionsObject")
 
 Provides options to verify Digital Signature in Cells Documents.
 
@@ -240,8 +233,7 @@ Example PdfVerifyDigitalOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfVerifyDigitalOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsVerifyDigialOptionsData Object]("WordsVerifyDigialOptionsData") 
-
+## [WordsVerifyDigialOptionsData Object]("WordsVerifyDigialOptionsData")
 
 Provides options to verify Digital Signature in Words Documents.
 
@@ -269,8 +261,7 @@ Example WordsVerifyDigitalOptionsData object
 |SheetNumber|int|Specifies document-sheet page number to add Text Signature.
 |OptionsType|string|The class name of options object, should always contains value "WordsVerifyDigitalOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsVerifyBarcodeOptionsData Object]("CellsVerifyBarcodeOptionsData") 
-
+## [CellsVerifyBarcodeOptionsData Object]("CellsVerifyBarcodeOptionsData")
 
 Provides options to verify Barcode Signature in Cells Documents.
 
@@ -299,8 +290,7 @@ Example CellsVerifyBarcodeOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsVerifyBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [ImagesVerifyBarcodeOptionsData Object]("ImagesVerifyBarcodeOptionsDataObject") 
-
+## [ImagesVerifyBarcodeOptionsData Object]("ImagesVerifyBarcodeOptionsDataObject")
 
 Provides options to verify Barcode Signature in Images Documents.
 
@@ -370,8 +360,7 @@ Example PdfVerifyBarcodeOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfVerifyBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesVerifyBarcodeOptionsData Object]("SlidesVerifyBarcodeOptionsData") 
-
+## [SlidesVerifyBarcodeOptionsData Object]("SlidesVerifyBarcodeOptionsData")
 
 Provides options to verify Barcode Signature in Slides Documents.
 
@@ -400,8 +389,7 @@ Example SlidesVerifyBarcodeOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "SlidesVerifyBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsVerifyBarcodeOptionsData Object]("WordsVerifyBarcodeOptionsData") 
-
+## [WordsVerifyBarcodeOptionsData Object]("WordsVerifyBarcodeOptionsData")
 
 Provides options to verify Barcode Signature in Words Documents.
 
@@ -430,8 +418,7 @@ Example WordsVerifyBarcodeOptionsData object
 |SheetNumber|int|Specifies document-sheet page number to add Text Signature.
 |OptionsType|string|The class name of options object, should always contains value "WordsVerifyBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsVerifyQRCodeOptionsData Object]("CellsVerifyQRCodeOptionsData") 
-
+## [CellsVerifyQRCodeOptionsData Object]("CellsVerifyQRCodeOptionsData")
 
 Provides options to verify QRCodeSignature in Cells Documents.
 
@@ -460,8 +447,7 @@ Example CellsVerifyQRCodeOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsVerifyQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [ImagesVerifyQRCodeOptionsData Object]("ImagesVerifyQRCodeOptionsDataObject") 
-
+## [ImagesVerifyQRCodeOptionsData Object]("ImagesVerifyQRCodeOptionsDataObject")
 
 Provides options to verify QRCodeSignature in Images Documents.
 
@@ -531,8 +517,7 @@ Example PdfVerifyQRCodeOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfVerifyQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesVerifyQRCodeOptionsData Object]("SlidesVerifyQRCodeOptionsData") 
-
+## [SlidesVerifyQRCodeOptionsData Object]("SlidesVerifyQRCodeOptionsData")
 
 Provides options to verify QRCodeSignature in Slides Documents.
 
@@ -561,8 +546,7 @@ Example SlidesVerifyQRCodeOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "SlidesVerifyQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsVerifyQRCodeOptionsData Object]("WordsVerifyQRCode OptionsData") 
-
+## [WordsVerifyQRCodeOptionsData Object]("WordsVerifyQRCode OptionsData")
 
 Provides options to verify QR-Code Signature in Words Documents.
 

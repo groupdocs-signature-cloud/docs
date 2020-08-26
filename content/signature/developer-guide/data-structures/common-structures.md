@@ -8,8 +8,6 @@ description: ""
 keywords: ""
 ---
 
-## Common data structures
-
 Page contains description for common structures and its properties
 
 ## SignatureType properties
@@ -443,8 +441,8 @@ StampLine Object Fields
 |TextColor|Color|Gets or sets the text color of signature.
 |TextBottomIntent|int|Gets or sets the bottom intent of text.
 |TextRepeatType|StampTextRepeatType|Gets or sets text repeat type.
-|OuterBorder|BorderLine|Setup Outer Border. **.**
-|InnerBorder|BorderLine|Setup Inner Border. **.**
+|OuterBorder|BorderLine|Setup Outer Border.
+|InnerBorder|BorderLine|Setup Inner Border.
 |Visible|bool|Get and set visibility of Stamp Line.
 
 ## DigitalSignatureType Object

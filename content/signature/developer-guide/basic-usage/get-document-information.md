@@ -8,8 +8,6 @@ description: ""
 keywords: ""
 ---
 
-# Get Document Information #
-
 This API retrieves document information. It returns an object that contains information about file format, document pages and file size.
 
 ## Resource ##

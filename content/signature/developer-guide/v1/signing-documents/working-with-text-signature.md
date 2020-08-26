@@ -139,10 +139,9 @@ The API is completely independent of your operating system, database system or d
 
 # Apply Background Brush for Text Signatures #
 
-You can creates Text Signature for document with [signature-options-objects]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}}). Signature Text Options and all inherited classes have been updated in Release 18.7 with newly added property** BackgroundBrush** which support following brush types.
+You can creates Text Signature for document with [signature-options-objects]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}}). Signature Text Options and all inherited classes have been updated in Release 18.7 with newly added property **BackgroundBrush** which support following brush types.
 
  Linear Gradient Brush
-\\
 
 **Brush Style option**
 
@@ -153,7 +152,6 @@ You can creates Text Signature for document with [signature-options-objects]({{
 ```
 
  Radial Gradient Brush
-\\
 
 **Brush Style option**
 
@@ -164,7 +162,6 @@ You can creates Text Signature for document with [signature-options-objects]({{
 ```
 
  Solid Brush
-\\
 
 **Brush Style option**
 
@@ -175,7 +172,6 @@ You can creates Text Signature for document with [signature-options-objects]({{
 ```
 
  Texture Brush
-\\
 
 **Brush Style option**
 
@@ -220,12 +216,10 @@ The API is completely independent of your operating system, database system or d
 
 {{< tabs tabTotal="5" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
 
- 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Text_Background_Brush.cs >}}
 
 {{< /tab >}} {{< tab tabNum="3" >}}
 
- 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Text_Background_Brush.php >}}
 
 {{< /tab >}} {{< tab tabNum="2" >}}
@@ -249,7 +243,6 @@ You can create Text Signature on Document provided by fileName and document fold
 It returns an object which contains document name, folder location and command status.**CellsSignTextOptionsData, ImagesSignTextOptionsData, PdfSignTextOptionsData, SlidesSignTextOptionsData, WordsSignTextOptionsData** classes were updated in (Release 18.7) with newly added properties **TextHorizontalAlignment** and **TextVerticalAlignment** .
 
  Text Horizontal Alignment
-\\
 
 ```javascript
 
@@ -258,7 +251,6 @@ It returns an object which contains document name, folder location and command s
 ```
 
  Text Vertical Alignment
-\\
 
 ```javascript
 
@@ -301,12 +293,10 @@ The API is completely independent of your operating system, database system or d
 
 {{< tabs tabTotal="5" tabID="13" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
 
- 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Text_Align_Text.cs >}}
 
 {{< /tab >}} {{< tab tabNum="3" >}}
 
- 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Text_Align_Text.php >}}
 
 {{< /tab >}} {{< tab tabNum="2" >}}
@@ -322,4 +312,3 @@ The API is completely independent of your operating system, database system or d
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Text_Align_Text.rb >}}
 
 {{< /tab >}} {{< /tabs >}}
-

@@ -9,7 +9,7 @@ keywords: ""
 
 # Introduction #
 
-An** image **as signature is alternative way to put any presenting data in a visual form. This electronic signature type allows to create custom image with company logo, sender' initials, names or make a company stamp icon in it,
+An image as signature is alternative way to put any presenting data in a visual form. This electronic signature type allows to create custom image with company logo, sender' initials, names or make a company stamp icon in it,
 
 ![image](signature/images/image2020-2-12_13_16_59.png)
 

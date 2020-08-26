@@ -46,7 +46,7 @@ There about 20 features and fixes in this release. The most notable are:
 
 ### Apply Background Brush for Text Signatures ###
 
-Signature Text Options and all inherited classes have been updated with newly added property** BackgroundBrush** which support following brush types:
+Signature Text Options and all inherited classes have been updated with newly added property **BackgroundBrush** which support following brush types:
 
 **§ Linear Gradient Brush**
 
@@ -183,7 +183,7 @@ JSON result contains list of objects which represent signatures found in a docu
 
 ### Setup Background Brush for Stamp Signatures ###
 
-Signature Stamp Options and all inherited classes have been updated with newly added property** BackgroundBrush** which support following brush types:
+Signature Stamp Options and all inherited classes have been updated with newly added property **BackgroundBrush** which support following brush types:
 
 **§ Linear Gradient Brush**
 
@@ -242,10 +242,9 @@ The result Document created by Signature contains Text Signature with Linear Gra
 
 ### Setup QR-Code Logo image (Signature QR-Code Options) ###
 
-Signature QR-Code Options have been updated with newly added property** LogoGuid **which support QR-Code background image located at the center of QR-Code
+Signature QR-Code Options have been updated with newly added property **LogoGuid** which support QR-Code background image located at the center of QR-Code
 
-**Setup LogoGuid
-**
+**Setup LogoGuid**
 
 ```javascript
 
@@ -254,7 +253,6 @@ Signature QR-Code Options have been updated with newly added property** LogoGui
 ```
 
 To put QRCode Signature to Image Document (png, jpeg, gif, tiff and another file formats) Signature provides new options **[ImagesSignQRCodeOptionsData]("ImagesSignQRCodeOptionsDataObject")** that specify text, signature area, alignment, appearance, colors and another render features.
-|---|---
 
 ```javascript
 
@@ -283,8 +281,7 @@ The result Document created by Signature contains Image Signature File (see scre
 
 **CellsSignTextOptionsData, ImagesSignTextOptionsData, PdfSignTextOptionsData, SlidesSignTextOptionsData, WordsSignTextOptionsData** classes were updated with newly added properties **TextHorizontalAlignment** and **TextVerticalAlignment** .
 
-**§ TextHorizontalAlignment
-**
+**§ TextHorizontalAlignment**
 
 ```javascript
 
@@ -292,8 +289,7 @@ The result Document created by Signature contains Image Signature File (see scre
 
 ```
 
-**§ TextVerticalAlignment 
-**
+**§ TextVerticalAlignment**
 
 ```javascript
 

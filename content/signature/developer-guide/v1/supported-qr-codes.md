@@ -12,8 +12,6 @@ keywords: ""
 Note:  The features listed on this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-# Supported QR-Codes Types #
-
 GroupDocs.Signature Cloud REST API supports to sign a document with QR-Code. You can list all supported QR-Ccode types using this API.
 
 ## Resource ##

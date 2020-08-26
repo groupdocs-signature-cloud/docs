@@ -3,6 +3,7 @@ id: "groupdocs-signature-cloud-20-7-release-notes"
 url: "signature/groupdocs-signature-cloud-20-7-release-notes"
 title: "GroupDocs.Signature Cloud 20.7 Release Notes"
 productName: "GroupDocs.Signature Cloud"
+weight: 2
 description: ""
 keywords: ""
 ---
