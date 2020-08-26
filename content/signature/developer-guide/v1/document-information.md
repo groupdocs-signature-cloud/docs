@@ -22,7 +22,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used to get 
 
 ## cURL REST Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/document.docx/document/info" \
@@ -32,7 +32,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document.docx/document/info" \
  
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -57,7 +57,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document.docx/document/info" \
   }
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -65,19 +65,19 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information ###
 
- C#
+C#
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_DocumentInfo_File.cs >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_DocumentInfo_File.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_DocumentInfo_File.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_DocumentInfo_File.rb >}}
 
@@ -91,7 +91,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used to get 
 
 ## cURL REST Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/document/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
@@ -101,7 +101,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document/info?url#https%3a%2f%
  
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -126,7 +126,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document/info?url#https%3a%2f%
   }
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -134,19 +134,19 @@ The API is completely independent of your operating system, database system or d
 
 ### Get Document Information from Provided URL ###
 
- C#
+C#
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_DocumentInfo_URL.cs >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_DocumentInfo_URL.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_DocumentInfo_URL.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_DocumentInfo_URL.rb >}}
 

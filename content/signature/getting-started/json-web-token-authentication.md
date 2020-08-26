@@ -61,7 +61,7 @@ The endpoint acts as an authorization server and it verifies your credentials, i
 
 ### cURL Example ###
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/connect/token" \
@@ -72,7 +72,7 @@ curl -v "https://api.groupdocs.cloud/connect/token" \
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -80,7 +80,7 @@ curl -v "https://api.groupdocs.cloud/connect/token" \
   "expires_in": 86400,
   "token_type": "Bearer"
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## Call REST API ##
 
@@ -93,7 +93,7 @@ Now that you have the Bearer Token (access_token) generated using the applicatio
 
 ### cURL Example ###
 
- Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X POST "https://api.groupdocs.cloud/v2.0/signature/info"
@@ -103,7 +103,7 @@ curl -X POST "https://api.groupdocs.cloud/v2.0/signature/info"
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -128,7 +128,7 @@ curl -X POST "https://api.groupdocs.cloud/v2.0/signature/info"
   }
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## Tokens Lifetime ##
 

@@ -18,13 +18,13 @@ The following GroupDocs.Signature Cloud REST API resource has been used in examp
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
  curl -X GET "https://api.groupdocs.cloud/v2.0/signature/barcodes" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -214,7 +214,7 @@ Response
     }
   ]
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

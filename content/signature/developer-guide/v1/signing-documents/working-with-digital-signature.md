@@ -28,7 +28,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/01_pages.pdf/digital" \
@@ -39,7 +39,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/01_pages.pdf/digital" \
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -48,7 +48,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/01_pages.pdf/digital" \
   "code": 200,
   "status": "OK"
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -56,23 +56,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Add Digital Signature to Document ###
 
- C#
+C#
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Digital.cs >}}
 
- PHP
+PHP
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Digital.php >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Digital.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Digital.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Digital.rb >}}
 
@@ -86,7 +86,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/digital?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
@@ -97,7 +97,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/digital?url#https%3a%2f%2fwww.
  
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -106,7 +106,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/digital?url#https%3a%2f%2fwww.
   "Code": 200,
   "Status" : "OK"
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -114,23 +114,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Add Digital Signature to Document at specified URL ###
 
- C#
+C#
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Digital_URL.cs >}}
 
- PHP
+PHP
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Digital_URL.php >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Digital_URL.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Digital_URL.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Digital_URL.rb >}}
 

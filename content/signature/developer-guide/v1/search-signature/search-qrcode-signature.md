@@ -28,7 +28,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl --request POST \
@@ -39,7 +39,7 @@ curl --request POST \
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -60,7 +60,7 @@ curl --request POST \
   "code": 200,
   "status": "OK"
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -68,23 +68,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Search QRCode Signature in a Document ###
 
- C#
+C#
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Search_Signature_QRCode.cs >}}
 
- PHP
+PHP
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_QRCode_Search.php >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Search_Signature_QRCode.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Search_Signature_QRCode.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Search_Signature_QRCode.rb >}}
 
@@ -100,7 +100,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl --request POST \
@@ -111,7 +111,7 @@ curl --request POST \
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -124,7 +124,7 @@ curl --request POST \
     { QRCodeTypeName: "Aztec", Text: "John Smith esq." }
     ]
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -132,23 +132,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Search QRCode Signature in a Document at Provided URL ###
 
- C#
+C#
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Search_Signature_QRCode_URL.cs >}}
 
- PHP
+PHP
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_QRCode_Search_URL.php >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Search_Signature_QRCode_URL.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Search_Signature_QRCode_URL.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Search_Signature_QRCode_URL.rb >}}
 

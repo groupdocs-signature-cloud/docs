@@ -30,7 +30,7 @@ Use the **App SID** and **App key (secret key)** from the API app client you
 
 ## SDK Examples
 
- C#
+C#
 
 ```csharp
 
@@ -45,7 +45,7 @@ var response = apiInstance.GetSupportedFileFormats();
 
 ```
 
- Java
+Java
 
 ```java
 
@@ -60,7 +60,7 @@ FormatsResult response = apiInstance.getSupportedFileFormats();
 
 ```
 
- PHP
+PHP
 
 ```php
 
@@ -81,7 +81,7 @@ $response = $infoApi->getSupportedFileFormats();
 
 ```
 
- Node
+Node
 
 ```javascript
 
@@ -97,7 +97,7 @@ let response = await infoApi.getSupportedFileFormats();
 
 ```
 
- Python
+Python
 
 ```python
 
@@ -113,7 +113,7 @@ result = infoApi.get_supported_file_formats()
 
 ```
 
- Ruby
+Ruby
 
 ```ruby
 

@@ -24,21 +24,21 @@ This API intended for checking existence of cloud storage with given name from [
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/MyStorage/exist" -H  "accept: application/json" -H  "authorization: Bearer  [Access Token]"
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
   "exists": true
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -90,20 +90,20 @@ Required. Can be passed as query string parameter or as part of the URL
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/exist/signaturedocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
   "exists": true,
   "isFolder": true
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -151,14 +151,14 @@ This API intended for getting total and used space of the[ GroupDocs Cloud Stora
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/disc?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -166,7 +166,7 @@ Response
   "totalSize": 3221225472
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -215,13 +215,13 @@ This API intended for getting the list of file versions, stored in the [GroupDoc
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/version/one-page.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -237,7 +237,7 @@ Response
     }
   ]
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -249,7 +249,7 @@ C#
 
 {{< gist groupdocscloud 930234f9ab12e6e3a5b7cfeb98928c9d Signature_CSharp_Get_File_Versions.cs >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d752cfd742c8869fa25ef531a9e29236 Signature_Java_Get_File_Versions.java >}}
 

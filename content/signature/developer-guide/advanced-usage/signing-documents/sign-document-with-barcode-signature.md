@@ -36,7 +36,7 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ## cURL REST Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 // First get JSON Web Token
@@ -76,7 +76,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -108,7 +108,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
   "failed": []
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -251,7 +251,7 @@ SignResult response = apiInstance.createSignatures(request);
 
 ```
 
- PHP
+PHP
 
 ```php
 
@@ -375,7 +375,7 @@ let response = await signApi.createSignatures(request);
 
 ```
 
- Python
+Python
 
 ```python
 
@@ -428,7 +428,7 @@ response = api.create_signatures(request)
 
 ```
 
- Ruby
+Ruby
 
 ```ruby
 

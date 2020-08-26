@@ -28,7 +28,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/one-page.docx/text" \
@@ -39,7 +39,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/one-page.docx/text" \
 -H "authorization: Bearer rf1Wyp3-Cz_xukjKqvzF-OMwYvhJcl0rJ6CQ0IgQbZwdSGTKYJziBpGNeDdzGSwwXgsRLCCfPLhHJBKPv8dzqX3tGA8n8SA4tXhLdnGh-hws2gQgmCWEjF0RpzEdJA6jh6tGZyOSAa2GlTrLhuflBwjMB5-dc8JwRmI-ssOiXkO3fSRxnwWuWih24Co8-n8elsun4HxZVMqCzXepAiXBV9UBeUktV_PLclri_lTJEnDzoJRzfRyDigjb2-luODo9aX8DFseboggoCIMKDoyLPSVHnFXgs5EWV2aQ_DgRm_D6UPn2T1Gn7OAIe-T8aA7ypDCoR-wuTJdB8o7T0f2I8K-8FrXCy2Sgb8B5QPpAOcLdiBBqFxRdk8f2c67J-rSbm2WUPWK65pbLa8NGHHdIRKuiI87NmphWuKc39a_zcgEg4MnHSlDeephmStnLS8OayQObNdLQBYAmoeQeVpZRy9t9bcU"
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -48,7 +48,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/one-page.docx/text" \
   "code": 200,
   "status": "OK"
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -56,23 +56,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Add Text Signature to Document ###
 
- C#
+C#
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Text.cs >}}
 
- PHP
+PHP
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Text.php >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Text.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Text.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Text.rb >}}
 
@@ -86,7 +86,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/text?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" \
@@ -96,7 +96,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/text?url#https%3A%2F%2Fwww.dro
 -H "authorization: Bearer rf1Wyp3-Cz_xukjKqvzF-OMwYvhJcl0rJ6CQ0IgQbZwdSGTKYJziBpGNeDdzGSwwXgsRLCCfPLhHJBKPv8dzqX3tGA8n8SA4tXhLdnGh-hws2gQgmCWEjF0RpzEdJA6jh6tGZyOSAa2GlTrLhuflBwjMB5-dc8JwRmI-ssOiXkO3fSRxnwWuWih24Co8-n8elsun4HxZVMqCzXepAiXBV9UBeUktV_PLclri_lTJEnDzoJRzfRyDigjb2-luODo9aX8DFseboggoCIMKDoyLPSVHnFXgs5EWV2aQ_DgRm_D6UPn2T1Gn7OAIe-T8aA7ypDCoR-wuTJdB8o7T0f2I8K-8FrXCy2Sgb8B5QPpAOcLdiBBqFxRdk8f2c67J-rSbm2WUPWK65pbLa8NGHHdIRKuiI87NmphWuKc39a_zcgEg4MnHSlDeephmStnLS8OayQObNdLQBYAmoeQeVpZRy9t9bcU"
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -105,7 +105,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/text?url#https%3A%2F%2Fwww.dro
   "Code": 200,
   "Status" : "OK"
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -113,23 +113,23 @@ The API is completely independent of your operating system, database system or d
 
 ### Add Text Signature to Document at specified URL ###
 
- C#
+C#
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Text_URL.cs >}}
 
- PHP
+PHP
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Text_URL.php >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Text_URL.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Text_URL.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Text_URL.rb >}}
 
@@ -187,7 +187,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl --request POST \
@@ -197,7 +197,7 @@ curl --request POST \
 --data '{ "borderTransparency": 0.0, "borderWeight": 1.0, "backgroundTransparency": 0.0, "signatureImplementation": "TextStamp", "backgroundBrush": { "startColor": { "web": "CornflowerBlue" }, "endColor": { "web": "DarkBlue" }, "angle": 0.0 , "brushType": "LinearGradientBrush"}, "left": 1, "top": 1, "width": 200, "height": 50, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "stretch": "None", "rotationAngle": 0, "horizontalAlignment": "Left", "verticalAlignment": "Top", "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 }, "marginMeasureType": "Pixels", "text": "John Smith", "signAllPages": false, "font": { "fontFamily": "Times New Roman", "fontSize": 24.0, "bold": true, "italic": false, "underline": false }, "foreColor": { "Web": "DarkSlateBlue" }, "borderColor": { "Web": "Black" }, "backgroundColor": { "Web": "Transparent", "Alpha": 0 }, "documentPageNumber": 0, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "OptionsType": "SlidesSignTextOptionsData" }'
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -206,7 +206,7 @@ curl --request POST \
   "Code": 200,
   "Status" : "OK"
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -214,25 +214,25 @@ The API is completely independent of your operating system, database system or d
 
 ### Apply Background Brush for Text Signatures ###
 
- C#
+C#
 
  
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Text_Background_Brush.cs >}}
 
- PHP
+PHP
 
  
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Text_Background_Brush.php >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Text_Background_Brush.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Text_Background_Brush.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Text_Background_Brush.rb >}}
 
@@ -266,7 +266,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl --request POST \
@@ -276,7 +276,7 @@ curl --request POST \
 --data '{ "borderDashStyle": 0, "borderTransparency": 0.0, "borderWeight": 5.0, "backgroundTransparency": 0.0, "signatureImplementation": "TextAsImage", "opacity": 1.0, "documentPageNumber": 1, "pagesSetup": { "firstPage": false, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [] }, "signAllPages": false, "textHorizontalAlignment": "Left", "textVerticalAlignment": "Top", "left": 1, "top": 1, "width": 200, "height": 40, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "stretch": "None", "rotationAngle": 0, "horizontalAlignment": "Left", "verticalAlignment": "Top", "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 }, "marginMeasureType": "Pixels", "text": " John Smith", "font": { "fontFamily": "Times New Roman", "fontSize": 24.0, "bold": true, "italic": false, "underline": false }, "foreColor": { "Web": "DarkSlateBlue" }, "borderColor": { "Web": "DarkSlateBlue" }, "backgroundColor": { "Web": "Goldenrod" }, "OptionsType": "ImagesSignTextOptionsData" }'
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -285,7 +285,7 @@ curl --request POST \
   "code": 200,
   "status": "OK"
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -293,25 +293,25 @@ The API is completely independent of your operating system, database system or d
 
 ### Add Text Signature to Document with Text Options (text alignments) ###
 
- C#
+C#
 
  
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Text_Align_Text.cs >}}
 
- PHP
+PHP
 
  
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Text_Align_Text.php >}}
 
- Java
+Java
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Text_Align_Text.java >}}
 
- Python
+Python
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Text_Align_Text.py >}}
 
- Ruby
+Ruby
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Text_Align_Text.rb >}}
 

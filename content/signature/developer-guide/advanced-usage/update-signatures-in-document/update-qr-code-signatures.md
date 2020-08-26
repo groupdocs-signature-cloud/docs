@@ -27,7 +27,7 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ## cURL REST Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 
@@ -64,7 +64,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/update" \
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 
@@ -96,7 +96,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/update" \
   "failed": []
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -104,7 +104,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
- C#
+C#
 
 ```csharp
 
@@ -163,7 +163,7 @@ var response = apiInstance.UpdateSignatures(request);
 
 ```
 
- Java
+Java
 
 ```java
 
@@ -207,7 +207,7 @@ UpdateResult updateResult = apiInstance.updateSignatures(new UpdateSignaturesReq
 
 ```
 
- PHP
+PHP
 
 ```php
 
@@ -261,7 +261,7 @@ $response = $apiInstance->updateSignatures($request);
 
 ```
 
- Node
+Node
 
 ```javascript
 
@@ -310,7 +310,7 @@ response = await signApi.updateSignatures(request);
 
 ```
 
- Python
+Python
 
 ```python
 
@@ -358,7 +358,7 @@ response = api.update_signatures(request)
 
 ```
 
- Ruby
+Ruby
 
 ```ruby
 

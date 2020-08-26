@@ -26,14 +26,14 @@ This API allows you to download a file from [GroupDocs Cloud Storage](https://da
 
 ## cURL Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/file/one-page.docx?storageName#MyStorage" -H  "accept: multipart/form-data" -H  "authorization: Bearer [Access Token]"
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -41,7 +41,7 @@ curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/file/one-page.do
   "Status": "OK"
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -91,14 +91,14 @@ This API allows you to upload files to the [GroupDocs Cloud Storage](https://
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs%2Fone-page2.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 Http status code: 200 (Returns OK and list of errors, which is empty if success.)
@@ -119,7 +119,7 @@ Http status code: 200 (Returns OK and list of errors, which is empty if success.
   ]
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -169,14 +169,14 @@ This API allows you to delete specific file from [GroupDocs Cloud Storage](htt
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="3" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs1%2Fone-page1.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -184,7 +184,7 @@ Response
   "Status": "OK"
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -236,14 +236,14 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/copy/sinaturedocs%2Fone-page1.docx?destPath#sinaturedocs%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
@@ -251,7 +251,7 @@ Response
   "Status": "OK"
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -303,21 +303,21 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https:
 
 ## cURL Example ##
 
-Request
+{{< tabs tabTotal="2" tabID="5" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/move/sinaturedocs%2Fone-page1.docx?destPath#sinaturedocs%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
 
 ```
 
-Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 {
   "Code": 200,
   "Status": "OK"
 }
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 

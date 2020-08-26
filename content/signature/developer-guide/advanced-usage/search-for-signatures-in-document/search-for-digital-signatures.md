@@ -24,7 +24,7 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ## cURL REST Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 
@@ -56,7 +56,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/search" \
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 
@@ -102,7 +102,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/search" \
   ]
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -110,7 +110,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
- C#
+C#
 
 ```csharp
 
@@ -152,7 +152,7 @@ var response = apiInstance.SearchSignatures(request);
 
 ```
 
- Java
+Java
 
 ```java
 
@@ -192,7 +192,7 @@ SearchResult  response = apiInstance.searchSignatures(request);
 
 ```
 
- PHP
+PHP
 
 ```php
 
@@ -228,7 +228,7 @@ $response = $apiInstance->searchSignatures($request);
 
 ```
 
- Node
+Node
 
 ```javascript
 
@@ -255,7 +255,7 @@ let response = await signApi.searchSignatures(request);
 
 ```
 
- Python
+Python
 
 ```python
 
@@ -283,7 +283,7 @@ response = api.search_signatures(request)
 
 ```
 
- Ruby
+Ruby
 
 ```ruby
 

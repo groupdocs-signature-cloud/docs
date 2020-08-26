@@ -27,7 +27,7 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ## cURL REST Example ##
 
- Request
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
 
 ```javascript
 
@@ -59,7 +59,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/delete" \
 
 ```
 
- Response
+{{< /tab >}} {{< tab tabNum="2" >}}
 
 ```javascript
 
@@ -91,7 +91,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/delete" \
   "failed": []
 }
 
-```
+{{< /tab >}} {{< /tabs >}}
 
 ## SDKs ##
 
@@ -99,7 +99,7 @@ The API is completely independent of your operating system, database system or d
 
 ### SDK Examples ###
 
- C#
+C#
 
 ```csharp
 
@@ -153,7 +153,7 @@ var response = apiInstance.DeleteSignatures(request);
 
 ```
 
- Java
+Java
 
 ```java
 
@@ -192,7 +192,7 @@ DeleteResult deleteResult = apiInstance.deleteSignatures(new DeleteSignaturesReq
 
 ```
 
- PHP
+PHP
 
 ```php
 
@@ -241,7 +241,7 @@ $response = $apiInstance->deleteSignatures($request);
 
 ```
 
- Node
+Node
 
 ```javascript
 
@@ -285,7 +285,7 @@ response = await signApi.deleteSignatures(request);
 
 ```
 
- Python
+Python
 
 ```python
 
@@ -328,7 +328,7 @@ response = api.delete_signatures(request)
 
 ```
 
- Ruby
+Ruby
 
 ```ruby
 
