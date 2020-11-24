@@ -14,9 +14,8 @@ Creating an account is very simple. Go to [https://dashboard.groupdocs.cloud](h
 
 ## Create an API client app
 
-Before you can make any requests to GroupDocs for Cloud API you need to get APP SID and APP key (secret key). This will will be used to invoke GroupDocs for Cloud API.
-
-You can get it from default Application or create new Application from [My Apps tab of GroupDocs for Cloud Dashboard]({{< ref "total/getting-started/ui-topics/create-new-app-and-get-app-key-and-sid.md" >}}).
+Before you can make any requests to GroupDocs Cloud API you need to get a **Client Id** and a **Client Secret**.
+This will will be used to invoke GroupDocs Cloud API. You can get it by creating a new [Application](https://dashboard.groupdocs.cloud/applications).
 
 ## Install the SDK of your choice
 
@@ -24,7 +23,8 @@ GroupDocs for Cloud SDK is written in different languages, all you need to get s
 
 ## Make an API request from the SDK of your choice
 
-Use the **App SID** and **App key (secret key)** from the API app client you created in step one and replace in the corresponding code. Below is an example demonstrating using the Formats API to get all supported file formats in GroupDocs.Signature Cloud.
+Use the **Client Id** and **Client Secret** from the API app client you created in step one and replace in the corresponding code.
+Below is an example demonstrating using the Formats API to get all supported file formats in GroupDocs.Signature Cloud.
 
 {{< alert style="info" >}}The GitHub repository for [GroupDocs.Signature Cloud](https://github.com/groupdocs-signature-cloud) has a complete set of examples, demonstrating our API capabilities.{{< /alert >}}
 
@@ -35,10 +35,10 @@ Use the **App SID** and **App key (secret key)** from the API app client you
 ```csharp
 
 // For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
-string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyClientSecret = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+string MyClientId = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-var configuration = new Configuration(MyAppSid, MyAppKey);
+var configuration = new Configuration(MyClientId, MyClientSecret);
 
 var apiInstance = new InfoApi(configuration);
 var response = apiInstance.GetSupportedFileFormats();
@@ -50,10 +50,10 @@ var response = apiInstance.GetSupportedFileFormats();
 ```java
 
 // For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
-String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+String MyClientSecret = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+String MyClientId = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-Configuration configuration = new Configuration(MyAppSid, MyAppKey);
+Configuration configuration = new Configuration(MyClientId, MyClientSecret);
 
 InfoApi apiInstance = new InfoApi(configuration);
 FormatsResult response = apiInstance.getSupportedFileFormats();
@@ -68,12 +68,12 @@ FormatsResult response = apiInstance.getSupportedFileFormats();
 use GroupDocs\Signature\Model;
 use GroupDocs\Signature\Model\Requests;
 
-$AppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$AppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$ClientId = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+$ClientSecret = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
 $configuration = new GroupDocs\Signature\Configuration();
-$configuration->setAppSid($AppSid);
-$configuration->setAppKey($AppKey);
+$configuration->setAppSid($ClientId);
+$configuration->setAppKey($ClientSecret);
 
 $infoApi# new GroupDocs\Signature\InfoApi($configuration);
 
@@ -88,10 +88,10 @@ $response = $infoApi->getSupportedFileFormats();
 // For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-node-samples
 global.signature_cloud = require("groupdocs-signature-cloud");
 
-global.appSid = "XXXX-XXXX-XXXX-XXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-global.appKey = "XXXXXXXXXXXXXXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.clientId = "XXXX-XXXX-XXXX-XXXX"; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+global.clientSecret = "XXXXXXXXXXXXXXXX"; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-global.infoApi = signature_cloud.InfoApi.fromKeys(appSid, appKey);
+global.infoApi = signature_cloud.InfoApi.fromKeys(clientId, clientSecret);
 
 let response = await infoApi.getSupportedFileFormats();
 
@@ -104,10 +104,10 @@ let response = await infoApi.getSupportedFileFormats();
 # For complete examples and data files, please go to https://github.com/groupdocs-signature_cloud-cloud/groupdocs-signature_cloud-cloud-python-samples
 import groupdocs_signature_cloud
 
-app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+client_id = "XXXX-XXXX-XXXX-XXXX" # Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+client_secret = "XXXXXXXXXXXXXXXX" # Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-infoApi = groupdocs_signature_cloud.InfoApi.from_keys(app_sid, app_key)
+infoApi = groupdocs_signature_cloud.InfoApi.from_keys(client_id, client_secret)
 
 result = infoApi.get_supported_file_formats()
 
@@ -120,10 +120,10 @@ result = infoApi.get_supported_file_formats()
 # For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-ruby-samples
 require 'groupdocs_signature_cloud'
 
-$app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$client_id = "XXXX-XXXX-XXXX-XXXX" # Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+$client_secret = "XXXXXXXXXXXXXXXX" # Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-infoApi = GroupDocsSignatureCloud::InfoApi.from_keys($app_sid, $app_key)
+infoApi = GroupDocsSignatureCloud::InfoApi.from_keys($client_id, $client_secret)
 
 result = infoApi.get_supported_file_formats()
 

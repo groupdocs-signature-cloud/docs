@@ -29,7 +29,7 @@ For storage operations, like uploading or downloading documents, please refer t
 ```javascript
 
 // First get JSON Web Token
-// Please get your App Key and App SID from https://dashboard.groupdocs.cloud/#/apps. Kindly place App Key in "client_secret" and App SID in "client_id" argument.
+// Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
 -X POST \
 -d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
@@ -104,10 +104,10 @@ The API is completely independent of your operating system, database system or d
 ```csharp
 
 // For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-dotnet-samples
-string MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-string MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+string MyClientSecret = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+string MyClientId = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-var configuration = new Configuration(MyAppSid, MyAppKey);
+var configuration = new Configuration(MyClientId, MyClientSecret);
 var apiInstance = new SignApi(configuration);
 
 // Barcode Search options.
@@ -167,10 +167,10 @@ var response = apiInstance.SearchSignatures(request);
 ```java
 
 // For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
-String MyAppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-String MyAppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+String MyClientSecret = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+String MyClientId = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-Configuration configuration = new Configuration(MyAppSid, MyAppKey);
+Configuration configuration = new Configuration(MyClientId, MyClientSecret);
 SignApi apiInstance = new SignApi(configuration);
 
 FileInfo fileInfo = new FileInfo();
@@ -229,12 +229,12 @@ SearchResult  response = apiInstance.searchSignatures(request);
 use GroupDocs\Signature\Model;
 use GroupDocs\Signature\Model\Requests;
 
-$AppSid = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$AppKey = ""; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$ClientId = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+$ClientSecret = ""; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
 $configuration = new GroupDocs\Signature\Configuration();
-$configuration->setAppSid($AppSid);
-$configuration->setAppKey($AppKey);
+$configuration->setAppSid($ClientId);
+$configuration->setAppKey($ClientSecret);
 
 $apiInstance = new GroupDocs\Signature\SignApi($configuration);
 
@@ -274,10 +274,10 @@ $response = $apiInstance->searchSignatures($request);
 // For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-node-samples
 global.signature_cloud = require("groupdocs-signature-cloud");
 
-global.appSid = "XXXX-XXXX-XXXX-XXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-global.appKey = "XXXXXXXXXXXXXXXX"; // Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+global.clientId = "XXXX-XXXX-XXXX-XXXX"; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+global.clientSecret = "XXXXXXXXXXXXXXXX"; // Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-global.signApi = signature_cloud.SignApi.fromKeys(appSid, appKey);
+global.signApi = signature_cloud.SignApi.fromKeys(clientId, clientSecret);
 
 let fileInfo = new signature_cloud.FileInfo();
 fileInfo.filePath = "signaturedocs/signedCollection_One_page.docx";
@@ -307,10 +307,10 @@ let response = await signApi.searchSignatures(request);
 from groupdocs_signature_cloud import *
 import groupdocs_signature_cloud
 
-app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+client_id = "XXXX-XXXX-XXXX-XXXX" # Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+client_secret = "XXXXXXXXXXXXXXXX" # Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-api = groupdocs_signature_cloud.SignApi.from_keys(app_sid, app_key)
+api = groupdocs_signature_cloud.SignApi.from_keys(client_id, client_secret)
 
 fileInfo = FileInfo()
 fileInfo.file_path = "signaturedocs\\signedCollectionOne_page.docx"
@@ -338,10 +338,10 @@ response = api.search_signatures(request)
 # For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-ruby-samples
 require 'groupdocs_signature_cloud'
 
-$app_sid = "XXXX-XXXX-XXXX-XXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
-$app_key = "XXXXXXXXXXXXXXXX" # Get AppKey and AppSID from https://dashboard.groupdocs.cloud
+$client_id = "XXXX-XXXX-XXXX-XXXX" # Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
+$client_secret = "XXXXXXXXXXXXXXXX" # Get ClientId and ClientSecret from https://dashboard.groupdocs.cloud
 
-api = GroupDocsSignatureCloud::SignApi.from_keys($app_sid, $app_key)
+api = GroupDocsSignatureCloud::SignApi.from_keys($client_id, $client_secret)
 
 $info = GroupDocsSignatureCloud::FileInfo.new()
 $info.file_path = "signaturedocs\\signedCollectionOne_page.docx"

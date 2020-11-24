@@ -84,7 +84,7 @@ Signature Text Options and all inherited classes have been updated with newly ad
 curl --request POST \
 --url http://api.groupdocs.cloud/oauth2/token \
 --header 'content-type: application/x-www-form-urlencoded' \
---data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+--data 'grant_type#client_credentials&#x26;client_id#[Your ClientId]&#x26;client_secret#[Your ClientSecret]'
 
 ### Put Text Signature with brush to Slides Document
 curl --request POST \
@@ -111,7 +111,7 @@ To search Barcode Signatures in PDF Document (.pdf file format) Signature provid
 curl --request POST \
 --url http://api.groupdocs.cloud/oauth2/token \
 --header 'content-type: application/x-www-form-urlencoded' \
---data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+--data 'grant_type#client_credentials&#x26;client_id#[Your ClientId]&#x26;client_secret#[Your ClientSecret]'
 
 ### Search Barcode Signatures in Pdf Document
 curl --request POST \
@@ -152,7 +152,7 @@ To search QR-Code Signatures in PDF Document (.pdf file format) Signature provid
 curl --request POST \
 --url http://api.groupdocs.cloud/oauth2/token \
 --header 'content-type: application/x-www-form-urlencoded' \
---data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+--data 'grant_type#client_credentials&#x26;client_id#[Your ClientId]&#x26;client_secret#[Your ClientSecret]'
 
 ### Search QRCode Signatures in Pdf Document
 curl --request POST \
@@ -225,7 +225,7 @@ List of updated options: **SignStampOptionsData, CellsSignStampOptionsData, Ima
 curl --request POST \
 --url http://api.groupdocs.cloud/oauth2/token \
 --header 'content-type: application/x-www-form-urlencoded' \
---data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+--data 'grant_type#client_credentials&#x26;client_id#[Your ClientId]&#x26;client_secret#[Your ClientSecret]'
 
 ### Put Stamp Signature with brush on Slides Document
 curl --request POST \
@@ -260,7 +260,7 @@ To put QRCode Signature to Image Document (png, jpeg, gif, tiff and another file
 curl --request POST \
 --url http://api.groupdocs.cloud/oauth2/token \
 --header 'content-type: application/x-www-form-urlencoded' \
---data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+--data 'grant_type#client_credentials&#x26;client_id#[Your ClientId]&#x26;client_secret#[Your ClientSecret]'
 
 ### Put QRCode Signature on Images Document with logo
 curl --request POST \
@@ -304,7 +304,7 @@ There is an example of signing document with text alignments.
 curl --request POST \
 --url http://api.groupdocs.cloud/oauth2/token \
 --header 'content-type: application/x-www-form-urlencoded' \
---data 'grant_type#client_credentials&#x26;client_id#[Your AppSid]&#x26;client_secret#[Your AppKey]'
+--data 'grant_type#client_credentials&#x26;client_id#[Your ClientId]&#x26;client_secret#[Your ClientSecret]'
 
 ### Put Text Signature on Image Document
 curl --request POST \
