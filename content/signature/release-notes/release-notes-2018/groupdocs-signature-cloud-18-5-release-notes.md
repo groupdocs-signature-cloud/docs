@@ -57,7 +57,7 @@ To put Stamp Signature for supported Document formats (PDF, Images, SpreadSheet
 curl --request POST \
 --url http:~/~/api.groupdocs.cloud/oauth2/token \
 --header 'content-type: application/x-www-form-urlencoded' \
---data 'grant_type#client_credentials&client_id#[Your AppSid]&client_secret#[Your AppKey]'
+--data 'grant_type#client_credentials&client_id#[Your ClientId]&client_secret#[Your ClientSecret]'
 ```
 
 ### Put Stamp Signature on Images Document
@@ -88,7 +88,7 @@ To put list of signatures on document (Cells, Images, PDF, Slides or Words) Sign
 curl --request POST \
 --url http:~/~/api.groupdocs.cloud/oauth2/token \
 --header 'content-type: application/x-www-form-urlencoded' \
---data 'grant_type#client_credentials&client_id#[Your AppSid]&client_secret#[Your AppKey]'
+--data 'grant_type#client_credentials&client_id#[Your ClientId]&client_secret#[Your ClientSecret]'
 ```
 
 ### Put Text Signature to PDF Document
