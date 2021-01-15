@@ -14,7 +14,7 @@ Note:  The features listed in this page are supported only in GroupDocs.Signatu
 
 Page contains description for Signature Options objects and object properties
 
-## [SignOptionsCollectionData Object]("SignOptionsCollectionDataObject")
+## SignOptionsCollectionData Object
 
 Provides list of options for documents signing.
 
@@ -119,13 +119,13 @@ Example SignOptionsCollectionData object
 }
 ```
 
- SignOptionsCollectionData Object Fields (Click here to expand)
+ SignOptionsCollectionData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |Items|List<SignOptionsData>|List of Signature Options objects.
 
-## [CellsSignTextOptionsData Object]("CellsSignTextOptionsDataObject")
+## CellsSignTextOptionsData Object
 
 Provides options for Cells Documents to add Text Signature.
 
@@ -194,7 +194,7 @@ Example CellsSignTextOptionsData object
 }
 ```
 
- CellsSignTextOptionsData Object Fields (Click here to expand)
+ CellsSignTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -203,7 +203,7 @@ Example CellsSignTextOptionsData object
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SheetNumber|int|Gets or sets worksheet number for signing. DocumentPageNumber parameter contains the same value.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified. **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height. (This property is obsolete.)
@@ -229,7 +229,7 @@ Example CellsSignTextOptionsData object
 |BackgroundTransparency|float|Specifies Transparency of Text Signature Area Background. Value should be in range 0 - 1. When 0 means no transparency and 1 absolutely transparent object. Default value is 0
 |OptionsType|string|The class name of options object, should always contains value "CellsSignTextOptionsData". This property is set automatically when using SDK classes.
 
-## [ImagesSignTextOptionsData Object]("ImagesSignTextOptionsDataObject")
+## ImagesSignTextOptionsData Object
 
 Provides options for Images Documents to add Text Signature.
 
@@ -295,7 +295,7 @@ Example ImagesSignTextOptionsData object
 }
 ```
 
- ImagesSignTextOptionsData Object Fields (Click here to expand)
+ ImagesSignTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -303,7 +303,7 @@ Example ImagesSignTextOptionsData object
 |SignatureImplementation|enum|Specifies Text Signature Implementation Type.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -327,7 +327,7 @@ Example ImagesSignTextOptionsData object
 |BackgroundTransparency|double|Gets or sets the signature background transparency (value from 0.0 (opaque) through 1.0 (clear)).
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignTextOptionsData". This property is set automatically when using SDK classes.
 
-##  ##
+## PdfSignTextOptionsData object
 
 Provides options for Pdf Documents to add Text Signature.
 
@@ -392,7 +392,7 @@ Example PdfSignTextOptionsData object
 }
 ```
 
- PdfSignTextOptions Object Fields (Click here to expand)
+ PdfSignTextOptions Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -400,7 +400,7 @@ Example PdfSignTextOptionsData object
 |SignatureImplementation|enum|Specifies Text Signature Implementation Type.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -422,7 +422,7 @@ Example PdfSignTextOptionsData object
 |FormTextFieldType|enum|Gets or sets the type of form field to put text signature into it. This property could be used only with PdfTextSignatureImplementation # TextToFormField. Value by default is AllTextTypes.
 |OptionsType|string|The class name of options object, should always contains value "PdfSignTextOptionsData ". This property is set automatically when using SDK classes.
 
-## [SlidesSignTextOptionsData Object]("SlidesTextOptions")
+## SlidesSignTextOptionsData Object
 
 Provides options to put Text Signature on Slides Documents.
 
@@ -486,7 +486,7 @@ Example SlidesSignTextOptionsData object
 }
 ```
 
- SlidesSignTextOptionsData Object Fields (Click here to expand)
+ SlidesSignTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -494,7 +494,7 @@ Example SlidesSignTextOptionsData object
 |SignatureImplementation|enum|Specifies Text Signature Implementation Type.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -516,7 +516,7 @@ Example SlidesSignTextOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignTextOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsSignTextOptionsData Object]("WordsSignTextOptionsData")
+## WordsSignTextOptionsData Object
 
 Provides options for Text Signature object for Words Documents.
 
@@ -581,7 +581,7 @@ Example WordsSignTextOptionsData object
 }
 ```
 
- WordsSignTextOptionsData Object Fields (Click here to expand)
+ WordsSignTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -589,7 +589,7 @@ Example WordsSignTextOptionsData object
 |SignatureImplementation|enum|Specifies Text Signature Implementation Type.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -612,7 +612,7 @@ Example WordsSignTextOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |OptionsType|string|The class name of options object, should always contains value "WordsSignTextOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsSignImageOptionsData Object]("CellsSignImageOptionsData")
+## CellsSignImageOptionsData Object
 
 Provides options to put Image Signature on Cells Documents Pages.
 
@@ -659,7 +659,7 @@ Example CellsSignImageOptionsData object
 }
 ```
 
- CellsSignImageOptionsData Object Fields (Click here to expand)
+ CellsSignImageOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -667,7 +667,7 @@ Example CellsSignImageOptionsData object
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SheetNumber|int|Gets or sets worksheet number for signing. DocumentPageNumber parameter contains the same value.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height. (This property is obsolete.)
@@ -684,7 +684,7 @@ Example CellsSignImageOptionsData object
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
 |OptionsType|string|The class name of options object, should always contains value "CellsSignImageOptionsData". This property is set automatically when using SDK classes.
 
-## [ImagesSignImageOptionsData Object]("ImagesSignImageOptionsDataObject")
+## ImagesSignImageOptionsData Object
 
 Provides options for Images Documents to add Image Signature.
 
@@ -728,14 +728,14 @@ Example ImagesSignImageOptionsData object.
 }
 ```
 
- ImagesSignImageOptionsData Object Fields (Click here to expand)
+ ImagesSignImageOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -750,7 +750,7 @@ Example ImagesSignImageOptionsData object.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignImageOptionsData". This property is set automatically when using SDK classes.
 
-## [PdfSignImageOptionsData Object]("PdfSignImageOptionsData Object") 
+## PdfSignImageOptionsData Object
 
 Provides options to add Image Signature on Document pages.
 
@@ -796,14 +796,14 @@ Example PdfSignImageOptionsData object
 
 ```
 
- PdfSignImageOptionsData Object Fields (Click here to expand)
+ PdfSignImageOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -818,7 +818,7 @@ Example PdfSignImageOptionsData object
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
 |OptionsType|string|The class name of options object, should always contains value "PdfSignImageOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesSignImageOptionsData Object]("SlidesSignImageOptionsData")
+## SlidesSignImageOptionsData Object
 
 Provides options to put Image Signature on Slides Documents
 
@@ -859,14 +859,14 @@ Provides options to put Image Signature on Slides Documents
 }
 ```
 
- SlidesSignImageOptionsData Object Fields (Click here to expand)
+ SlidesSignImageOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -881,7 +881,7 @@ Provides options to put Image Signature on Slides Documents
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
 |OptionsType|string|The class name of options object, should always contains value "SlidesSignImageOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsSignImageOptionsData Object]("WordsSignImageOptionsData")
+## WordsSignImageOptionsData Object
 
 Provides options to put Image Signature on Words Documents
 
@@ -925,14 +925,14 @@ Example WordsSignImageOptionsData object.
 }
 ```
 
- WordsSignImagesOptionsData Object Fields (Click here to expand)
+ WordsSignImagesOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -947,7 +947,7 @@ Example WordsSignImageOptionsData object.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
 |OptionsType|string|The class name of options object, should always contains value "WordsSignImageOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsSignDigitalOptionsData Object]("CellsSignDigitalOptionsData")
+## CellsSignDigitalOptionsData Object
 
 Provides options to add Digital Signature on Cells Documents
 
@@ -996,7 +996,7 @@ Example CellsSignDigitalOptionsData object.
 }
 ```
 
- CellsSignDigitalOptionsData Object Fields (Click here to expand)
+ CellsSignDigitalOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -1006,7 +1006,7 @@ Example CellsSignDigitalOptionsData object.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SheetNumber|int|Gets or sets worksheet number for signing. DocumentPageNumber parameter contains the same value.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height. (This property is obsolete.)
@@ -1023,7 +1023,7 @@ Example CellsSignDigitalOptionsData object.
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
 |OptionsType|string|The class name of options object, should always contains value "CellsSignImageOptionsData". This property is set automatically when using SDK classes
 
-## [PdfSignDigitalOptionsData Object]("PdfSignDigitalOptionsData")
+## PdfSignDigitalOptionsData Object
 
 Provides options to put Digital Signature on Pdf Documents
 
@@ -1073,7 +1073,7 @@ Example PdfSignDigitalOptionsData object.
 }
 ```
 
- PdfSignDigitalOptionsData Object Fields (Click here to expand)
+ PdfSignDigitalOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -1082,7 +1082,7 @@ Example PdfSignDigitalOptionsData object.
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -1101,7 +1101,7 @@ Example PdfSignDigitalOptionsData object.
 |Visible|bool|Gets or sets the visibility of signature.
 |OptionsType|string|The class name of options object, should always contains value "PdfSignDigitalOptionsData". This property is set automatically when using SDK classes
 
-## [WordsSignDigitalOptionsData Object]("WordsSignDigitalOptionsData")
+## WordsSignDigitalOptionsData Object
 
 Provides options to put Digital Siganture on Words Documents.
 
@@ -1145,7 +1145,7 @@ Example WordsSignDigitalOptionsData object.
 }
 ```
 
- WordsSignDigitalOptionsData Object Fileds (Click here to expand)
+ WordsSignDigitalOptionsData Object Fileds
 
 |Name|Type|Description
 |---|---|---
@@ -1154,7 +1154,7 @@ Example WordsSignDigitalOptionsData object.
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified. **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -1169,7 +1169,7 @@ Example WordsSignDigitalOptionsData object.
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
 |OptionsType|string|The class name of options object, should always contains value "WordsSignDigitalOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsSignBarcodeOptionsData Object]("CellsSignBarcodeOptionsData")
+## CellsSignBarcodeOptionsData Object
 
 Provides options for Cells Documents to add Barcode Signature.
 
@@ -1245,7 +1245,7 @@ Example CellsSignBarcodeOptionsData object
 }
 ```
 
- CellsSignBarcodeOptionsData Object Fields (Click here to expand)
+ CellsSignBarcodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -1254,7 +1254,7 @@ Example CellsSignBarcodeOptionsData object
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SheetNumber|int|Gets or sets worksheet number for signing. DocumentPageNumber parameter contains the same value.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified. **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height. (This property is obsolete.)
@@ -1276,11 +1276,11 @@ Example CellsSignBarcodeOptionsData object
 |BorderWeight|int|Specifies Border Width of Signature Area
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "CellsSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [ImagesSignBarcodeOptionsData Object]("ImagesSignBarcodeOptionsDataObject")
+## ImagesSignBarcodeOptionsData Object
 
 Provides options for Images Documents to add Barcode Signature.
 
@@ -1353,7 +1353,7 @@ Example ImagesSignBarcodeOptionsData object.
 }
 ```
 
- ImagesSignBarcodeOptionsData Object Fields (Click here to expand)
+ ImagesSignBarcodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -1361,7 +1361,7 @@ Example ImagesSignBarcodeOptionsData object.
 |BarcodeTypeName|string|Get or set Barcode type. Pick one from supported Barcode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -1382,11 +1382,11 @@ Example ImagesSignBarcodeOptionsData object.
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-##  ##
+## PdfSignBarcodeOptionsData object
 
 Provides options for Pdf Documents to add Barcode Signature.
 
@@ -1459,7 +1459,7 @@ Example PdfSignBarcodeOptionsData object
 }
 ```
 
- PdfSignBarcodeOptionsData Object Fields (Click here to expand)
+ PdfSignBarcodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -1467,7 +1467,7 @@ Example PdfSignBarcodeOptionsData object
 |BarcodeTypeName|string|Get or set Barcode type. Pick one from supported Barcode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -1488,11 +1488,11 @@ Example PdfSignBarcodeOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "PdfSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesSignBarcodeOptionsData Object]("SlidesTextOptions")
+## SlidesSignBarcodeOptionsData Object
 
 Provides options to put Barcode Signature on Slides Documents.
 
@@ -1565,7 +1565,7 @@ Example SlidesSignBarcodeOptionsData object
 }
 ```
 
- SlidesSignBarcodeOptionsData Object Fields (Click here to expand)
+ SlidesSignBarcodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -1573,7 +1573,7 @@ Example SlidesSignBarcodeOptionsData object
 |BarcodeTypeName|string|Get or set Barcode type. Pick one from supported Barcode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -1594,11 +1594,11 @@ Example SlidesSignBarcodeOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "SlidesSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsSignBarcodeOptionsData Object]("WordsSignTextOptionsData")
+## WordsSignBarcodeOptionsData Object
 
 Provides options for Barcode Signature object for Words Documents.
 
@@ -1671,7 +1671,7 @@ Example WordsSignBarcodeOptionsData object
 }
 ```
 
- WordsSignBarcodeOptionsData Object Fields (Click here to expand)
+ WordsSignBarcodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -1679,7 +1679,7 @@ Example WordsSignBarcodeOptionsData object
 |BarcodeTypeName|string|Get or set Barcode type. Pick one from supported Barcode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -1700,11 +1700,11 @@ Example WordsSignBarcodeOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result Barcode. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between Barcode elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "WordsSignBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsSignQRCodeOptionsData Object]("CellsSignQRCodeOptionsData")
+## CellsSignQRCodeOptionsData Object
 
 Provides options for Cells Documents to add QR-Code Signature.
 
@@ -1780,7 +1780,7 @@ Example CellsSignQRCodeOptionsData object
 }
 ```
 
- CellsSignQRCodeOptionsData Object Fields (Click here to expand)
+ CellsSignQRCodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -1789,7 +1789,7 @@ Example CellsSignQRCodeOptionsData object
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SheetNumber|int|Gets or sets worksheet number for signing. DocumentPageNumber parameter contains the same value.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height. (This property is obsolete.)
@@ -1811,11 +1811,11 @@ Example CellsSignQRCodeOptionsData object
 |BorderWeight|int|Specifies Border Width of Signature Area
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "CellsSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [ImagesSignQRCodeOptionsData Object]("ImagesSignQRCodeOptionsDataObject")
+## ImagesSignQRCodeOptionsData Object
 
 Provides options for Images Documents to add QRCode Signature.
 
@@ -1888,7 +1888,7 @@ Example ImagesSignQRCodeOptionsData object.
 }
 ```
 
- ImagesSignQRCodeOptionsData Object Fields (Click here to expand)
+ ImagesSignQRCodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -1896,7 +1896,7 @@ Example ImagesSignQRCodeOptionsData object.
 |QRCodeTypeName|string|Get or set QRCode type. Pick one from supported QRCode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified. **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -1917,11 +1917,11 @@ Example ImagesSignQRCodeOptionsData object.
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-##  ##
+## PdfSignQRCodeOptionsData object
 
 Provides options for Pdf Documents to add QRCode Signature.
 
@@ -1992,7 +1992,7 @@ Example PdfSignQRCodeOptionsData object
 }
 ```
 
- PdfSignQRCodeOptions Object Fields (Click here to expand)
+ PdfSignQRCodeOptions Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -2000,7 +2000,7 @@ Example PdfSignQRCodeOptionsData object
 |QRCodeTypeName|string|Get or set QRCode type. Pick one from supported QRCode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -2021,11 +2021,11 @@ Example PdfSignQRCodeOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "PdfSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesSignQRCodeOptionsData Object]("SlidesSignQRCodeOptionsData")
+## SlidesSignQRCodeOptionsData Object
 
 Provides options to put QR-Code Signature on Slides Documents.
 
@@ -2098,7 +2098,7 @@ Example SlidesSignQRCodeOptionsData object
 }
 ```
 
- SlidesSignQRCodeOptionsData Object Fields (Click here to expand)
+ SlidesSignQRCodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -2106,7 +2106,7 @@ Example SlidesSignQRCodeOptionsData object
 |QRCodeTypeName|string|Get or set QRCode type. Pick one from supported QRCode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -2127,11 +2127,11 @@ Example SlidesSignQRCodeOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "SlidesSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsSignQRCodeOptionsData Object]("WordsSignQRCodeOptionsData")
+## WordsSignQRCodeOptionsData Object
 
 Provides options for QR-Code Signature object for Words Documents.
 
@@ -2204,7 +2204,7 @@ Example WordsSignQRCodeOptionsData object
 }
 ```
 
- WordsSignQRCodeOptions Object Fields (Click here to expand)
+ WordsSignQRCodeOptions Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -2212,7 +2212,7 @@ Example WordsSignQRCodeOptionsData object
 |QRCodeTypeName|string|Get or set QRCode type. Pick one from supported QRCode Types list.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -2233,11 +2233,11 @@ Example WordsSignQRCodeOptionsData object
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Stretch|enum|Specifies stretch mode for Signature. Values are  None, PageWidth, PageHeight, PageArea.
 |Opacity|double|Gets or sets the signature opacity (value from 0.0 (clear) through 1.0 (opaque)).
-|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None. **[CodeTextAlignmentData.]("CodeTextAlignmentDataObject")**
-|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders. **[PaddingDataData.]("PaddingDataObject")**
+|CodeTextAlignment|enum|Gets or sets the alignment of text in the result QR-code. Default value is None.
+|InnerMargins|PaddingData|Gets or sets the space between QR-code elements and result image borders.
 |OptionsType|string|The class name of options object, should always contains value "WordsSignQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsSignStampOptionsData Object]("CellsSignStampOptionsData")
+## CellsSignStampOptionsData Object
 
 Provides options to put Stamp Signature on Cells Documents Pages.
 
@@ -2365,7 +2365,7 @@ Example CellsSignStampOptionsData object
 }
 ```
 
- CellsSignStampOptionsData Object Fields (Click here to expand)
+ CellsSignStampOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -2373,7 +2373,7 @@ Example CellsSignStampOptionsData object
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SheetNumber|int|Gets or sets worksheet number for signing. DocumentPageNumber parameter contains the same value.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height. (This property is obsolete.)
@@ -2388,14 +2388,14 @@ Example CellsSignStampOptionsData object
 |MarginMeasureType|enum|Specifies measure type (pixels or percent) for Margin. (This property is obsolete.)
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
-|BackgroundColor|Color|Gets or sets the background color of signature. 
+|BackgroundColor|Color|Gets or sets the background color of signature.
 |BackgroundColorCropType|enum|Gets or sets the background color crop type of signature.
-|BackgroundImageCropType|enum|Gets or sets the background image crop type of signature.** .**
-|OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles. 
-|InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles. 
+|BackgroundImageCropType|enum|Gets or sets the background image crop type of signature.
+|OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles.
+|InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles.
 |OptionsType|string|The class name of options object, should always contains value "CellsSignStampOptionsData". This property is set automatically when using SDK classes.
 
-## [ImagesSignStampOptionsData Object]("ImagesSignStampOptionsDataObject")
+## ImagesSignStampOptionsData Object
 
 Provides options to put Stamp Signature on Images Documents Pages.
 
@@ -2520,14 +2520,14 @@ Example ImagesSignStampOptionsData object
 }
 ```
 
- ImagesSignStampOptionsData Object Fields (Click here to expand)
+ ImagesSignStampOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -2540,14 +2540,14 @@ Example ImagesSignStampOptionsData object
 |MarginMeasureType|enum|Specifies measure type (pixels or percent) for Margin.
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
-|BackgroundColor|Color|Gets or sets the background color of signature. 
+|BackgroundColor|Color|Gets or sets the background color of signature.
 |BackgroundColorCropType|enum|Gets or sets the background color crop type of signature.
-|BackgroundImageCropType|enum|Gets or sets the background image crop type of signature.** .**
-|OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles. 
-|InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles. 
+|BackgroundImageCropType|enum|Gets or sets the background image crop type of signature.
+|OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles.
+|InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles.
 |OptionsType|string|The class name of options object, should always contains value "ImagesSignStampOptionsData". This property is set automatically when using SDK classes.
 
-## [PdfSignStampOptionsData Object]("PdfSignStampOptionsDataObject")
+## PdfSignStampOptionsData Object
 
 Provides options to put Stamp Signature on Pdf Documents Pages.
 
@@ -2670,14 +2670,14 @@ Example PdfSignStampOptionsData object.
 }
 ```
 
- PdfSignStampOptionsData Object Fields (Click here to expand)
+ PdfSignStampOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified. **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -2690,14 +2690,14 @@ Example PdfSignStampOptionsData object.
 |MarginMeasureType|enum|Specifies measure type (pixels or percent) for Margin.
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
-|BackgroundColor|Color|Gets or sets the background color of signature. 
+|BackgroundColor|Color|Gets or sets the background color of signature.
 |BackgroundColorCropType|enum|Gets or sets the background color crop type of signature.
-|BackgroundImageCropType|enum|Gets or sets the background image crop type of signature.** .**
-|OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles. 
-|InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles. 
+|BackgroundImageCropType|enum|Gets or sets the background image crop type of signature.
+|OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles.
+|InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles.
 |OptionsType|string|The class name of options object, should always contains value "PdfSignStampOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesSignStampOptionsData Object]("SlidesSignStampOptionsDataObject")
+## SlidesSignStampOptionsData Object
 
 Provides options to put Stamp Signature on Slides Documents Pages.
 
@@ -2822,14 +2822,14 @@ Example SlidesSignStampOptionsData object
 }
 ```
 
- ImagesSignStampOptionsData Object Fields (Click here to expand)
+ ImagesSignStampOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -2842,14 +2842,14 @@ Example SlidesSignStampOptionsData object
 |MarginMeasureType|enum|Specifies measure type (pixels or percent) for Margin.
 |RotationAngle|int|Rotation angle of signature on document page (clockwise).
 |Opacity|double|Gets or sets the additional opacity for sign image (value from 0.0 (clear) through 1.0 (opaque)). By default the value is 1.0.
-|BackgroundColor|Color|Gets or sets the background color of signature. 
+|BackgroundColor|Color|Gets or sets the background color of signature.
 |BackgroundColorCropType|enum|Gets or sets the background color crop type of signature.
-|BackgroundImageCropType|enum|Gets or sets the background image crop type of signature.** .**
-|OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles. 
-|InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles. 
+|BackgroundImageCropType|enum|Gets or sets the background image crop type of signature.
+|OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles.
+|InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles.
 |OptionsType|string|The class name of options object, should always contains value "SlidesSignStampOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsSignStampOptionsData Object]("WordsSignStampOptionsDataObject")
+## WordsSignStampOptionsData Object
 
 Provides options to put Stamp Signature on Words Documents Pages.
 
@@ -2972,14 +2972,14 @@ Example WordsSignStampOptionsData object
 }
 ```
 
- ImagesSignStampOptionsData Object Fields (Click here to expand)
+ ImagesSignStampOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |ImageGuid|string|Gets or sets the signature image file name.
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
 |SignAllPages|bool|Put signature on all document pages. Default value is false.
-|PagesSetup|PagesSetupData|Page options to specify pages to be verified.  **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|PagesSetupData|Page options to specify pages to be verified.
 |Width|int|The width of Signature Area in measure unit values.
 |Height|int|The width of Signature Area in measure unit values.
 |SizeMeasureType|enum|Specifies enumeration of Measure Units for Size - Width and Height.
@@ -2998,7 +2998,3 @@ Example WordsSignStampOptionsData object
 |OuterLines|List<StampLineData>|List of Outer Lines rendered as concentric circles.
 |InnerLines|List<StampLineData>|List of Inner Lines rendered as set of rectangles.
 |OptionsType|string|The class name of options object, should always contains value "WordsSignStampOptionsData". This property is set automatically when using SDK classes.
-
-**[PagesSetupData]("PagesSetupDataObject")**
-
-**[PagesSetupData]("PagesSetupDataObject")**

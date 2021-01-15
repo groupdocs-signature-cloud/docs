@@ -51,7 +51,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/one-page.docx/qrcode" \
 
 ## SDKs ##
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
 
 ### Add QRCode Signature to Document ###
 
@@ -111,7 +111,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/qrcode?url#https%3A%2F%2Fwww.d
 
 ## SDKs ##
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
 
 ### Add QRCode Signature to Document at specified URL ###
 
@@ -166,7 +166,7 @@ curl --request POST \--url http://api.groupdocs.cloud/v1/signature/01_pages.png/
 
 ## SDKs ##
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
 
 ### Setup QR-Code Logo image (Signature QR-Code Options) ###
 
@@ -226,7 +226,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/qrcode?url#https%3A%2F%2Fwww.d
 
 ## SDKs ##
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
 
 ### Add QRCode Signature to Document at specified URL ###
 

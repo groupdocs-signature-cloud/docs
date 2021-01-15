@@ -16,13 +16,13 @@ Barcodes are used in various areas where quick identification is necessary - a
 
 Barcodes allow to store product related data like manufacturing and expiry dates, manufacturer name, country of the origin and product price. There are plenty of barcode types nowadays because different companies use different amount of number and bar combinations in their barcodes dependent on their needs. From document signature perspective Barcode may contain different characters (letters, digits or symbols) and have a various length and its size depending on the type and settings to keep signature information, title, subject or short encrypted data.
 
-GroupDocs.Signature Cloud supports wide range or Barcode types that can be used to create electronic signature within the documents. Please refer to [Getting supported Barcode Types](https://wiki.lisbon.dynabic.com/display/signature/Get+supported+barcode+types) article to get the full list of supported barcodes.
+GroupDocs.Signature Cloud supports wide range or Barcode types that can be used to create electronic signature within the documents. Please refer to [Getting supported Barcode Types](signature/get-supported-barcodes) article to get the full list of supported barcodes.
 To specify different options for Barcode signature GroupDocs.Signature Cloud provides SignBarcodeOptions class. The main fields are:
 
 * BarcodeType - specifies Barcode type (AustralianPost, Codabar, EAN13, OPC, etc.);
 * Text - specifies Barcode text.
 
-API Usage
+## API Usage ##
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -112,7 +112,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 
 ## SDKs ##
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
 
 ### SDK Examples ###
 

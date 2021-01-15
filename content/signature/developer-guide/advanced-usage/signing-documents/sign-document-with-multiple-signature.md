@@ -11,7 +11,7 @@ keywords: ""
 
 GroupDocs.Signature Cloud allows to sign document with several signatures simultaneously and even apply signatures of different types to the same document.
 
-API Usage
+## API Usage ##
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -132,7 +132,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 
 ## SDKs ##
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
 
 ### SDK Examples ###
 

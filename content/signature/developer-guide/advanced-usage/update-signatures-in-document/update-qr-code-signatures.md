@@ -11,9 +11,7 @@ keywords: ""
 
 GroupDocs.Signature Cloud provides a method to update some signature properties by it's id. The signature ID is needed to perform the update, it comes from the result of sign or search operation.
 
-This example shows how to update QR-Code signature.
-
-API Usage
+## API Usage ##
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -100,7 +98,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/update" \
 
 ## SDKs ##
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
 
 ### SDK Examples ###
 

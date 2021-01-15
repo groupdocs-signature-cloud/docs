@@ -97,7 +97,7 @@ curl -i http://localhost:8080/
 
 At the following screenshot, I'm calling [http:~~/~~/localhost:8080/](http://localhost:8080/) in a separate Powershell window and response indicates that service is alive:
 
-![screenshot](signature/images/viewercloud.getting-started.how-to-self-host-groupdocs-viewer-cloud-with-docker.WebHome@health_check.png)
+![screenshot](signature/images/health_check.png)
 
 ### Using UI ###
 
@@ -163,4 +163,4 @@ GroupDocs.Signature Cloud can be started in trial and licensed modes. When Group
 * You can sign only two first pages of the document
 * Evaluation watermarks added to the output
 
-You can find more information about evaluation at [Evaluate GroupDocs.Signature]({{< ref "signature/getting-started/evaluate-groupdocs-signature.md" >}})).
+You can find more information about evaluation at [Evaluate GroupDocs.Signature]({{< ref "signature/getting-started/evaluate-groupdocs-signature.md" >}}).

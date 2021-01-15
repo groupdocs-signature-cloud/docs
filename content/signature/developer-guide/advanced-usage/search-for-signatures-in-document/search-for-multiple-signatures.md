@@ -11,7 +11,7 @@ keywords: ""
 
 Sometimes you may want to search for electronic signatures of different types simultaneously. GroupDocs.Signature Cloud allows searching documents for different signature types in an easy and intuitive way. In common words the idea is to pass collection of desired signature types to Search method.
 
-API Usage
+## API Usage ##
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -95,7 +95,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/search" \
 
 ## SDKs ##
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
 
 ### SDK Examples ###
 

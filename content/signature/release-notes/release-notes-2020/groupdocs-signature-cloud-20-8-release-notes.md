@@ -8,7 +8,9 @@ description: ""
 keywords: ""
 ---
 
-This page contains release notes for GroupDocs.Signature Cloud 20.8.
+{{< alert style="info" >}}
+This page contains release notes for GroupDocs.Signature Cloud 20.8
+{{< /alert >}}
 
 ## Major Features ##
 

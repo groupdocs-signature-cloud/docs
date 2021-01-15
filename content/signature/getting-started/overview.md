@@ -45,52 +45,52 @@ List of supported Document file formats:
 |Supported formats / Signature Type|Text Signature|Stamp Signature|Image Signature|Digital Signature|Barcode Signature|QR-Code Signature|
 |---|---|---|---|---|---|---|
 |Portable Document Format| | | | | |
-|PDF|+|+|+|+|+|+
+|[PDF](https://docs.fileformat.com/pdf/)|+|+|+|+|+|+
 |Microsoft Word| | | | | |
-|DOC – binary files|+|+|+|+|+|+
-|DOCM|+|+|+|+|+|+
-|DOCX – Open XML files|+|+|+|+|+|+
-|DOT|+|+|+|+|+|+
-|DOTM|+|+|+|+|+|+
-|DOTX|+|+|+|+|+|+
+|[DOC](https://docs.fileformat.com/word-processing/doc/)|+|+|+|+|+|+
+|[DOCM](https://docs.fileformat.com/word-processing/docm/)|+|+|+|+|+|+
+|[DOCX](https://docs.fileformat.com/word-processing/docx/)|+|+|+|+|+|+
+|[DOT](https://docs.fileformat.com/word-processing/dot/)|+|+|+|+|+|+
+|[DOTM](https://docs.fileformat.com/word-processing/dotm/)|+|+|+|+|+|+
+|[DOTX](https://docs.fileformat.com/word-processing/dotx/)|+|+|+|+|+|+
 |Microsoft Excel| | | | | |
-|XLS – binary files|+|+|+|+|+|+
-|XLSB|+|+|+| |+|
-|XLSM|+|+|+|+|+|+
-|XLSX – Open XML files|+|+|+|+|+|+
-|XLT|+|+|+|+|+|+
-|XLTM|+|+|+|+|+|+
-|XLTX|+|+|+|+|+|+
+|[XLS](https://docs.fileformat.com/spreadsheet/xls/)|+|+|+|+|+|+
+|[XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)|+|+|+| |+|
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|+|+|+|+|+|+
+|[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|+|+|+|+|+|+
+|[XLT](https://docs.fileformat.com/spreadsheet/xlt/)|+|+|+|+|+|+
+|[XLTM](https://docs.fileformat.com/spreadsheet/xltm/)|+|+|+|+|+|+
+|[XLTX](https://docs.fileformat.com/spreadsheet/xltx/)|+|+|+|+|+|+
 |Microsoft PowerPoint| | | | | |
-|POT|+|+|+| |+|
-|POTM|+|+|+| |+|
-|POTX|+|+|+|
-|PPS|+|+|+| | |
-|PPSM|+|+|+|
-|PPSX|+|+|+| |+|
-|PPT – binary files|+|+|+| | |
-|PPTM| | | |+| |
-|PPTX – Open XML files|+|+|+|+|+|
+|[POT](https://docs.fileformat.com/presentation/pot/)|+|+|+| |+|
+|[POTM](https://docs.fileformat.com/presentation/potm/)|+|+|+| |+|
+|[POTX](https://docs.fileformat.com/presentation/potx/)|+|+|+|
+|[PPS](https://docs.fileformat.com/presentation/pps/)|+|+|+| | |
+|[PPSM](https://docs.fileformat.com/presentation/ppsm/)|+|+|+|
+|[PPSX](https://docs.fileformat.com/presentation/ppsx/)|+|+|+| |+|
+|[PPT](https://docs.fileformat.com/presentation/ppt/)|+|+|+| | |
+|[PPTM](https://docs.fileformat.com/presentation/pptm/)| | | |+| |
+|[PPTX](https://docs.fileformat.com/presentation/pptx/)|+|+|+|+|+|
 |OpenDocument Formats| | | | | |
-|ODT – OpenOffice Document|+|+|+|+|+|
-|ODP – OpenOffice Presentation|+|+|+| |+|
-|ODS – OpenOffice Spreadsheet|+|+|+| |+|
-|OTT – OpenOffice Text Template|+|+|+| |+|+
+|[ODT](https://docs.fileformat.com/word-processing/odt/)|+|+|+|+|+|
+|[ODP](https://docs.fileformat.com/presentation/odp/)|+|+|+| |+|
+|[ODS](https://docs.fileformat.com/spreadsheet/ods/)|+|+|+| |+|
+|[OTT](https://docs.fileformat.com/word-processing/ott/)|+|+|+| |+|+
 |Rich Text Format| | | | | |
-|RTF|+|+|+| |+|+
+|[RTF](https://docs.fileformat.com/word-processing/rtf/)|+|+|+| |+|+
 |**Image Formats**| | | | | |
-|JPG|+|+|+| |+|+
-|PNG|+|+|+| |+|+
-|BMP|+|+|+| |+|+
-|GIF|+|+|+| |+|+
-|TIFF|+|+|+| |+|+
-|CDR|+|+|+| |+|+
+|[JPG](https://docs.fileformat.com/image/jpeg/)|+|+|+| |+|+
+|[PNG](https://docs.fileformat.com/image/png/)|+|+|+| |+|+
+|[BMP](https://docs.fileformat.com/image/bmp/)|+|+|+| |+|+
+|[GIF](https://docs.fileformat.com/image/gif/)|+|+|+| |+|+
+|[TIFF](https://docs.fileformat.com/image/tiff/)|+|+|+| |+|+
+|[CDR](https://docs.fileformat.com/image/cdr/)|+|+|+| |+|+
 
 ## Security and Authentication
 
 The GroupDocs.Signature Cloud API is secured and requires authentication.
 
-Developers can [create]({{< ref "total/getting-started/ui-topics/creating-and-managing-application.md" >}}) an Application which has a Client Id and Client Secret when they [register]({{< ref "total/getting-started/ui-topics/creating-and-managing-account.md" >}}). 
+Developers can [create]({{< ref "total/getting-started/ui-topics/creating-and-managing-application.md" >}}) an Application which has a Client Id and Client Secret when they [register]({{< ref "total/getting-started/ui-topics/creating-and-managing-account.md" >}}).
 
 Authenticated requests require an OAuth 2.0 authorization header. You can see complete detail [here]({{< ref "total/getting-started/overview-rest-api/authenticating-api-requests.md" >}}).
 

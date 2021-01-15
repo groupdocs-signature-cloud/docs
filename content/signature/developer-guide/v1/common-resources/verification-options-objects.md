@@ -14,7 +14,7 @@ Note:  The features listed in this page are supported only in GroupDocs.Signatu
 
 Page contains description for Verification Options objects and object properties
 
-## [VerifyOptionsCollectionData Object]("VerifyOptionsCollectionDataObject")
+## VerifyOptionsCollectionData Object
 
 Provides list of options for documents verification.
 
@@ -65,13 +65,13 @@ Example VerifyOptionsCollectionData object
 }
 ```
 
- VerifyOptionsCollectionData Object Fields (Click here to expand)
+ VerifyOptionsCollectionData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |Items|List<VerifyOptionsData>|List of Verify Options records.
 
-## [CellsVerifyTextOptionsData Object]("CellsVerifyTextOptionsData")
+## CellsVerifyTextOptionsData Object
 
 Provides options to verify Text Signature in Cells Documents.
 
@@ -86,13 +86,13 @@ Example CellsVerifyTextOptionsData object
  }
 ```
 
- CellsVerifyTextOptionsData Object Fields (Click here to expand)
+ CellsVerifyTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |Text|string|Text of Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsVerifyTextOptionsData". This property is set automatically when using SDK classes.
 
@@ -113,7 +113,7 @@ Example PdfVerifyTextOptionsData object
  }
 ```
 
- PdfVerifyTextOptions Object Fields (Click here to expand)
+ PdfVerifyTextOptions Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -121,11 +121,11 @@ Example PdfVerifyTextOptionsData object
 |SignatureImplementation|enum|Specifies type of Signature implementation to verify
 |Text|string|Text of Signature. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfVerifyTextOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesVerifyTextOptionsData Object]("SlidesVerifyTextOptionsData")
+## SlidesVerifyTextOptionsData Object
 
 Provides options to verify Text Signature in Slides Documents.
 
@@ -140,17 +140,17 @@ Example SlidesVerifyTextOptionsData object
  }
 ```
 
- SlidesVerifyTextOptionsData Object Fields (Click here to expand)
+ SlidesVerifyTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |Text|string|Text of Signature. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "SlidesVerifyTextOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsVerifyTextOptionsData Object]("WordsVerifyTextOptionsData")
+## WordsVerifyTextOptionsData Object
 
 Provides optionsto verify Text Signature in Words Documents.
 
@@ -165,17 +165,17 @@ Example WordsVerifyTextOptionsData object
  }
 ```
 
- WordsVerifyTextOptionsData Object Fields (Click here to expand)
+ WordsVerifyTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |Text|string|Text of Signature to verify
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |SheetNumber|int|Specifies document-sheet page number to add Text Signature.
 |OptionsType|string|The class name of options object, should always contains value "WordsVerifyTextOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsVerifyDigitalOptionsData Object]("InfoOptionsObject")
+## CellsVerifyDigitalOptionsData Object
 
 Provides options to verify Digital Signature in Cells Documents.
 
@@ -193,17 +193,17 @@ Example CellsVerifyDigitalOptionsData object
  }
 ```
 
- CellsVerifyTextOptionsData Object Fields (Click here to expand)
+ CellsVerifyTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |Text|string|Text of Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsVerifyDigitalOptionsData". This property is set automatically when using SDK classes.
 
-##  ##
+## PdfVerifyDigitalOptionsData object
 
 Provides options to verify Digital Signature in Pdf Documents.
 
@@ -221,7 +221,7 @@ Example PdfVerifyDigitalOptionsData object
  }
 ```
 
- PdfVerifyDigitalOptionsData Object Fields (Click here to expand)
+ PdfVerifyDigitalOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -229,11 +229,11 @@ Example PdfVerifyDigitalOptionsData object
 |SignatureImplementation|enum|Specifies type of Signature implementation to verify
 |Text|string|Text of Signature. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfVerifyDigitalOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsVerifyDigialOptionsData Object]("WordsVerifyDigialOptionsData")
+## WordsVerifyDigialOptionsData Object
 
 Provides options to verify Digital Signature in Words Documents.
 
@@ -251,17 +251,17 @@ Example WordsVerifyDigitalOptionsData object
  }
 ```
 
- WordsVerifyTextOptionsData Object Fields (Click here to expand)
+ WordsVerifyTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |Text|string|Text of Signature to verify
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |SheetNumber|int|Specifies document-sheet page number to add Text Signature.
 |OptionsType|string|The class name of options object, should always contains value "WordsVerifyDigitalOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsVerifyBarcodeOptionsData Object]("CellsVerifyBarcodeOptionsData")
+## CellsVerifyBarcodeOptionsData Object
 
 Provides options to verify Barcode Signature in Cells Documents.
 
@@ -278,19 +278,19 @@ Example CellsVerifyBarcodeOptionsData object
  }
 ```
 
- CellsVerifyTextOptionsData Object Fields (Click here to expand)
+ CellsVerifyTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |BarcodeTypeName|string|Barcode encode type name to verify on document page(s). List of supported Barcode encode type names could be found in Barcode Resources
-|MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
+|MatchType|enum|Specifies Text matching logic.
 |Text|string|Text of Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsVerifyBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [ImagesVerifyBarcodeOptionsData Object]("ImagesVerifyBarcodeOptionsDataObject")
+## ImagesVerifyBarcodeOptionsData Object
 
 Provides options to verify Barcode Signature in Images Documents.
 
@@ -319,19 +319,19 @@ Example ImagesVerifyBarcodeOptionsData object
 }
 ```
 
- CellsVerifyTextOptionsData Object Fields (Click here to expand)
+ CellsVerifyTextOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |BarcodeTypeName|string|Barcode encode type name to verify on document page(s). List of supported Barcode encode type names could be found in Barcode Resources
 |Text|string|Optional. Specifies text to search in Barcodes. If value is not set there will be no Text criteria.
-|MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
+|MatchType|enum|Specifies Text matching logic.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsVerifyBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-##  ##
+## PdfVerifyBarcodeOptionsData object
 
 Provides options to verify Barcode Signature in Pdf Documents.
 
@@ -348,7 +348,7 @@ Example PdfVerifyBarcodeOptionsData object
  }
 ```
 
- PdfVerifyBarcodeOptionsData Object Fields (Click here to expand)
+ PdfVerifyBarcodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -356,11 +356,11 @@ Example PdfVerifyBarcodeOptionsData object
 |MatchType|enum|Specifies enumeration of possible Barcode Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of Signature. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfVerifyBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesVerifyBarcodeOptionsData Object]("SlidesVerifyBarcodeOptionsData")
+## SlidesVerifyBarcodeOptionsData Object
 
 Provides options to verify Barcode Signature in Slides Documents.
 
@@ -377,7 +377,7 @@ Example SlidesVerifyBarcodeOptionsData object
  }
 ```
 
- SlidesVerifyBarodeOptionsData Object Fields (Click here to expand)
+ SlidesVerifyBarodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -385,11 +385,11 @@ Example SlidesVerifyBarcodeOptionsData object
 |MatchType|enum|Specifies enumeration of possible Barcode Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of Signature. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify Text Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "SlidesVerifyBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsVerifyBarcodeOptionsData Object]("WordsVerifyBarcodeOptionsData")
+## WordsVerifyBarcodeOptionsData Object
 
 Provides options to verify Barcode Signature in Words Documents.
 
@@ -414,11 +414,11 @@ Example WordsVerifyBarcodeOptionsData object
 |MatchType|enum|Specifies enumeration of possible Barcode Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of Signature to verify
 |DocumentPageNumber|int|Specifies document page number to add Text Signature. Default value is 1.
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |SheetNumber|int|Specifies document-sheet page number to add Text Signature.
 |OptionsType|string|The class name of options object, should always contains value "WordsVerifyBarcodeOptionsData". This property is set automatically when using SDK classes.
 
-## [CellsVerifyQRCodeOptionsData Object]("CellsVerifyQRCodeOptionsData")
+## CellsVerifyQRCodeOptionsData Object
 
 Provides options to verify QRCodeSignature in Cells Documents.
 
@@ -435,7 +435,7 @@ Example CellsVerifyQRCodeOptionsData object
  }
 ```
 
- CellsVerifyQRCodeOptionsData Object Fields (Click here to expand)
+ CellsVerifyQRCodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -443,11 +443,11 @@ Example CellsVerifyQRCodeOptionsData object
 |MatchType|enum|Specifies enumeration of possible QR-Code Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify QR-Code Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsVerifyQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [ImagesVerifyQRCodeOptionsData Object]("ImagesVerifyQRCodeOptionsDataObject")
+## ImagesVerifyQRCodeOptionsData Object
 
 Provides options to verify QRCodeSignature in Images Documents.
 
@@ -476,19 +476,19 @@ Example ImagesVerifyQRCodeOptionsData object
 }
 ```
 
- ImagesVerifyQRCodeOptionsData Object Fields (Click here to expand)
+ ImagesVerifyQRCodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
 |QRCodeTypeName|string|QR-Code encode type name to verify on document page(s). List of supported QR-Code encode type names could be found in QR-Code Resources
-|MatchType|enum|Specifies Text matching logic. See **[TextMatchTypeData]("TextMatchTypeDataObject")**
+|MatchType|enum|Specifies Text matching logic.
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify QR-Code Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "ImagesVerifyQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-##  ##
+## PdfVerifyQRCodeOptionsData object
 
 Provides options to verify QRCode Signature in Pdf Documents.
 
@@ -505,7 +505,7 @@ Example PdfVerifyQRCodeOptionsData object
  }
 ```
 
- PdfVerifyQRCodeOptionsData Object Fields (Click here to expand)
+ PdfVerifyQRCodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -513,11 +513,11 @@ Example PdfVerifyQRCodeOptionsData object
 |MatchType|enum|Specifies enumeration of possible QR-Code Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify QR-Code Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "PdfVerifyQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [SlidesVerifyQRCodeOptionsData Object]("SlidesVerifyQRCodeOptionsData")
+## SlidesVerifyQRCodeOptionsData Object
 
 Provides options to verify QRCodeSignature in Slides Documents.
 
@@ -534,7 +534,7 @@ Example SlidesVerifyQRCodeOptionsData object
  }
 ```
 
- SlidesVerifyQRCodeOptionsData Object Fields (Click here to expand)
+ SlidesVerifyQRCodeOptionsData Object Fields
 
 |Name|Type|Description
 |---|---|---
@@ -542,11 +542,11 @@ Example SlidesVerifyQRCodeOptionsData object
 |MatchType|enum|Specifies enumeration of possible QR-Code Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify QR-Code Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "SlidesVerifyQRCodeOptionsData". This property is set automatically when using SDK classes.
 
-## [WordsVerifyQRCodeOptionsData Object]("WordsVerifyQRCode OptionsData")
+## WordsVerifyQRCodeOptionsData Object
 
 Provides options to verify QR-Code Signature in Words Documents.
 
@@ -571,7 +571,6 @@ Example WordsVerifyQRCodeOptionsData object
 |MatchType|enum|Specifies enumeration of possible QR-Code Text match - Exact match, Starts With, Ends With, Contains
 |Text|string|Text of QR-Code Signature to verify. Default value is empty.
 |DocumentPageNumber|int|Specifies document-sheet page number to verify QR-Code Signature. Parameter is optional. if value is not set program will try to find on any page
-|PagesSetup|struct|Specifies Page Setting to define separate pages to process. See **[PagesSetupData]("PagesSetupDataObject")**
+|PagesSetup|struct|Specifies Page Setting to define separate pages to process.
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "WordsVerifyQRCodeOptionsData". This property is set automatically when using SDK classes.
-

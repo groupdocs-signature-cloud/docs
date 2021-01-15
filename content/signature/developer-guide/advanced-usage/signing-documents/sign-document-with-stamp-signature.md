@@ -23,7 +23,7 @@ GroupDocs.Signature Cloud provides options to specify different options for St
 
 Each Stamp option contains inner and outer lines. Inner lines represent vertical lines inside the stamp, when outer lines represent circles (or rectangles based on stamp type) around stamp with own text, border settings, background etc.
 
-API Usage
+## API Usage ##
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -132,7 +132,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 
 ## SDKs ##
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](https://github.com/groupdocs-signature-cloud).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
 
 ### SDK Examples ###
 
