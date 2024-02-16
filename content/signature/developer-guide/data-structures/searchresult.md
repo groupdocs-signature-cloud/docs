@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 9
 description: ""
 keywords: ""
+toc: True
 ---
 
 SearchResult data structure returned by Search API method as output result
 
-##### SearchResult example #####
+##### SearchResult example
 
 ```javascript
 {
@@ -40,7 +41,7 @@ SearchResult data structure returned by Search API method as output result
 
 ```
 
-##### SignResult fields #####
+##### SignResult fields
 
 |Name|Description
 |---|---

@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 3
 description: ""
 keywords: ""
+toc: True
 ---
 
 InfoResult data structure returned by Info API method  as output result
 
-##### InfoResult example #####
+##### InfoResult example
 
 ```javascript
 {
@@ -42,7 +43,7 @@ InfoResult data structure returned by Info API method  as output result
 
 ```
 
-##### InfoResult fields #####
+##### InfoResult fields
 
 |Name|Description
 |---|---

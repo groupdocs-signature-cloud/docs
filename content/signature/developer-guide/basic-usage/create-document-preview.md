@@ -6,12 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 5
 description: ""
 keywords: ""
+toc: True
 ---
-
 
 GroupDocs.Signature Cloud allows to create document preview images, one per page. Image size and format can be set as options.
 
-## API Usage ##
+## API usage
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -23,9 +23,9 @@ For storage operations, like uploading or downloading documents, please refer t
 
 [Swagger UI](https://apireference.groupdocs.cloud/signature/) lets you call this REST API directly from the browser.
 
-## cURL REST Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```javascript
 
@@ -52,7 +52,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/preview" \
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -79,15 +79,16 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/preview" \
     }
   ]
 }
+
+```
+
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### SDK Examples ###
-
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 ```csharp
 
@@ -117,7 +118,7 @@ Console.WriteLine("Expected response type is PreviewResult: " + response);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 ```java
 
@@ -141,7 +142,7 @@ System.out.println("Expected response type is PreviewResult: " + response);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 ```php
 
@@ -172,7 +173,7 @@ echo "\n";
 
 ```
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Node.js" >}}
 
 ```javascript
 
@@ -194,7 +195,7 @@ console.log("GetDocumentPreview: PagesCount = " + response.pages.length);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 ```python
 
@@ -223,7 +224,7 @@ print("Page count = " + str(len(response.pages)))
 
 ```
 
-{{< /tab >}} {{< tab tabNum="6" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 ```ruby
 

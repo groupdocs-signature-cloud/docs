@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 12
 description: ""
 keywords: ""
+toc: True
 ---
 
 DeleteSettings data structure used as input parameters of Delete API method.
 
-##### DeleteSettings example #####
+##### DeleteSettings example
 
 ```javascript
 {
@@ -27,7 +28,7 @@ DeleteSettings data structure used as input parameters of Delete API method.
 
 ```
 
-##### UpdateSettings fields #####
+##### UpdateSettings fields
 
 |Name|Description|API Version
 |---|---|---

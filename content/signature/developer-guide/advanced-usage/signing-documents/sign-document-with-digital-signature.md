@@ -5,15 +5,14 @@ title: "Sign document with digital signature"
 productName: "GroupDocs.Signature Cloud"
 description: ""
 keywords: ""
+toc: True
 ---
-
-# Introduction #
 
 A digital electronic signature is a scheme for verifying the document's authenticity. A valid digital signature gives a recipient very strong reason to believe that the document was created or updated by a known sender and that the document was not altered by unknown source. For documents, the digital signature is represented by certificate with private (to sign) and public (to verify) keys. Most often certificates of various public key cryptography standards are used for this purpose, for example PFX format (see specification [here](https://en.wikipedia.org/wiki/PKCS_12)). These digital signature certificates could be obtained from the operation system or generated manually with proper tools or trusted sources.
 
 Digital signature as certificate file of PFX format allows to sign document after each creation or change with certificate and specify several optional parameters like subject, title, reason, contact etc. Most document viewers or editors support digital signatures verification that allows users to ensure document is from trusted source. Office documents format such as Word processing documents (DOC, DOCX, ODT, OTT), Spreadsheet files (XLSX, XLS, ODS, OTS) support digital signature without any visual appearance on document pages. PDF document format supports digital signature with alternative visual appearance on specific document page with custom image and labels. Picture below shows how digital signature looks by default on PDF document page..
 
-![image](signature/images/image2020-2-10_18_40_38.png)
+![image](/signature/images/image2020-2-10_18_40_38.png)
 
 GroupDocs.Signature Cloud supports creation of digital signature based on existing PFX certificate. It allows to adjust digital signature properties in the document:
 
@@ -23,7 +22,7 @@ GroupDocs.Signature Cloud supports creation of digital signature based on existi
 * Visible property to specify whether signature should be visible on document page or not;
 * XAdES type to specify whether e-signature should be of Xml Advanced Electronic Signature type.
 
-## API Usage ##
+## API usage
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -35,9 +34,9 @@ For storage operations, like uploading or downloading documents, please refer t
 
 [Swagger UI](https://apireference.groupdocs.cloud/signature/) lets you call this REST API directly from the browser.
 
-## cURL REST Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```javascript
 // First get JSON Web Token
@@ -78,7 +77,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -125,15 +124,17 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
   "failed": []
 }
 
+```
+
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### SDK Examples ###
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 ```csharp
 
@@ -189,7 +190,7 @@ var response = apiInstance.CreateSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 ```java
 
@@ -259,7 +260,7 @@ SignResult response = apiInstance.createSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 ```php
 
@@ -324,7 +325,7 @@ $response = $apiInstance->createSignatures($request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Node.js" >}}
 
 ```javascript
 
@@ -357,7 +358,7 @@ let response = await signApi.createSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 ```python
 
@@ -406,7 +407,7 @@ response = api.create_signatures(request)
 
 ```
 
-{{< /tab >}} {{< tab tabNum="6" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 ```ruby
 

@@ -5,5 +5,6 @@ title: "Signing documents"
 productName: "GroupDocs.Signature Cloud"
 description: ""
 keywords: ""
+toc: True
 ---
 

@@ -6,6 +6,7 @@ productName: "GroupDocs.Signature Cloud"
 weight: 3
 description: ""
 keywords: ""
+toc: True
 ---
 
 ## Create an account
@@ -28,9 +29,9 @@ Below is an example demonstrating using the Formats API to get all supported fi
 
 {{< alert style="info" >}}The GitHub repository for [GroupDocs.Signature Cloud](https://github.com/groupdocs-signature-cloud) has a complete set of examples, demonstrating our API capabilities.{{< /alert >}}
 
-## SDK Examples
+## SDK example
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "C#" >}}
 
 ```csharp
 
@@ -45,7 +46,7 @@ var response = apiInstance.GetSupportedFileFormats();
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 ```java
 
@@ -60,7 +61,7 @@ FormatsResult response = apiInstance.getSupportedFileFormats();
 
 ```
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 ```php
 
@@ -81,7 +82,7 @@ $response = $infoApi->getSupportedFileFormats();
 
 ```
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Node.js" >}}
 
 ```javascript
 
@@ -97,7 +98,7 @@ let response = await infoApi.getSupportedFileFormats();
 
 ```
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 ```python
 
@@ -113,7 +114,7 @@ result = infoApi.get_supported_file_formats()
 
 ```
 
-{{< /tab >}} {{< tab tabNum="6" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 ```ruby
 

@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 8
 description: ""
 keywords: ""
+toc: True
 ---
 
 SearchSettings data structure used as input parameters of Search API method.
 
-##### SearchSettings example #####
+##### SearchSettings example
 
 ```javascript
 {
@@ -34,7 +35,7 @@ SearchSettings data structure used as input parameters of Search API method.
 
 ```
 
-##### SearchSettings fields #####
+##### SearchSettings fields
 
 |Name|Description|API Version
 |---|---|---

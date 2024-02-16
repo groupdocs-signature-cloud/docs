@@ -5,13 +5,12 @@ title: "Update QR-Code signatures"
 productName: "GroupDocs.Signature Cloud"
 description: ""
 keywords: ""
+toc: True
 ---
-
-# Introduction #
 
 GroupDocs.Signature Cloud provides a method to update some signature properties by it's id. The signature ID is needed to perform the update, it comes from the result of sign or search operation.
 
-## API Usage ##
+## API usage
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -23,9 +22,9 @@ For storage operations, like uploading or downloading documents, please refer t
 
 [Swagger UI](https://apireference.groupdocs.cloud/signature/) lets you call this REST API directly from the browser.
 
-## cURL REST Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```javascript
 
@@ -62,7 +61,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/update" \
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 
@@ -94,15 +93,17 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/update" \
   "failed": []
 }
 
+```
+
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### SDK Examples ###
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 ```csharp
 
@@ -161,7 +162,7 @@ var response = apiInstance.UpdateSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 ```java
 
@@ -201,11 +202,11 @@ UpdateSettings updateSettings = new UpdateSettings();
 updateSettings.setFileInfo(fileInfo);
 updateSettings.addOptionsItem(updateOptions);
 
-UpdateResult updateResult = apiInstance.updateSignatures(new UpdateSignaturesRequest(updateSettings));
+UpdateResult updateResult = apiInstance.updateSignatures(new UpdateSignaturesReques(updateSettings));
 
 ```
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 ```php
 
@@ -259,7 +260,7 @@ $response = $apiInstance->updateSignatures($request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Node.js" >}}
 
 ```javascript
 
@@ -308,7 +309,7 @@ response = await signApi.updateSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 ```python
 
@@ -356,7 +357,7 @@ response = api.update_signatures(request)
 
 ```
 
-{{< /tab >}} {{< tab tabNum="6" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 ```ruby
 

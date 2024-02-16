@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 4
 description: ""
 keywords: ""
+toc: True
 ---
 
 SignSettings data structure used as input parameters for Sign API method
 
-##### SignSettings example #####
+##### SignSettings example
 
 ```javascript
 {
@@ -43,7 +44,7 @@ SignSettings data structure used as input parameters for Sign API method
 
 ```
 
-##### SignSettings fields #####
+##### SignSettings fields
 
 |Name|Description|API Version
 |---|---|---

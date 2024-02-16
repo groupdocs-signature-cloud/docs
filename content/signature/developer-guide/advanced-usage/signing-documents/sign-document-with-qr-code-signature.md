@@ -5,17 +5,16 @@ title: "Sign document with QR-code signature"
 productName: "GroupDocs.Signature Cloud"
 description: ""
 keywords: ""
+toc: True
 ---
 
-# Introduction #
+QR-code (or Quick Response code) is a sort of two-dimensional barcode that consists of black squares arranged in a square grid on a white background. QR-code can be read by smartphone camera or specialized devices that are dedicated to QR reading - hand-held scanners, handy terminals, fixed scanners that are used after placing it on a desktop, or embedding it in other devices. Usually QR-codes contain data that points to a website or application, emails, or phone numbers, product identifiers, or trackers. Therefore QR-code application scope extends general marketing and item identification to document management.
 
-QR-code (or Quick Response code) is a sort of two-dimensional barcode that consists of black squares arranged in a square grid on a white background. QR-code can be read by smartphone camera or specialized devices that are dedicated to QR reading - hand-held scanners, handy terminals, fixed scanners that are used after placing it on a desktop, or embedding it in other devices. Usually QR-codes contain data that points to a website or application, emails, or phone numbers, product identifiers, or trackers. Therefore QR-code application scope extends general marketing and item identification to document management.
-
-![qrcode](signature/images/QR_Code_2.png)
+![qrcode](/signature/images/QR_Code_2.png)
 
 GroupDocs.Signature Cloud allows to eSign documents with QR-codes of various types.
 
-## API Usage ##
+## API usage
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -27,9 +26,9 @@ For storage operations, like uploading or downloading documents, please refer t
 
 [Swagger UI](https://apireference.groupdocs.cloud/signature/) lets you call this REST API directly from the browser.
 
-## cURL REST Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```javascript
 
@@ -69,7 +68,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 
@@ -102,15 +101,17 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
   "failed": []
 }
 
+```
+
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### SDK Examples ###
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 ```csharp
 
@@ -174,7 +175,7 @@ var response = apiInstance.CreateSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 ```java
 
@@ -253,7 +254,7 @@ SignResult response = apiInstance.createSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 ```php
 
@@ -322,7 +323,7 @@ $response = $apiInstance->createSignatures($request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Node.js" >}}
 
 ```javascript
 
@@ -374,7 +375,7 @@ let response = await signApi.createSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 ```python
 
@@ -426,7 +427,7 @@ response = api.create_signatures(request)
 
 ```
 
-{{< /tab >}} {{< tab tabNum="6" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 ```ruby
 

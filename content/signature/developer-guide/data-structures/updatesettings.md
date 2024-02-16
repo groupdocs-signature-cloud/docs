@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 10
 description: ""
 keywords: ""
+toc: True
 ---
 
 UpdateSettings data structure used as input parameters of Update API method.
 
-##### UpdateSettings example #####
+##### UpdateSettings example
 
 ```javascript
 {
@@ -32,7 +33,7 @@ UpdateSettings data structure used as input parameters of Update API method.
 
 ```
 
-##### UpdateSettings fields #####
+##### UpdateSettings fields
 
 |Name|Description|API Version
 |---|---|---

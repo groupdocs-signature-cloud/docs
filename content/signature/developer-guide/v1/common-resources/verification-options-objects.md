@@ -6,6 +6,7 @@ productName: "GroupDocs.Signature Cloud"
 weight: 2
 description: ""
 keywords: ""
+toc: True
 ---
 
 {{< alert style="info" >}}
@@ -96,7 +97,7 @@ Example CellsVerifyTextOptionsData object
 |VerifyAllPages|bool|The flag to verify all pages in document
 |OptionsType|string|The class name of options object, should always contains value "CellsVerifyTextOptionsData". This property is set automatically when using SDK classes.
 
-## PdfVerifyTextOptionsData ##
+## PdfVerifyTextOptionsData
 
 Provides options to verify Text Signature in Pdf Documents.
 

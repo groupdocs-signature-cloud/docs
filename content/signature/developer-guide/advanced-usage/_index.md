@@ -5,5 +5,6 @@ title: "Advanced usage"
 productName: "GroupDocs.Signature Cloud"
 description: ""
 keywords: ""
+toc: True
 ---
 

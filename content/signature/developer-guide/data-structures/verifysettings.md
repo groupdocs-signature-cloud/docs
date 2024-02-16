@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 6
 description: ""
 keywords: ""
+toc: True
 ---
 
 VerifySettings data structure used as input parameters for Verify API method.
 
-##### VerifySettings example #####
+##### VerifySettings example
 
 ```javascript
 {
@@ -32,7 +33,7 @@ VerifySettings data structure used as input parameters for Verify API method.
 
 ```
 
-##### VerifySettings fields #####
+##### VerifySettings fields
 
 |Name|Description|API Version
 |---|---|---

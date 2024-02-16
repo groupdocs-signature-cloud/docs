@@ -6,6 +6,7 @@ productName: "GroupDocs.Signature Cloud"
 weight: 2
 description: ""
 keywords: ""
+toc: True
 ---
 
 InfoSettings data structure used as input parameters for Info API method  to retrieve information
@@ -14,7 +15,7 @@ InfoSettings data structure used as input parameters for Info API method  to re
 Not all options are supported by all document formats. Each option may correspond to one or more formats.
 {{< /alert >}}
 
-##### InfoSettings example #####
+##### InfoSettings example
 
 ```javascript
 {
@@ -28,7 +29,7 @@ Not all options are supported by all document formats. Each option may correspon
 
 ```
 
-##### InfoSettings fields #####
+##### InfoSettings fields
 
 |Name|Description|API Version
 |---|---|---

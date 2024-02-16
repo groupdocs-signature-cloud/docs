@@ -5,24 +5,23 @@ title: "Sign document with Barcode signature"
 productName: "GroupDocs.Signature Cloud"
 description: ""
 keywords: ""
+toc: True
 ---
-
-# Introduction #
 
 A **barcode** or **bar code** is a way of presenting data in a visual, machine-readable form. Generally speaking, barcode is an image of rectangular form that consists of parallel black lines and white spaces of different widths.
 Barcodes are used in various areas where quick identification is necessary - as part of the purchase process in retail stores, in warehouses to track inventory, and on invoices to assist in accounting, among many other uses.
 
-![barcode](signature/images/GS1-DataBar_Expanded_01.gif)
+![barcode](/signature/images/GS1-DataBar_Expanded_01.gif)
 
 Barcodes allow to store product related data like manufacturing and expiry dates, manufacturer name, country of the origin and product price. There are plenty of barcode types nowadays because different companies use different amount of number and bar combinations in their barcodes dependent on their needs. From document signature perspective Barcode may contain different characters (letters, digits or symbols) and have a various length and its size depending on the type and settings to keep signature information, title, subject or short encrypted data.
 
-GroupDocs.Signature Cloud supports wide range or Barcode types that can be used to create electronic signature within the documents. Please refer to [Getting supported Barcode Types](signature/get-supported-barcodes) article to get the full list of supported barcodes.
+GroupDocs.Signature Cloud supports wide range or Barcode types that can be used to create electronic signature within the documents. Please refer to [Getting supported Barcode Types](/signature/get-supported-barcodes) article to get the full list of supported barcodes.
 To specify different options for Barcode signature GroupDocs.Signature Cloud provides SignBarcodeOptions class. The main fields are:
 
 * BarcodeType - specifies Barcode type (AustralianPost, Codabar, EAN13, OPC, etc.);
 * Text - specifies Barcode text.
 
-## API Usage ##
+## API usage
 
 There are steps that usage of GroupDocs.Signature Cloud consists of:
 
@@ -34,9 +33,9 @@ For storage operations, like uploading or downloading documents, please refer t
 
 [Swagger UI](https://apireference.groupdocs.cloud/signature/) lets you call this REST API directly from the browser.
 
-## cURL REST Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```javascript
 // First get JSON Web Token
@@ -76,7 +75,7 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -108,15 +107,17 @@ curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
   "failed": []
 }
 
+```
+
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### SDK Examples ###
 
-{{< tabs tabTotal="6" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Node.js" tabName5="Python" tabName6="Ruby" >}} {{< tab tabNum="1" >}}
+
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 ```csharp
 
@@ -173,7 +174,7 @@ var response = apiInstance.CreateSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 ```java
 // For complete examples and data files, please go to https://github.com/groupdocs-signature-cloud/groupdocs-signature-cloud-java-samples
@@ -251,7 +252,7 @@ SignResult response = apiInstance.createSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 ```php
 
@@ -321,7 +322,7 @@ $response = $apiInstance->createSignatures($request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Node.js" >}}
 
 ```javascript
 
@@ -375,7 +376,7 @@ let response = await signApi.createSignatures(request);
 
 ```
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 ```python
 
@@ -428,7 +429,7 @@ response = api.create_signatures(request)
 
 ```
 
-{{< /tab >}} {{< tab tabNum="6" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 ```ruby
 

@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 2
 description: ""
 keywords: ""
+toc: True
 ---
 
 UpdateResult data structure returned by Update API method as output result
 
-##### UpdateResult example #####
+##### UpdateResult example
 
 ```javascript
 {
@@ -43,7 +44,7 @@ UpdateResult data structure returned by Update API method as output result
 
 ```
 
-##### UpdateResult fields #####
+##### UpdateResult fields
 
 |Name|Description|API Version
 |---|---|---

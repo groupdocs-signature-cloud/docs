@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 13
 description: ""
 keywords: ""
+toc: True
 ---
 
 DeleteResult data structure returned by Delete API method as output result
 
-##### DeleteResult example #####
+##### DeleteResult example
 
 ```javascript
 {
@@ -43,7 +44,7 @@ DeleteResult data structure returned by Delete API method as output result
 
 ```
 
-##### DeleteResult fields #####
+##### DeleteResult fields
 
 |Name|Description|API Version
 |---|---|---

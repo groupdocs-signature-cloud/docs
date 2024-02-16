@@ -6,6 +6,7 @@ productName: "GroupDocs.Signature Cloud"
 weight: 1
 description: ""
 keywords: ""
+toc: True
 ---
 
 Page contains description for common structures and its properties
@@ -364,7 +365,8 @@ Utility class for BorderLine serialization.
 
 Example BorderLine object
 
-```javascript
+```json
+
 {
 "style": "LongDash",
 "transparency": 0.5,

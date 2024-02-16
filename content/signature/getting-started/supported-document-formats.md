@@ -6,9 +6,8 @@ productName: "GroupDocs.Signature Cloud"
 weight: 2
 description: ""
 keywords: ""
+toc: True
 ---
-
-## Supported File Formats Cloud V2
 
 This page is a reference for all document and image formats supported by GroupDocs.Signature Cloud V2
 

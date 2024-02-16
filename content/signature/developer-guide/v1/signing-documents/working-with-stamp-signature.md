@@ -6,29 +6,28 @@ productName: "GroupDocs.Signature Cloud"
 weight: 6
 description: ""
 keywords: ""
+toc: True
 ---
 
 {{< alert style="info" >}}
 Note:  The features listed on this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-# Introduction #
-
 GroupDocs.Signature Cloud REST API supports to put Stamp Signature on supported file format. It provides methods to create Stamp Signature in Document Pages with different options to add image as stamp, location, alignment, font, margins and appearances by using [Signature Options Object]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}}) data in request body.
 
-# Add Stamp Signature to Document #
+## Add Stamp Signature to Document
 
 You can create Stamp Signature on Document provided by fileName and document folder (if required) using following API. It expects [Signature Options Object]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}}) data in request body.
 
 It returns an object which contains document name, folder location and command status.
 
-## Resource ##
+### Resource
 
 The following GroupDocs.Signature Cloud REST API resource has been used in the example [to add Stamp signature to a document](https://apireference.groupdocs.cloud/signature/#!/Signing/PostStamp).
 
-## cURL Example ##
+### cURL example
 
- {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+ {{< tabs "example1">}} {{< tab "Request" >}}
 
 ```javascript
  curl --request POST \
@@ -38,7 +37,7 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 --data '{ "outerLines": [ { "height": 20, "backgroundColor": { "Web": "BlueViolet" }, "text": " * John Smith * ", "font": { "fontFamily": "Arial", "fontSize": 12.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "DarkOrange" }, "textBottomIntent": 5, "textRepeatType": "FullTextRepeat", "outerBorder": { "style": "Default", "transparency": 0.7, "weight": 2.0, "color": { "Web": "DarkOrange" } }, "innerBorder": { "style": "Default", "transparency": 0.5, "weight": 2.0, "color": { "Web": "DarkOrange" } }, "visible": true } ], "innerLines": [ { "height": 30, "backgroundColor": { "Web": "Transparent", "Alpha": 0 }, "text": "John Smith", "font": { "fontFamily": "Times New Roman", "fontSize": 20.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "Gold" }, "textBottomIntent": 3, "textRepeatType": "None", "visible": true } ], "backgroundColor": { "Web": "CornflowerBlue" }, "backgroundColorCropType": "OuterArea", "backgroundImageCropType": "MiddleArea", "left": 2, "top": 2, "width": 200, "height": 150, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 0, "horizontalAlignment": "Left", "verticalAlignment": "Top", "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 }, "marginMeasureType": "Pixels", "opacity": 1.0, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "OptionsType": "ImagesSignStampOptionsData" }'
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -51,45 +50,43 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+### SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### Add Stamp Signature to Document ###
-
-{{< tabs tabTotal="5" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Stamp.cs >}}
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Stamp.php >}}
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Stamp.java >}}
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Stamp.py >}}
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_Stamp.rb >}}
 
 {{< /tab >}} {{< /tabs >}}
 
-# Add Stamp Signature to Document at Provided URL #
+## Add Stamp Signature to Document at Provided URL
 
 You can create Stamp Signature for document at provided URL with [signature-options-objects]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}}). It retrieves file from specified URL and tries to detect file type when fileName parameter is not specified. It saves retrieved file in storage, by using fileName and folder parameters to specify desired file name and folder to save file. When file with specified name already exists in storage new unique file name will be used for file. It expects [Signature Options Object]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}}) data in request body and returns object which contains document name and folder location.
 
-## Resource ##
+### Resource
 
 The following GroupDocs.Signature Cloud REST API resource has been used in the example [to add Stamp signature to a document at provided URL](https://apireference.groupdocs.cloud/signature/#!/Signing/PostStampFromUrl).
 
-## cURL Example ##
+### cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example3">}} {{< tab "Request" >}}
 
 ```javascript
 curl --request POST \
@@ -99,7 +96,7 @@ curl --request POST \
 --data '{ "outerLines": [ { "height": 20, "backgroundColor": { "Web": "BlueViolet" }, "text": " * John Smith * ", "font": { "fontFamily": "Arial", "fontSize": 12.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "DarkOrange" }, "textBottomIntent": 5, "textRepeatType": "FullTextRepeat", "outerBorder": { "style": "Default", "transparency": 0.7, "weight": 2.0, "color": { "Web": "DarkOrange" } }, "innerBorder": { "style": "Default", "transparency": 0.5, "weight": 2.0, "color": { "Web": "DarkOrange" } }, "visible": true } ], "innerLines": [ { "height": 30, "backgroundColor": { "Web": "Transparent", "Alpha": 0 }, "text": "John Smith", "font": { "fontFamily": "Times New Roman", "fontSize": 20.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "Gold" }, "textBottomIntent": 3, "textRepeatType": "None", "visible": true } ], "backgroundColor": { "Web": "CornflowerBlue" }, "backgroundColorCropType": "OuterArea", "backgroundImageCropType": "MiddleArea", "left": 2, "top": 2, "width": 200, "height": 150, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 0, "horizontalAlignment": "Left", "verticalAlignment": "Top", "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 }, "marginMeasureType": "Pixels", "opacity": 1.0, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "OptionsType": "ImagesSignStampOptionsData" }'
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -108,42 +105,41 @@ curl --request POST \
   "Code": 200,
   "Status" : "OK"
 }
+```
+
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+### SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### Add Stamp Signature to Document at specified URL ###
-
-{{< tabs tabTotal="5" tabID="11" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs "example4">}} {{< tab "C#" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Stamp_URL.cs >}}
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Stamp_URL.php >}}
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Stamp_URL.java >}}
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Stamp_URL.py >}}
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_Stamp_URL.rb >}}
 
 {{< /tab >}} {{< /tabs >}}
 
-# Setup Background Brush for Stamp Signatures #
+## Setup Background Brush for Stamp Signatures
 
 You can creates Text Signature for document with [signature-options-objects]({{< ref "signature/developer-guide/v1/common-resources/signature-options-objects.md" >}}). Signature Stamp Options and all inherited classes have been updated in (Release 18.7) with newly added property** BackgroundBrush** which support following brush types:
 
- Linear Gradient Brush
-\\
+Linear Gradient Brush
 
 **Brush Style option**
 
@@ -153,8 +149,7 @@ You can creates Text Signature for document with [signature-options-objects]({{
 
 ```
 
- Radial Gradient Brush
-\\
+Radial Gradient Brush
 
 **Brush Style option**
 
@@ -164,8 +159,7 @@ You can creates Text Signature for document with [signature-options-objects]({{
 
 ```
 
- Solid Brush
-\\
+Solid Brush
 
 **Brush Style option**
 
@@ -175,8 +169,7 @@ You can creates Text Signature for document with [signature-options-objects]({{
 
 ```
 
- Texture Brush
-\\
+Texture Brush
 
 **Brush Style option**
 
@@ -186,13 +179,13 @@ You can creates Text Signature for document with [signature-options-objects]({{
 
 ```
 
-## Resource ##
+## Resource
 
 The following GroupDocs.Signature Cloud REST API resource has been used in the example [to add Text signature to a document](https://apireference.groupdocs.cloud/signature/#!/Signing/PostText).
 
-## cURL Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example5">}} {{< tab "Request" >}}
 
 ```javascript
 curl --request POST \
@@ -202,7 +195,7 @@ curl --request POST \
 --data '{ "outerLines": [ { "height": 20, "backgroundColor": { "Web": "BlueViolet" }, "text": " * John Smith * ", "font": { "fontFamily": "Arial", "fontSize": 12.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "DarkOrange" }, "textBottomIntent": 5, "textRepeatType": "FullTextRepeat", "outerBorder": { "style": "Default", "transparency": 0.7, "weight": 2.0, "color": {  "Web": "DarkOrange" } }, "innerBorder": { "style": "Default", "transparency": 0.5, "weight": 2.0, "color": {  "Web": "DarkOrange" } }, "visible": true } ], "innerLines": [ { "height": 30, "backgroundColor": { "Web": "Transparent", "Alpha": 0 }, "text": "John Smith", "font": { "fontFamily": "Times New Roman", "fontSize": 20.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "Gold" }, "textBottomIntent": 3, "textRepeatType": "None", "visible": true } ], "backgroundColor": { "Web": "CornflowerBlue" }, "backgroundBrush": { "startColor": { "web": "LightBlue" }, "endColor": { "web": "DarkBlue" }, "angle": 45.0, "brushType": "LinearGradientBrush" }, "backgroundColorCropType": "OuterArea", "backgroundImageCropType": "MiddleArea", "left": 2, "top": 2, "width": 200, "height": 150, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 0, "horizontalAlignment": "Left", "verticalAlignment": "Top", "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 }, "marginMeasureType": "Pixels", "opacity": 1.0, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "OptionsType": "SlidesSignStampOptionsData" }'
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -211,31 +204,31 @@ curl --request POST \
   "Code": 200,
   "Status" : "OK"
 }
+```
+
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### Setup Background Brush for Stamp Signatures ###
-
-{{< tabs tabTotal="5" tabID="12" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs "example6">}} {{< tab "C#" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Signature_Stamp_Background_Brush.cs >}}
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Signature_Stamp_Background_Brush.php >}}
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Signature_Stamp_Background_Brush.java >}}
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Signature_Stamp_Background_Brush.py >}}
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Signature_Signature_Stamp_Background_Brush.rb >}}
 

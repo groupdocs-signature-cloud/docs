@@ -5,5 +5,6 @@ title: "Update signatures in document"
 productName: "GroupDocs.Signature Cloud"
 description: ""
 keywords: ""
+toc: True
 ---
 

@@ -6,6 +6,7 @@ productName: "GroupDocs.Signature Cloud"
 weight: 5
 description: ""
 keywords: ""
+toc: True
 ---
 
 {{< alert style="info" >}}
@@ -14,13 +15,13 @@ Note:  The features listed in this page are supported only in GroupDocs.Signatu
 
 GroupDocs.Signature Cloud REST API supports to sign a document with Barcode. This API lists all supported Barcode types.
 
-## Resource ##
+## Resource
 
 The following GroupDocs.Signature Cloud REST API resource has been used in example [to list supported Barcode types](https://apireference.groupdocs.cloud/signature/#!/Helper/GetBarcodes).
 
-## cURL Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/barcodes" \
@@ -30,7 +31,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/barcodes" \
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -220,27 +221,28 @@ curl -v "https://api.groupdocs.cloud/v1/signature/barcodes" \
     }
   ]
 }
+
+```
+
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### Get Supported Barcodes List ###
-
-{{< tabs tabTotal="4" tabID="10" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Supported_Barcodes.cs >}}
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Supported_Barcodes.java >}}
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Supported_Barcodes.py >}}
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Supported_Barcodes.rb >}}
 

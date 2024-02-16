@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 7
 description: ""
 keywords: ""
+toc: True
 ---
 
 VerifyResult data structure returned by Verify API method  as output result
 
-##### VerifyResult example #####
+##### VerifyResult example
 
 ```javascript
 {
@@ -24,7 +25,7 @@ VerifyResult data structure returned by Verify API method  as output result
 
 ```
 
-##### SignResult fields #####
+##### SignResult fields
 
 |Name|Description
 |---|---

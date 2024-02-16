@@ -6,6 +6,7 @@ productName: "GroupDocs.Signature Cloud"
 weight: 1
 description: ""
 keywords: ""
+toc: True
 ---
 
 GroupDocs.Signature Cloud is a REST API to create, verify, search, update and delete different type of Signatures objects to documents in the cloud by performing a wide variety of signature options you can wish to put on a document in the cloud, verify document and search Signatures in it.
@@ -90,11 +91,11 @@ List of supported Document file formats:
 
 The GroupDocs.Signature Cloud API is secured and requires authentication.
 
-Developers can [create]({{< ref "total/getting-started/ui-topics/creating-and-managing-application.md" >}}) an Application which has a Client Id and Client Secret when they [register]({{< ref "total/getting-started/ui-topics/creating-and-managing-account.md" >}}).
+Developers can [create]({{< ref "total/ui-topics/creating-and-managing-application.md" >}}) an Application which has a Client Id and Client Secret when they [register]({{< ref "total/ui-topics/creating-and-managing-account.md" >}}).
 
-Authenticated requests require an OAuth 2.0 authorization header. You can see complete detail [here]({{< ref "total/getting-started/overview-rest-api/authenticating-api-requests.md" >}}).
+Authenticated requests require an OAuth 2.0 authorization header. You can see complete detail [here]({{< ref "total/overview-rest-api/authenticating-api-requests.md" >}}).
 
-## SDKs
+## SDK examples
 
 GroupDocs.Signature Cloud comes with SDKs for different platforms to use this REST API in your specific project effortlessly. Please checkout our GitHub [repository](https://github.com/groupdocs-signature-cloud) for a complete list of GroupDocs.Signature SDKs along with working examples, to get you started in no time.
 

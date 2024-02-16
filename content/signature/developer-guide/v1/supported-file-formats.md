@@ -6,23 +6,22 @@ productName: "GroupDocs.Signature Cloud"
 weight: 3
 description: ""
 keywords: ""
+toc: True
 ---
 
 {{< alert style="info" >}}
 Note:  The features listed in this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-# Introduction #
-
 GroupDocs.Signature Cloud is a REST API to create, verify and search different type of Signatures objects in all common business formats, including PDF, Microsoft Word, Excel, PowerPoint, epub and many other files. To get list of supported file formats, you can use the following API.
 
-## Resource ##
+## Resource
 
 The following GroupDocs.Signature Cloud REST API resource has been used in the [Supported File Formats](https://apireference.groupdocs.cloud/signature/#!/Helper/GetSupportedFormats) example.
 
-## cURL Example ##
+## cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/formats" \
@@ -32,7 +31,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/formats" \
 
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -188,31 +187,31 @@ curl -v "https://api.groupdocs.cloud/v1/signature/formats" \
   ]
 }
 
+```
+
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+## SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### Get List of Supported File Formats ###
-
-{{< tabs tabTotal="5" tabID="10" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_Supported_FileFormats.cs >}}
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "PHP" >}}
 
 {{< gist groupdocscloud a43adea6e4f64b33ea37ead904a401cb Signature_Php_Supported_FileFormats.php >}}
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_Supported_FileFormats.java >}}
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_Supported_FileFormats.py >}}
 
-{{< /tab >}} {{< tab tabNum="5" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_Supported_FileFormats.rb >}}
 

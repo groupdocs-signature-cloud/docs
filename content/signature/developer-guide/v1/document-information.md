@@ -6,23 +6,24 @@ productName: "GroupDocs.Signature Cloud"
 weight: 4
 description: ""
 keywords: ""
+toc: True
 ---
 
 {{< alert style="info" >}}
 Note:  The features listed in this page are supported only in GroupDocs.Signature Cloud V1
 {{< /alert >}}
 
-# Get Document Information #
+## Get Document Information
 
 This API retrieves document information. It returns an object that contains information about file format, document pages and file size.
 
-## Resource ##
+### Resource
 
 The following GroupDocs.Signature Cloud REST API resource has been used to get [document information](https://apireference.groupdocs.cloud/signature/#!/File_Info/GetDocumentInfo).
 
-## cURL REST Example ##
+### cURL example
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example1">}} {{< tab "Request" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/document.docx/document/info" \
@@ -32,7 +33,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document.docx/document/info" \
  
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -56,44 +57,43 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document.docx/document/info" \
     ]
   }
 }
+```
 
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+### SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### Get Document Information ###
-
-{{< tabs tabTotal="4" tabID="10" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs "example2">}} {{< tab "C#" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_DocumentInfo_File.cs >}}
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_DocumentInfo_File.java >}}
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_DocumentInfo_File.py >}}
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_DocumentInfo_File.rb >}}
 
 {{< /tab >}} {{< /tabs >}}
 
-# Get Document Information from provided URL #
+## Get Document Information from provided URL
 
 This API retrieves document information for document at provided URL. It retrieves file from specified URL and tries to detect file type when fileName parameter is not specified. It saves retrieved file in storage, uses fileName and folder parameters to specify desired file name and folder to save file. When file with specified name already exists in storage new unique file name will be used. It returns an object that contains information about file format and file size. It also includes information about document pages and attachments.
 
-## Resource ##
+### Resource
 
 The following GroupDocs.Signature Cloud REST API resource has been used to get [document information from provided URL](https://apireference.groupdocs.cloud/signature/#!/File_Info/GetDocumentInfoFromUrl).
 
-## cURL REST Example ##
+### cURL example
 
-{{< tabs tabTotal="2" tabID="2" tabName1="Request" tabName2="Response" >}} {{< tab tabNum="1" >}}
+{{< tabs "example3">}} {{< tab "Request" >}}
 
 ```javascript
 curl -v "https://api.groupdocs.cloud/v1/signature/document/info?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
@@ -103,7 +103,7 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document/info?url#https%3a%2f%
  
 ```
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
 {
@@ -127,28 +127,27 @@ curl -v "https://api.groupdocs.cloud/v1/signature/document/info?url#https%3a%2f%
     ]
   }
 }
+```
 
 {{< /tab >}} {{< /tabs >}}
 
-## SDKs ##
+### SDK examples
 
-The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](signature/available-sdks).
+The API is completely independent of your operating system, database system or development language. We provide and support API SDKs in many development languages in order to make it even easier to integrate. You can see our available SDKs list [here](/signature/available-sdks).
 
-### Get Document Information from Provided URL ###
-
-{{< tabs tabTotal="4" tabID="11" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" >}} {{< tab tabNum="1" >}}
+{{< tabs "example4">}} {{< tab "C#" >}}
 
 {{< gist groupdocscloud e1e1480f327b6a0982bc1ecc3768718f Signature_CSharp_DocumentInfo_URL.cs >}}
 
-{{< /tab >}} {{< tab tabNum="2" >}}
+{{< /tab >}} {{< tab "Java" >}}
 
 {{< gist groupdocscloud d95398adbee451da9981705cf5c6ad7f Signature_Java_DocumentInfo_URL.java >}}
 
-{{< /tab >}} {{< tab tabNum="3" >}}
+{{< /tab >}} {{< tab "Python" >}}
 
 {{< gist groupdocscloud e967ad642d9e6e11f123064b9292e12e Signature_Python_DocumentInfo_URL.py >}}
 
-{{< /tab >}} {{< tab tabNum="4" >}}
+{{< /tab >}} {{< tab "Ruby" >}}
 
 {{< gist groupdocscloud 1a0d1223161ccb6a2157dcef82c39c37 Signature_Ruby_DocumentInfo_URL.rb >}}
 

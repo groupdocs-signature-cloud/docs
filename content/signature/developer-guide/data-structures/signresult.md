@@ -6,11 +6,12 @@ productName: "GroupDocs.Signature Cloud"
 weight: 5
 description: ""
 keywords: ""
+toc: True
 ---
 
 SignResult data structure returned by Sign API method  as output result
 
-##### SignResult example #####
+##### SignResult example
 
 ```javascript
 {
@@ -42,7 +43,7 @@ SignResult data structure returned by Sign API method  as output result
 
 ```
 
-##### SignResult fields #####
+##### SignResult fields
 
 |Name|Description
 |---|---
