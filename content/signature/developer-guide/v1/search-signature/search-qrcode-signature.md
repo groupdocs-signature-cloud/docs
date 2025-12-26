@@ -27,15 +27,66 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
 
-```javascript
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.xlsx/QRCode/search?folder#signed \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "qrCodeTypeName": "Aztec", "text": "John Smith", "matchType": "Contains", "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "searchAllPages": true, "OptionsType": "CellsSearchQRCodeOptionsData" }'
+  --url "http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.xlsx/QRCode/search?folder#signed" \
+  --header "Authorization: Bearer $JWT_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "qrCodeTypeName": "Aztec",
+    "text": "John Smith",
+    "matchType": "Contains",
+    "documentPageNumber": 1,
+    "pagesSetup": {
+      "firstPage": true,
+      "lastPage": false,
+      "oddPages": false,
+      "evenPages": false,
+      "pageNumbers": [1]
+    },
+    "searchAllPages": true,
+    "OptionsType": "CellsSearchQRCodeOptionsData"
+  }'
+```
 
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+curl.exe --request POST `
+  --url "http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.xlsx/QRCode/search?folder#signed" `
+  --header "Authorization: Bearer $env:JWT_TOKEN" `
+  --header "Content-Type: application/json" `
+  --data "{
+    'qrCodeTypeName': 'Aztec',
+    'text': 'John Smith',
+    'matchType': 'Contains',
+    'documentPageNumber': 1,
+    'pagesSetup': {
+      'firstPage': \$true,
+      'lastPage': \$false,
+      'oddPages': \$false,
+      'evenPages': \$false,
+      'pageNumbers': [1]
+    },
+    'searchAllPages': \$true,
+    'OptionsType': 'CellsSearchQRCodeOptionsData'
+  }"
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```bat
+curl --request POST ^
+  --url "http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.xlsx/QRCode/search?folder#signed" ^
+  --header "Authorization: Bearer %JWT_TOKEN%" ^
+  --header "Content-Type: application/json" ^
+  --data "{\"qrCodeTypeName\":\"Aztec\",\"text\":\"John Smith\",\"matchType\":\"Contains\",\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":true,\"lastPage\":false,\"oddPages\":false,\"evenPages\":false,\"pageNumbers\":[1]},\"searchAllPages\":true,\"OptionsType\":\"CellsSearchQRCodeOptionsData\"}"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}
@@ -102,15 +153,52 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
 
-```javascript
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/qrcode/search?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{  "QRCodeTypeName" : "Aztec",  "MatchType" : "Contains",  "DocumentPageNumber": 1,  "Text": "John Smith",  "SearchAllPages" : true,  "OptionsType" : "WordsSearchQRCodeOptionsData" }'
+  --url "http://api.groupdocs.cloud/v1/signature/qrcode/search?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
+  --header "Authorization: Bearer $JWT_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "QRCodeTypeName": "Aztec",
+    "MatchType": "Contains",
+    "DocumentPageNumber": 1,
+    "Text": "John Smith",
+    "SearchAllPages": true,
+    "OptionsType": "WordsSearchQRCodeOptionsData"
+  }'
+```
 
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+curl.exe --request POST `
+  --url "http://api.groupdocs.cloud/v1/signature/qrcode/search?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" `
+  --header "Authorization: Bearer $env:JWT_TOKEN" `
+  --header "Content-Type: application/json" `
+  --data "{
+    'QRCodeTypeName': 'Aztec',
+    'MatchType': 'Contains',
+    'DocumentPageNumber': 1,
+    'Text': 'John Smith',
+    'SearchAllPages': \$true,
+    'OptionsType': 'WordsSearchQRCodeOptionsData'
+  }"
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```bat
+curl --request POST ^
+  --url "http://api.groupdocs.cloud/v1/signature/qrcode/search?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" ^
+  --header "Authorization: Bearer %JWT_TOKEN%" ^
+  --header "Content-Type: application/json" ^
+  --data "{\"QRCodeTypeName\":\"Aztec\",\"MatchType\":\"Contains\",\"DocumentPageNumber\":1,\"Text\":\"John Smith\",\"SearchAllPages\":true,\"OptionsType\":\"WordsSearchQRCodeOptionsData\"}"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}

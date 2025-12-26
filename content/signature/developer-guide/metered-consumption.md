@@ -30,15 +30,38 @@ You can find more information about Docker version at [How to self-host GroupDo
 
 ## cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
 
 ```bash
+# cURL example to get metered license consumption
+curl -v "http://$BASE_URL/v2.0/signature/consumption" \
+  -X GET \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer $JWT_TOKEN"
+```
 
-* cURL example to get metered license consumption
-curl -v "http://<base url>/v2.0/signature/consumption" \
--X GET \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+# cURL example to get metered license consumption
+curl.exe -v "http://$env:BASE_URL/v2.0/signature/consumption" `
+  -X GET `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN"
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```cmd
+rem cURL example to get metered license consumption
+curl -v "http://%BASE_URL%/v2.0/signature/consumption" ^
+  -X GET ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}

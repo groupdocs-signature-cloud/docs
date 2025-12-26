@@ -24,43 +24,94 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ## cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
-
-// First get JSON Web Token
-// Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+# Get JSON Web Token
+# Ensure CLIENT_ID and CLIENT_SECRET are set as environment variables.
 curl -v "https://api.groupdocs.cloud/connect/token" \
--X POST \
--d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
--H "Content-Type: application/x-www-form-urlencoded" \
--H "Accept: application/json"
+  -X POST \
+  -d 'grant_type=client_credentials&client_id=$CLIENT_ID&client_secret=$CLIENT_SECRET' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Accept: application/json'
 
-// cURL example to get document information
+# Get document signature information
 curl -v "https://api.groupdocs.cloud/v2.0/signature/update" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{
-  'FileInfo': {
-    'FilePath': 'signedBarcode_one-page.docx'
-  },
-  'Options': [
-    {
-      'SignatureType': 'Barcode',
-      'SignatureId': '4cb67aa8-835d-4877-8a5d-5a9ad015a098',
-      'Left': 200,
-      'Top': 200,
-      'Width': 300,
-      'Height': 100,
-      'IsSignature': true
-    }
-  ]
-}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -d '{
+    "FileInfo": {
+      "FilePath": "signedBarcode_one-page.docx"
+    },
+    "Options": [
+      {
+        "SignatureType": "Barcode",
+        "SignatureId": "4cb67aa8-835d-4877-8a5d-5a9ad015a098",
+        "Left": 200,
+        "Top": 200,
+        "Width": 300,
+        "Height": 100,
+        "IsSignature": true
+      }
+    ]
+  }'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+# Get JSON Web Token
+# Ensure $env:CLIENT_ID and $env:CLIENT_SECRET are defined.
+curl.exe -v "https://api.groupdocs.cloud/connect/token" `
+  -X POST `
+  -d "grant_type=client_credentials&client_id=$env:CLIENT_ID&client_secret=$env:CLIENT_SECRET" `
+  -H "Content-Type: application/x-www-form-urlencoded" `
+  -H "Accept: application/json"
+
+# Get document signature information
+curl.exe -v "https://api.groupdocs.cloud/v2.0/signature/update" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -d "{
+    'FileInfo': {
+      'FilePath': 'signedBarcode_one-page.docx'
+    },
+    'Options': [
+      {
+        'SignatureType': 'Barcode',
+        'SignatureId': '4cb67aa8-835d-4877-8a5d-5a9ad015a098',
+        'Left': 200,
+        'Top': 200,
+        'Width': 300,
+        'Height': 100,
+        'IsSignature': true
+      }
+    ]
+  }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+rem Get JSON Web Token
+rem Ensure CLIENT_ID and CLIENT_SECRET are defined in the environment.
+curl -v "https://api.groupdocs.cloud/connect/token" ^
+  -X POST ^
+  -d "grant_type=client_credentials&client_id=%CLIENT_ID%&client_secret=%CLIENT_SECRET%" ^
+  -H "Content-Type: application/x-www-form-urlencoded" ^
+  -H "Accept: application/json"
+
+rem Get document signature information
+curl -v "https://api.groupdocs.cloud/v2.0/signature/update" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"FileInfo\":{\"FilePath\":\"signedBarcode_one-page.docx\"},\"Options\":[{\"SignatureType\":\"Barcode\",\"SignatureId\":\"4cb67aa8-835d-4877-8a5d-5a9ad015a098\",\"Left\":200,\"Top\":200,\"Width\":300,\"Height\":100,\"IsSignature\":true}]}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

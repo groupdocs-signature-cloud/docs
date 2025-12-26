@@ -27,16 +27,41 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
 
-```javascript
+```bash
 curl -v "https://api.groupdocs.cloud/v1/signature/one-page.docx/image" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--d "{"ImageGuid": "signature.jpg","Left": 10,"Top": 10,"Width": 40,"Height": 10,"LocationMeasureType": "Percents","SizeMeasureType": "Percents","RotationAngle": 0,"HorizontalAlignment": "Right","VerticalAlignment": "Bottom","Margin":{"All": 10,"Left": 10,"Top": 10,"Right": 10,"Bottom": 10},"MarginMeasureType": "Percents","Opacity": 1.0,"SignAllPages": true,"DocumentPageNumber": 1,"OptionsType": "WordsSignImageOptionsData"}" \
--H "authorization: Bearer rf1Wyp3-Cz_xukjKqvzF-OMwYvhJcl0rJ6CQ0IgQbZwdSGTKYJziBpGNeDdzGSwwXgsRLCCfPLhHJBKPv8dzqX3tGA8n8SA4tXhLdnGh-hws2gQgmCWEjF0RpzEdJA6jh6tGZyOSAa2GlTrLhuflBwjMB5-dc8JwRmI-ssOiXkO3fSRxnwWuWih24Co8-n8elsun4HxZVMqCzXepAiXBV9UBeUktV_PLclri_lTJEnDzoJRzfRyDigjb2-luODo9aX8DFseboggoCIMKDoyLPSVHnFXgs5EWV2aQ_DgRm_D6UPn2T1Gn7OAIe-T8aA7ypDCoR-wuTJdB8o7T0f2I8K-8FrXCy2Sgb8B5QPpAOcLdiBBqFxRdk8f2c67J-rSbm2WUPWK65pbLa8NGHHdIRKuiI87NmphWuKc39a_zcgEg4MnHSlDeephmStnLS8OayQObNdLQBYAmoeQeVpZRy9t9bcU"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "authorization: Bearer $JWT_TOKEN" \
+  -d '{"ImageGuid":"signature.jpg","Left":10,"Top":10,"Width":40,"Height":10,"LocationMeasureType":"Percents","SizeMeasureType":"Percents","RotationAngle":0,"HorizontalAlignment":"Right","VerticalAlignment":"Bottom","Margin":{"All":10,"Left":10,"Top":10,"Right":10,"Bottom":10},"MarginMeasureType":"Percents","Opacity":1.0,"SignAllPages":true,"DocumentPageNumber":1,"OptionsType":"WordsSignImageOptionsData"}'
+```
 
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+curl.exe -v "https://api.groupdocs.cloud/v1/signature/one-page.docx/image" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN" `
+  -d '{ "ImageGuid": "signature.jpg", "Left": 10, "Top": 10, "Width": 40, "Height": 10, "LocationMeasureType": "Percents", "SizeMeasureType": "Percents", "RotationAngle": 0, "HorizontalAlignment": "Right", "VerticalAlignment": "Bottom", "Margin": { "All": 10, "Left": 10, "Top": 10, "Right": 10, "Bottom": 10 }, "MarginMeasureType": "Percents", "Opacity": 1.0, "SignAllPages": true, "DocumentPageNumber": 1, "OptionsType": "WordsSignImageOptionsData" }'
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```cmd
+curl -v "https://api.groupdocs.cloud/v1/signature/one-page.docx/image" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"ImageGuid\":\"signature.jpg\",\"Left\":10,\"Top\":10,\"Width\":40,\"Height\":10,\"LocationMeasureType\":\"Percents\",\"SizeMeasureType\":\"Percents\",\"RotationAngle\":0,\"HorizontalAlignment\":\"Right\",\"VerticalAlignment\":\"Bottom\",\"Margin\":{\"All\":10,\"Left\":10,\"Top\":10,\"Right\":10,\"Bottom\":10},\"MarginMeasureType\":\"Percents\",\"Opacity\":1.0,\"SignAllPages\":true,\"DocumentPageNumber\":1,\"OptionsType\":\"WordsSignImageOptionsData\"}"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}
@@ -88,16 +113,41 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
 
-```javascript
+```bash
 curl -v "https://api.groupdocs.cloud/v1/signature/image?fileName#piechartsigned.docx&#x26;url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--d "{"ImageGuid": "signature.jpg","Left": 10,"Top": 10,"Width": 40,"Height": 10,"LocationMeasureType": "Percents","SizeMeasureType": "Percents","RotationAngle": 0,"HorizontalAlignment": "Right","VerticalAlignment": "Bottom","Margin":{"All": 10,"Left": 10,"Top": 10,"Right": 10,"Bottom": 10},"MarginMeasureType": "Percents","Opacity": 1.0,"SignAllPages": true,"DocumentPageNumber": 1,"OptionsType": "WordsSignImageOptionsData"}" \
--H "authorization: Bearer rf1Wyp3-Cz_xukjKqvzF-OMwYvhJcl0rJ6CQ0IgQbZwdSGTKYJziBpGNeDdzGSwwXgsRLCCfPLhHJBKPv8dzqX3tGA8n8SA4tXhLdnGh-hws2gQgmCWEjF0RpzEdJA6jh6tGZyOSAa2GlTrLhuflBwjMB5-dc8JwRmI-ssOiXkO3fSRxnwWuWih24Co8-n8elsun4HxZVMqCzXepAiXBV9UBeUktV_PLclri_lTJEnDzoJRzfRyDigjb2-luODo9aX8DFseboggoCIMKDoyLPSVHnFXgs5EWV2aQ_DgRm_D6UPn2T1Gn7OAIe-T8aA7ypDCoR-wuTJdB8o7T0f2I8K-8FrXCy2Sgb8B5QPpAOcLdiBBqFxRdk8f2c67J-rSbm2WUPWK65pbLa8NGHHdIRKuiI87NmphWuKc39a_zcgEg4MnHSlDeephmStnLS8OayQObNdLQBYAmoeQeVpZRy9t9bcU"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "authorization: Bearer $JWT_TOKEN" \
+  -d '{"ImageGuid":"signature.jpg","Left":10,"Top":10,"Width":40,"Height":10,"LocationMeasureType":"Percents","SizeMeasureType":"Percents","RotationAngle":0,"HorizontalAlignment":"Right","VerticalAlignment":"Bottom","Margin":{"All":10,"Left":10,"Top":10,"Right":10,"Bottom":10},"MarginMeasureType":"Percents","Opacity":1.0,"SignAllPages":true,"DocumentPageNumber":1,"OptionsType":"WordsSignImageOptionsData"}'
+```
+
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+curl.exe -v "https://api.groupdocs.cloud/v1/signature/image?fileName#piechartsigned.docx&#x26;url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN" `
+  -d '{ "ImageGuid": "signature.jpg", "Left": 10, "Top": 10, "Width": 40, "Height": 10, "LocationMeasureType": "Percents", "SizeMeasureType": "Percents", "RotationAngle": 0, "HorizontalAlignment": "Right", "VerticalAlignment": "Bottom", "Margin": { "All": 10, "Left": 10, "Top": 10, "Right": 10, "Bottom": 10 }, "MarginMeasureType": "Percents", "Opacity": 1.0, "SignAllPages": true, "DocumentPageNumber": 1, "OptionsType": "WordsSignImageOptionsData" }'
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```cmd
+curl -v "https://api.groupdocs.cloud/v1/signature/image?fileName#piechartsigned.docx&#x26;url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"ImageGuid\":\"signature.jpg\",\"Left\":10,\"Top\":10,\"Width\":40,\"Height\":10,\"LocationMeasureType\":\"Percents\",\"SizeMeasureType\":\"Percents\",\"RotationAngle\":0,\"HorizontalAlignment\":\"Right\",\"VerticalAlignment\":\"Bottom\",\"Margin\":{\"All\":10,\"Left\":10,\"Top\":10,\"Right\":10,\"Bottom\":10},\"MarginMeasureType\":\"Percents\",\"Opacity\":1.0,\"SignAllPages\":true,\"DocumentPageNumber\":1,\"OptionsType\":\"WordsSignImageOptionsData\"}"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}

@@ -21,14 +21,35 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the 
 
 ## cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
 
-```javascript
+```bash
 curl -v "https://api.groupdocs.cloud/v1/signature/formats" \
--X GET \
--H "Content-Type: application/json" \
--H "authorization: Bearer _0zqJ6w3enMdpEw5C6ZKm3lgYvHell1lHdx3vztekvBpCbZGqMvMplrKNrsVXih9Xe6738GSej2hb0BnwKVVz-ANEOnW0bGqjeiJcEySo2Y9-9VZ1K_rs_p4zZcsMoGNuDkL9G4rowGX9Wd1frChwRXzsJCpJUs9G5fGK-0kochaFTVdMgoOHU8JjUOQ5wiu-_ZQSbR0bMKRamxEyc_P_gv9NU7LTJQTCrP1SIJwem1WTX7GaTr8JRUYE0zsXH2vHUkJ1rNh-1RPblqE6wwrfxkklTCGxAWTxvoaSG-Ax-h2Zl9nZkBCAjS48zzz2kqIWS-K5WUmGPP9hAWQL00_deMB0Qi7xqvf2MWoJ831mFnyse-ZQ80fAqPyFBdYpS-xVFC0Uuc8rVHehydCxD0_oIJWkCU_GuDJpNMv6q4IpM-1RzFn"
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "authorization: Bearer $JWT_TOKEN"
+```
 
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+curl.exe -v "https://api.groupdocs.cloud/v1/signature/formats" `
+  -X GET `
+  -H "Content-Type: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```cmd
+curl -v "https://api.groupdocs.cloud/v1/signature/formats" ^
+  -X GET ^
+  -H "Content-Type: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}

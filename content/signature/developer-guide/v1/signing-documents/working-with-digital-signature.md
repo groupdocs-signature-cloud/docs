@@ -27,17 +27,65 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl -v "https://api.groupdocs.cloud/v1/signature/01_pages.pdf/digital" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" -d "{"Visible": true,"Password": "password","CertificateGuid": "temp.pfx","ImageGuid": "signature.jpg","Left": 10,"Top": 10,"Width": 40,"Height": 10,"LocationMeasureType": "Millimeters","SizeMeasureType": "Millimeters","RotationAngle": 0,"HorizontalAlignment": "Right","VerticalAlignment": "Bottom","Margin": {"All": 10,"Left": 10,"Top": 10,"Right": 10,"Bottom": 10},"MarginMeasureType": "Millimeters","Opacity": 0.5,"SignAllPages": true,"DocumentPageNumber": 1,"OptionsType": "PdfSignDigitalOptionsData"}" \
--H "authorization: Bearer rf1Wyp3-Cz_xukjKqvzF-OMwYvhJcl0rJ6CQ0IgQbZwdSGTKYJziBpGNeDdzGSwwXgsRLCCfPLhHJBKPv8dzqX3tGA8n8SA4tXhLdnGh-hws2gQgmCWEjF0RpzEdJA6jh6tGZyOSAa2GlTrLhuflBwjMB5-dc8JwRmI-ssOiXkO3fSRxnwWuWih24Co8-n8elsun4HxZVMqCzXepAiXBV9UBeUktV_PLclri_lTJEnDzoJRzfRyDigjb2-luODo9aX8DFseboggoCIMKDoyLPSVHnFXgs5EWV2aQ_DgRm_D6UPn2T1Gn7OAIe-T8aA7ypDCoR-wuTJdB8o7T0f2I8K-8FrXCy2Sgb8B5QPpAOcLdiBBqFxRdk8f2c67J-rSbm2WUPWK65pbLa8NGHHdIRKuiI87NmphWuKc39a_zcgEg4MnHSlDeephmStnLS8OayQObNdLQBYAmoeQeVpZRy9t9bcU"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -d '{"Visible":true,"Password":"password","CertificateGuid":"temp.pfx","ImageGuid":"signature.jpg","Left":10,"Top":10,"Width":40,"Height":10,"LocationMeasureType":"Millimeters","SizeMeasureType":"Millimeters","RotationAngle":0,"HorizontalAlignment":"Right","VerticalAlignment":"Bottom","Margin":{"All":10,"Left":10,"Top":10,"Right":10,"Bottom":10},"MarginMeasureType":"Millimeters","Opacity":0.5,"SignAllPages":true,"DocumentPageNumber":1,"OptionsType":"PdfSignDigitalOptionsData"}' \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -v "https://api.groupdocs.cloud/v1/signature/01_pages.pdf/digital" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -d @'
+{
+    "Visible": true,
+    "Password": "password",
+    "CertificateGuid": "temp.pfx",
+    "ImageGuid": "signature.jpg",
+    "Left": 10,
+    "Top": 10,
+    "Width": 40,
+    "Height": 10,
+    "LocationMeasureType": "Millimeters",
+    "SizeMeasureType": "Millimeters",
+    "RotationAngle": 0,
+    "HorizontalAlignment": "Right",
+    "VerticalAlignment": "Bottom",
+    "Margin": {
+        "All": 10,
+        "Left": 10,
+        "Top": 10,
+        "Right": 10,
+        "Bottom": 10
+    },
+    "MarginMeasureType": "Millimeters",
+    "Opacity": 0.5,
+    "SignAllPages": true,
+    "DocumentPageNumber": 1,
+    "OptionsType": "PdfSignDigitalOptionsData"
+}
+'@ `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -v "https://api.groupdocs.cloud/v1/signature/01_pages.pdf/digital" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -d "{\"Visible\":true,\"Password\":\"password\",\"CertificateGuid\":\"temp.pfx\",\"ImageGuid\":\"signature.jpg\",\"Left\":10,\"Top\":10,\"Width\":40,\"Height\":10,\"LocationMeasureType\":\"Millimeters\",\"SizeMeasureType\":\"Millimeters\",\"RotationAngle\":0,\"HorizontalAlignment\":\"Right\",\"VerticalAlignment\":\"Bottom\",\"Margin\":{\"All\":10,\"Left\":10,\"Top\":10,\"Right\":10,\"Bottom\":10},\"MarginMeasureType\":\"Millimeters\",\"Opacity\":0.5,\"SignAllPages\":true,\"DocumentPageNumber\":1,\"OptionsType\":\"PdfSignDigitalOptionsData\"}" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -87,17 +135,67 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl -v "https://api.groupdocs.cloud/v1/signature/digital?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" -d "{"Margin": {"All": 10,"Left": 10,"Top": 10,"Right": 10,"Bottom": 10},"DocumentPageNumber": 1,"SheetNumber": 1,"RowNumber": 1,"ColumnNumber": 2,"Password":"password","CertificateGuid":"temp.pfx","ImageGuid":"signature.jpg","Left": 1,"Top": 1,"Width": 40,"Height": 40,"LocationMeasureType": "Pixels","SizeMeasureType":"Millimeters","RotationAngle": 0,"HorizontalAlignment": "Left","VerticalAlignment": "Bottom","MarginMeasureType":"Pixels","Opacity": 0.5,"SignAllPages": true,"OptionsType": "WordsSignDigitalOptionsData"}" \
--H "authorization: Bearer rf1Wyp3-Cz_xukjKqvzF-OMwYvhJcl0rJ6CQ0IgQbZwdSGTKYJziBpGNeDdzGSwwXgsRLCCfPLhHJBKPv8dzqX3tGA8n8SA4tXhLdnGh-hws2gQgmCWEjF0RpzEdJA6jh6tGZyOSAa2GlTrLhuflBwjMB5-dc8JwRmI-ssOiXkO3fSRxnwWuWih24Co8-n8elsun4HxZVMqCzXepAiXBV9UBeUktV_PLclri_lTJEnDzoJRzfRyDigjb2-luODo9aX8DFseboggoCIMKDoyLPSVHnFXgs5EWV2aQ_DgRm_D6UPn2T1Gn7OAIe-T8aA7ypDCoR-wuTJdB8o7T0f2I8K-8FrXCy2Sgb8B5QPpAOcLdiBBqFxRdk8f2c67J-rSbm2WUPWK65pbLa8NGHHdIRKuiI87NmphWuKc39a_zcgEg4MnHSlDeephmStnLS8OayQObNdLQBYAmoeQeVpZRy9t9bcU"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -d '{"Margin":{"All":10,"Left":10,"Top":10,"Right":10,"Bottom":10},"DocumentPageNumber":1,"SheetNumber":1,"RowNumber":1,"ColumnNumber":2,"Password":"password","CertificateGuid":"temp.pfx","ImageGuid":"signature.jpg","Left":1,"Top":1,"Width":40,"Height":40,"LocationMeasureType":"Pixels","SizeMeasureType":"Millimeters","RotationAngle":0,"HorizontalAlignment":"Left","VerticalAlignment":"Bottom","MarginMeasureType":"Pixels","Opacity":0.5,"SignAllPages":true,"OptionsType":"WordsSignDigitalOptionsData"}' \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -v "https://api.groupdocs.cloud/v1/signature/digital?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -d @'
+{
+    "Margin": {
+        "All": 10,
+        "Left": 10,
+        "Top": 10,
+        "Right": 10,
+        "Bottom": 10
+    },
+    "DocumentPageNumber": 1,
+    "SheetNumber": 1,
+    "RowNumber": 1,
+    "ColumnNumber": 2,
+    "Password": "password",
+    "CertificateGuid": "temp.pfx",
+    "ImageGuid": "signature.jpg",
+    "Left": 1,
+    "Top": 1,
+    "Width": 40,
+    "Height": 40,
+    "LocationMeasureType": "Pixels",
+    "SizeMeasureType": "Millimeters",
+    "RotationAngle": 0,
+    "HorizontalAlignment": "Left",
+    "VerticalAlignment": "Bottom",
+    "MarginMeasureType": "Pixels",
+    "Opacity": 0.5,
+    "SignAllPages": true,
+    "OptionsType": "WordsSignDigitalOptionsData"
+}
+'@ `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -v "https://api.groupdocs.cloud/v1/signature/digital?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -d "{\"Margin\":{\"All\":10,\"Left\":10,\"Top\":10,\"Right\":10,\"Bottom\":10},\"DocumentPageNumber\":1,\"SheetNumber\":1,\"RowNumber\":1,\"ColumnNumber\":2,\"Password\":\"password\",\"CertificateGuid\":\"temp.pfx\",\"ImageGuid\":\"signature.jpg\",\"Left\":1,\"Top\":1,\"Width\":40,\"Height\":40,\"LocationMeasureType\":\"Pixels\",\"SizeMeasureType\":\"Millimeters\",\"RotationAngle\":0,\"HorizontalAlignment\":\"Left\",\"VerticalAlignment\":\"Bottom\",\"MarginMeasureType\":\"Pixels\",\"Opacity\":0.5,\"SignAllPages\":true,\"OptionsType\":\"WordsSignDigitalOptionsData\"}" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

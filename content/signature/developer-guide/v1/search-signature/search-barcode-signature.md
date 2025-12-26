@@ -27,15 +27,38 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
 
-```javascript
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.xlsx/barcode/search?folder#signed \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "barcodeTypeName": "Code39Standard", "text": "123456789012", "matchType": "Contains", "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "searchAllPages": true, "OptionsType": "CellsSearchBarcodeOptionsData" }'
+  --url http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.xlsx/barcode/search?folder#signed \
+  --header 'authorization: $JWT_TOKEN' \
+  --header 'content-type: application/json' \
+  --data '{ "barcodeTypeName": "Code39Standard", "text": "123456789012", "matchType": "Contains", "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "searchAllPages": true, "OptionsType": "CellsSearchBarcodeOptionsData" }'
+```
 
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+curl.exe --request POST `
+  --url "http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.xlsx/barcode/search?folder#signed" `
+  --header "authorization: $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{ 'barcodeTypeName': 'Code39Standard', 'text': '123456789012', 'matchType': 'Contains', 'documentPageNumber': 1, 'pagesSetup': { 'firstPage': $true, 'lastPage': $false, 'oddPages': $false, 'evenPages': $false, 'pageNumbers': [ 1 ] }, 'searchAllPages': $true, 'OptionsType': 'CellsSearchBarcodeOptionsData' }"
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```cmd
+curl --request POST ^
+  --url "http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.xlsx/barcode/search?folder#signed" ^
+  --header "authorization: %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{ \"barcodeTypeName\": \"Code39Standard\", \"text\": \"123456789012\", \"matchType\": \"Contains\", \"documentPageNumber\": 1, \"pagesSetup\": { \"firstPage\": true, \"lastPage\": false, \"oddPages\": false, \"evenPages\": false, \"pageNumbers\": [ 1 ] }, \"searchAllPages\": true, \"OptionsType\": \"CellsSearchBarcodeOptionsData\" }"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}
@@ -104,15 +127,38 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
 
-```javascript
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/barcode/search?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "BarcodeTypeName" : "Code128",  "MatchType" : "Contains",  "DocumentPageNumber": 1,  "Text": "John Smith",  "SearchAllPages" : true,  "OptionsType" : "WordsSearchBarcodeOptionsData" }'
+  --url http://api.groupdocs.cloud/v1/signature/barcode/search?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
+  --header 'authorization: $JWT_TOKEN' \
+  --header 'content-type: application/json' \
+  --data '{ "BarcodeTypeName" : "Code128",  "MatchType" : "Contains",  "DocumentPageNumber": 1,  "Text": "John Smith",  "SearchAllPages" : true,  "OptionsType" : "WordsSearchBarcodeOptionsData" }'
+```
 
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+curl.exe --request POST `
+  --url "http://api.groupdocs.cloud/v1/signature/barcode/search?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" `
+  --header "authorization: $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{ 'BarcodeTypeName': 'Code128', 'MatchType': 'Contains', 'DocumentPageNumber': 1, 'Text': 'John Smith', 'SearchAllPages': $true, 'OptionsType': 'WordsSearchBarcodeOptionsData' }"
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```cmd
+curl --request POST ^
+  --url "http://api.groupdocs.cloud/v1/signature/barcode/search?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" ^
+  --header "authorization: %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{ \"BarcodeTypeName\" : \"Code128\",  \"MatchType\" : \"Contains\",  \"DocumentPageNumber\": 1,  \"Text\": \"John Smith\",  \"SearchAllPages\" : true,  \"OptionsType\" : \"WordsSearchBarcodeOptionsData\" }"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}

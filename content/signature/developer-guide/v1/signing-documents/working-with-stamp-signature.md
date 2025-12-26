@@ -27,16 +27,126 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
- {{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
- curl --request POST \
---url 'https://api.groupdocs.cloud/v1/signature/01_pages.png/stamp?folder=storage' \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "outerLines": [ { "height": 20, "backgroundColor": { "Web": "BlueViolet" }, "text": " * John Smith * ", "font": { "fontFamily": "Arial", "fontSize": 12.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "DarkOrange" }, "textBottomIntent": 5, "textRepeatType": "FullTextRepeat", "outerBorder": { "style": "Default", "transparency": 0.7, "weight": 2.0, "color": { "Web": "DarkOrange" } }, "innerBorder": { "style": "Default", "transparency": 0.5, "weight": 2.0, "color": { "Web": "DarkOrange" } }, "visible": true } ], "innerLines": [ { "height": 30, "backgroundColor": { "Web": "Transparent", "Alpha": 0 }, "text": "John Smith", "font": { "fontFamily": "Times New Roman", "fontSize": 20.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "Gold" }, "textBottomIntent": 3, "textRepeatType": "None", "visible": true } ], "backgroundColor": { "Web": "CornflowerBlue" }, "backgroundColorCropType": "OuterArea", "backgroundImageCropType": "MiddleArea", "left": 2, "top": 2, "width": 200, "height": 150, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 0, "horizontalAlignment": "Left", "verticalAlignment": "Top", "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 }, "marginMeasureType": "Pixels", "opacity": 1.0, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "OptionsType": "ImagesSignStampOptionsData" }'
+ {{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl --request POST \
+  --url 'https://api.groupdocs.cloud/v1/signature/01_pages.png/stamp?folder=storage' \
+  --header "authorization: Bearer $JWT_TOKEN" \
+  --header "content-type: application/json" \
+  --data '{
+    "outerLines": [
+      {
+        "height": 20,
+        "backgroundColor": { "Web": "BlueViolet" },
+        "text": " * John Smith * ",
+        "font": { "fontFamily": "Arial", "fontSize": 12.0, "bold": true, "italic": true, "underline": false },
+        "textColor": { "Web": "DarkOrange" },
+        "textBottomIntent": 5,
+        "textRepeatType": "FullTextRepeat",
+        "outerBorder": { "style": "Default", "transparency": 0.7, "weight": 2.0, "color": { "Web": "DarkOrange" } },
+        "innerBorder": { "style": "Default", "transparency": 0.5, "weight": 2.0, "color": { "Web": "DarkOrange" } },
+        "visible": true
+      }
+    ],
+    "innerLines": [
+      {
+        "height": 30,
+        "backgroundColor": { "Web": "Transparent", "Alpha": 0 },
+        "text": "John Smith",
+        "font": { "fontFamily": "Times New Roman", "fontSize": 20.0, "bold": true, "italic": true, "underline": false },
+        "textColor": { "Web": "Gold" },
+        "textBottomIntent": 3,
+        "textRepeatType": "None",
+        "visible": true
+      }
+    ],
+    "backgroundColor": { "Web": "CornflowerBlue" },
+    "backgroundColorCropType": "OuterArea",
+    "backgroundImageCropType": "MiddleArea",
+    "left": 2,
+    "top": 2,
+    "width": 200,
+    "height": 150,
+    "locationMeasureType": "Pixels",
+    "sizeMeasureType": "Pixels",
+    "rotationAngle": 0,
+    "horizontalAlignment": "Left",
+    "verticalAlignment": "Top",
+    "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 },
+    "marginMeasureType": "Pixels",
+    "opacity": 1.0,
+    "signAllPages": false,
+    "documentPageNumber": 1,
+    "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] },
+    "OptionsType": "ImagesSignStampOptionsData"
+}'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe --request POST `
+  --url 'https://api.groupdocs.cloud/v1/signature/01_pages.png/stamp?folder=storage' `
+  --header "authorization: Bearer $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{
+    'outerLines': [
+      {
+        'height': 20,
+        'backgroundColor': { 'Web': 'BlueViolet' },
+        'text': ' * John Smith * ',
+        'font': { 'fontFamily': 'Arial', 'fontSize': 12.0, 'bold': $true, 'italic': $true, 'underline': $false },
+        'textColor': { 'Web': 'DarkOrange' },
+        'textBottomIntent': 5,
+        'textRepeatType': 'FullTextRepeat',
+        'outerBorder': { 'style': 'Default', 'transparency': 0.7, 'weight': 2.0, 'color': { 'Web': 'DarkOrange' } },
+        'innerBorder': { 'style': 'Default', 'transparency': 0.5, 'weight': 2.0, 'color': { 'Web': 'DarkOrange' } },
+        'visible': $true
+      }
+    ],
+    'innerLines': [
+      {
+        'height': 30,
+        'backgroundColor': { 'Web': 'Transparent', 'Alpha': 0 },
+        'text': 'John Smith',
+        'font': { 'fontFamily': 'Times New Roman', 'fontSize': 20.0, 'bold': $true, 'italic': $true, 'underline': $false },
+        'textColor': { 'Web': 'Gold' },
+        'textBottomIntent': 3,
+        'textRepeatType': 'None',
+        'visible': $true
+      }
+    ],
+    'backgroundColor': { 'Web': 'CornflowerBlue' },
+    'backgroundColorCropType': 'OuterArea',
+    'backgroundImageCropType': 'MiddleArea',
+    'left': 2,
+    'top': 2,
+    'width': 200,
+    'height': 150,
+    'locationMeasureType': 'Pixels',
+    'sizeMeasureType': 'Pixels',
+    'rotationAngle': 0,
+    'horizontalAlignment': 'Left',
+    'verticalAlignment': 'Top',
+    'margin': { 'all': 10, 'left': 10, 'top': 10, 'right': 10, 'bottom': 10 },
+    'marginMeasureType': 'Pixels',
+    'opacity': 1.0,
+    'signAllPages': $false,
+    'documentPageNumber': 1,
+    'pagesSetup': { 'firstPage': $true, 'lastPage': $false, 'oddPages': $false, 'evenPages': $false, 'pageNumbers': [ 1 ] },
+    'OptionsType': 'ImagesSignStampOptionsData'
+}"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl --request POST ^
+  --url "https://api.groupdocs.cloud/v1/signature/01_pages.png/stamp?folder=storage" ^
+  --header "authorization: Bearer %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{\"outerLines\":[{\"height\":20,\"backgroundColor\":{\"Web\":\"BlueViolet\"},\"text\":\" * John Smith * \",\"font\":{\"fontFamily\":\"Arial\",\"fontSize\":12.0,\"bold\":true,\"italic\":true,\"underline\":false},\"textColor\":{\"Web\":\"DarkOrange\"},\"textBottomIntent\":5,\"textRepeatType\":\"FullTextRepeat\",\"outerBorder\":{\"style\":\"Default\",\"transparency\":0.7,\"weight\":2.0,\"color\":{\"Web\":\"DarkOrange\"}},\"innerBorder\":{\"style\":\"Default\",\"transparency\":0.5,\"weight\":2.0,\"color\":{\"Web\":\"DarkOrange\"}},\"visible\":true}],\"innerLines\":[{\"height\":30,\"backgroundColor\":{\"Web\":\"Transparent\",\"Alpha\":0},\"text\":\"John Smith\",\"font\":{\"fontFamily\":\"Times New Roman\",\"fontSize\":20.0,\"bold\":true,\"italic\":true,\"underline\":false},\"textColor\":{\"Web\":\"Gold\"},\"textBottomIntent\":3,\"textRepeatType\":\"None\",\"visible\":true}],\"backgroundColor\":{\"Web\":\"CornflowerBlue\"},\"backgroundColorCropType\":\"OuterArea\",\"backgroundImageCropType\":\"MiddleArea\",\"left\":2,\"top\":2,\"width\":200,\"height\":150,\"locationMeasureType\":\"Pixels\",\"sizeMeasureType\":\"Pixels\",\"rotationAngle\":0,\"horizontalAlignment\":\"Left\",\"verticalAlignment\":\"Top\",\"margin\":{\"all\":10,\"left\":10,\"top\":10,\"right\":10,\"bottom\":10},\"marginMeasureType\":\"Pixels\",\"opacity\":1.0,\"signAllPages\":false,\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":true,\"lastPage\":false,\"oddPages\":false,\"evenPages\":false,\"pageNumbers\":[1]},\"OptionsType\":\"ImagesSignStampOptionsData\"}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -86,16 +196,126 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/stamp?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2F3hbc18wympow0j1%2Ftest.png%3Fdl%3D1 \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "outerLines": [ { "height": 20, "backgroundColor": { "Web": "BlueViolet" }, "text": " * John Smith * ", "font": { "fontFamily": "Arial", "fontSize": 12.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "DarkOrange" }, "textBottomIntent": 5, "textRepeatType": "FullTextRepeat", "outerBorder": { "style": "Default", "transparency": 0.7, "weight": 2.0, "color": { "Web": "DarkOrange" } }, "innerBorder": { "style": "Default", "transparency": 0.5, "weight": 2.0, "color": { "Web": "DarkOrange" } }, "visible": true } ], "innerLines": [ { "height": 30, "backgroundColor": { "Web": "Transparent", "Alpha": 0 }, "text": "John Smith", "font": { "fontFamily": "Times New Roman", "fontSize": 20.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "Gold" }, "textBottomIntent": 3, "textRepeatType": "None", "visible": true } ], "backgroundColor": { "Web": "CornflowerBlue" }, "backgroundColorCropType": "OuterArea", "backgroundImageCropType": "MiddleArea", "left": 2, "top": 2, "width": 200, "height": 150, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 0, "horizontalAlignment": "Left", "verticalAlignment": "Top", "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 }, "marginMeasureType": "Pixels", "opacity": 1.0, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "OptionsType": "ImagesSignStampOptionsData" }'
+  --url 'http://api.groupdocs.cloud/v1/signature/stamp?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2F3hbc18wympow0j1%2Ftest.png%3Fdl%3D1' \
+  --header "authorization: Bearer $JWT_TOKEN" \
+  --header "content-type: application/json" \
+  --data '{
+    "outerLines": [
+      {
+        "height": 20,
+        "backgroundColor": { "Web": "BlueViolet" },
+        "text": " * John Smith * ",
+        "font": { "fontFamily": "Arial", "fontSize": 12.0, "bold": true, "italic": true, "underline": false },
+        "textColor": { "Web": "DarkOrange" },
+        "textBottomIntent": 5,
+        "textRepeatType": "FullTextRepeat",
+        "outerBorder": { "style": "Default", "transparency": 0.7, "weight": 2.0, "color": { "Web": "DarkOrange" } },
+        "innerBorder": { "style": "Default", "transparency": 0.5, "weight": 2.0, "color": { "Web": "DarkOrange" } },
+        "visible": true
+      }
+    ],
+    "innerLines": [
+      {
+        "height": 30,
+        "backgroundColor": { "Web": "Transparent", "Alpha": 0 },
+        "text": "John Smith",
+        "font": { "fontFamily": "Times New Roman", "fontSize": 20.0, "bold": true, "italic": true, "underline": false },
+        "textColor": { "Web": "Gold" },
+        "textBottomIntent": 3,
+        "textRepeatType": "None",
+        "visible": true
+      }
+    ],
+    "backgroundColor": { "Web": "CornflowerBlue" },
+    "backgroundColorCropType": "OuterArea",
+    "backgroundImageCropType": "MiddleArea",
+    "left": 2,
+    "top": 2,
+    "width": 200,
+    "height": 150,
+    "locationMeasureType": "Pixels",
+    "sizeMeasureType": "Pixels",
+    "rotationAngle": 0,
+    "horizontalAlignment": "Left",
+    "verticalAlignment": "Top",
+    "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 },
+    "marginMeasureType": "Pixels",
+    "opacity": 1.0,
+    "signAllPages": false,
+    "documentPageNumber": 1,
+    "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] },
+    "OptionsType": "ImagesSignStampOptionsData"
+}'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe --request POST `
+  --url 'http://api.groupdocs.cloud/v1/signature/stamp?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2F3hbc18wympow0j1%2Ftest.png%3Fdl%3D1' `
+  --header "authorization: Bearer $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{
+    'outerLines': [
+      {
+        'height': 20,
+        'backgroundColor': { 'Web': 'BlueViolet' },
+        'text': ' * John Smith * ',
+        'font': { 'fontFamily': 'Arial', 'fontSize': 12.0, 'bold': $true, 'italic': $true, 'underline': $false },
+        'textColor': { 'Web': 'DarkOrange' },
+        'textBottomIntent': 5,
+        'textRepeatType': 'FullTextRepeat',
+        'outerBorder': { 'style': 'Default', 'transparency': 0.7, 'weight': 2.0, 'color': { 'Web': 'DarkOrange' } },
+        'innerBorder': { 'style': 'Default', 'transparency': 0.5, 'weight': 2.0, 'color': { 'Web': 'DarkOrange' } },
+        'visible': $true
+      }
+    ],
+    'innerLines': [
+      {
+        'height': 30,
+        'backgroundColor': { 'Web': 'Transparent', 'Alpha': 0 },
+        'text': 'John Smith',
+        'font': { 'fontFamily': 'Times New Roman', 'fontSize': 20.0, 'bold': $true, 'italic': $true, 'underline': $false },
+        'textColor': { 'Web': 'Gold' },
+        'textBottomIntent': 3,
+        'textRepeatType': 'None',
+        'visible': $true
+      }
+    ],
+    'backgroundColor': { 'Web': 'CornflowerBlue' },
+    'backgroundColorCropType': 'OuterArea',
+    'backgroundImageCropType': 'MiddleArea',
+    'left': 2,
+    'top': 2,
+    'width': 200,
+    'height': 150,
+    'locationMeasureType': 'Pixels',
+    'sizeMeasureType': 'Pixels',
+    'rotationAngle': 0,
+    'horizontalAlignment': 'Left',
+    'verticalAlignment': 'Top',
+    'margin': { 'all': 10, 'left': 10, 'top': 10, 'right': 10, 'bottom': 10 },
+    'marginMeasureType': 'Pixels',
+    'opacity': 1.0,
+    'signAllPages': $false,
+    'documentPageNumber': 1,
+    'pagesSetup': { 'firstPage': $true, 'lastPage': $false, 'oddPages': $false, 'evenPages': $false, 'pageNumbers': [ 1 ] },
+    'OptionsType': 'ImagesSignStampOptionsData'
+}"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl --request POST ^
+  --url "http://api.groupdocs.cloud/v1/signature/stamp?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2F3hbc18wympow0j1%2Ftest.png%3Fdl%3D1" ^
+  --header "authorization: Bearer %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{\"outerLines\":[{\"height\":20,\"backgroundColor\":{\"Web\":\"BlueViolet\"},\"text\":\" * John Smith * \",\"font\":{\"fontFamily\":\"Arial\",\"fontSize\":12.0,\"bold\":true,\"italic\":true,\"underline\":false},\"textColor\":{\"Web\":\"DarkOrange\"},\"textBottomIntent\":5,\"textRepeatType\":\"FullTextRepeat\",\"outerBorder\":{\"style\":\"Default\",\"transparency\":0.7,\"weight\":2.0,\"color\":{\"Web\":\"DarkOrange\"}},\"innerBorder\":{\"style\":\"Default\",\"transparency\":0.5,\"weight\":2.0,\"color\":{\"Web\":\"DarkOrange\"}},\"visible\":true}],\"innerLines\":[{\"height\":30,\"backgroundColor\":{\"Web\":\"Transparent\",\"Alpha\":0},\"text\":\"John Smith\",\"font\":{\"fontFamily\":\"Times New Roman\",\"fontSize\":20.0,\"bold\":true,\"italic\":true,\"underline\":false},\"textColor\":{\"Web\":\"Gold\"},\"textBottomIntent\":3,\"textRepeatType\":\"None\",\"visible\":true}],\"backgroundColor\":{\"Web\":\"CornflowerBlue\"},\"backgroundColorCropType\":\"OuterArea\",\"backgroundImageCropType\":\"MiddleArea\",\"left\":2,\"top\":2,\"width\":200,\"height\":150,\"locationMeasureType\":\"Pixels\",\"sizeMeasureType\":\"Pixels\",\"rotationAngle\":0,\"horizontalAlignment\":\"Left\",\"verticalAlignment\":\"Top\",\"margin\":{\"all\":10,\"left\":10,\"top\":10,\"right\":10,\"bottom\":10},\"marginMeasureType\":\"Pixels\",\"opacity\":1.0,\"signAllPages\":false,\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":true,\"lastPage\":false,\"oddPages\":false,\"evenPages\":false,\"pageNumbers\":[1]},\"OptionsType\":\"ImagesSignStampOptionsData\"}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -185,16 +405,128 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ## cURL example
 
-{{< tabs "example5">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example5">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/01_pages.pptx/stamp?folder#storage \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "outerLines": [ { "height": 20, "backgroundColor": { "Web": "BlueViolet" }, "text": " * John Smith * ", "font": { "fontFamily": "Arial", "fontSize": 12.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "DarkOrange" }, "textBottomIntent": 5, "textRepeatType": "FullTextRepeat", "outerBorder": { "style": "Default", "transparency": 0.7, "weight": 2.0, "color": {  "Web": "DarkOrange" } }, "innerBorder": { "style": "Default", "transparency": 0.5, "weight": 2.0, "color": {  "Web": "DarkOrange" } }, "visible": true } ], "innerLines": [ { "height": 30, "backgroundColor": { "Web": "Transparent", "Alpha": 0 }, "text": "John Smith", "font": { "fontFamily": "Times New Roman", "fontSize": 20.0, "bold": true, "italic": true, "underline": false }, "textColor": { "Web": "Gold" }, "textBottomIntent": 3, "textRepeatType": "None", "visible": true } ], "backgroundColor": { "Web": "CornflowerBlue" }, "backgroundBrush": { "startColor": { "web": "LightBlue" }, "endColor": { "web": "DarkBlue" }, "angle": 45.0, "brushType": "LinearGradientBrush" }, "backgroundColorCropType": "OuterArea", "backgroundImageCropType": "MiddleArea", "left": 2, "top": 2, "width": 200, "height": 150, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 0, "horizontalAlignment": "Left", "verticalAlignment": "Top", "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 }, "marginMeasureType": "Pixels", "opacity": 1.0, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] }, "OptionsType": "SlidesSignStampOptionsData" }'
+  --url 'http://api.groupdocs.cloud/v1/signature/01_pages.pptx/stamp?folder#storage' \
+  --header "authorization: Bearer $JWT_TOKEN" \
+  --header "content-type: application/json" \
+  --data '{
+    "outerLines": [
+      {
+        "height": 20,
+        "backgroundColor": { "Web": "BlueViolet" },
+        "text": " * John Smith * ",
+        "font": { "fontFamily": "Arial", "fontSize": 12.0, "bold": true, "italic": true, "underline": false },
+        "textColor": { "Web": "DarkOrange" },
+        "textBottomIntent": 5,
+        "textRepeatType": "FullTextRepeat",
+        "outerBorder": { "style": "Default", "transparency": 0.7, "weight": 2.0, "color": { "Web": "DarkOrange" } },
+        "innerBorder": { "style": "Default", "transparency": 0.5, "weight": 2.0, "color": { "Web": "DarkOrange" } },
+        "visible": true
+      }
+    ],
+    "innerLines": [
+      {
+        "height": 30,
+        "backgroundColor": { "Web": "Transparent", "Alpha": 0 },
+        "text": "John Smith",
+        "font": { "fontFamily": "Times New Roman", "fontSize": 20.0, "bold": true, "italic": true, "underline": false },
+        "textColor": { "Web": "Gold" },
+        "textBottomIntent": 3,
+        "textRepeatType": "None",
+        "visible": true
+      }
+    ],
+    "backgroundColor": { "Web": "CornflowerBlue" },
+    "backgroundBrush": { "startColor": { "web": "LightBlue" }, "endColor": { "web": "DarkBlue" }, "angle": 45.0, "brushType": "LinearGradientBrush" },
+    "backgroundColorCropType": "OuterArea",
+    "backgroundImageCropType": "MiddleArea",
+    "left": 2,
+    "top": 2,
+    "width": 200,
+    "height": 150,
+    "locationMeasureType": "Pixels",
+    "sizeMeasureType": "Pixels",
+    "rotationAngle": 0,
+    "horizontalAlignment": "Left",
+    "verticalAlignment": "Top",
+    "margin": { "all": 10, "left": 10, "top": 10, "right": 10, "bottom": 10 },
+    "marginMeasureType": "Pixels",
+    "opacity": 1.0,
+    "signAllPages": false,
+    "documentPageNumber": 1,
+    "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [ 1 ] },
+    "OptionsType": "SlidesSignStampOptionsData"
+}'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe --request POST `
+  --url 'http://api.groupdocs.cloud/v1/signature/01_pages.pptx/stamp?folder#storage' `
+  --header "authorization: Bearer $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{
+    'outerLines': [
+      {
+        'height': 20,
+        'backgroundColor': { 'Web': 'BlueViolet' },
+        'text': ' * John Smith * ',
+        'font': { 'fontFamily': 'Arial', 'fontSize': 12.0, 'bold': $true, 'italic': $true, 'underline': $false },
+        'textColor': { 'Web': 'DarkOrange' },
+        'textBottomIntent': 5,
+        'textRepeatType': 'FullTextRepeat',
+        'outerBorder': { 'style': 'Default', 'transparency': 0.7, 'weight': 2.0, 'color': { 'Web': 'DarkOrange' } },
+        'innerBorder': { 'style': 'Default', 'transparency': 0.5, 'weight': 2.0, 'color': { 'Web': 'DarkOrange' } },
+        'visible': $true
+      }
+    ],
+    'innerLines': [
+      {
+        'height': 30,
+        'backgroundColor': { 'Web': 'Transparent', 'Alpha': 0 },
+        'text': 'John Smith',
+        'font': { 'fontFamily': 'Times New Roman', 'fontSize': 20.0, 'bold': $true, 'italic': $true, 'underline': $false },
+        'textColor': { 'Web': 'Gold' },
+        'textBottomIntent': 3,
+        'textRepeatType': 'None',
+        'visible': $true
+      }
+    ],
+    'backgroundColor': { 'Web': 'CornflowerBlue' },
+    'backgroundBrush': { 'startColor': { 'web': 'LightBlue' }, 'endColor': { 'web': 'DarkBlue' }, 'angle': 45.0, 'brushType': 'LinearGradientBrush' },
+    'backgroundColorCropType': 'OuterArea',
+    'backgroundImageCropType': 'MiddleArea',
+    'left': 2,
+    'top': 2,
+    'width': 200,
+    'height': 150,
+    'locationMeasureType': 'Pixels',
+    'sizeMeasureType': 'Pixels',
+    'rotationAngle': 0,
+    'horizontalAlignment': 'Left',
+    'verticalAlignment': 'Top',
+    'margin': { 'all': 10, 'left': 10, 'top': 10, 'right': 10, 'bottom': 10 },
+    'marginMeasureType': 'Pixels',
+    'opacity': 1.0,
+    'signAllPages': $false,
+    'documentPageNumber': 1,
+    'pagesSetup': { 'firstPage': $true, 'lastPage': $false, 'oddPages': $false, 'evenPages': $false, 'pageNumbers': [ 1 ] },
+    'OptionsType': 'SlidesSignStampOptionsData'
+}"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl --request POST ^
+  --url "http://api.groupdocs.cloud/v1/signature/01_pages.pptx/stamp?folder#storage" ^
+  --header "authorization: Bearer %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{\"outerLines\":[{\"height\":20,\"backgroundColor\":{\"Web\":\"BlueViolet\"},\"text\":\" * John Smith * \",\"font\":{\"fontFamily\":\"Arial\",\"fontSize\":12.0,\"bold\":true,\"italic\":true,\"underline\":false},\"textColor\":{\"Web\":\"DarkOrange\"},\"textBottomIntent\":5,\"textRepeatType\":\"FullTextRepeat\",\"outerBorder\":{\"style\":\"Default\",\"transparency\":0.7,\"weight\":2.0,\"color\":{\"Web\":\"DarkOrange\"}},\"innerBorder\":{\"style\":\"Default\",\"transparency\":0.5,\"weight\":2.0,\"color\":{\"Web\":\"DarkOrange\"}},\"visible\":true}],\"innerLines\":[{\"height\":30,\"backgroundColor\":{\"Web\":\"Transparent\",\"Alpha\":0},\"text\":\"John Smith\",\"font\":{\"fontFamily\":\"Times New Roman\",\"fontSize\":20.0,\"bold\":true,\"italic\":true,\"underline\":false},\"textColor\":{\"Web\":\"Gold\"},\"textBottomIntent\":3,\"textRepeatType\":\"None\",\"visible\":true}],\"backgroundColor\":{\"Web\":\"CornflowerBlue\"},\"backgroundBrush\":{\"startColor\":{\"web\":\"LightBlue\"},\"endColor\":{\"web\":\"DarkBlue\"},\"angle\":45.0,\"brushType\":\"LinearGradientBrush\"},\"backgroundColorCropType\":\"OuterArea\",\"backgroundImageCropType\":\"MiddleArea\",\"left\":2,\"top\":2,\"width\":200,\"height\":150,\"locationMeasureType\":\"Pixels\",\"sizeMeasureType\":\"Pixels\",\"rotationAngle\":0,\"horizontalAlignment\":\"Left\",\"verticalAlignment\":\"Top\",\"margin\":{\"all\":10,\"left\":10,\"top\":10,\"right\":10,\"bottom\":10},\"marginMeasureType\":\"Pixels\",\"opacity\":1.0,\"signAllPages\":false,\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":true,\"lastPage\":false,\"oddPages\":false,\"evenPages\":false,\"pageNumbers\":[1]},\"OptionsType\":\"SlidesSignStampOptionsData\"}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

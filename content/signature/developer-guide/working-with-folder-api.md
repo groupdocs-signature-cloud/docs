@@ -26,13 +26,28 @@ This API allows you to get a list of all files of a specific folder from the 
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
-curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" \
+  -H "accept: application/json" \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -147,13 +162,28 @@ This API allows you to create a new Folder in the specified Cloud Storage. If yo
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
-
-```javascript
-curl -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" \
+  -H "accept: application/json" \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs?storageName#MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -212,13 +242,28 @@ This API allows you to delete a particular Folder in the specified Cloud Storage
 
 ### cURL example
 
-{{< tabs "example5">}} {{< tab "Request" >}}
-
-```javascript
-curl -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs3?storageName#MyStorage&#x26;recursive#true" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
+{{< tabs "example5">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs3?storageName#MyStorage&#x26;recursive#true" \
+  -H "accept: application/json" \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs3?storageName#MyStorage&#x26;recursive#true" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/folder/signaturedocs3?storageName#MyStorage&#x26;recursive#true" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -279,13 +324,28 @@ This API allows you to copy a Folder to another location in the GroupDocs Cloud 
 
 ### cURL example
 
-{{< tabs "example7">}} {{< tab "Request" >}}
-
-```javascript
-curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/copy/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
+{{< tabs "example7">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/copy/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" \
+  -H "accept: application/json" \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/copy/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/copy/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -346,12 +406,28 @@ This API allows you to move a Folder to another location in the GroupDocs Cloud 
 
 ### cURL example
 
-{{< tabs "example9">}} {{< tab "Request" >}}
-
-```javascript
-curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/move/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
+{{< tabs "example9">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/move/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" \
+  -H "accept: application/json" \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/move/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/folder/move/signaturedocs?destPath#signaturedocs1&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

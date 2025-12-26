@@ -27,17 +27,68 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.pdf/collection/verification?folder#storage \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "items": [ { "barcodeTypeName": "Code39Standard", "matchType": "Contains", "text": "123456789012", "verifyAllPages": true, "isValid": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": false, "lastPage": true, "oddPages": false, "evenPages": true, "pageNumbers": [  1 ] }, "OptionsType": "PdfVerifyBarcodeOptionsData" }, { "password": "1234567890", "certificateGuid": "certificates\SherlockHolmes.pfx", "isValid": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": false, "lastPage": true, "oddPages": false, "evenPages": true, "pageNumbers": [  1 ] }, "OptionsType": "PdfVerifyDigitalOptionsData" } ], "isValid": false }'
-
+  --url http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.pdf/collection/verification?folder#storage \
+  --header "authorization: Bearer $JWT_TOKEN" \
+  --header "content-type: application/json" \
+  --data '{
+    "items": [
+      {
+        "barcodeTypeName": "Code39Standard",
+        "matchType": "Contains",
+        "text": "123456789012",
+        "verifyAllPages": true,
+        "isValid": false,
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": false,
+          "lastPage": true,
+          "oddPages": false,
+          "evenPages": true,
+          "pageNumbers": [1]
+        },
+        "OptionsType": "PdfVerifyBarcodeOptionsData"
+      },
+      {
+        "password": "1234567890",
+        "certificateGuid": "certificates\\SherlockHolmes.pfx",
+        "isValid": false,
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": false,
+          "lastPage": true,
+          "oddPages": false,
+          "evenPages": true,
+          "pageNumbers": [1]
+        },
+        "OptionsType": "PdfVerifyDigitalOptionsData"
+      }
+    ],
+    "isValid": false
+  }'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe --request POST `
+  --url "http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.pdf/collection/verification?folder#storage" `
+  --header "authorization: Bearer $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{ 'items': [ { 'barcodeTypeName': 'Code39Standard', 'matchType': 'Contains', 'text': '123456789012', 'verifyAllPages': true, 'isValid': false, 'documentPageNumber': 1, 'pagesSetup': { 'firstPage': false, 'lastPage': true, 'oddPages': false, 'evenPages': true, 'pageNumbers': [1] }, 'OptionsType': 'PdfVerifyBarcodeOptionsData' }, { 'password': '1234567890', 'certificateGuid': 'certificates\\SherlockHolmes.pfx', 'isValid': false, 'documentPageNumber': 1, 'pagesSetup': { 'firstPage': false, 'lastPage': true, 'oddPages': false, 'evenPages': true, 'pageNumbers': [1] }, 'OptionsType': 'PdfVerifyDigitalOptionsData' } ], 'isValid': false }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl --request POST ^
+  --url "http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.pdf/collection/verification?folder#storage" ^
+  --header "authorization: Bearer %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{\"items\":[{\"barcodeTypeName\":\"Code39Standard\",\"matchType\":\"Contains\",\"text\":\"123456789012\",\"verifyAllPages\":true,\"isValid\":false,\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":false,\"lastPage\":true,\"oddPages\":false,\"evenPages\":true,\"pageNumbers\":[1]},\"OptionsType\":\"PdfVerifyBarcodeOptionsData\"},{\"password\":\"1234567890\",\"certificateGuid\":\"certificates\\\\SherlockHolmes.pfx\",\"isValid\":false,\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":false,\"lastPage\":true,\"oddPages\":false,\"evenPages\":true,\"pageNumbers\":[1]},\"OptionsType\":\"PdfVerifyDigitalOptionsData\"}],\"isValid\":false}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -90,17 +141,68 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "items": [ { "barcodeTypeName": "Code39Standard", "matchType": "Contains", "text": "123456789012", "verifyAllPages": true, "isValid": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": false, "lastPage": true, "oddPages": false, "evenPages": true, "pageNumbers": [  1 ] }, "OptionsType": "PdfVerifyBarcodeOptionsData" }, { "password": "1234567890", "certificateGuid": "certificates\SherlockHolmes.pfx", "isValid": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": false, "lastPage": true, "oddPages": false, "evenPages": true, "pageNumbers": [  1 ] }, "OptionsType": "PdfVerifyDigitalOptionsData" } ], "isValid": false }'
-
+  --url http://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
+  --header "authorization: Bearer $JWT_TOKEN" \
+  --header "content-type: application/json" \
+  --data '{
+    "items": [
+      {
+        "barcodeTypeName": "Code39Standard",
+        "matchType": "Contains",
+        "text": "123456789012",
+        "verifyAllPages": true,
+        "isValid": false,
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": false,
+          "lastPage": true,
+          "oddPages": false,
+          "evenPages": true,
+          "pageNumbers": [1]
+        },
+        "OptionsType": "PdfVerifyBarcodeOptionsData"
+      },
+      {
+        "password": "1234567890",
+        "certificateGuid": "certificates\\SherlockHolmes.pfx",
+        "isValid": false,
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": false,
+          "lastPage": true,
+          "oddPages": false,
+          "evenPages": true,
+          "pageNumbers": [1]
+        },
+        "OptionsType": "PdfVerifyDigitalOptionsData"
+      }
+    ],
+    "isValid": false
+  }'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe --request POST `
+  --url "http://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" `
+  --header "authorization: Bearer $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{ 'items': [ { 'barcodeTypeName': 'Code39Standard', 'matchType': 'Contains', 'text': '123456789012', 'verifyAllPages': true, 'isValid': false, 'documentPageNumber': 1, 'pagesSetup': { 'firstPage': false, 'lastPage': true, 'oddPages': false, 'evenPages': true, 'pageNumbers': [1] }, 'OptionsType': 'PdfVerifyBarcodeOptionsData' }, { 'password': '1234567890', 'certificateGuid': 'certificates\\SherlockHolmes.pfx', 'isValid': false, 'documentPageNumber': 1, 'pagesSetup': { 'firstPage': false, 'lastPage': true, 'oddPages': false, 'evenPages': true, 'pageNumbers': [1] }, 'OptionsType': 'PdfVerifyDigitalOptionsData' } ], 'isValid': false }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl --request POST ^
+  --url "http://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" ^
+  --header "authorization: Bearer %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{\"items\":[{\"barcodeTypeName\":\"Code39Standard\",\"matchType\":\"Contains\",\"text\":\"123456789012\",\"verifyAllPages\":true,\"isValid\":false,\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":false,\"lastPage\":true,\"oddPages\":false,\"evenPages\":true,\"pageNumbers\":[1]},\"OptionsType\":\"PdfVerifyBarcodeOptionsData\"},{\"password\":\"1234567890\",\"certificateGuid\":\"certificates\\\\SherlockHolmes.pfx\",\"isValid\":false,\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":false,\"lastPage\":true,\"oddPages\":false,\"evenPages\":true,\"pageNumbers\":[1]},\"OptionsType\":\"PdfVerifyDigitalOptionsData\"}],\"isValid\":false}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

@@ -28,46 +28,102 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ## cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
-
-// First get JSON Web Token
-// Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+# First get JSON Web Token
+# Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "$CLIENT_ID" and Client Secret in "$CLIENT_SECRET" argument.
 curl -v "https://api.groupdocs.cloud/connect/token" \
--X POST \
--d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
--H "Content-Type: application/x-www-form-urlencoded" \
--H "Accept: application/json"
+  -X POST \
+  -d "grant_type=client_credentials&client_id=$CLIENT_ID&client_secret=$CLIENT_SECRET" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -H "Accept: application/json"
 
-// cURL example to get document information
+# cURL example to get document information
 curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{
-  'FileInfo': {
-    'FilePath': 'signaturedocs/one-page.docx'
-  },
-  'Options': [
-    {
-      'AllPages': true,
-      'SignatureType': 'QRCode',
-      'QRCodeType': 'Aztec',
-      'Text': '123456789012',
-      'Left': 100,
-      'Top': 100,
-      'Width': 100,
-      'Height': 100
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -d '{
+    "FileInfo": {
+      "FilePath": "signaturedocs/one-page.docx"
+    },
+    "Options": [
+      {
+        "AllPages": true,
+        "SignatureType": "QRCode",
+        "QRCodeType": "Aztec",
+        "Text": "123456789012",
+        "Left": 100,
+        "Top": 100,
+        "Width": 100,
+        "Height": 100
+      }
+    ],
+    "SaveOptions": {
+      "OutputFilePath": "signaturedocs/signedQRCode_one-page.docx"
     }
-  ],
-  'SaveOptions': {
-    'OutputFilePath': 'signaturedocs/signedQRCode_one-page.docx'
-  }"
-
+  }'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+# First get JSON Web Token
+# Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in $env:CLIENT_ID and Client Secret in $env:CLIENT_SECRET argument.
+curl.exe -v "https://api.groupdocs.cloud/connect/token" `
+  -X POST `
+  -d "grant_type=client_credentials&client_id=$env:CLIENT_ID&client_secret=$env:CLIENT_SECRET" `
+  -H "Content-Type: application/x-www-form-urlencoded" `
+  -H "Accept: application/json"
+
+# cURL example to get document information
+curl.exe -v "https://api.groupdocs.cloud/v2.0/signature/create" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -d "{ 
+    'FileInfo': { 
+      'FilePath': 'signaturedocs/one-page.docx' 
+    }, 
+    'Options': [ 
+      { 
+        'AllPages': true, 
+        'SignatureType': 'QRCode', 
+        'QRCodeType': 'Aztec', 
+        'Text': '123456789012', 
+        'Left': 100, 
+        'Top': 100, 
+        'Width': 100, 
+        'Height': 100 
+      } 
+    ], 
+    'SaveOptions': { 
+      'OutputFilePath': 'signaturedocs/signedQRCode_one-page.docx' 
+    } 
+  }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+:: First get JSON Web Token
+:: Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in %CLIENT_ID% and Client Secret in %CLIENT_SECRET% argument.
+curl -v "https://api.groupdocs.cloud/connect/token" ^
+  -X POST ^
+  -d "grant_type=client_credentials&client_id=%CLIENT_ID%&client_secret=%CLIENT_SECRET%" ^
+  -H "Content-Type: application/x-www-form-urlencoded" ^
+  -H "Accept: application/json"
+
+:: cURL example to get document information
+curl -v "https://api.groupdocs.cloud/v2.0/signature/create" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"FileInfo\":{\"FilePath\":\"signaturedocs/one-page.docx\"},\"Options\":[{\"AllPages\":true,\"SignatureType\":\"QRCode\",\"QRCodeType\":\"Aztec\",\"Text\":\"123456789012\",\"Left\":100,\"Top\":100,\"Width\":100,\"Height\":100}],\"SaveOptions\":{\"OutputFilePath\":\"signaturedocs/signedQRCode_one-page.docx\"}}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

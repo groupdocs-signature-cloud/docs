@@ -27,17 +27,206 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/01_pages.pdf/collection?folder#storage \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "items": [ { "barcodeTypeName": "Code39Standard", "borderVisiblity": true, "borderDashStyle": "Dash", "borderWeight": 12.0, "opacity": 0.8, "text": "123456789012", "left": 2, "top": 100, "width": 200, "height": 100, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "stretch": "None", "rotationAngle": 0, "horizontalAlignment": "Default", "verticalAlignment": "Default", "margin": { "all": 5, "left": 5, "top": 5, "right": 5, "bottom": 5 }, "marginMeasureType": "Pixels", "signAllPages": false, "font": { "fontFamily": "Times New Roman", "fontSize": 14.0, "bold": false, "italic": false, "underline": false }, "foreColor": { "Web": "DarkOrange" }, "borderColor": { "Web": "DarkOrange" }, "backgroundColor": { "Web": "BlueViolet" }, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "OptionsType": "PdfSignBarcodeOptionsData" }, { "reason": "PdfDigitalReason", "contact": "PdfDigitalContact", "location": "PdfDigitalLocation", "visible": true, "password": "1234567890", "certificateGuid": "certificates\SherlockHolmes.pfx", "imageGuid": "images\signature_01.jpg", "left": 2, "top": 500, "width": 200, "height": 100, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 45, "horizontalAlignment": "Default", "verticalAlignment": "Default", "margin": { "all": 5, "left": 5, "top": 5, "right": 5, "bottom": 5 }, "marginMeasureType": "Pixels", "opacity": 0.9, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "OptionsType": "PdfSignDigitalOptionsData" } ] }'
-
+  --url https://api.groupdocs.cloud/v2.0/signature/01_pages.pdf/collection?folder#storage \
+  --header "authorization: Bearer $JWT_TOKEN" \
+  --header "content-type: application/json" \
+  --data '{
+    "items": [
+      {
+        "barcodeTypeName": "Code39Standard",
+        "borderVisiblity": true,
+        "borderDashStyle": "Dash",
+        "borderWeight": 12.0,
+        "opacity": 0.8,
+        "text": "123456789012",
+        "left": 2,
+        "top": 100,
+        "width": 200,
+        "height": 100,
+        "locationMeasureType": "Pixels",
+        "sizeMeasureType": "Pixels",
+        "stretch": "None",
+        "rotationAngle": 0,
+        "horizontalAlignment": "Default",
+        "verticalAlignment": "Default",
+        "margin": {
+          "all": 5,
+          "left": 5,
+          "top": 5,
+          "right": 5,
+          "bottom": 5
+        },
+        "marginMeasureType": "Pixels",
+        "signAllPages": false,
+        "font": {
+          "fontFamily": "Times New Roman",
+          "fontSize": 14.0,
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "foreColor": { "Web": "DarkOrange" },
+        "borderColor": { "Web": "DarkOrange" },
+        "backgroundColor": { "Web": "BlueViolet" },
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": true,
+          "lastPage": false,
+          "oddPages": false,
+          "evenPages": false,
+          "pageNumbers": [1]
+        },
+        "OptionsType": "PdfSignBarcodeOptionsData"
+      },
+      {
+        "reason": "PdfDigitalReason",
+        "contact": "PdfDigitalContact",
+        "location": "PdfDigitalLocation",
+        "visible": true,
+        "password": "1234567890",
+        "certificateGuid": "certificates/SherlockHolmes.pfx",
+        "imageGuid": "images/signature_01.jpg",
+        "left": 2,
+        "top": 500,
+        "width": 200,
+        "height": 100,
+        "locationMeasureType": "Pixels",
+        "sizeMeasureType": "Pixels",
+        "rotationAngle": 45,
+        "horizontalAlignment": "Default",
+        "verticalAlignment": "Default",
+        "margin": {
+          "all": 5,
+          "left": 5,
+          "top": 5,
+          "right": 5,
+          "bottom": 5
+        },
+        "marginMeasureType": "Pixels",
+        "opacity": 0.9,
+        "signAllPages": false,
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": true,
+          "lastPage": false,
+          "oddPages": false,
+          "evenPages": false,
+          "pageNumbers": [1]
+        },
+        "OptionsType": "PdfSignDigitalOptionsData"
+      }
+    ]
+  }'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe --request POST `
+  --url "https://api.groupdocs.cloud/v2.0/signature/01_pages.pdf/collection?folder#storage" `
+  --header "authorization: Bearer $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{
+    'items': [
+      {
+        'barcodeTypeName': 'Code39Standard',
+        'borderVisiblity': true,
+        'borderDashStyle': 'Dash',
+        'borderWeight': 12.0,
+        'opacity': 0.8,
+        'text': '123456789012',
+        'left': 2,
+        'top': 100,
+        'width': 200,
+        'height': 100,
+        'locationMeasureType': 'Pixels',
+        'sizeMeasureType': 'Pixels',
+        'stretch': 'None',
+        'rotationAngle': 0,
+        'horizontalAlignment': 'Default',
+        'verticalAlignment': 'Default',
+        'margin': {
+          'all': 5,
+          'left': 5,
+          'top': 5,
+          'right': 5,
+          'bottom': 5
+        },
+        'marginMeasureType': 'Pixels',
+        'signAllPages': false,
+        'font': {
+          'fontFamily': 'Times New Roman',
+          'fontSize': 14.0,
+          'bold': false,
+          'italic': false,
+          'underline': false
+        },
+        'foreColor': { 'Web': 'DarkOrange' },
+        'borderColor': { 'Web': 'DarkOrange' },
+        'backgroundColor': { 'Web': 'BlueViolet' },
+        'documentPageNumber': 1,
+        'pagesSetup': {
+          'firstPage': $true,
+          'lastPage': $false,
+          'oddPages': $false,
+          'evenPages': $false,
+          'pageNumbers': @(1)
+        },
+        'OptionsType': 'PdfSignBarcodeOptionsData'
+      },
+      {
+        'reason': 'PdfDigitalReason',
+        'contact': 'PdfDigitalContact',
+        'location': 'PdfDigitalLocation',
+        'visible': $true,
+        'password': '1234567890',
+        'certificateGuid': 'certificates/SherlockHolmes.pfx',
+        'imageGuid': 'images/signature_01.jpg',
+        'left': 2,
+        'top': 500,
+        'width': 200,
+        'height': 100,
+        'locationMeasureType': 'Pixels',
+        'sizeMeasureType': 'Pixels',
+        'rotationAngle': 45,
+        'horizontalAlignment': 'Default',
+        'verticalAlignment': 'Default',
+        'margin': {
+          'all': 5,
+          'left': 5,
+          'top': 5,
+          'right': 5,
+          'bottom': 5
+        },
+        'marginMeasureType': 'Pixels',
+        'opacity': 0.9,
+        'signAllPages': $false,
+        'documentPageNumber': 1,
+        'pagesSetup': {
+          'firstPage': $true,
+          'lastPage': $false,
+          'oddPages': $false,
+          'evenPages': $false,
+          'pageNumbers': @(1)
+        },
+        'OptionsType': 'PdfSignDigitalOptionsData'
+      }
+    ]
+  }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl --request POST ^
+  --url "https://api.groupdocs.cloud/v2.0/signature/01_pages.pdf/collection?folder#storage" ^
+  --header "authorization: Bearer %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{ \"items\": [ { \"barcodeTypeName\": \"Code39Standard\", \"borderVisiblity\": true, \"borderDashStyle\": \"Dash\", \"borderWeight\": 12.0, \"opacity\": 0.8, \"text\": \"123456789012\", \"left\": 2, \"top\": 100, \"width\": 200, \"height\": 100, \"locationMeasureType\": \"Pixels\", \"sizeMeasureType\": \"Pixels\", \"stretch\": \"None\", \"rotationAngle\": 0, \"horizontalAlignment\": \"Default\", \"verticalAlignment\": \"Default\", \"margin\": { \"all\": 5, \"left\": 5, \"top\": 5, \"right\": 5, \"bottom\": 5 }, \"marginMeasureType\": \"Pixels\", \"signAllPages\": false, \"font\": { \"fontFamily\": \"Times New Roman\", \"fontSize\": 14.0, \"bold\": false, \"italic\": false, \"underline\": false }, \"foreColor\": { \"Web\": \"DarkOrange\" }, \"borderColor\": { \"Web\": \"DarkOrange\" }, \"backgroundColor\": { \"Web\": \"BlueViolet\" }, \"documentPageNumber\": 1, \"pagesSetup\": { \"firstPage\": true, \"lastPage\": false, \"oddPages\": false, \"evenPages\": false, \"pageNumbers\": [1] }, \"OptionsType\": \"PdfSignBarcodeOptionsData\" }, { \"reason\": \"PdfDigitalReason\", \"contact\": \"PdfDigitalContact\", \"location\": \"PdfDigitalLocation\", \"visible\": true, \"password\": \"1234567890\", \"certificateGuid\": \"certificates/SherlockHolmes.pfx\", \"imageGuid\": \"images/signature_01.jpg\", \"left\": 2, \"top\": 500, \"width\": 200, \"height\": 100, \"locationMeasureType\": \"Pixels\", \"sizeMeasureType\": \"Pixels\", \"rotationAngle\": 45, \"horizontalAlignment\": \"Default\", \"verticalAlignment\": \"Default\", \"margin\": { \"all\": 5, \"left\": 5, \"top\": 5, \"right\": 5, \"bottom\": 5 }, \"marginMeasureType\": \"Pixels\", \"opacity\": 0.9, \"signAllPages\": false, \"documentPageNumber\": 1, \"pagesSetup\": { \"firstPage\": true, \"lastPage\": false, \"oddPages\": false, \"evenPages\": false, \"pageNumbers\": [1] }, \"OptionsType\": \"PdfSignDigitalOptionsData\" } ] }"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -89,17 +278,206 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "items": [ { "barcodeTypeName": "Code39Standard", "borderVisiblity": true, "borderDashStyle": "Dash", "borderWeight": 12.0, "opacity": 0.8, "text": "123456789012", "left": 2, "top": 100, "width": 200, "height": 100, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "stretch": "None", "rotationAngle": 0, "horizontalAlignment": "Default", "verticalAlignment": "Default", "margin": { "all": 5, "left": 5, "top": 5, "right": 5, "bottom": 5 }, "marginMeasureType": "Pixels", "signAllPages": false, "font": { "fontFamily": "Times New Roman", "fontSize": 14.0, "bold": false, "italic": false, "underline": false }, "foreColor": { "Web": "DarkOrange" }, "borderColor": { "Web": "DarkOrange" }, "backgroundColor": { "Web": "BlueViolet" }, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "OptionsType": "PdfSignBarcodeOptionsData" }, { "reason": "PdfDigitalReason", "contact": "PdfDigitalContact", "location": "PdfDigitalLocation", "visible": true, "password": "1234567890", "certificateGuid": "certificates\SherlockHolmes.pfx", "imageGuid": "images\signature_01.jpg", "left": 2, "top": 500, "width": 200, "height": 100, "locationMeasureType": "Pixels", "sizeMeasureType": "Pixels", "rotationAngle": 45, "horizontalAlignment": "Default", "verticalAlignment": "Default", "margin": { "all": 5, "left": 5, "top": 5, "right": 5, "bottom": 5 }, "marginMeasureType": "Pixels", "opacity": 0.9, "signAllPages": false, "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "OptionsType": "PdfSignDigitalOptionsData" } ] }'
-
+  --url https://api.groupdocs.cloud/v2.0/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
+  --header "authorization: Bearer $JWT_TOKEN" \
+  --header "content-type: application/json" \
+  --data '{
+    "items": [
+      {
+        "barcodeTypeName": "Code39Standard",
+        "borderVisiblity": true,
+        "borderDashStyle": "Dash",
+        "borderWeight": 12.0,
+        "opacity": 0.8,
+        "text": "123456789012",
+        "left": 2,
+        "top": 100,
+        "width": 200,
+        "height": 100,
+        "locationMeasureType": "Pixels",
+        "sizeMeasureType": "Pixels",
+        "stretch": "None",
+        "rotationAngle": 0,
+        "horizontalAlignment": "Default",
+        "verticalAlignment": "Default",
+        "margin": {
+          "all": 5,
+          "left": 5,
+          "top": 5,
+          "right": 5,
+          "bottom": 5
+        },
+        "marginMeasureType": "Pixels",
+        "signAllPages": false,
+        "font": {
+          "fontFamily": "Times New Roman",
+          "fontSize": 14.0,
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        "foreColor": { "Web": "DarkOrange" },
+        "borderColor": { "Web": "DarkOrange" },
+        "backgroundColor": { "Web": "BlueViolet" },
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": true,
+          "lastPage": false,
+          "oddPages": false,
+          "evenPages": false,
+          "pageNumbers": [1]
+        },
+        "OptionsType": "PdfSignBarcodeOptionsData"
+      },
+      {
+        "reason": "PdfDigitalReason",
+        "contact": "PdfDigitalContact",
+        "location": "PdfDigitalLocation",
+        "visible": true,
+        "password": "1234567890",
+        "certificateGuid": "certificates/SherlockHolmes.pfx",
+        "imageGuid": "images/signature_01.jpg",
+        "left": 2,
+        "top": 500,
+        "width": 200,
+        "height": 100,
+        "locationMeasureType": "Pixels",
+        "sizeMeasureType": "Pixels",
+        "rotationAngle": 45,
+        "horizontalAlignment": "Default",
+        "verticalAlignment": "Default",
+        "margin": {
+          "all": 5,
+          "left": 5,
+          "top": 5,
+          "right": 5,
+          "bottom": 5
+        },
+        "marginMeasureType": "Pixels",
+        "opacity": 0.9,
+        "signAllPages": false,
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": true,
+          "lastPage": false,
+          "oddPages": false,
+          "evenPages": false,
+          "pageNumbers": [1]
+        },
+        "OptionsType": "PdfSignDigitalOptionsData"
+      }
+    ]
+  }'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe --request POST `
+  --url "https://api.groupdocs.cloud/v2.0/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" `
+  --header "authorization: Bearer $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{
+    'items': [
+      {
+        'barcodeTypeName': 'Code39Standard',
+        'borderVisiblity': true,
+        'borderDashStyle': 'Dash',
+        'borderWeight': 12.0,
+        'opacity': 0.8,
+        'text': '123456789012',
+        'left': 2,
+        'top': 100,
+        'width': 200,
+        'height': 100,
+        'locationMeasureType': 'Pixels',
+        'sizeMeasureType': 'Pixels',
+        'stretch': 'None',
+        'rotationAngle': 0,
+        'horizontalAlignment': 'Default',
+        'verticalAlignment': 'Default',
+        'margin': {
+          'all': 5,
+          'left': 5,
+          'top': 5,
+          'right': 5,
+          'bottom': 5
+        },
+        'marginMeasureType': 'Pixels',
+        'signAllPages': $false,
+        'font': {
+          'fontFamily': 'Times New Roman',
+          'fontSize': 14.0,
+          'bold': $false,
+          'italic': $false,
+          'underline': $false
+        },
+        'foreColor': { 'Web': 'DarkOrange' },
+        'borderColor': { 'Web': 'DarkOrange' },
+        'backgroundColor': { 'Web': 'BlueViolet' },
+        'documentPageNumber': 1,
+        'pagesSetup': {
+          'firstPage': $true,
+          'lastPage': $false,
+          'oddPages': $false,
+          'evenPages': $false,
+          'pageNumbers': @(1)
+        },
+        'OptionsType': 'PdfSignBarcodeOptionsData'
+      },
+      {
+        'reason': 'PdfDigitalReason',
+        'contact': 'PdfDigitalContact',
+        'location': 'PdfDigitalLocation',
+        'visible': $true,
+        'password': '1234567890',
+        'certificateGuid': 'certificates/SherlockHolmes.pfx',
+        'imageGuid': 'images/signature_01.jpg',
+        'left': 2,
+        'top': 500,
+        'width': 200,
+        'height': 100,
+        'locationMeasureType': 'Pixels',
+        'sizeMeasureType': 'Pixels',
+        'rotationAngle': 45,
+        'horizontalAlignment': 'Default',
+        'verticalAlignment': 'Default',
+        'margin': {
+          'all': 5,
+          'left': 5,
+          'top': 5,
+          'right': 5,
+          'bottom': 5
+        },
+        'marginMeasureType': 'Pixels',
+        'opacity': 0.9,
+        'signAllPages': $false,
+        'documentPageNumber': 1,
+        'pagesSetup': {
+          'firstPage': $true,
+          'lastPage': $false,
+          'oddPages': $false,
+          'evenPages': $false,
+          'pageNumbers': @(1)
+        },
+        'OptionsType': 'PdfSignDigitalOptionsData'
+      }
+    ]
+  }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl --request POST ^
+  --url "https://api.groupdocs.cloud/v2.0/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" ^
+  --header "authorization: Bearer %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{ \"items\": [ { \"barcodeTypeName\": \"Code39Standard\", \"borderVisiblity\": true, \"borderDashStyle\": \"Dash\", \"borderWeight\": 12.0, \"opacity\": 0.8, \"text\": \"123456789012\", \"left\": 2, \"top\": 100, \"width\": 200, \"height\": 100, \"locationMeasureType\": \"Pixels\", \"sizeMeasureType\": \"Pixels\", \"stretch\": \"None\", \"rotationAngle\": 0, \"horizontalAlignment\": \"Default\", \"verticalAlignment\": \"Default\", \"margin\": { \"all\": 5, \"left\": 5, \"top\": 5, \"right\": 5, \"bottom\": 5 }, \"marginMeasureType\": \"Pixels\", \"signAllPages\": false, \"font\": { \"fontFamily\": \"Times New Roman\", \"fontSize\": 14.0, \"bold\": false, \"italic\": false, \"underline\": false }, \"foreColor\": { \"Web\": \"DarkOrange\" }, \"borderColor\": { \"Web\": \"DarkOrange\" }, \"backgroundColor\": { \"Web\": \"BlueViolet\" }, \"documentPageNumber\": 1, \"pagesSetup\": { \"firstPage\": true, \"lastPage\": false, \"oddPages\": false, \"evenPages\": false, \"pageNumbers\": [1] }, \"OptionsType\": \"PdfSignBarcodeOptionsData\" }, { \"reason\": \"PdfDigitalReason\", \"contact\": \"PdfDigitalContact\", \"location\": \"PdfDigitalLocation\", \"visible\": true, \"password\": \"1234567890\", \"certificateGuid\": \"certificates/SherlockHolmes.pfx\", \"imageGuid\": \"images/signature_01.jpg\", \"left\": 2, \"top\": 500, \"width\": 200, \"height\": 100, \"locationMeasureType\": \"Pixels\", \"sizeMeasureType\": \"Pixels\", \"rotationAngle\": 45, \"horizontalAlignment\": \"Default\", \"verticalAlignment\": \"Default\", \"margin\": { \"all\": 5, \"left\": 5, \"top\": 5, \"right\": 5, \"bottom\": 5 }, \"marginMeasureType\": \"Pixels\", \"opacity\": 0.9, \"signAllPages\": false, \"documentPageNumber\": 1, \"pagesSetup\": { \"firstPage\": true, \"lastPage\": false, \"oddPages\": false, \"evenPages\": false, \"pageNumbers\": [1] }, \"OptionsType\": \"PdfSignDigitalOptionsData\" } ] }"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

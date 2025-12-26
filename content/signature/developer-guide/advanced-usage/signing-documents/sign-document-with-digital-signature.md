@@ -36,47 +36,101 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ## cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+# Get JSON Web Token
+curl -v 'https://api.groupdocs.cloud/connect/token' \
+  -X POST \
+  -d "grant_type=client_credentials&client_id=$CLIENT_ID&client_secret=$CLIENT_SECRET" \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Accept: application/json'
 
-```javascript
-// First get JSON Web Token
-// Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
-curl -v "https://api.groupdocs.cloud/connect/token" \
--X POST \
--d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
--H "Content-Type: application/x-www-form-urlencoded" \
--H "Accept: application/json"
-
-// cURL example to get document information
-curl -v "https://api.groupdocs.cloud/v2.0/signature/create" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{
-  'FileInfo': {
-    'FilePath': 'signaturedocs/sample2.pdf'
-  },
-  'Options': [
-    {
-      'AllPages': true,
-      'SignatureType': 'Digital',
-      'ImageFilePath': 'signaturedocs/signature.jpg',
-      'CertificateFilePath': 'signaturedocs/temp.pfx',
-      'Password': '1234567890',
-      'Left': 100,
-      'Top': 100,
-      'Width': 200,
-      'Height': 200
+# Create signature
+curl -v 'https://api.groupdocs.cloud/v2.0/signature/create' \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -d '{
+    "FileInfo": {
+      "FilePath": "signaturedocs/sample2.pdf"
+    },
+    "Options": [
+      {
+        "AllPages": true,
+        "SignatureType": "Digital",
+        "ImageFilePath": "signaturedocs/signature.jpg",
+        "CertificateFilePath": "signaturedocs/temp.pfx",
+        "Password": "1234567890",
+        "Left": 100,
+        "Top": 100,
+        "Width": 200,
+        "Height": 200
+      }
+    ],
+    "SaveOptions": {
+      "OutputFilePath": "signaturedocs/signedDigital_sample2.pdf"
     }
-  ],
-  'SaveOptions': {
-    'OutputFilePath': 'signaturedocs/signedDigital_sample2.pdf'
-  }
-}"
-
+  }'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+# Get JSON Web Token
+curl.exe -v "https://api.groupdocs.cloud/connect/token" `
+  -X POST `
+  -d "grant_type=client_credentials&client_id=$env:CLIENT_ID&client_secret=$env:CLIENT_SECRET" `
+  -H "Content-Type: application/x-www-form-urlencoded" `
+  -H "Accept: application/json"
+
+# Create signature
+curl.exe -v "https://api.groupdocs.cloud/v2.0/signature/create" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -d "{
+    'FileInfo': {
+      'FilePath': 'signaturedocs/sample2.pdf'
+    },
+    'Options': [
+      {
+        'AllPages': true,
+        'SignatureType': 'Digital',
+        'ImageFilePath': 'signaturedocs/signature.jpg',
+        'CertificateFilePath': 'signaturedocs/temp.pfx',
+        'Password': '1234567890',
+        'Left': 100,
+        'Top': 100,
+        'Width': 200,
+        'Height': 200
+      }
+    ],
+    'SaveOptions': {
+      'OutputFilePath': 'signaturedocs/signedDigital_sample2.pdf'
+    }
+  }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+:: Get JSON Web Token
+curl -v "https://api.groupdocs.cloud/connect/token" ^
+  -X POST ^
+  -d "grant_type=client_credentials&client_id=%CLIENT_ID%&client_secret=%CLIENT_SECRET%" ^
+  -H "Content-Type: application/x-www-form-urlencoded" ^
+  -H "Accept: application/json"
+
+:: Create signature
+curl -v "https://api.groupdocs.cloud/v2.0/signature/create" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"FileInfo\":{\"FilePath\":\"signaturedocs/sample2.pdf\"},\"Options\":[{\"AllPages\":true,\"SignatureType\":\"Digital\",\"ImageFilePath\":\"signaturedocs/signature.jpg\",\"CertificateFilePath\":\"signaturedocs/temp.pfx\",\"Password\":\"1234567890\",\"Left\":100,\"Top\":100,\"Width\":200,\"Height\":200}],\"SaveOptions\":{\"OutputFilePath\":\"signaturedocs/signedDigital_sample2.pdf\"}}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

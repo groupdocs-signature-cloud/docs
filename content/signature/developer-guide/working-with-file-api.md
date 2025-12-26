@@ -27,13 +27,28 @@ This API allows you to download a file from [GroupDocs Cloud Storage](https://da
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
-curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/file/one-page.docx?storageName#MyStorage" -H  "accept: multipart/form-data" -H  "authorization: Bearer [Access Token]"
-
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X GET 'https://api.groupdocs.cloud/v2.0/signature/storage/file/one-page.docx?storageName=MyStorage' \
+  -H 'accept: multipart/form-data' \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/file/one-page.docx?storageName=MyStorage" `
+  -H "accept: multipart/form-data" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X GET "https://api.groupdocs.cloud/v2.0/signature/storage/file/one-page.docx?storageName=MyStorage" ^
+  -H "accept: multipart/form-data" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -93,13 +108,28 @@ This API allows you to upload files to the [GroupDocs Cloud Storage](https://
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
-
-```javascript
-curl -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs%2Fone-page2.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X POST 'https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs%2Fone-page2.docx?storageName=MyStorage' \
+  -H 'accept: application/json' \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs%2Fone-page2.docx?storageName=MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs%2Fone-page2.docx?storageName=MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -173,13 +203,28 @@ This API allows you to delete specific file from [GroupDocs Cloud Storage](htt
 
 ### cURL example
 
-{{< tabs "example5">}} {{< tab "Request" >}}
-
-```javascript
-curl -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs1%2Fone-page1.docx?storageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
+{{< tabs "example5">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X DELETE 'https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs1%2Fone-page1.docx?storageName=MyStorage' \
+  -H 'accept: application/json' \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs1%2Fone-page1.docx?storageName=MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X DELETE "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs1%2Fone-page1.docx?storageName=MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -242,13 +287,28 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https
 
 ### cURL example
 
-{{< tabs "example7">}} {{< tab "Request" >}}
-
-```javascript
-curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/copy/sinaturedocs%2Fone-page1.docx?destPath#sinaturedocs%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
+{{< tabs "example7">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X PUT 'https://api.groupdocs.cloud/v2.0/signature/storage/file/copy/sinaturedocs%2Fone-page1.docx?destPath=sinaturedocs%2Fone-page1.docx&srcStorageName=MyStorage&destStorageName=MyStorage' \
+  -H 'accept: application/json' \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/copy/sinaturedocs%2Fone-page1.docx?destPath=sinaturedocs%2Fone-page1.docx&srcStorageName=MyStorage&destStorageName=MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/copy/sinaturedocs%2Fone-page1.docx?destPath=sinaturedocs%2Fone-page1.docx&srcStorageName=MyStorage&destStorageName=MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -310,13 +370,28 @@ This API allows you to copy specific file from [GroupDocs Cloud Storage](https:
 
 ### cURL example
 
-{{< tabs "example9">}} {{< tab "Request" >}}
-
-```javascript
-curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/move/sinaturedocs%2Fone-page1.docx?destPath#sinaturedocs%2Fone-page1.docx'&#x26;srcStorageName#MyStorage&#x26;destStorageName#MyStorage" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]"
-
+{{< tabs "example9">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
+curl -X PUT 'https://api.groupdocs.cloud/v2.0/signature/storage/file/move/sinaturedocs%2Fone-page1.docx?destPath=sinaturedocs%2Fone-page1.docx&srcStorageName=MyStorage&destStorageName=MyStorage' \
+  -H 'accept: application/json' \
+  -H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/move/sinaturedocs%2Fone-page1.docx?destPath=sinaturedocs%2Fone-page1.docx&srcStorageName=MyStorage&destStorageName=MyStorage" `
+  -H "accept: application/json" `
+  -H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -X PUT "https://api.groupdocs.cloud/v2.0/signature/storage/file/move/sinaturedocs%2Fone-page1.docx?destPath=sinaturedocs%2Fone-page1.docx&srcStorageName=MyStorage&destStorageName=MyStorage" ^
+  -H "accept: application/json" ^
+  -H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

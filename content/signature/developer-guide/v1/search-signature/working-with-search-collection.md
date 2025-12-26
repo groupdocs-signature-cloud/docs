@@ -27,17 +27,94 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.pdf/collection/search?folder#signed \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "items": [ { "barcodeTypeName": "Code39Standard", "text": "123456789012", "matchType": "Contains", "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "searchAllPages": true, "OptionsType": "PdfSearchBarcodeOptionsData" }, { "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "searchAllPages": true, "OptionsType": "PdfSearchDigitalOptionsData" } ] }'
-
+  --url "https://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.pdf/collection/search?folder#signed" \
+  --header "authorization: $JWT_TOKEN" \
+  --header "content-type: application/json" \
+  --data '{
+    "items": [
+      {
+        "barcodeTypeName": "Code39Standard",
+        "text": "123456789012",
+        "matchType": "Contains",
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": true,
+          "lastPage": false,
+          "oddPages": false,
+          "evenPages": false,
+          "pageNumbers": [1]
+        },
+        "searchAllPages": true,
+        "OptionsType": "PdfSearchBarcodeOptionsData"
+      },
+      {
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": true,
+          "lastPage": false,
+          "oddPages": false,
+          "evenPages": false,
+          "pageNumbers": [1]
+        },
+        "searchAllPages": true,
+        "OptionsType": "PdfSearchDigitalOptionsData"
+      }
+    ]
+  }'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe --request POST `
+  --url "https://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.pdf/collection/search?folder#signed" `
+  --header "authorization: $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{
+    'items': [
+      {
+        'barcodeTypeName': 'Code39Standard',
+        'text': '123456789012',
+        'matchType': 'Contains',
+        'documentPageNumber': 1,
+        'pagesSetup': {
+          'firstPage': $true,
+          'lastPage': $false,
+          'oddPages': $false,
+          'evenPages': $false,
+          'pageNumbers': [1]
+        },
+        'searchAllPages': $true,
+        'OptionsType': 'PdfSearchBarcodeOptionsData'
+      },
+      {
+        'documentPageNumber': 1,
+        'pagesSetup': {
+          'firstPage': $true,
+          'lastPage': $false,
+          'oddPages': $false,
+          'evenPages': $false,
+          'pageNumbers': [1]
+        },
+        'searchAllPages': $true,
+        'OptionsType': 'PdfSearchDigitalOptionsData'
+      }
+    ]
+  }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl --request POST ^
+  --url "https://api.groupdocs.cloud/v1/signature/SignedForVerificationAll.pdf/collection/search?folder#signed" ^
+  --header "authorization: %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{\"items\":[{\"barcodeTypeName\":\"Code39Standard\",\"text\":\"123456789012\",\"matchType\":\"Contains\",\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":true,\"lastPage\":false,\"oddPages\":false,\"evenPages\":false,\"pageNumbers\":[1]},\"searchAllPages\":true,\"OptionsType\":\"PdfSearchBarcodeOptionsData\"},{\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":true,\"lastPage\":false,\"oddPages\":false,\"evenPages\":false,\"pageNumbers\":[1]},\"searchAllPages\":true,\"OptionsType\":\"PdfSearchDigitalOptionsData\"}]}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -104,17 +181,94 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl --request POST \
---url http://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1 \
---header 'authorization: [Access Token]' \
---header 'content-type: application/json' \
---data '{ "items": [ { "barcodeTypeName": "Code39Standard", "text": "123456789012", "matchType": "Contains", "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "searchAllPages": true, "OptionsType": "PdfSearchBarcodeOptionsData" }, { "documentPageNumber": 1, "pagesSetup": { "firstPage": true, "lastPage": false, "oddPages": false, "evenPages": false, "pageNumbers": [  1 ] }, "searchAllPages": true, "OptionsType": "PdfSearchDigitalOptionsData" } ] }'
-
+  --url "https://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" \
+  --header "authorization: $JWT_TOKEN" \
+  --header "content-type: application/json" \
+  --data '{
+    "items": [
+      {
+        "barcodeTypeName": "Code39Standard",
+        "text": "123456789012",
+        "matchType": "Contains",
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": true,
+          "lastPage": false,
+          "oddPages": false,
+          "evenPages": false,
+          "pageNumbers": [1]
+        },
+        "searchAllPages": true,
+        "OptionsType": "PdfSearchBarcodeOptionsData"
+      },
+      {
+        "documentPageNumber": 1,
+        "pagesSetup": {
+          "firstPage": true,
+          "lastPage": false,
+          "oddPages": false,
+          "evenPages": false,
+          "pageNumbers": [1]
+        },
+        "searchAllPages": true,
+        "OptionsType": "PdfSearchDigitalOptionsData"
+      }
+    ]
+  }'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe --request POST `
+  --url "https://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" `
+  --header "authorization: $env:JWT_TOKEN" `
+  --header "content-type: application/json" `
+  --data "{
+    'items': [
+      {
+        'barcodeTypeName': 'Code39Standard',
+        'text': '123456789012',
+        'matchType': 'Contains',
+        'documentPageNumber': 1,
+        'pagesSetup': {
+          'firstPage': $true,
+          'lastPage': $false,
+          'oddPages': $false,
+          'evenPages': $false,
+          'pageNumbers': [1]
+        },
+        'searchAllPages': $true,
+        'OptionsType': 'PdfSearchBarcodeOptionsData'
+      },
+      {
+        'documentPageNumber': 1,
+        'pagesSetup': {
+          'firstPage': $true,
+          'lastPage': $false,
+          'oddPages': $false,
+          'evenPages': $false,
+          'pageNumbers': [1]
+        },
+        'searchAllPages': $true,
+        'OptionsType': 'PdfSearchDigitalOptionsData'
+      }
+    ]
+  }"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl --request POST ^
+  --url "https://api.groupdocs.cloud/v1/signature/collection/verification?url#https%3a%2f%2fwww.dropbox.com%2fs%2fumokluz338w4ng7%2fone-page.docx%3fdl%3d1" ^
+  --header "authorization: %JWT_TOKEN%" ^
+  --header "content-type: application/json" ^
+  --data "{\"items\":[{\"barcodeTypeName\":\"Code39Standard\",\"text\":\"123456789012\",\"matchType\":\"Contains\",\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":true,\"lastPage\":false,\"oddPages\":false,\"evenPages\":false,\"pageNumbers\":[1]},\"searchAllPages\":true,\"OptionsType\":\"PdfSearchBarcodeOptionsData\"},{\"documentPageNumber\":1,\"pagesSetup\":{\"firstPage\":true,\"lastPage\":false,\"oddPages\":false,\"evenPages\":false,\"pageNumbers\":[1]},\"searchAllPages\":true,\"OptionsType\":\"PdfSearchDigitalOptionsData\"}]}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

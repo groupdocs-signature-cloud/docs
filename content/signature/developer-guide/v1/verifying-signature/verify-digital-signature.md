@@ -25,17 +25,37 @@ The following GroupDocs.Signature Cloud REST API resource has been used [to ver
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl -v "https://api-qa.groupdocs.cloud/v1/signature/Signed_Digital.pdf/digital/verification?Folder#signed" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--d "{"DocumentPageNumber": 1,"Password" : "password","CertificateGuid": "temp.pfx","Comments" : "verified data","SignDateTimeFrom" : "1/12/2017","SignDateTimeTo":"12/12/2017","OptionsType":"PdfVerifyDigitalOptionsData"}" \
--H "authorization: Bearer ku1wBVYory9t4m9MOW0VuEKbyT4GYUZy8hTXpirhs6ECV_3dQhlbwLHn8ffsX650Syt0hDq2vXZNia70T1NY0jG32h_LUxQoRrVQMvV88P5Y0EbmBinPsmEAuqFHCR2ahhWJqZhidpXU7tP_PHh5IXuZ-cmmW1VUARtj73oE-B4gyD8WEJ1i0CgEM8-Do2843TpCgueqczRgCikeKy8ftSjhgNr2HfYGIc8Fjn152yE3o-wi2VvYwRmEquF28di-zDCxVcZa742ENp9d5GLs1obG8Y-pf-FwQDFcvj-XreWt9U1_dNbTaRiREsrliisAxFAM7qUG1zRZpNISX_kEYC6NqaLlebMIAd5-WHL_PeK2reld-DMURVsniqsgHSxNRnQpmxoJ-YVeQQeN7ZoMBrI4G3zWMeRrUwWR2UmS4jfBlckpfCjkvGZ7ydbzWp3qkLmE3Ns95uf1ccJuvESN9yWkUmg"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -d '{"DocumentPageNumber":1,"Password":"password","CertificateGuid":"temp.pfx","Comments":"verified data","SignDateTimeFrom":"1/12/2017","SignDateTimeTo":"12/12/2017","OptionsType":"PdfVerifyDigitalOptionsData"}'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -v "https://api-qa.groupdocs.cloud/v1/signature/Signed_Digital.pdf/digital/verification?Folder#signed" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -d '{ "DocumentPageNumber": 1, "Password": "password", "CertificateGuid": "temp.pfx", "Comments": "verified data", "SignDateTimeFrom": "1/12/2017", "SignDateTimeTo": "12/12/2017", "OptionsType": "PdfVerifyDigitalOptionsData" }'
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -v "https://api-qa.groupdocs.cloud/v1/signature/Signed_Digital.pdf/digital/verification?Folder#signed" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"DocumentPageNumber\":1,\"Password\":\"password\",\"CertificateGuid\":\"temp.pfx\",\"Comments\":\"verified data\",\"SignDateTimeFrom\":\"1/12/2017\",\"SignDateTimeTo\":\"12/12/2017\",\"OptionsType\":\"PdfVerifyDigitalOptionsData\"}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -86,17 +106,37 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl -v "https://api-qa.groupdocs.cloud/v1/signature/digital/verification?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--d "{"DocumentPageNumber": 1,"Password":"password","CertificateGuid":"temp.pfx","Comments":"verified data","SignDateTimeFrom":"1/12/2017","SignDateTimeTo":"12/12/2017","OptionsType":"WordsVerifyDigitalOptionsData"}" \
--H "authorization: Bearer ku1wBVYory9t4m9MOW0VuEKbyT4GYUZy8hTXpirhs6ECV_3dQhlbwLHn8ffsX650Syt0hDq2vXZNia70T1NY0jG32h_LUxQoRrVQMvV88P5Y0EbmBinPsmEAuqFHCR2ahhWJqZhidpXU7tP_PHh5IXuZ-cmmW1VUARtj73oE-B4gyD8WEJ1i0CgEM8-Do2843TpCgueqczRgCikeKy8ftSjhgNr2HfYGIc8Fjn152yE3o-wi2VvYwRmEquF28di-zDCxVcZa742ENp9d5GLs1obG8Y-pf-FwQDFcvj-XreWt9U1_dNbTaRiREsrliisAxFAM7qUG1zRZpNISX_kEYC6NqaLlebMIAd5-WHL_PeK2reld-DMURVsniqsgHSxNRnQpmxoJ-YVeQQeN7ZoMBrI4G3zWMeRrUwWR2UmS4jfBlckpfCjkvGZ7ydbzWp3qkLmE3Ns95uf1ccJuvESN9yWkUmg"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -d '{"DocumentPageNumber":1,"Password":"password","CertificateGuid":"temp.pfx","Comments":"verified data","SignDateTimeFrom":"1/12/2017","SignDateTimeTo":"12/12/2017","OptionsType":"WordsVerifyDigitalOptionsData"}'
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -v "https://api-qa.groupdocs.cloud/v1/signature/digital/verification?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -d '{ "DocumentPageNumber": 1, "Password": "password", "CertificateGuid": "temp.pfx", "Comments": "verified data", "SignDateTimeFrom": "1/12/2017", "SignDateTimeTo": "12/12/2017", "OptionsType": "WordsVerifyDigitalOptionsData" }'
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -v "https://api-qa.groupdocs.cloud/v1/signature/digital/verification?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"DocumentPageNumber\":1,\"Password\":\"password\",\"CertificateGuid\":\"temp.pfx\",\"Comments\":\"verified data\",\"SignDateTimeFrom\":\"1/12/2017\",\"SignDateTimeTo\":\"12/12/2017\",\"OptionsType\":\"WordsVerifyDigitalOptionsData\"}"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript

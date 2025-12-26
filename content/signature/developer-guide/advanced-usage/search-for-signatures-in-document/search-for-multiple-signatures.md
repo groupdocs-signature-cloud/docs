@@ -23,40 +23,93 @@ For storage operations, like uploading or downloading documents, please refer t
 
 ## cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
 
-```javascript
-
-// First get JSON Web Token
-// Please get your Client Id and Client Secret from https://dashboard.groupdocs.cloud/applications. Kindly place Client Id in "client_id" and Client Secret in "client_secret" argument.
+```bash
+# Get JSON Web Token
+# Place your client ID and client secret in the CLIENT_ID and CLIENT_SECRET environment variables.
 curl -v "https://api.groupdocs.cloud/connect/token" \
--X POST \
--d "grant_type#client_credentials&client_id#xxxx&client_secret#xxxx" \
--H "Content-Type: application/x-www-form-urlencoded" \
--H "Accept: application/json"
+  -X POST \
+  -d "grant_type=client_credentials&client_id=$CLIENT_ID&client_secret=$CLIENT_SECRET" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -H "Accept: application/json"
 
-// cURL example to get document information
+# Get document signature information
+# The JWT token must be stored in the JWT_TOKEN environment variable.
 curl -v "https://api.groupdocs.cloud/v2.0/signature/search" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{
-  'FileInfo': {
-    'FilePath': 'signaturedocs/signedCollectionsOne_page.docx'
-  },
-  'Options': [
-    {
-      'AllPages': true,
-      'SignatureType': 'Barcode'
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -d '{
+    "FileInfo": {
+      "FilePath": "signaturedocs/signedCollectionsOne_page.docx"
     },
-    {
-      'AllPages': true,
-      'SignatureType': 'QRCode'
-    }
-  ]
-}"
+    "Options": [
+      {
+        "AllPages": true,
+        "SignatureType": "Barcode"
+      },
+      {
+        "AllPages": true,
+        "SignatureType": "QRCode"
+      }
+    ]
+  }'
+```
 
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+# Get JSON Web Token
+# Ensure CLIENT_ID and CLIENT_SECRET are set in your environment.
+curl.exe -v "https://api.groupdocs.cloud/connect/token" `
+  -X POST `
+  -d "grant_type=client_credentials&client_id=$env:CLIENT_ID&client_secret=$env:CLIENT_SECRET" `
+  -H "Content-Type: application/x-www-form-urlencoded" `
+  -H "Accept: application/json"
+
+# Get document signature information
+# Ensure JWT_TOKEN is set in your environment.
+curl.exe -v "https://api.groupdocs.cloud/v2.0/signature/search" `
+  -X POST `
+  -H "Content-Type: application/json" `
+  -H "Accept: application/json" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -d "{ 
+        'FileInfo': { 
+            'FilePath': 'signaturedocs/signedCollectionsOne_page.docx' 
+        }, 
+        'Options': [ 
+            { 'AllPages': true, 'SignatureType': 'Barcode' }, 
+            { 'AllPages': true, 'SignatureType': 'QRCode' } 
+        ] 
+    }"
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```cmd
+rem Get JSON Web Token
+rem Ensure CLIENT_ID and CLIENT_SECRET are set as environment variables.
+curl -v "https://api.groupdocs.cloud/connect/token" ^
+  -X POST ^
+  -d "grant_type=client_credentials&client_id=%CLIENT_ID%&client_secret=%CLIENT_SECRET%" ^
+  -H "Content-Type: application/x-www-form-urlencoded" ^
+  -H "Accept: application/json"
+
+rem Get document signature information
+rem Ensure JWT_TOKEN is set as an environment variable.
+curl -v "https://api.groupdocs.cloud/v2.0/signature/search" ^
+  -X POST ^
+  -H "Content-Type: application/json" ^
+  -H "Accept: application/json" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -d "{\"FileInfo\":{\"FilePath\":\"signaturedocs/signedCollectionsOne_page.docx\"},\"Options\":[{\"AllPages\":true,\"SignatureType\":\"Barcode\"},{\"AllPages\":true,\"SignatureType\":\"QRCode\"}]}"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}

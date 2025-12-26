@@ -17,10 +17,38 @@ The following GroupDocs.Signature Cloud REST API resource has been used to get 
 
 ## cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
 
-```javascript
- curl -X POST "https://api.groupdocs.cloud/v2.0/signature/info" -H  "accept: application/json" -H  "authorization: Bearer [Access Token]" -H  "Content-Type: application/json" -d "{  \"FileInfo\": {    \"FilePath\": \"Signaturedocs/one-page.docx\",    \"StorageName\": \"MyStorage\",    \"VersionId\": \"\",    \"Password\": \"\"  }}"
+```bash
+curl -X POST "https://api.groupdocs.cloud/v2.0/signature/info" \
+     -H "accept: application/json" \
+     -H "authorization: Bearer $JWT_TOKEN" \
+     -H "Content-Type: application/json" \
+     -d '{"FileInfo": {"FilePath": "Signaturedocs/one-page.docx","StorageName": "MyStorage","VersionId": "","Password": ""}}'
+```
+
+{{< /tab >}}
+
+{{< tab "Windows PowerShell" >}}
+
+```powershell
+curl.exe -X POST "https://api.groupdocs.cloud/v2.0/signature/info" `
+    -H "accept: application/json" `
+    -H "authorization: Bearer $env:JWT_TOKEN" `
+    -H "Content-Type: application/json" `
+    -d "{ 'FileInfo': { 'FilePath': 'Signaturedocs/one-page.docx', 'StorageName': 'MyStorage', 'VersionId': '', 'Password': '' } }"
+```
+
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+
+```cmd
+curl -X POST "https://api.groupdocs.cloud/v2.0/signature/info" ^
+    -H "accept: application/json" ^
+    -H "authorization: Bearer %JWT_TOKEN%" ^
+    -H "Content-Type: application/json" ^
+    -d "{\"FileInfo\": {\"FilePath\": \"Signaturedocs/one-page.docx\", \"StorageName\": \"MyStorage\", \"VersionId\": \"\", \"Password\": \"\"}}"
 ```
 
 {{< /tab >}} {{< tab "Response" >}}

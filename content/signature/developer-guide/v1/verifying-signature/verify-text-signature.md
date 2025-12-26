@@ -25,17 +25,42 @@ The following GroupDocs.Signature Cloud REST API resource has been used [to ver
 
 ### cURL example
 
-{{< tabs "example1">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example1">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl -v "https://api.groupdocs.cloud/v1/signature/Signed_Text.pdf/text/verification?Folder#signed" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--d "{"DocumentPageNumber":1,"Text":"1234567890","VerifyAllPages":true,"OptionsType":"PdfVerifyTextOptionsData"}" \
--H "authorization: Bearer rf1Wyp3-Cz_xukjKqvzF-OMwYvhJcl0rJ6CQ0IgQbZwdSGTKYJziBpGNeDdzGSwwXgsRLCCfPLhHJBKPv8dzqX3tGA8n8SA4tXhLdnGh-hws2gQgmCWEjF0RpzEdJA6jh6tGZyOSAa2GlTrLhuflBwjMB5-dc8JwRmI-ssOiXkO3fSRxnwWuWih24Co8-n8elsun4HxZVMqCzXepAiXBV9UBeUktV_PLclri_lTJEnDzoJRzfRyDigjb2-luODo9aX8DFseboggoCIMKDoyLPSVHnFXgs5EWV2aQ_DgRm_D6UPn2T1Gn7OAIe-T8aA7ypDCoR-wuTJdB8o7T0f2I8K-8FrXCy2Sgb8B5QPpAOcLdiBBqFxRdk8f2c67J-rSbm2WUPWK65pbLa8NGHHdIRKuiI87NmphWuKc39a_zcgEg4MnHSlDeephmStnLS8OayQObNdLQBYAmoeQeVpZRy9t9bcU"
+-d '{"DocumentPageNumber":1,"Text":"1234567890","VerifyAllPages":true,"OptionsType":"PdfVerifyTextOptionsData"}' \
+-H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -v "https://api.groupdocs.cloud/v1/signature/Signed_Text.pdf/text/verification?Folder#signed" `
+-X POST `
+-H "Content-Type: application/json" `
+-H "Accept: application/json" `
+-d "`{
+    'DocumentPageNumber':1,
+    'Text':'1234567890',
+    'VerifyAllPages':$true,
+    'OptionsType':'PdfVerifyTextOptionsData'
+}`" `
+-H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -v "https://api.groupdocs.cloud/v1/signature/Signed_Text.pdf/text/verification?Folder#signed" ^
+-X POST ^
+-H "Content-Type: application/json" ^
+-H "Accept: application/json" ^
+-d "{\"DocumentPageNumber\":1,\"Text\":\"1234567890\",\"VerifyAllPages\":true,\"OptionsType\":\"PdfVerifyTextOptionsData\"}" ^
+-H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
@@ -86,17 +111,42 @@ The following GroupDocs.Signature Cloud REST API resource has been used in the e
 
 ### cURL example
 
-{{< tabs "example3">}} {{< tab "Request" >}}
-
-```javascript
+{{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
+```bash
 curl -v "https://api-qa.groupdocs.cloud/v1/signature/text/verification?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--d "{"DocumentPageNumber":1,"Text":"coca cola","VerifyAllPages":true,"OptionsType":"WordsVerifyTextOptionsData"}" \
--H "authorization: Bearer ku1wBVYory9t4m9MOW0VuEKbyT4GYUZy8hTXpirhs6ECV_3dQhlbwLHn8ffsX650Syt0hDq2vXZNia70T1NY0jG32h_LUxQoRrVQMvV88P5Y0EbmBinPsmEAuqFHCR2ahhWJqZhidpXU7tP_PHh5IXuZ-cmmW1VUARtj73oE-B4gyD8WEJ1i0CgEM8-Do2843TpCgueqczRgCikeKy8ftSjhgNr2HfYGIc8Fjn152yE3o-wi2VvYwRmEquF28di-zDCxVcZa742ENp9d5GLs1obG8Y-pf-FwQDFcvj-XreWt9U1_dNbTaRiREsrliisAxFAM7qUG1zRZpNISX_kEYC6NqaLlebMIAd5-WHL_PeK2reld-DMURVsniqsgHSxNRnQpmxoJ-YVeQQeN7ZoMBrI4G3zWMeRrUwWR2UmS4jfBlckpfCjkvGZ7ydbzWp3qkLmE3Ns95uf1ccJuvESN9yWkUmg"
+-d '{"DocumentPageNumber":1,"Text":"coca cola","VerifyAllPages":true,"OptionsType":"WordsVerifyTextOptionsData"}' \
+-H "authorization: Bearer $JWT_TOKEN"
 ```
+{{< /tab >}}
 
+{{< tab "Windows PowerShell" >}}
+```powershell
+curl.exe -v "https://api-qa.groupdocs.cloud/v1/signature/text/verification?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" `
+-X POST `
+-H "Content-Type: application/json" `
+-H "Accept: application/json" `
+-d "`{
+    'DocumentPageNumber':1,
+    'Text':'coca cola',
+    'VerifyAllPages':$true,
+    'OptionsType':'WordsVerifyTextOptionsData'
+}`" `
+-H "authorization: Bearer $env:JWT_TOKEN"
+```
+{{< /tab >}}
+
+{{< tab "Windows CMD" >}}
+```cmd
+curl -v "https://api-qa.groupdocs.cloud/v1/signature/text/verification?url#https%3A%2F%2Fwww.dropbox.com%2Fs%2Fbzx1xm68zd0c910%2FPieChart.docx" ^
+-X POST ^
+-H "Content-Type: application/json" ^
+-H "Accept: application/json" ^
+-d "{\"DocumentPageNumber\":1,\"Text\":\"coca cola\",\"VerifyAllPages\":true,\"OptionsType\":\"WordsVerifyTextOptionsData\"}" ^
+-H "authorization: Bearer %JWT_TOKEN%"
+```
 {{< /tab >}} {{< tab "Response" >}}
 
 ```javascript
