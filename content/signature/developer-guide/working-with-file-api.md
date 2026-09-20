@@ -110,25 +110,31 @@ This API allows you to upload files to the [GroupDocs Cloud Storage](https://
 
 {{< tabs "example3">}} {{< tab "Linux/MacOS/Bash" >}}
 ```bash
-curl -X POST 'https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs%2Fone-page2.docx?storageName=MyStorage' \
-  -H 'accept: application/json' \
-  -H "authorization: Bearer $JWT_TOKEN"
+curl -X PUT \
+  "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs/one-page2.docx?storageName=MyStorage" \
+  -H "Authorization: Bearer $JWT_TOKEN" \
+  -H "Accept: application/json" \
+  -F "File=@one-page2.docx"
 ```
 {{< /tab >}}
 
 {{< tab "Windows PowerShell" >}}
 ```powershell
-curl.exe -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs%2Fone-page2.docx?storageName=MyStorage" `
-  -H "accept: application/json" `
-  -H "authorization: Bearer $env:JWT_TOKEN"
+curl.exe -X PUT `
+  "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs/one-page2.docx?storageName=MyStorage" `
+  -H "Authorization: Bearer $env:JWT_TOKEN" `
+  -H "Accept: application/json" `
+  -F "File=@one-page2.docx"
 ```
 {{< /tab >}}
 
 {{< tab "Windows CMD" >}}
 ```cmd
-curl -X POST "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs%2Fone-page2.docx?storageName=MyStorage" ^
-  -H "accept: application/json" ^
-  -H "authorization: Bearer %JWT_TOKEN%"
+curl -X PUT ^
+  "https://api.groupdocs.cloud/v2.0/signature/storage/file/signaturedocs/one-page2.docx?storageName=MyStorage" ^
+  -H "Authorization: Bearer %JWT_TOKEN%" ^
+  -H "Accept: application/json" ^
+  -F "File=@one-page2.docx"
 ```
 {{< /tab >}} {{< tab "Response" >}}
 
